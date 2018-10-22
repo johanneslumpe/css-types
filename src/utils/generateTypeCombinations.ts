@@ -2,29 +2,20 @@ import {
   ICssCombinatorTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact, every, flatten, map } from 'lodash/fp';
+import { compact, flatten, map } from 'lodash/fp';
 
-import { ComponentArray, IComponent } from '../types';
-import { generatePermutations } from './generatePermutations';
-
-function onlyKeywords(entities: ComponentArray): entities is IComponent[] {
-  return every(item => {
-    return item.type === ICssTokenType.KEYWORD;
-  }, entities);
-}
-
-function convertToArray<T>(value: T | T[]): T[] {
-  return Array.isArray(value) ? value : [value];
-}
+import { ComponentArray, INestedComponentArray } from '../types';
+import { generateComponentPermutations } from './generateComponentPermutations';
 
 export function generateTypeCombinations(
   entities: ComponentArray,
-): Array<string | string[]> {
+): INestedComponentArray {
   return compact(
     map(entity => {
       switch (entity.type) {
         case ICssTokenType.KEYWORD:
-          return entity.value;
+        case ICssTokenType.DATA_TYPE:
+          return entity;
 
         case ICssTokenType.COMBINATOR: {
           switch (entity.combinator) {
@@ -32,12 +23,10 @@ export function generateTypeCombinations(
             // Since the double ampersand allows tokens in any order
             // it can be just the same as a juxtaposition
             case ICssCombinatorTokenType.DOUBLE_AMPERSAND:
-              return flatten(
-                generatePermutations(
-                  map(
-                    item => convertToArray(item),
-                    generateTypeCombinations(entity.entities),
-                  ),
+              return generateComponentPermutations(
+                map(
+                  item => (Array.isArray(item) ? item : [item]),
+                  generateTypeCombinations(entity.entities),
                 ),
               );
 

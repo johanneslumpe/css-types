@@ -14,10 +14,15 @@ export type MultiplierToken = IBaseLexToken<
   ICssTokenType.MULTIPLIER,
   IAdditionalTokenData
 >;
+
 export type RawToken = IBaseLexToken<
   ICssTokenType | ILexingError,
   IAdditionalTokenData
 >;
+
+export enum ComponentTypes {
+  VOID = 'VOID',
+}
 
 export type BasicMultiplier =
   | ICssMultiplierTokenType.QUESTION_MARK
@@ -55,7 +60,7 @@ export interface IComponentGroup {
 }
 
 export interface IComponent {
-  type: ICssTokenType.KEYWORD | ICssTokenType.DATA_TYPE;
+  type: ICssTokenType.KEYWORD | ICssTokenType.DATA_TYPE | ComponentTypes.VOID;
   multiplier?: TokenMultiplier;
   value: string;
 }
@@ -68,3 +73,6 @@ export interface IFunction {
 export type ComponentArray = Array<
   IComponent | IComponentGroup | ICombinatorGroup
 >;
+
+export interface INestedComponentArray
+  extends Array<IComponent | INestedComponentArray> {}
