@@ -116,9 +116,11 @@ const generateTypes = (data: INestedComponentArray, level: number = 0): any => {
 const { emittedTokens } = lexValueDeclarationGrammar(
   '[ [block | inline | run-in] || [flow | flow-root | table | flex | grid | ruby] ] | [[block | inline | run-in]? && [ flow | flow-root ]? && list-item] | [table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container] | [contents | none] | [inline-block | inline-list-item | inline-table | inline-flex | inline-grid]',
   // '[ [ left | center | right | top | bottom ] | [ left | center | right ] [ top | center | bottom ] | [ center | [ left | right ] <percent> ] && [ center | [ top | bottom ] <percent>] ]',
+  // 'normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]',
 );
 
 const components = convertRawTokensToComponents(emittedTokens);
+
 // const hasOnlyKeywords = components.every(component =>
 //   [
 //     ICssTokenType.COMBINATOR,
@@ -129,32 +131,33 @@ const components = convertRawTokensToComponents(emittedTokens);
 // if (hasOnlyKeywords) {
 //   console.log('ONLY KEYWORDS!');
 // }
+
 const result = generateTypeCombinations(
   groupTokensByCombinatorPredence(components),
 );
 
 console.log(util.inspect(result, false, Infinity));
 
-const value = result[0];
-if (Array.isArray(value)) {
-  const typesSrc = ts.createSourceFile(
-    `dummyTypes.ts`,
-    '',
-    ts.ScriptTarget.ESNext,
-    false,
-    ts.ScriptKind.TS,
-  );
-  const printer = ts.createPrinter({
-    newLine: ts.NewLineKind.LineFeed,
-  });
-  const types = generateTypes(value);
+// const value = result[0];
+// if (Array.isArray(value)) {
+//   const typesSrc = ts.createSourceFile(
+//     `dummyTypes.ts`,
+//     '',
+//     ts.ScriptTarget.ESNext,
+//     false,
+//     ts.ScriptKind.TS,
+//   );
+//   const printer = ts.createPrinter({
+//     newLine: ts.NewLineKind.LineFeed,
+//   });
+//   const types = generateTypes(value);
 
-  // console.log(util.inspect(types, false, Infinity));
-  writeFileSync(
-    path.join(__dirname, typesSrc.fileName),
-    printer.printFile(ts.updateSourceFileNode(typesSrc, [types])),
-  );
-}
+//   // console.log(util.inspect(types, false, Infinity));
+//   writeFileSync(
+//     path.join(__dirname, typesSrc.fileName),
+//     printer.printFile(ts.updateSourceFileNode(typesSrc, [types])),
+//   );
+// }
 
 // if (alltokens are keywords && no-multipliers || only finite multipliers) {
 //   generate all permutations as strings

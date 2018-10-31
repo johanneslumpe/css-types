@@ -11,7 +11,7 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules', '__tests__/utils'],
   coverageDirectory: './coverage/',
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
-  collectCoverage: true,
+  collectCoverage: false,
   globals: {
     'ts-jest': {
       tsConfigFile: 'tsconfig.cjs.json',

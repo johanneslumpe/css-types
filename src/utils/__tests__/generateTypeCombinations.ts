@@ -1,10 +1,15 @@
-import { ICssCombinatorTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import {
+  ICssCombinatorTokenType,
+  ICssMultiplierTokenType,
+} from '@johanneslumpe/css-value-declaration-grammer-lexer';
 
 import { createCombinatorGroup } from '../createCombinatorGroup';
 import { createComponent } from '../createComponent';
 import { createComponentGroup } from '../createComponentGroup';
 import { generateTypeCombinations } from '../generateTypeCombinations';
-import { keywordToken } from './utils/tokens';
+import { keywordToken, multiplierToken } from './utils/tokens';
+import { createVoidComponent } from '../createVoidComponent';
+import * as util from 'util';
 
 describe('generateTypeCombinations', () => {
   it('single keyword', () => {
@@ -124,5 +129,108 @@ describe('generateTypeCombinations', () => {
     ]);
 
     expect(result).toEqual([[[a, c], [a, d], [b, c], [b, d]]]);
+  });
+
+  it('two juxtaposed groups with question mark multiplier', () => {
+    // [a]? [b]?
+    const a = createComponent(keywordToken('a'));
+    const b = createComponent(keywordToken('b'));
+
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
+        createComponentGroup(
+          [a],
+          multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+        ),
+        createComponentGroup(
+          [b],
+          multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+        ),
+      ]),
+    ]);
+
+    const voidComp = createVoidComponent();
+    expect(result).toEqual([
+      [[voidComp, voidComp], [voidComp, b], [a, voidComp], [a, b]],
+    ]);
+  });
+
+  // it('test', () => {
+  //   // a b [ c d{1,2} | e ]? f
+  //   const a = createComponent(keywordToken('a'));
+  //   const b = createComponent(keywordToken('b'));
+  //   const c = createComponent(keywordToken('c'));
+  //   const d = createComponent(
+  //     keywordToken('d'),
+  //     multiplierToken(ICssMultiplierTokenType.CURLY_BRACES, '{1,2}'),
+  //   );
+  //   const e = createComponent(keywordToken('e'));
+  //   const f = createComponent(keywordToken('f'));
+
+  //   const result = generateTypeCombinations([
+  //     createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
+  //       a,
+  //       b,
+  //       createComponentGroup(
+  //         [
+  //           createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [
+  //             createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
+  //               c,
+  //               d,
+  //             ]),
+  //             e,
+  //           ]),
+  //         ],
+  //         multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+  //       ),
+  //       f,
+  //     ]),
+  //   ]);
+
+  //   console.log(util.inspect(result, false, Infinity));
+  // });
+
+  it('single bar delimited keywords and group with juxtaposed keywords', () => {
+    // a | b | c | [ d? e ]
+    const a = createComponent(keywordToken('a'));
+    const b = createComponent(keywordToken('b'));
+    const c = createComponent(keywordToken('c'));
+    const d = createComponent(
+      keywordToken('d'),
+      multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+    );
+    const e = createComponent(keywordToken('e'));
+
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [
+        a,
+        b,
+        c,
+        createComponentGroup([
+          createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [d, e]),
+        ]),
+      ]),
+    ]);
+    // console.log(
+    //   util.inspect(
+    //     [
+    //       createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [
+    //         a,
+    //         b,
+    //         c,
+    //         createComponentGroup([
+    //           createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
+    //             d,
+    //             e,
+    //           ]),
+    //         ]),
+    //       ]),
+    //     ],
+    //     false,
+    //     Infinity,
+    //   ),
+    // );
+    // console.log(result);
+    expect(result).toEqual([[a, b, c, [createVoidComponent(), e], [d, e]]]);
   });
 });

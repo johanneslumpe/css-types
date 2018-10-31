@@ -1,11 +1,23 @@
 import {
   ICssCombinatorTokenType,
   ICssTokenType,
+  ICssMultiplierTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
 import { compact, flatten, map } from 'lodash/fp';
 
 import { ComponentArray, INestedComponentArray } from '../types';
 import { generateComponentPermutations } from './generateComponentPermutations';
+import { createVoidComponent } from './createVoidComponent';
+
+// TODO tag returned arrays somehow so that it is possible to later infer which
+// type representation to use, e.g. union or tuple:
+//
+// Juxtapositions need to use tuples
+// single bars need unions
+
+interface ITaggedComponentArray extends INestedComponentArray {
+  representation: 'union' | 'tuple';
+}
 
 export function generateTypeCombinations(
   entities: ComponentArray,
@@ -33,10 +45,18 @@ export function generateTypeCombinations(
             case ICssCombinatorTokenType.SINGLE_BAR:
               return flatten(generateTypeCombinations(entity.entities));
           }
+          break;
         }
 
-        case ICssTokenType.GROUP:
-          return flatten(generateTypeCombinations(entity.entities));
+        case ICssTokenType.GROUP: {
+          const combinations = flatten(
+            generateTypeCombinations(entity.entities),
+          );
+          return entity.multiplier &&
+            entity.multiplier.type === ICssMultiplierTokenType.QUESTION_MARK
+            ? [createVoidComponent(), ...combinations]
+            : combinations;
+        }
       }
     }, entities),
   );

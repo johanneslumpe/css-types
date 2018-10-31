@@ -1,16 +1,7 @@
-import {
-  ICssMultiplierTokenType,
-  ICssTokenType,
-} from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import {
-  IBasicMultiplier,
-  IComponent,
-  ICurlyBraceMultiplier,
-  MultiplierToken,
-  Token,
-} from '../types';
-import { createBasicMultiplier } from './createBasicMultiplier';
-import { createCurlyBracesMultiplier } from './createCurlyBracesMultiplier';
+import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import { IComponent, MultiplierToken, Token } from '../types';
+
+import { getMultiplierForToken } from './getMultiplierForToken';
 
 export function createComponent(
   token: Token,
@@ -22,28 +13,9 @@ export function createComponent(
   ) {
     throw new Error('Unsupported token type');
   }
-  let componentMultiplier: IBasicMultiplier | ICurlyBraceMultiplier | undefined;
 
-  if (multiplier && multiplier.data && multiplier.data.subType) {
-    switch (multiplier.data.subType) {
-      case ICssMultiplierTokenType.CURLY_BRACES:
-        componentMultiplier = createCurlyBracesMultiplier(multiplier.value);
-        break;
-      case ICssMultiplierTokenType.ASTERISK:
-      case ICssMultiplierTokenType.EXCLAMATION_MARK:
-      case ICssMultiplierTokenType.HASH_MARK:
-      case ICssMultiplierTokenType.PLUS:
-      case ICssMultiplierTokenType.QUESTION_MARK:
-        componentMultiplier = createBasicMultiplier(multiplier.data.subType);
-        break;
-      default:
-        throw new Error(
-          `Invalid multiplier sub type: ${multiplier.data.subType}`,
-        );
-    }
-  }
   return {
-    multiplier: componentMultiplier,
+    multiplier: getMultiplierForToken(multiplier),
     type: token.type,
     value: token.value,
   };
