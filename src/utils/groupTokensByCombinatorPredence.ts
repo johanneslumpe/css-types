@@ -10,7 +10,6 @@ import {
   IComponentGroup,
 } from '../types';
 import { createCombinatorGroup } from './createCombinatorGroup';
-import { createComponent } from './createComponent';
 import { createComponentGroup } from './createComponentGroup';
 
 // Higher number is higher precedence
@@ -82,9 +81,11 @@ export function groupTokensByCombinatorPredence(
     if (entities.length === 1) {
       const first = entities[0];
       if (first.type === ICssTokenType.GROUP) {
-        return [
-          createComponentGroup(groupTokensByCombinatorPredence(first.entities)),
-        ];
+        const group = createComponentGroup(
+          groupTokensByCombinatorPredence(first.entities),
+        );
+        group.multiplier = first.multiplier;
+        return [group];
       }
     }
     return groupTokensByCombinatorPredence(entities, precedence - 1);

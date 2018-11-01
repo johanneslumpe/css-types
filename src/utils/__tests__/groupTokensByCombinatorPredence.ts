@@ -1,5 +1,6 @@
 import {
   ICssCombinatorTokenType,
+  ICssMultiplierTokenType,
   lexValueDeclarationGrammar,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
 import { Token } from '../../types';
@@ -9,6 +10,7 @@ import { createComponent } from '../createComponent';
 import { createComponentGroup } from '../createComponentGroup';
 import { groupTokensByCombinatorPredence } from '../groupTokensByCombinatorPredence';
 import { isValidToken } from '../isValidToken';
+import { multiplierToken } from './utils/tokens';
 
 function getValidTokenArrayForSyntax(syntax: string): Token[] {
   const { emittedTokens } = lexValueDeclarationGrammar(syntax);
@@ -63,7 +65,7 @@ describe('groupTokensByCombinatorPredence', () => {
       expect(result).toEqual(expected);
     });
 
-    it('should create a basic double ampersansd group', () => {
+    it('should create a basic double ampersand group', () => {
       const parsedSyntax = getValidTokenArrayForSyntax('a && b');
       const result = groupTokens(parsedSyntax);
       const expected = [
@@ -91,6 +93,19 @@ describe('groupTokensByCombinatorPredence', () => {
       const result = groupTokens(parsedSyntax);
       const expected = [
         createComponentGroup([createComponent(parsedSyntax[1])]),
+      ];
+
+      expect(result).toEqual(expected);
+    });
+
+    it('should preserve group multipliers', () => {
+      const parsedSyntax = getValidTokenArrayForSyntax('[ a ]?');
+      const result = groupTokens(parsedSyntax);
+      const expected = [
+        createComponentGroup(
+          [createComponent(parsedSyntax[1])],
+          multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+        ),
       ];
 
       expect(result).toEqual(expected);

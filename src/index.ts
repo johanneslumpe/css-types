@@ -113,19 +113,16 @@ const generateTypes = (data: INestedComponentArray, level: number = 0): any => {
 //   }
 // };
 
-let grammar =
+const grammar =
   '[ [block | inline | run-in] || [flow | flow-root | table | flex | grid | ruby] ] | [[block | inline | run-in]? && [ flow | flow-root ]? && list-item] | [table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container] | [contents | none] | [inline-block | inline-list-item | inline-table | inline-flex | inline-grid]';
-
-grammar = '[[block | inline | run-in]? && [ flow | flow-root ]? && list-item]';
 console.log('parsing grammar:', grammar);
+
 const { emittedTokens } = lexValueDeclarationGrammar(
   grammar,
   // '[ [ left | center | right | top | bottom ] | [ left | center | right ] [ top | center | bottom ] | [ center | [ left | right ] <percent> ] && [ center | [ top | bottom ] <percent>] ]',
   // 'normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]',
 );
-
 const components = convertRawTokensToComponents(emittedTokens);
-
 // const hasOnlyKeywords = components.every(component => {
 //   return (
 //     component.type === ICssTokenType.COMBINATOR ||
@@ -136,9 +133,9 @@ const components = convertRawTokensToComponents(emittedTokens);
 // if (hasOnlyKeywords) {
 //   console.log('ONLY KEYWORDS!');
 // }
-console.log(
-  util.inspect(groupTokensByCombinatorPredence(components), false, Infinity),
-);
+// console.log(
+//   util.inspect(groupTokensByCombinatorPredence(components), false, Infinity),
+// );
 const result = generateTypeCombinations(
   groupTokensByCombinatorPredence(components),
 );
@@ -165,9 +162,9 @@ if (Array.isArray(value)) {
     [] as string[],
   );
 
-  // console.log(combined);
+  console.log(combined);
 }
-console.log(util.inspect(result[0], false, Infinity));
+// console.log(util.inspect(result[0], false, Infinity));
 
 // const value = result[0];
 // if (Array.isArray(value)) {

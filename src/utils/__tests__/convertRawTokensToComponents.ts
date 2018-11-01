@@ -180,6 +180,27 @@ describe('convertRawTokensToComponents', () => {
         ]),
       ]);
     });
+
+    it('should convert groups with multipliers', () => {
+      const result = convertRawTokensToComponents(
+        lexValueDeclarationGrammar('[ [ a ]? && [ b ]? && c ]').emittedTokens,
+      );
+      expect(result).toEqual([
+        createComponentGroup([
+          createComponentGroup(
+            [createComponent(keywordToken('a'))],
+            multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+          ),
+          createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_AMPERSAND, []),
+          createComponentGroup(
+            [createComponent(keywordToken('b'))],
+            multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+          ),
+          createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_AMPERSAND, []),
+          createComponent(keywordToken('c')),
+        ]),
+      ]);
+    });
   });
 
   describe('operators', () => {

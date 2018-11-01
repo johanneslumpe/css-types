@@ -16,6 +16,7 @@ import {
 import { createCombinatorGroup } from './createCombinatorGroup';
 import { createComponent } from './createComponent';
 import { createComponentGroup } from './createComponentGroup';
+import { getMultiplierForToken } from './getMultiplierForToken';
 
 function isValidTokenArray(arr: RawToken[]): arr is Token[] {
   return !arr.find(token => token.type === ILexingError.LEXING_ERROR);
@@ -25,8 +26,8 @@ function isComponentGroup(value: any): value is IComponentGroup {
   return value && !!value.entities && value.type === ICssTokenType.GROUP;
 }
 
-function isCssMultiplierToken(value: Token): value is MultiplierToken {
-  return value && value.type === ICssTokenType.MULTIPLIER;
+function isCssMultiplierToken(value?: Token): value is MultiplierToken {
+  return !!(value && value.type === ICssTokenType.MULTIPLIER);
 }
 
 export const convertRawTokensToComponents = (tokens: RawToken[]) => {
@@ -56,6 +57,14 @@ export const convertRawTokensToComponents = (tokens: RawToken[]) => {
           pushStack(current);
           current = nested;
         } else {
+          const lookAhead = tokens[i + 1];
+          // consume and skip next token if it is a multiplier
+          if (isCssMultiplierToken(lookAhead)) {
+            const group = current as IComponentGroup;
+            group.multiplier = getMultiplierForToken(lookAhead);
+            i += 1;
+          }
+
           const val = stack.pop();
           if (val) {
             current = val;
@@ -82,7 +91,7 @@ export const convertRawTokensToComponents = (tokens: RawToken[]) => {
 
       const nextToken = tokens[i + 1];
       // consume and skip next token if it is a multiplier
-      if (nextToken && nextToken.type === ICssTokenType.MULTIPLIER) {
+      if (isCssMultiplierToken(nextToken)) {
         i += 1;
       }
 
