@@ -13,7 +13,7 @@ import * as path from 'path';
 import ts from 'typescript';
 import * as util from 'util';
 
-import { INestedComponentArray, IComponent } from './types';
+import { INestedComponentArray, IComponent, ComponentTypes } from './types';
 
 // export function generateUnionTypeAliasesForTokens(
 //   snt: Dictionary<IToken[]>,
@@ -113,30 +113,61 @@ const generateTypes = (data: INestedComponentArray, level: number = 0): any => {
 //   }
 // };
 
+let grammar =
+  '[ [block | inline | run-in] || [flow | flow-root | table | flex | grid | ruby] ] | [[block | inline | run-in]? && [ flow | flow-root ]? && list-item] | [table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container] | [contents | none] | [inline-block | inline-list-item | inline-table | inline-flex | inline-grid]';
+
+grammar = '[[block | inline | run-in]? && [ flow | flow-root ]? && list-item]';
+console.log('parsing grammar:', grammar);
 const { emittedTokens } = lexValueDeclarationGrammar(
-  '[ [block | inline | run-in] || [flow | flow-root | table | flex | grid | ruby] ] | [[block | inline | run-in]? && [ flow | flow-root ]? && list-item] | [table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container] | [contents | none] | [inline-block | inline-list-item | inline-table | inline-flex | inline-grid]',
+  grammar,
   // '[ [ left | center | right | top | bottom ] | [ left | center | right ] [ top | center | bottom ] | [ center | [ left | right ] <percent> ] && [ center | [ top | bottom ] <percent>] ]',
   // 'normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]',
 );
 
 const components = convertRawTokensToComponents(emittedTokens);
 
-// const hasOnlyKeywords = components.every(component =>
-//   [
-//     ICssTokenType.COMBINATOR,
-//     ICssTokenType.KEYWORD,
-//     ICssTokenType.GROUP,
-//   ].includes(component.type),
-// );
+// const hasOnlyKeywords = components.every(component => {
+//   return (
+//     component.type === ICssTokenType.COMBINATOR ||
+//     component.type === ICssTokenType.KEYWORD ||
+//     component.type === ICssTokenType.GROUP
+//   );
+// });
 // if (hasOnlyKeywords) {
 //   console.log('ONLY KEYWORDS!');
 // }
-
+console.log(
+  util.inspect(groupTokensByCombinatorPredence(components), false, Infinity),
+);
 const result = generateTypeCombinations(
   groupTokensByCombinatorPredence(components),
 );
 
-console.log(util.inspect(result, false, Infinity));
+function isComponentArray(arr: INestedComponentArray): arr is IComponent[] {
+  return arr.every(i => !Array.isArray(i));
+}
+// console.log(result[0]);
+const value = result[0];
+if (Array.isArray(value)) {
+  const combined = value.reduce(
+    (acc, item) => {
+      if (Array.isArray(item)) {
+        if (isComponentArray(item)) {
+          acc.push(item.reduce((a, i) => `${a} ${i.value}`.trim(), ''));
+        } else {
+          console.log(item);
+        }
+      } else {
+        acc.push(item.value);
+      }
+      return acc;
+    },
+    [] as string[],
+  );
+
+  // console.log(combined);
+}
+console.log(util.inspect(result[0], false, Infinity));
 
 // const value = result[0];
 // if (Array.isArray(value)) {

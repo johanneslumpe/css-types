@@ -3,9 +3,13 @@ import {
   ICssTokenType,
   ICssMultiplierTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact, flatten, map } from 'lodash/fp';
+import { compact, every, flatten, map, reject } from 'lodash/fp';
 
-import { ComponentArray, INestedComponentArray } from '../types';
+import {
+  ComponentArray,
+  INestedComponentArray,
+  ComponentTypes,
+} from '../types';
 import { generateComponentPermutations } from './generateComponentPermutations';
 import { createVoidComponent } from './createVoidComponent';
 
@@ -44,6 +48,34 @@ export function generateTypeCombinations(
 
             case ICssCombinatorTokenType.SINGLE_BAR:
               return flatten(generateTypeCombinations(entity.entities));
+
+            case ICssCombinatorTokenType.DOUBLE_BAR: {
+              const permutations = generateComponentPermutations(
+                map(
+                  combination =>
+                    Array.isArray(combination)
+                      ? combination.find(
+                          c =>
+                            !Array.isArray(c) && c.type === ComponentTypes.VOID,
+                        )
+                        ? combination
+                        : [createVoidComponent(), ...combination]
+                      : [createVoidComponent(), combination],
+                  generateTypeCombinations(entity.entities),
+                ),
+              );
+
+              // at least one value is required, so we remove all permutations that only
+              // contain void values
+              return reject(
+                permutation =>
+                  every(
+                    component => component.type === ComponentTypes.VOID,
+                    permutation,
+                  ),
+                permutations,
+              );
+            }
           }
           break;
         }

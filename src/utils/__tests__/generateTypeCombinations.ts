@@ -53,6 +53,52 @@ describe('generateTypeCombinations', () => {
     expect(result).toEqual([[[a, b]]]);
   });
 
+  it('double bar with two keywords', () => {
+    // a || b
+    const a = createComponent(keywordToken('a'));
+    const b = createComponent(keywordToken('b'));
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_BAR, [a, b]),
+    ]);
+
+    const voidComp = createVoidComponent();
+    expect(result).toEqual([[[voidComp, b], [a, voidComp], [a, b]]]);
+  });
+
+  it('double bar with two keyword and optional group', () => {
+    // a || [b]?
+    const a = createComponent(keywordToken('a'));
+    const b = createComponent(keywordToken('b'));
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_BAR, [
+        a,
+        createComponentGroup(
+          [b],
+          multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+        ),
+      ]),
+    ]);
+    const voidComp = createVoidComponent();
+    expect(result).toEqual([[[voidComp, b], [a, voidComp], [a, b]]]);
+  });
+
+  it.skip('juxtapostion with keyword and group with two keywords and double bar', () => {
+    // a [b || c]
+    const a = createComponent(keywordToken('a'));
+    const b = createComponent(keywordToken('b'));
+    const c = createComponent(keywordToken('c'));
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
+        a,
+        createComponentGroup([
+          createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_BAR, [b, c]),
+        ]),
+      ]),
+    ]);
+    const voidComp = createVoidComponent();
+    expect(result).toEqual([[[a, b, voidComp], [a, voidComp, c], [a, b, c]]]);
+  });
+
   it('single bar with keyword and a group with juxtaposed keywords', () => {
     // a | [ b c ]
     const a = createComponent(keywordToken('a'));
@@ -155,7 +201,7 @@ describe('generateTypeCombinations', () => {
     ]);
   });
 
-  // it('test', () => {
+  // it.only('test', () => {
   //   // a b [ c d{1,2} | e ]? f
   //   const a = createComponent(keywordToken('a'));
   //   const b = createComponent(keywordToken('b'));
