@@ -2,6 +2,7 @@ import {
   ICssCombinatorTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import { reduce } from 'lodash/fp';
 
 import {
   ComponentArray,
@@ -103,7 +104,7 @@ export function groupTokensByCombinatorPredence(
   const result: ComponentArray = [];
   const combinatorGroup = createCombinatorGroup(
     combinator,
-    groupedComponentValues.reduce(
+    reduce(
       (acc, tokenGroup) => [
         ...acc,
         ...groupTokensByCombinatorPredence(
@@ -112,6 +113,7 @@ export function groupTokensByCombinatorPredence(
         ),
       ],
       result,
+      groupedComponentValues,
     ),
   );
   return [combinatorGroup];

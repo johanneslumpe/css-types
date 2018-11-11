@@ -16,9 +16,10 @@ export function generateComponentMultiplierPermutations(
   const component = arr[0];
 
   if (!component.multiplier) {
-    return nestedResult.reduce(
+    return reduce(
       (acc, componentArr) => acc.concat([[component].concat(componentArr)]),
       result,
+      nestedResult,
     );
   }
   let min: number = 0;

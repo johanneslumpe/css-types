@@ -1,14 +1,16 @@
 import { flatten, map } from 'lodash/fp';
-import { CSSUnitGroups } from 'mdn-data';
+import { CSSUnitGroups, IUnit } from 'mdn-data';
 import ts from 'typescript';
 
+import {
+  LENGTH_TYPE_NAME,
+  UNIT_TYPES_FILE,
+  UNIT_UTILS_FILE,
+} from './constants';
 import { createBrandedTypeInterfaceForUnit } from './utils/createBrandedTypeInterfaceForUnit';
 import { createUnitFunctionDeclaration } from './utils/createUnitFunctionDeclaration';
 import { generateTypeName } from './utils/generateTypeName';
 import { getUnits, lengthValueTags } from './utils/getUnits';
-
-const UNIT_TYPES_FILE = 'unitTypes.ts';
-const UNIT_UTILS_FILE = 'unitUtils.ts';
 
 const getUnitsWithAdditionalTypes = (tagFilterArray?: CSSUnitGroups[]) => [
   ...getUnits(tagFilterArray),
@@ -19,11 +21,11 @@ const getUnitsWithAdditionalTypes = (tagFilterArray?: CSSUnitGroups[]) => [
   },
 ];
 
-export const generateUnitInterfaces = (
+export function generateUnitInterfaces(
   withAdditionalTypes: boolean,
   tagFilterArray?: CSSUnitGroups[],
-) =>
-  flatten(
+) {
+  return flatten(
     map(
       unit =>
         createBrandedTypeInterfaceForUnit(unit.unit, unit.name, unit.brandKey),
@@ -32,6 +34,7 @@ export const generateUnitInterfaces = (
         : getUnits(tagFilterArray),
     ),
   );
+}
 
 export const generateUnitTypesImportStatement = (
   interfaces: ts.InterfaceDeclaration[],
@@ -45,10 +48,10 @@ export const generateUnitTypesImportStatement = (
         map(val => ts.createImportSpecifier(undefined, val.name), interfaces),
       ),
     ),
-    ts.createStringLiteral(`./${UNIT_TYPES_FILE}`),
+    ts.createStringLiteral(`./${UNIT_TYPES_FILE.replace('.ts', '')}`),
   );
 
-export const generateUnitTypesSourceFiles = () => {
+export function generateUnitTypesSourceFiles() {
   const utilsSrc = ts.createSourceFile(
     UNIT_UTILS_FILE,
     '',
@@ -67,16 +70,20 @@ export const generateUnitTypesSourceFiles = () => {
 
   const interfaces = generateUnitInterfaces(true);
   const typesImportDeclaration = generateUnitTypesImportStatement(interfaces);
+  const unitTypes = getUnitsWithAdditionalTypes();
   // native map because lodash/fp does not give us access to the index property
-  const unitUtils = getUnitsWithAdditionalTypes().map((unit, index) =>
+  const unitUtils = unitTypes.map((unit, index) =>
     createUnitFunctionDeclaration(interfaces[index], unit.unit, unit.name),
   );
 
-  return [
-    ts.updateSourceFileNode(utilsSrc, [typesImportDeclaration, ...unitUtils]),
-    ts.updateSourceFileNode(typesSrc, interfaces),
-  ];
-};
+  return {
+    sourceFiles: [
+      ts.updateSourceFileNode(utilsSrc, [typesImportDeclaration, ...unitUtils]),
+      ts.updateSourceFileNode(typesSrc, interfaces),
+    ],
+    unitTypes,
+  };
+}
 
 export const generateCombinedLengthType = () => {
   const interfaces = generateUnitInterfaces(false, lengthValueTags);
@@ -86,7 +93,7 @@ export const generateCombinedLengthType = () => {
 
   const types = [
     {
-      name: 'length',
+      name: LENGTH_TYPE_NAME.toLowerCase(),
       values: interfaces,
     },
   ];

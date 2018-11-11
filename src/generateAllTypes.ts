@@ -1,13 +1,13 @@
-import { writeFileSync } from 'fs';
 import * as fs from 'fs';
-import { filter, find } from 'lodash/fp';
+import { find, forEach, map } from 'lodash/fp';
 import properties from 'mdn-data/css/properties.json';
 import syntaxes from 'mdn-data/css/syntaxes.json';
 import * as path from 'path';
 import rimraf from 'rimraf';
 import ts from 'typescript';
 
-import { TYPES_BUILD_DIR } from './constants';
+import { LENGTH_TYPE_NAME, TYPES_BUILD_DIR } from './constants';
+import { customSyntaxes } from './customSyntaxes';
 import {
   generateBaseDataTypes,
   generateTypesFromMdnData,
@@ -16,8 +16,8 @@ import {
   generateCombinedLengthType,
   generateUnitTypesSourceFiles,
 } from './generateUnitTypeSourceFiles';
+import { generateUnitvalueInterface } from './utils/generateUnitvalueInterface';
 
-// create directory to store out types in
 const outputDir = path.join(__dirname, TYPES_BUILD_DIR);
 rimraf.sync(outputDir);
 fs.mkdirSync(outputDir);
@@ -25,52 +25,24 @@ fs.mkdirSync(outputDir);
 const isSelectorKey = (key: string) => key.includes('selector');
 
 // generate sources
+const {
+  unitTypes,
+  sourceFiles: unitSourceFiles,
+} = generateUnitTypesSourceFiles();
 
 // custom types to prevent invalid references
 // after removing function types
-const customSyntaxes = {
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/angle
-  angle: {
-    syntax: '<IDegValue> | <IGradValue> | <IRadValue> | <ITurnValue>',
-  },
-  color: {
-    syntax: '<string>',
-  },
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value
-  flex: {
-    syntax: '<IFrValue>',
-  },
-  'inset()': {
-    syntax: '<string>',
-  },
-  integer: {
-    syntax: '<number>',
-  },
-  percentage: {
-    syntax: '<IPercentageValue>',
-  },
-  shape: {
-    syntax: '<string>',
-  },
-  'track-repeat': {
-    syntax: '<string>',
-  },
-};
-
 const customTypes = generateTypesFromMdnData(customSyntaxes, {
   availableTypes: [
-    'IDegValue',
-    'IGradValue',
-    'IRadValue',
-    'ITurnValue',
-    'IFrValue',
-    'IPercentageValue',
+    ...map(unitType => generateUnitvalueInterface(unitType.name), unitTypes),
+    'i-s-value',
+    'i-x-value',
   ],
 });
 
 const baseTypes = generateBaseDataTypes([
   // ignore types which clash with custom added types
-  'length',
+  LENGTH_TYPE_NAME.toLowerCase(),
   ...Object.keys(customSyntaxes),
   // ignore all properties and syntaxes
   ...Object.keys(syntaxes),
@@ -94,7 +66,6 @@ const propertyTypes = generateTypesFromMdnData(properties, {
   },
   typeSuffix: 'Property',
 });
-const unitSourceFiles = generateUnitTypesSourceFiles();
 
 const typesOutputSource = ts.updateSourceFileNode(
   ts.createSourceFile(
@@ -117,18 +88,24 @@ const printer = ts.createPrinter({
   newLine: ts.NewLineKind.LineFeed,
 });
 
-[...unitSourceFiles, typesOutputSource].forEach(sourceFile => {
-  writeFileSync(
-    path.join(__dirname, TYPES_BUILD_DIR, sourceFile.fileName),
-    printer.printFile(sourceFile),
-  );
-});
+forEach(
+  sourceFile => {
+    fs.writeFileSync(
+      path.join(__dirname, TYPES_BUILD_DIR, sourceFile.fileName),
+      printer.printFile(sourceFile),
+    );
+  },
+  [...unitSourceFiles, typesOutputSource],
+);
 
 // TODO
-// DONE - collapse nested tuples with same length into tuples with unions
-// - handle special types like `string`, `number`, `percentage`, `length-percentage`, `length`, `flex`, etc.
+// - length type generics
+// - fold similar tuples into one
 // - clean up type `generateTypeCombinations`
 // - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
+// - create color function utils (rgb, hsla, etc) from css grammar to be used within `color` type
+// - support finite version of `+` and `*`
+// - faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords
 
 // const grammar = '<length> | <percentage>';
 // console.log('parsing grammar:', grammar);

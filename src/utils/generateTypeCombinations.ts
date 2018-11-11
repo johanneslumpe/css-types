@@ -3,7 +3,7 @@ import {
   ICssMultiplierTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact, every, find, flatten, map, reject } from 'lodash/fp';
+import { compact, every, find, flatten, map, reduce, reject } from 'lodash/fp';
 
 import {
   ComponentArray,
@@ -97,11 +97,15 @@ export function generateTypeCombinations(
           const r1 = generateTypeCombinations(entity.entities);
 
           // we lift the nested representation up when resolving the group
-          const type: ComponentTypeRepresentation = r1.reduce((acc, item) => {
-            return Array.isArray(item)
-              ? acc || item.representation || ComponentTypeRepresentation.NONE
-              : acc;
-          }, ComponentTypeRepresentation.NONE);
+          const type: ComponentTypeRepresentation = reduce(
+            (acc, item) => {
+              return Array.isArray(item)
+                ? acc || item.representation || ComponentTypeRepresentation.NONE
+                : acc;
+            },
+            ComponentTypeRepresentation.NONE,
+            r1,
+          );
 
           const combinations = flatten(
             generateTypeCombinations(entity.entities),
@@ -114,6 +118,10 @@ export function generateTypeCombinations(
               : combinations;
           final.representation = type;
           return final;
+        }
+
+        default: {
+          throw new Error('unsupported case hit');
         }
       }
     }, entities),

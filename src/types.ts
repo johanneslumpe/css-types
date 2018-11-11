@@ -1,7 +1,6 @@
 import { IBaseLexToken } from '@johanneslumpe/basic-lexer';
 
 import {
-  formatTokens,
   IAdditionalTokenData,
   ICssCombinatorTokenType,
   ICssMultiplierTokenType,

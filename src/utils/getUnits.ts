@@ -1,3 +1,4 @@
+import { reduce } from 'lodash/fp';
 import { CSSUnitGroups } from 'mdn-data';
 import units from 'mdn-data/css/units.json';
 
@@ -18,14 +19,14 @@ export const lengthValueTags: CSSUnitGroups[] = [
   'CSS Lengths',
 ];
 
-interface IUnit {
+export interface IUnit {
   name: string;
   unit: string;
   brandKey?: string;
 }
 
 export function getUnits(tagsToFilterFor?: CSSUnitGroups[]) {
-  return Object.keys(units).reduce(
+  return reduce(
     (acc, key) => {
       const lowerCaseKey = key.toLowerCase();
       const unit = units[key];
@@ -43,5 +44,6 @@ export function getUnits(tagsToFilterFor?: CSSUnitGroups[]) {
       return acc;
     },
     [] as IUnit[],
+    Object.keys(units),
   );
 }

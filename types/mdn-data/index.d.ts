@@ -23,18 +23,30 @@ declare module 'mdn-data' {
       groups: string[];
     };
   }
-}
 
-declare module 'mdn-data/css/units.json' {
-  import { CSSUnitGroups, CSSStatus, IRawSyntaxes } from 'mdn-data';
-
-  interface IUnit {
+  export interface IUnit {
     groups: CSSUnitGroups[];
     status: CSSStatus;
   }
-  interface IUnits {
+
+  export interface IUnits {
     [index: string]: IUnit;
   }
+
+  export type PropertyStatus = 'standard' | 'nonstandard' | 'experimental';
+
+  export interface IRawProperty extends IRawSyntax {
+    status: PropertyStatus;
+  }
+
+  export interface IRawProperties {
+    [index: string]: IRawProperty;
+  }
+}
+
+declare module 'mdn-data/css/units.json' {
+  import { IUnits } from 'mdn-data';
+
   const value: IUnits;
   export default value;
 }
@@ -46,16 +58,8 @@ declare module 'mdn-data/css/syntaxes.json' {
 }
 
 declare module 'mdn-data/css/properties.json' {
-  import { IRawSyntax } from 'mdn-data';
+  import { IRawProperties } from 'mdn-data';
 
-  type PropertyStatus = 'standard' | 'nonstandard' | 'experimental';
-  export interface IRawProperty extends IRawSyntax {
-    status: PropertyStatus;
-  }
-
-  export interface IRawProperties {
-    [index: string]: IRawProperty;
-  }
   const value: IRawProperties;
   export default value;
 }
