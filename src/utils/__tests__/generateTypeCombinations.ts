@@ -6,17 +6,19 @@ import {
 import { createCombinatorGroup } from '../createCombinatorGroup';
 import { createComponent } from '../createComponent';
 import { createComponentGroup } from '../createComponentGroup';
+import {
+  createTupleArray,
+  createUnionArray,
+} from '../createdTypeNestedComponentArrays';
+import { createVoidComponent } from '../createVoidComponent';
 import { generateTypeCombinations } from '../generateTypeCombinations';
 import { keywordToken, multiplierToken } from './utils/tokens';
-import { createVoidComponent } from '../createVoidComponent';
-import * as util from 'util';
 
 describe('generateTypeCombinations', () => {
   it('single keyword', () => {
     // a
     const a = createComponent(keywordToken('a'));
     const result = generateTypeCombinations([a]);
-
     expect(result).toEqual([a]);
   });
 
@@ -27,8 +29,7 @@ describe('generateTypeCombinations', () => {
     const result = generateTypeCombinations([
       createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [a, b]),
     ]);
-
-    expect(result).toEqual([[a, b]]);
+    expect(result).toEqual([createUnionArray([a, b])]);
   });
 
   it('juxtaposition with two keywords', () => {
@@ -38,8 +39,7 @@ describe('generateTypeCombinations', () => {
     const result = generateTypeCombinations([
       createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [a, b]),
     ]);
-
-    expect(result).toEqual([[[a, b]]]);
+    expect(result).toEqual([createUnionArray([createTupleArray([a, b])])]);
   });
 
   it('double ampersand with two keywords', () => {
@@ -49,8 +49,7 @@ describe('generateTypeCombinations', () => {
     const result = generateTypeCombinations([
       createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_AMPERSAND, [a, b]),
     ]);
-
-    expect(result).toEqual([[[a, b]]]);
+    expect(result).toEqual([createUnionArray([createTupleArray([a, b])])]);
   });
 
   it('double bar with two keywords', () => {
@@ -62,7 +61,14 @@ describe('generateTypeCombinations', () => {
     ]);
 
     const voidComp = createVoidComponent();
-    expect(result).toEqual([[[voidComp, b], [a, voidComp], [a, b]]]);
+
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([voidComp, b]),
+        createTupleArray([a, voidComp]),
+        createTupleArray([a, b]),
+      ]),
+    ]);
   });
 
   it('double bar with two keyword and optional group', () => {
@@ -79,10 +85,16 @@ describe('generateTypeCombinations', () => {
       ]),
     ]);
     const voidComp = createVoidComponent();
-    expect(result).toEqual([[[voidComp, b], [a, voidComp], [a, b]]]);
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([voidComp, b]),
+        createTupleArray([a, voidComp]),
+        createTupleArray([a, b]),
+      ]),
+    ]);
   });
 
-  it.skip('juxtapostion with keyword and group with two keywords and double bar', () => {
+  it('juxtapostion with keyword and group with two keywords and double bar', () => {
     // a [b || c]
     const a = createComponent(keywordToken('a'));
     const b = createComponent(keywordToken('b'));
@@ -96,7 +108,13 @@ describe('generateTypeCombinations', () => {
       ]),
     ]);
     const voidComp = createVoidComponent();
-    expect(result).toEqual([[[a, b, voidComp], [a, voidComp, c], [a, b, c]]]);
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([a, createTupleArray([voidComp, c])]),
+        createTupleArray([a, createTupleArray([b, voidComp])]),
+        createTupleArray([a, createTupleArray([b, c])]),
+      ]),
+    ]);
   });
 
   it('single bar with keyword and a group with juxtaposed keywords', () => {
@@ -112,8 +130,7 @@ describe('generateTypeCombinations', () => {
         ]),
       ]),
     ]);
-
-    expect(result).toEqual([[a, [b, c]]]);
+    expect(result).toEqual([createUnionArray([a, createTupleArray([b, c])])]);
   });
 
   it('juxtaposition with keyword and group with single bar and keywords', () => {
@@ -129,8 +146,9 @@ describe('generateTypeCombinations', () => {
         ]),
       ]),
     ]);
-
-    expect(result).toEqual([[[a, b], [a, c]]]);
+    expect(result).toEqual([
+      createUnionArray([createTupleArray([a, b]), createTupleArray([a, c])]),
+    ]);
   });
 
   it('single bar with keyword and group with single bar and keywords', () => {
@@ -146,8 +164,7 @@ describe('generateTypeCombinations', () => {
         ]),
       ]),
     ]);
-
-    expect(result).toEqual([[a, b, c]]);
+    expect(result).toEqual([createUnionArray([a, b, c])]);
   });
 
   it('two juxtaposed groups with single bars and keywords', () => {
@@ -173,8 +190,14 @@ describe('generateTypeCombinations', () => {
         ]),
       ]),
     ]);
-
-    expect(result).toEqual([[[a, c], [a, d], [b, c], [b, d]]]);
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([a, c]),
+        createTupleArray([a, d]),
+        createTupleArray([b, c]),
+        createTupleArray([b, d]),
+      ]),
+    ]);
   });
 
   it('two juxtaposed groups with question mark multiplier', () => {
@@ -197,44 +220,14 @@ describe('generateTypeCombinations', () => {
 
     const voidComp = createVoidComponent();
     expect(result).toEqual([
-      [[voidComp, voidComp], [voidComp, b], [a, voidComp], [a, b]],
+      createUnionArray([
+        createTupleArray([voidComp, voidComp]),
+        createTupleArray([voidComp, b]),
+        createTupleArray([a, voidComp]),
+        createTupleArray([a, b]),
+      ]),
     ]);
   });
-
-  // it.only('test', () => {
-  //   // a b [ c d{1,2} | e ]? f
-  //   const a = createComponent(keywordToken('a'));
-  //   const b = createComponent(keywordToken('b'));
-  //   const c = createComponent(keywordToken('c'));
-  //   const d = createComponent(
-  //     keywordToken('d'),
-  //     multiplierToken(ICssMultiplierTokenType.CURLY_BRACES, '{1,2}'),
-  //   );
-  //   const e = createComponent(keywordToken('e'));
-  //   const f = createComponent(keywordToken('f'));
-
-  //   const result = generateTypeCombinations([
-  //     createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
-  //       a,
-  //       b,
-  //       createComponentGroup(
-  //         [
-  //           createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [
-  //             createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
-  //               c,
-  //               d,
-  //             ]),
-  //             e,
-  //           ]),
-  //         ],
-  //         multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
-  //       ),
-  //       f,
-  //     ]),
-  //   ]);
-
-  //   console.log(util.inspect(result, false, Infinity));
-  // });
 
   it('single bar delimited keywords and group with juxtaposed keywords', () => {
     // a | b | c | [ d? e ]
@@ -257,26 +250,15 @@ describe('generateTypeCombinations', () => {
         ]),
       ]),
     ]);
-    // console.log(
-    //   util.inspect(
-    //     [
-    //       createCombinatorGroup(ICssCombinatorTokenType.SINGLE_BAR, [
-    //         a,
-    //         b,
-    //         c,
-    //         createComponentGroup([
-    //           createCombinatorGroup(ICssCombinatorTokenType.JUXTAPOSITION, [
-    //             d,
-    //             e,
-    //           ]),
-    //         ]),
-    //       ]),
-    //     ],
-    //     false,
-    //     Infinity,
-    //   ),
-    // );
-    // console.log(result);
-    expect(result).toEqual([[a, b, c, [createVoidComponent(), e], [d, e]]]);
+
+    expect(result).toEqual([
+      createUnionArray([
+        a,
+        b,
+        c,
+        createTupleArray([createVoidComponent(), e]),
+        createTupleArray([d, e]),
+      ]),
+    ]);
   });
 });

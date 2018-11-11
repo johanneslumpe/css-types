@@ -2,7 +2,7 @@ import {
   ICssCombinatorTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact } from 'lodash/fp';
+
 import {
   ComponentArray,
   ICombinatorGroup,

@@ -74,5 +74,12 @@ export type ComponentArray = Array<
   IComponent | IComponentGroup | ICombinatorGroup
 >;
 
+export enum ComponentTypeRepresentation {
+  NONE,
+  UNION,
+  TUPLE,
+}
 export interface INestedComponentArray
-  extends Array<IComponent | INestedComponentArray> {}
+  extends Array<IComponent | INestedComponentArray> {
+  representation?: ComponentTypeRepresentation;
+}

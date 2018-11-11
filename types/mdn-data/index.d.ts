@@ -1,7 +1,11 @@
 declare module 'mdn-data' {
+  export interface IRawSyntax {
+    syntax: string;
+  }
+  export interface IRawSyntaxes {
+    [index: string]: IRawSyntax;
+  }
 
-}
-declare module 'mdn-data/css/units.json' {
   export type CSSUnitGroups =
     | 'CSS Units'
     | 'CSS Lengths'
@@ -13,6 +17,17 @@ declare module 'mdn-data/css/units.json' {
     | 'CSS Times';
 
   export type CSSStatus = 'standard' | 'experimental';
+
+  export interface ITypes {
+    [index: string]: {
+      groups: string[];
+    };
+  }
+}
+
+declare module 'mdn-data/css/units.json' {
+  import { CSSUnitGroups, CSSStatus, IRawSyntaxes } from 'mdn-data';
+
   interface IUnit {
     groups: CSSUnitGroups[];
     status: CSSStatus;
@@ -25,23 +40,28 @@ declare module 'mdn-data/css/units.json' {
 }
 
 declare module 'mdn-data/css/syntaxes.json' {
-  export interface IRawSyntax {
-    syntax: string;
-  }
-  export interface IRawSyntaxes {
-    [index: string]: IRawSyntax;
-  }
+  import { IRawSyntaxes } from 'mdn-data';
   const value: IRawSyntaxes;
   export default value;
 }
 
 declare module 'mdn-data/css/properties.json' {
-  export interface IRawSyntax {
-    syntax: string;
+  import { IRawSyntax } from 'mdn-data';
+
+  type PropertyStatus = 'standard' | 'nonstandard' | 'experimental';
+  export interface IRawProperty extends IRawSyntax {
+    status: PropertyStatus;
   }
-  export interface IRawSyntaxes {
-    [index: string]: IRawSyntax;
+
+  export interface IRawProperties {
+    [index: string]: IRawProperty;
   }
-  const value: IRawSyntaxes;
+  const value: IRawProperties;
+  export default value;
+}
+
+declare module 'mdn-data/css/types.json' {
+  import { ITypes } from 'mdn-data';
+  const value: ITypes;
   export default value;
 }

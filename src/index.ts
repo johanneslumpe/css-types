@@ -1,128 +1,103 @@
-import { compact, flatten } from 'lodash';
-
-import {
-  ICssTokenType,
-  lexValueDeclarationGrammar,
-} from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { convertRawTokensToComponents } from './utils/convertRawTokensToComponents';
-import { generateTypeCombinations } from './utils/generateTypeCombinations';
-import { groupTokensByCombinatorPredence } from './utils/groupTokensByCombinatorPredence';
-
 import { writeFileSync } from 'fs';
+import * as fs from 'fs';
+import properties from 'mdn-data/css/properties.json';
+import syntaxes from 'mdn-data/css/syntaxes.json';
 import * as path from 'path';
+import rimraf from 'rimraf';
 import ts from 'typescript';
-import * as util from 'util';
 
-import { INestedComponentArray, IComponent, ComponentTypes } from './types';
+import { TYPES_BUILD_DIR } from './constants';
+import {
+  generateBaseDataTypes,
+  generateTypesFromMdnData,
+} from './generateTypesFromMdnData';
+import {
+  generateCombinedLengthType,
+  generateUnitTypesSourceFiles,
+} from './generateUnitTypeSourceFiles';
 
-// export function generateUnionTypeAliasesForTokens(
-//   snt: Dictionary<IToken[]>,
-// ): ts.TypeAliasDeclaration[] {
-//   return Object.keys(snt).map(key => {
-//     const tokens = snt[key];
-//     return ts.createTypeAliasDeclaration(
-//       [],
-//       [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-//       upperFirst(camelCase(key)),
-//       [],
-//       ts.createUnionTypeNode(
-//         // TODO figure out if this is going to be an issue later with concatenated type values
-//         uniqBy(
-//           token => `${token.isTypeReference}~${token.trimmedValue}`,
-//           tokens,
-//         ).map(
-//           token =>
-//             token.isTypeReference
-//               ? ts.createTypeReferenceNode(token.trimmedValue, [])
-//               : ts.createLiteralTypeNode(
-//                   ts.createStringLiteral(token.trimmedValue),
-//                 ),
-//         ),
-//       ),
-//     );
-//   });
-// }
+// create directory to store out types in
+const outputDir = path.join(__dirname, TYPES_BUILD_DIR);
+rimraf.sync(outputDir);
+fs.mkdirSync(outputDir);
 
-const generateTypes = (data: INestedComponentArray, level: number = 0): any => {
-  if (level === 0) {
-    return ts.createTypeAliasDeclaration(
-      [],
-      [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-      'TestType',
-      [],
-      ts.createUnionTypeNode(
-        compact(
-          data.map(item => {
-            if (Array.isArray(item)) {
-              return generateTypes(item, level + 1);
-            }
-            return ts.createLiteralTypeNode(ts.createStringLiteral(item.value));
-          }),
-        ),
-      ),
-    );
-  } else if (level === 1) {
-    return ts.createTupleTypeNode(
-      compact(
-        flatten(
-          data.map(item =>
-            generateTypes(Array.isArray(item) ? item : [item], level + 1),
-          ),
-        ),
-      ),
-    );
-  } else if (level === 2) {
-    const first = data[0];
-    const generateTsNode = (component: IComponent) =>
-      component.type === ICssTokenType.KEYWORD
-        ? ts.createStringLiteral(component.value)
-        : ts.createTypeReferenceNode(component.value, []);
+const isSelectorKey = (key: string) => key.includes('selector');
 
-    return data.length === 1 && !Array.isArray(first)
-      ? generateTsNode(first)
-      : compact(
-          data.map(
-            item => (Array.isArray(item) ? undefined : generateTsNode(item)),
-          ),
-        );
-  }
-};
+// generate sources
+const baseTypes = generateBaseDataTypes([
+  // ignore types which clash with custom added types
+  'length',
+  // ignore types which have been aliased
+  'integer',
+  // ignore all properties annd syntaxes
+  ...Object.keys(syntaxes),
+  ...Object.keys(properties).filter(x => x !== 'flex'),
+]);
+const syntaxTypes = generateTypesFromMdnData(syntaxes, {
+  blacklistPredicate: isSelectorKey,
+});
+const propertyTypes = generateTypesFromMdnData(properties, {
+  availableTypes: syntaxTypes.typeKeys,
+  blacklistPredicate: (key: string) => {
+    if (isSelectorKey(key) || key.startsWith('media') || key === 'image') {
+      return false;
+    }
 
-// const generateTypes = (data: INestedComponentArray, level: number = 0): any => {
-//   if (level === 0) {
-//     return {
-//       type: 'union',
-//       values: data.map(item => {
-//         if (Array.isArray(item)) {
-//           return generateTypes(item, level + 1);
-//         }
-//         return item;
-//       }),
-//     };
-//   } else if (level === 1) {
-//     return {
-//       type: 'tuple',
-//       values: flatten(
-//         data.map(item =>
-//           generateTypes(Array.isArray(item) ? item : [item], level + 1),
-//         ),
-//       ),
-//     };
-//   } else if (level === 2) {
-//     return data.length === 1 ? data : { type: 'union', values: data };
-//   }
-// };
-
-const grammar =
-  '[ [block | inline | run-in] || [flow | flow-root | table | flex | grid | ruby] ] | [[block | inline | run-in]? && [ flow | flow-root ]? && list-item] | [table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container] | [contents | none] | [inline-block | inline-list-item | inline-table | inline-flex | inline-grid]';
-console.log('parsing grammar:', grammar);
-
-const { emittedTokens } = lexValueDeclarationGrammar(
-  grammar,
-  // '[ [ left | center | right | top | bottom ] | [ left | center | right ] [ top | center | bottom ] | [ center | [ left | right ] <percent> ] && [ center | [ top | bottom ] <percent>] ]',
-  // 'normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]',
+    return properties[key].status !== 'standard';
+  },
+  typeSuffix: 'Property',
+});
+const sourceFiles = generateUnitTypesSourceFiles();
+const typesSource = ts.updateSourceFileNode(
+  ts.createSourceFile(
+    'generatedTypes.ts',
+    '',
+    ts.ScriptTarget.ESNext,
+    false,
+    ts.ScriptKind.TS,
+  ),
+  [...generateCombinedLengthType()].concat(
+    ...baseTypes,
+    ...syntaxTypes.typeDeclarations,
+    ...propertyTypes.typeDeclarations,
+  ),
 );
-const components = convertRawTokensToComponents(emittedTokens);
+
+// print files
+const printer = ts.createPrinter({
+  newLine: ts.NewLineKind.LineFeed,
+});
+
+[...sourceFiles, typesSource].forEach(sourceFile => {
+  writeFileSync(
+    path.join(__dirname, TYPES_BUILD_DIR, sourceFile.fileName),
+    printer.printFile(sourceFile),
+  );
+});
+
+// TODO
+// DONE - collapse nested tuples with same length into tuples with unions
+// - handle special types like `string`, `number`, `percentage`, `length-percentage`, `length`, `flex`, etc.
+// - clean up type `generateTypeCombinations`
+// - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
+// generate helper functiosn to generate union, tuple etc arrays
+
+// const grammar = '<length> | <percentage>';
+// console.log('parsing grammar:', grammar);
+// const { emittedTokens } = lexValueDeclarationGrammar(grammar);
+// const components = convertRawTokensToComponents(emittedTokens);
+// const result = generateTypeCombinations(
+//   groupTokensByCombinatorPredence(components),
+// );
+// console.log(util.inspect(result, false, Infinity));
+
+// const { emittedTokens } = lexValueDeclarationGrammar(
+// grammar,
+// '[ [ left | center | right | top | bottom ] | [ left | center | right ] [ top | center | bottom ] | [ center | [ left | right ] <percent> ] && [ center | [ top | bottom ] <percent>] ]',
+// 'normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]',
+// );
+// const components = convertRawTokensToComponents(emittedTokens);
+
 // const hasOnlyKeywords = components.every(component => {
 //   return (
 //     component.type === ICssTokenType.COMBINATOR ||
@@ -136,34 +111,57 @@ const components = convertRawTokensToComponents(emittedTokens);
 // console.log(
 //   util.inspect(groupTokensByCombinatorPredence(components), false, Infinity),
 // );
-const result = generateTypeCombinations(
-  groupTokensByCombinatorPredence(components),
-);
 
-function isComponentArray(arr: INestedComponentArray): arr is IComponent[] {
-  return arr.every(i => !Array.isArray(i));
-}
-// console.log(result[0]);
-const value = result[0];
-if (Array.isArray(value)) {
-  const combined = value.reduce(
-    (acc, item) => {
-      if (Array.isArray(item)) {
-        if (isComponentArray(item)) {
-          acc.push(item.reduce((a, i) => `${a} ${i.value}`.trim(), ''));
-        } else {
-          console.log(item);
-        }
-      } else {
-        acc.push(item.value);
-      }
-      return acc;
-    },
-    [] as string[],
-  );
+// const result = generateTypeCombinations(
+//   groupTokensByCombinatorPredence(components),
+// );
 
-  console.log(combined);
-}
+// function isComponentArray(arr: INestedComponentArray): arr is IComponent[] {
+//   return arr.every(i => !Array.isArray(i));
+// }
+// const value = result[0];
+// if (Array.isArray(value)) {
+//   const types = ts.createTypeAliasDeclaration(
+//     [],
+//     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
+//     'TestType',
+//     [],
+//     generateTypes(value),
+//   );
+
+// const typesSrc = ts.createSourceFile(
+//   `dummyTypes.ts`,
+//   '',
+//   ts.ScriptTarget.ESNext,
+//   false,
+//   ts.ScriptKind.TS,
+// );
+// const printer = ts.createPrinter({
+//   newLine: ts.NewLineKind.LineFeed,
+// });
+// // console.log(util.inspect(types, false, Infinity));
+// writeFileSync(
+//   path.join(__dirname, typesSrc.fileName),
+//   printer.printFile(ts.updateSourceFileNode(typesSrc, [types])),
+// );
+// const combined = value.reduce(
+//   (acc, item) => {
+//     if (Array.isArray(item)) {
+//       if (isComponentArray(item)) {
+//         acc.push(item.reduce((a, i) => `${a} ${i.value}`.trim(), ''));
+//       } else {
+//         console.log(item);
+//       }
+//     } else {
+//       acc.push(item.value);
+//     }
+//     return acc;
+//   },
+//   [] as string[],
+// );
+
+// console.log(combined);
+// }
 // console.log(util.inspect(result[0], false, Infinity));
 
 // const value = result[0];

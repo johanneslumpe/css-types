@@ -1,6 +1,10 @@
 import ts from 'typescript';
 
-export function createBrandedTypeInterfaceForUnit(unit: string, name: string) {
+export function createBrandedTypeInterfaceForUnit(
+  unit: string,
+  name: string,
+  brandKey?: string,
+) {
   return ts.createInterfaceDeclaration(
     [],
     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
@@ -16,7 +20,7 @@ export function createBrandedTypeInterfaceForUnit(unit: string, name: string) {
     [
       ts.createPropertySignature(
         [],
-        `__${unit}_brand_type__`,
+        `__${brandKey || unit}_brand_type__`,
         undefined,
         ts.createKeywordTypeNode(ts.SyntaxKind.NeverKeyword),
         undefined,

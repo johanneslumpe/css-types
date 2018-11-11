@@ -1,4 +1,5 @@
 import { ICssMultiplierTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+
 import { IComponent, INestedComponentArray } from '../types';
 import { generateComponentMultiplierPermutations } from './generateComponentMultiplierPermutations';
 
@@ -33,6 +34,4 @@ export function generateComponentPermutations(
     }
     return acc;
   }, result);
-
-  return result;
 }

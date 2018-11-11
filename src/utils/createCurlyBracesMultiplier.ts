@@ -1,4 +1,5 @@
 import { ICssMultiplierTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+
 import { ICurlyBraceMultiplier } from '../types';
 
 const REGEX_CURLY_BRACE_BOUNDARIES = /^\{(\d)(,)?(\d)?\}$/;

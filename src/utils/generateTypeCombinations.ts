@@ -1,27 +1,22 @@
 import {
   ICssCombinatorTokenType,
-  ICssTokenType,
   ICssMultiplierTokenType,
+  ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
 import { compact, every, flatten, map, reject } from 'lodash/fp';
 
 import {
   ComponentArray,
-  INestedComponentArray,
+  ComponentTypeRepresentation,
   ComponentTypes,
+  INestedComponentArray,
 } from '../types';
-import { generateComponentPermutations } from './generateComponentPermutations';
+import {
+  createTupleArray,
+  createUnionArray,
+} from './createdTypeNestedComponentArrays';
 import { createVoidComponent } from './createVoidComponent';
-
-// TODO tag returned arrays somehow so that it is possible to later infer which
-// type representation to use, e.g. union or tuple:
-//
-// Juxtapositions need to use tuples
-// single bars need unions
-
-interface ITaggedComponentArray extends INestedComponentArray {
-  representation: 'union' | 'tuple';
-}
+import { generateComponentPermutations } from './generateComponentPermutations';
 
 export function generateTypeCombinations(
   entities: ComponentArray,
@@ -37,17 +32,29 @@ export function generateTypeCombinations(
           switch (entity.combinator) {
             case ICssCombinatorTokenType.JUXTAPOSITION:
             // Since the double ampersand allows tokens in any order
-            // it can be just the same as a juxtaposition
-            case ICssCombinatorTokenType.DOUBLE_AMPERSAND:
-              return generateComponentPermutations(
+            // we make an opinionated decision and force the same order
+            // as we would have for a juxtaposition
+            case ICssCombinatorTokenType.DOUBLE_AMPERSAND: {
+              const permutations: INestedComponentArray = generateComponentPermutations(
                 map(
                   item => (Array.isArray(item) ? item : [item]),
                   generateTypeCombinations(entity.entities),
                 ),
               );
 
-            case ICssCombinatorTokenType.SINGLE_BAR:
-              return flatten(generateTypeCombinations(entity.entities));
+              return createUnionArray(
+                map(
+                  arr => createTupleArray(arr as INestedComponentArray),
+                  permutations,
+                ),
+              );
+            }
+
+            case ICssCombinatorTokenType.SINGLE_BAR: {
+              return createUnionArray(
+                flatten(generateTypeCombinations(entity.entities)),
+              );
+            }
 
             case ICssCombinatorTokenType.DOUBLE_BAR: {
               const permutations = generateComponentPermutations(
@@ -67,13 +74,18 @@ export function generateTypeCombinations(
 
               // at least one value is required, so we remove all permutations that only
               // contain void values
-              return reject(
-                permutation =>
-                  every(
-                    component => component.type === ComponentTypes.VOID,
-                    permutation,
+              return createUnionArray(
+                map(
+                  arr => createTupleArray(arr as INestedComponentArray),
+                  reject(
+                    permutation =>
+                      every(
+                        component => component.type === ComponentTypes.VOID,
+                        permutation,
+                      ),
+                    permutations,
                   ),
-                permutations,
+                ),
               );
             }
           }
@@ -81,13 +93,26 @@ export function generateTypeCombinations(
         }
 
         case ICssTokenType.GROUP: {
+          const r1 = generateTypeCombinations(entity.entities);
+
+          // we lift the nested representation up when resolving the group
+          const type: ComponentTypeRepresentation = r1.reduce((acc, item) => {
+            return Array.isArray(item)
+              ? acc || item.representation || ComponentTypeRepresentation.NONE
+              : acc;
+          }, ComponentTypeRepresentation.NONE);
+
           const combinations = flatten(
             generateTypeCombinations(entity.entities),
           );
-          return entity.multiplier &&
+
+          const final: INestedComponentArray =
+            entity.multiplier &&
             entity.multiplier.type === ICssMultiplierTokenType.QUESTION_MARK
-            ? [createVoidComponent(), ...combinations]
-            : combinations;
+              ? [createVoidComponent(), ...combinations]
+              : combinations;
+          final.representation = type;
+          return final;
         }
       }
     }, entities),

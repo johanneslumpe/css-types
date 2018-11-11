@@ -1,6 +1,6 @@
 import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { IComponent, MultiplierToken, Token } from '../types';
 
+import { IComponent, MultiplierToken, Token } from '../types';
 import { getMultiplierForToken } from './getMultiplierForToken';
 
 export function createComponent(
