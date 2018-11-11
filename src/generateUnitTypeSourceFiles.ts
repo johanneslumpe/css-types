@@ -2,9 +2,9 @@ import { flatten, map } from 'lodash/fp';
 import { CSSUnitGroups } from 'mdn-data';
 import ts from 'typescript';
 
-import { generateTypeName } from './generateTypeNodes';
 import { createBrandedTypeInterfaceForUnit } from './utils/createBrandedTypeInterfaceForUnit';
 import { createUnitFunctionDeclaration } from './utils/createUnitFunctionDeclaration';
+import { generateTypeName } from './utils/generateTypeName';
 import { getUnits, lengthValueTags } from './utils/getUnits';
 
 const UNIT_TYPES_FILE = 'unitTypes.ts';
@@ -42,7 +42,7 @@ export const generateUnitTypesImportStatement = (
     ts.createImportClause(
       undefined,
       ts.createNamedImports(
-        interfaces.map(val => ts.createImportSpecifier(undefined, val.name)),
+        map(val => ts.createImportSpecifier(undefined, val.name), interfaces),
       ),
     ),
     ts.createStringLiteral(`./${UNIT_TYPES_FILE}`),
@@ -67,6 +67,7 @@ export const generateUnitTypesSourceFiles = () => {
 
   const interfaces = generateUnitInterfaces(true);
   const typesImportDeclaration = generateUnitTypesImportStatement(interfaces);
+  // native map because lodash/fp does not give us access to the index property
   const unitUtils = getUnitsWithAdditionalTypes().map((unit, index) =>
     createUnitFunctionDeclaration(interfaces[index], unit.unit, unit.name),
   );

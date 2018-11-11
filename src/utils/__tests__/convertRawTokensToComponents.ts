@@ -148,8 +148,6 @@ describe('convertRawTokensToComponents', () => {
 
     generateTestForType(ICssTokenType.KEYWORD, 'test');
     generateTestForType(ICssTokenType.DATA_TYPE, '<test-type>');
-
-    // it('should handle multipliers after groups', () => {});
   });
 
   describe('groups', () => {

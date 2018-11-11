@@ -3,33 +3,69 @@ import {
   ICssTokenType,
   lexValueDeclarationGrammar,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { difference, omit } from 'lodash';
+import { difference, filter, map, omit } from 'lodash/fp';
 import { IRawSyntax, IRawSyntaxes } from 'mdn-data';
 import { IRawProperties } from 'mdn-data/css/properties.json';
-import types from 'mdn-data/css/types.json';
+import mdnCssTypes from 'mdn-data/css/types.json';
 import ts, { TypeAliasDeclaration } from 'typescript';
 
-import { generateTypeName, generateTypesNodes } from './generateTypeNodes';
+import { generateTypesNodes } from './generateTypeNodes';
 import { INestedComponentArray, RawToken } from './types';
 import { convertRawTokensToComponents } from './utils/convertRawTokensToComponents';
 import { generateTypeCombinations } from './utils/generateTypeCombinations';
+import { generateDefaultStringTypeDeclaration } from './utils/generateTypeReferenceDeclarations';
 import { groupTokensByCombinatorPredence } from './utils/groupTokensByCombinatorPredence';
+import { parenthesesToFunction } from './utils/parenthesesToFunction';
+import { typeNameWithSuffix } from './utils/typeNameWithSuffix';
 
-// data types which we do not want to generate
-const blacklistedDataTypes = Object.keys(types);
+const globalDataTypes = Object.keys(mdnCssTypes);
 
 const getDataTypeKey = (str: string) => str.replace(/<\'?(.*?)\'?>/, '$1');
 
-const typeNameWithSuffix = (key: string, suffix: string = '') =>
-  `${generateTypeName(key)}${suffix}`;
-
 const appendSuffixToDataTypes = (tokens: RawToken[], suffix: string) => {
   tokens.forEach(token => {
-    if (token.type === ICssTokenType.DATA_TYPE && token.value.includes("'")) {
+    if (token.type !== ICssTokenType.DATA_TYPE) {
+      return;
+    }
+    if (token.value.includes("'")) {
       token.value = token.value.replace("'>", `-${suffix.toLowerCase()}'>`);
     }
+
+    token.value = parenthesesToFunction(token.value);
   });
 };
+
+// function isPlusMultiplier(token: RawToken) {
+//   return (
+//     token.type === ICssTokenType.MULTIPLIER &&
+//     token.data &&
+//     token.data.subType === ICssMultiplierTokenType.PLUS
+//   );
+// }
+// function isAsteriskMultiplier(token: RawToken) {
+//   return (
+//     token.type === ICssTokenType.MULTIPLIER &&
+//     token.data &&
+//     token.data.subType === ICssMultiplierTokenType.ASTERISK
+//   );
+// }
+
+// /**
+//  * Converts infinite multipliers like `+` and `*` to opinionated, finite `{}` versions.
+//  * Opinionated, because they will have a cap at 10 repetitions
+//  * @param tokens
+//  * @param suffix
+//  */
+// function convertInfiniteMultiplersToFinite(tokens: RawToken[]) {
+//   tokens.forEach(token => {
+//     const isPlus = isPlusMultiplier(token);
+//     const isAsterisk = isAsteriskMultiplier(token);
+//     if (isPlus || isAsterisk) {
+//       token.data!.subType = ICssMultiplierTokenType.CURLY_BRACES;
+//       token.value = isPlus ? `{1,9}` : '{0,9}';
+//     }
+//   });
+// }
 
 const containsUnsupportedSyntax = (tokens: RawToken[]) =>
   tokens.some(
@@ -39,11 +75,12 @@ const containsUnsupportedSyntax = (tokens: RawToken[]) =>
       !!(
         token.type === ICssTokenType.MULTIPLIER &&
         token.data &&
-        (token.data.subType === ICssMultiplierTokenType.PLUS ||
-          token.data.subType === ICssMultiplierTokenType.HASH_MARK ||
-          token.data.subType === ICssMultiplierTokenType.ASTERISK)
+        token.data.subType === ICssMultiplierTokenType.HASH_MARK
       ),
   );
+
+const isDataTypeToken = (token: RawToken) =>
+  token.type === ICssTokenType.DATA_TYPE;
 
 const removeCircularAndUnsupportedGrammar = (
   sourceObject: IRawSyntaxes | IRawProperties,
@@ -51,19 +88,17 @@ const removeCircularAndUnsupportedGrammar = (
   const keysPerSource = Object.keys(sourceObject);
   const keysToRemove: string[] = [];
   keysPerSource.forEach(key => {
-    if (blacklistedDataTypes.includes(key)) {
+    if (globalDataTypes.includes(key)) {
       return;
     }
 
-    const checkCirularKeys = (syntax: IRawSyntax) => {
+    const checkCircularKeys = (syntax: IRawSyntax) => {
       const { emittedTokens } = lexValueDeclarationGrammar(syntax.syntax);
       if (containsUnsupportedSyntax(emittedTokens)) {
         return;
       }
 
-      const dataTypes = emittedTokens.filter(
-        token => token.type === ICssTokenType.DATA_TYPE,
-      );
+      const dataTypes = filter(isDataTypeToken, emittedTokens);
 
       dataTypes.forEach(dataType => {
         const dataTypeKey = getDataTypeKey(dataType.value);
@@ -73,17 +108,17 @@ const removeCircularAndUnsupportedGrammar = (
         }
 
         if (
-          !blacklistedDataTypes.includes(dataTypeKey) &&
+          !globalDataTypes.includes(dataTypeKey) &&
           sourceObject[dataTypeKey]
         ) {
-          checkCirularKeys(sourceObject[dataTypeKey]);
+          checkCircularKeys(sourceObject[dataTypeKey]);
         }
       });
     };
 
-    checkCirularKeys(sourceObject[key]);
+    checkCircularKeys(sourceObject[key]);
   });
-  return omit(sourceObject, keysToRemove);
+  return omit(keysToRemove, sourceObject);
 };
 
 const removeInvalidDataTypeReferences = (
@@ -100,11 +135,13 @@ const removeInvalidDataTypeReferences = (
     Object.keys(newObject).forEach(key => {
       const syntax = newObject[key];
       const { emittedTokens } = lexValueDeclarationGrammar(syntax.syntax);
-      const dataTypeKeys = emittedTokens
-        .filter(x => x.type === ICssTokenType.DATA_TYPE)
-        .map(token => getDataTypeKey(token.value));
-      const invalidDataTypes = difference(dataTypeKeys, allKeys).filter(
-        dataType => !blacklistedDataTypes.includes(dataType),
+      const dataTypeKeys = map(
+        token => getDataTypeKey(token.value),
+        filter(isDataTypeToken, emittedTokens),
+      );
+      const invalidDataTypes = filter(
+        dataType => !globalDataTypes.includes(dataType),
+        difference(dataTypeKeys, allKeys),
       );
       if (invalidDataTypes.length) {
         keysToRemove.push(key);
@@ -112,29 +149,29 @@ const removeInvalidDataTypeReferences = (
     });
 
     keys = keysToRemove;
-    newObject = omit(newObject, keysToRemove);
+    newObject = omit(keysToRemove, newObject);
   } while (keys.length);
 
   return newObject;
 };
 
-const generateTypeReferenceDeclaration = (
-  key: string,
-  value: string,
-  suffix: string = '',
-) =>
-  ts.createTypeAliasDeclaration(
-    [],
-    [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-    typeNameWithSuffix(key, suffix),
-    [],
-    ts.createTypeReferenceNode(value, []),
-  );
+// const generateTypeReferenceDeclaration = (
+//   key: string,
+//   value: string,
+//   suffix: string = '',
+// ) =>
+//   ts.createTypeAliasDeclaration(
+//     [],
+//     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
+//     typeNameWithSuffix(parenthesesToFunction(key), suffix),
+//     [],
+//     ts.createTypeReferenceNode(value, []),
+//   );
 
-const generateDefaultStringTypeDeclaration = (
-  key: string,
-  suffix: string = '',
-) => generateTypeReferenceDeclaration(key, 'string', suffix);
+// const generateDefaultStringTypeDeclaration = (
+//   key: string,
+//   suffix: string = '',
+// ) => generateTypeReferenceDeclaration(key, 'string', suffix);
 
 const generateTypesForKey = (
   key: string,
@@ -144,24 +181,16 @@ const generateTypesForKey = (
   ts.createTypeAliasDeclaration(
     [],
     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-    typeNameWithSuffix(key, suffix),
+    typeNameWithSuffix(parenthesesToFunction(key), suffix),
     [],
     generateTypesNodes(value),
   );
 
-const baseDataTypeAliasMap: { [index: string]: string } = {
-  flex: 'IFrValue',
-  percentage: 'IPercentageValue',
-};
 export const generateBaseDataTypes = (keysToIgnore: string[]) => [
-  [...Object.keys(types)]
-    .filter(key => !keysToIgnore.includes(key))
-    .map(
-      key =>
-        baseDataTypeAliasMap[key]
-          ? generateTypeReferenceDeclaration(key, baseDataTypeAliasMap[key])
-          : generateDefaultStringTypeDeclaration(key),
-    ),
+  map(
+    key => generateDefaultStringTypeDeclaration(key),
+    filter(key => !keysToIgnore.includes(key), globalDataTypes),
+  ),
 ];
 
 interface IGenerateTypesFromMdnDataOptions {
@@ -175,13 +204,10 @@ export const generateTypesFromMdnData = (
   options: IGenerateTypesFromMdnDataOptions = {},
 ) => {
   // TODO
-  // filter our circular refs - DONE
-  // filter out unparseable syntaxes - DONE
-  // filter out syntaxes with missing data references - DONE
+  // - figure out how to keep types like `color` in, which require functions etc.
+  // - faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords
+  // - faciliate proper parsing of infinite multipliers by replacing them with finite counterparts
 
-  // figure out how to prefix syntax types to prevent name clashes with properties - DONE
-  // figure out how to keep types like `color` in, which require functions etc.
-  // faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords
   const { availableTypes = [], typeSuffix = '' } = options;
   const withoutCircular = removeCircularAndUnsupportedGrammar(sourceObject);
   const withoutInvalidReferences = removeInvalidDataTypeReferences(
@@ -203,6 +229,7 @@ export const generateTypesFromMdnData = (
         return acc;
       }
       appendSuffixToDataTypes(emittedTokens, typeSuffix);
+      // convertInfiniteMultiplersToFinite(emittedTokens);
 
       try {
         const components = convertRawTokensToComponents(emittedTokens);

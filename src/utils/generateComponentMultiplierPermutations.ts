@@ -41,13 +41,13 @@ export function generateComponentMultiplierPermutations(
 
   return reduce(
     (acc, permutation) => {
-      const data = nestedResult.map(componentArray => {
+      const data = map(componentArray => {
         const combined = permutation.concat(componentArray);
         // return empty array to signify when a component has no value for a given permutation
         // this is important to prevent downstream errors when trying to generate more permutations/combinations
         // where functions need the right amount of values in their input arrays
         return combined.length ? combined : [createVoidComponent()];
-      });
+      }, nestedResult);
 
       return acc.concat(data);
     },

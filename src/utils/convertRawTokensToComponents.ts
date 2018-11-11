@@ -4,6 +4,7 @@ import {
   ICssTokenType,
   ILexingError,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import { find } from 'lodash/fp';
 
 import {
   ComponentArray,
@@ -20,7 +21,7 @@ import { createComponentGroup } from './createComponentGroup';
 import { getMultiplierForToken } from './getMultiplierForToken';
 
 function isValidTokenArray(arr: RawToken[]): arr is Token[] {
-  return !arr.find(token => token.type === ILexingError.LEXING_ERROR);
+  return !find(token => token.type === ILexingError.LEXING_ERROR, arr);
 }
 
 function isComponentGroup(value: any): value is IComponentGroup {

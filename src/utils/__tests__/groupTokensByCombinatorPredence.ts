@@ -3,6 +3,7 @@ import {
   ICssMultiplierTokenType,
   lexValueDeclarationGrammar,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import { filter, find } from 'lodash/fp';
 import { Token } from '../../types';
 import { convertRawTokensToComponents } from '../convertRawTokensToComponents';
 import { createCombinatorGroup } from '../createCombinatorGroup';
@@ -14,10 +15,10 @@ import { multiplierToken } from './utils/tokens';
 
 function getValidTokenArrayForSyntax(syntax: string): Token[] {
   const { emittedTokens } = lexValueDeclarationGrammar(syntax);
-  if (emittedTokens.find(x => !isValidToken(x))) {
+  if (find(x => !isValidToken(x), emittedTokens)) {
     throw new Error('unexpected token encountered');
   }
-  return emittedTokens.filter(isValidToken);
+  return filter(isValidToken, emittedTokens);
 }
 
 function groupTokens(tokens: Token[]) {

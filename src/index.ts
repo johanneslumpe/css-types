@@ -1,5 +1,6 @@
 import { writeFileSync } from 'fs';
 import * as fs from 'fs';
+import { filter, find } from 'lodash/fp';
 import properties from 'mdn-data/css/properties.json';
 import syntaxes from 'mdn-data/css/syntaxes.json';
 import * as path from 'path';
@@ -24,15 +25,58 @@ fs.mkdirSync(outputDir);
 const isSelectorKey = (key: string) => key.includes('selector');
 
 // generate sources
+
+// custom types to prevent invalid references
+// after removing function types
+const customSyntaxes = {
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/angle
+  angle: {
+    syntax: '<IDegValue> | <IGradValue> | <IRadValue> | <ITurnValue>',
+  },
+  color: {
+    syntax: '<string>',
+  },
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value
+  flex: {
+    syntax: '<IFrValue>',
+  },
+  'inset()': {
+    syntax: '<string>',
+  },
+  integer: {
+    syntax: '<number>',
+  },
+  percentage: {
+    syntax: '<IPercentageValue>',
+  },
+  shape: {
+    syntax: '<string>',
+  },
+  'track-repeat': {
+    syntax: '<string>',
+  },
+};
+
+const customTypes = generateTypesFromMdnData(customSyntaxes, {
+  availableTypes: [
+    'IDegValue',
+    'IGradValue',
+    'IRadValue',
+    'ITurnValue',
+    'IFrValue',
+    'IPercentageValue',
+  ],
+});
+
 const baseTypes = generateBaseDataTypes([
   // ignore types which clash with custom added types
   'length',
-  // ignore types which have been aliased
-  'integer',
-  // ignore all properties annd syntaxes
+  ...Object.keys(customSyntaxes),
+  // ignore all properties and syntaxes
   ...Object.keys(syntaxes),
-  ...Object.keys(properties).filter(x => x !== 'flex'),
+  ...Object.keys(properties),
 ]);
+
 const syntaxTypes = generateTypesFromMdnData(syntaxes, {
   blacklistPredicate: isSelectorKey,
 });
@@ -43,14 +87,18 @@ const propertyTypes = generateTypesFromMdnData(properties, {
       return false;
     }
 
-    return properties[key].status !== 'standard';
+    return (
+      properties[key].status !== 'standard' ||
+      !!find(key, Object.keys(customSyntaxes))
+    );
   },
   typeSuffix: 'Property',
 });
-const sourceFiles = generateUnitTypesSourceFiles();
-const typesSource = ts.updateSourceFileNode(
+const unitSourceFiles = generateUnitTypesSourceFiles();
+
+const typesOutputSource = ts.updateSourceFileNode(
   ts.createSourceFile(
-    'generatedTypes.ts',
+    'types.ts',
     '',
     ts.ScriptTarget.ESNext,
     false,
@@ -58,6 +106,7 @@ const typesSource = ts.updateSourceFileNode(
   ),
   [...generateCombinedLengthType()].concat(
     ...baseTypes,
+    ...customTypes.typeDeclarations,
     ...syntaxTypes.typeDeclarations,
     ...propertyTypes.typeDeclarations,
   ),
@@ -68,7 +117,7 @@ const printer = ts.createPrinter({
   newLine: ts.NewLineKind.LineFeed,
 });
 
-[...sourceFiles, typesSource].forEach(sourceFile => {
+[...unitSourceFiles, typesOutputSource].forEach(sourceFile => {
   writeFileSync(
     path.join(__dirname, TYPES_BUILD_DIR, sourceFile.fileName),
     printer.printFile(sourceFile),
@@ -80,7 +129,6 @@ const printer = ts.createPrinter({
 // - handle special types like `string`, `number`, `percentage`, `length-percentage`, `length`, `flex`, etc.
 // - clean up type `generateTypeCombinations`
 // - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
-// generate helper functiosn to generate union, tuple etc arrays
 
 // const grammar = '<length> | <percentage>';
 // console.log('parsing grammar:', grammar);

@@ -1,13 +1,5 @@
 import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import {
-  camelCase,
-  compact,
-  filter,
-  flatMap,
-  map,
-  reject,
-  upperFirst,
-} from 'lodash';
+import { compact, filter, flatMap, map, reject } from 'lodash';
 import ts from 'typescript';
 
 import {
@@ -16,14 +8,12 @@ import {
   IComponent,
   INestedComponentArray,
 } from './types';
+import { generateTypeName } from './utils/generateTypeName';
 
 const typeReferenceOverrideMap: { [index: string]: string } = {
-  integer: 'number',
   number: 'number',
   string: 'string',
 };
-
-export const generateTypeName = (str: string) => upperFirst(camelCase(str));
 
 export const generateTsNode = (component: IComponent) => {
   switch (component.type) {

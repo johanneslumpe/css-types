@@ -3,7 +3,7 @@ import {
   ICssMultiplierTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact, every, flatten, map, reject } from 'lodash/fp';
+import { compact, every, find, flatten, map, reject } from 'lodash/fp';
 
 import {
   ComponentArray,
@@ -61,9 +61,10 @@ export function generateTypeCombinations(
                 map(
                   combination =>
                     Array.isArray(combination)
-                      ? combination.find(
+                      ? find(
                           c =>
                             !Array.isArray(c) && c.type === ComponentTypes.VOID,
+                          combination,
                         )
                         ? combination
                         : [createVoidComponent(), ...combination]
