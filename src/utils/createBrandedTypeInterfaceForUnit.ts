@@ -1,6 +1,6 @@
 import ts from 'typescript';
 
-import { generateUnitvalueInterface } from './generateUnitvalueInterface';
+import { generateUnitValueInterface } from './generateUnitValueInterface';
 export function createBrandedTypeInterfaceForUnit(
   unit: string,
   name: string,
@@ -9,7 +9,7 @@ export function createBrandedTypeInterfaceForUnit(
   return ts.createInterfaceDeclaration(
     [],
     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-    ts.createIdentifier(generateUnitvalueInterface(name)),
+    ts.createIdentifier(generateUnitValueInterface(name)),
     [],
     [
       ts.createHeritageClause(ts.SyntaxKind.ExtendsKeyword, [

@@ -183,6 +183,7 @@ export const generateTypesFromMdnData = (
             );
           }
         } catch (e) {
+          // tslint:disable-next-line: no-console
           console.log(key, ': could not create combined syntax');
         }
       }

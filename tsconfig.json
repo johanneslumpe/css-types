@@ -7,6 +7,7 @@
     "esModuleInterop": true,
     "declaration": true,
     "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
     "typeRoots": [
       "./node_modules/@types", "./typings"
     ],

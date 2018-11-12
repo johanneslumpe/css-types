@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { find, forEach, map } from 'lodash/fp';
+import { find, map } from 'lodash/fp';
 import properties from 'mdn-data/css/properties.json';
 import syntaxes from 'mdn-data/css/syntaxes.json';
 import * as path from 'path';
@@ -17,7 +17,7 @@ import {
   generateCombinedLengthType,
   generateUnitTypesSourceFiles,
 } from './generateUnitTypeSourceFiles';
-import { generateUnitvalueInterface } from './utils/generateUnitvalueInterface';
+import { generateUnitValueInterface } from './utils/generateUnitValueInterface';
 import { parseRawSyntaxes } from './utils/parseRawSyntaxes';
 
 export async function generateAllTypes() {
@@ -38,7 +38,7 @@ export async function generateAllTypes() {
   const parsedCustomSyntaxes = parseRawSyntaxes(customSyntaxes);
   const customTypes = generateTypesFromMdnData(parsedCustomSyntaxes, {
     availableTypes: [
-      ...map(unitType => generateUnitvalueInterface(unitType.name), unitTypes),
+      ...map(unitType => generateUnitValueInterface(unitType.name), unitTypes),
       'i-s-value',
       'i-x-value',
     ],
