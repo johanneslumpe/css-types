@@ -1,5 +1,5 @@
 import { flatten, map } from 'lodash/fp';
-import { CSSUnitGroups, IUnit } from 'mdn-data';
+import { CSSUnitGroups } from 'mdn-data';
 import ts from 'typescript';
 
 import {
