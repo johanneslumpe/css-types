@@ -3,66 +3,26 @@
 ![Build status](https://travis-ci.org/johanneslumpe/css-types.svg?branch=master)
 [![codecov](https://codecov.io/gh/johanneslumpe/css-types/branch/master/graph/badge.svg)](https://codecov.io/gh/johanneslumpe/css-types)
 
-Lexer for value declarations found at https://github.com/mdn/data/. It currently implements a subset of instructions, not the full spec.
+This library provides TypeScript types for CSS properties. It uses data provided by [MDN](https://github.com/mdn/data/) to generate types. This project is similar to https://github.com/frenic/csstype, but differs in some key points:
 
-As of now it supports:
-* keywords
-* data types
-* functions
-* groups
-* combinators (`|`, `||`, ` `, `&&`)
-* mutlipliers (`+`, `*`, `?`, `!`, `#`, `{}`)
-* literal characters (`,`, `/`)
+1) Allow typing of dynamic user input for lengths and other custom inputs
+2) Generate pre-combined types where possible, e.g. the `display` property
+3) Usage of tuples to express non-combineable types
+4) Exported types aren't exhaustive, only standard property types are generated
+
+It has mainly been designed to generate types which could be consumed by https://github.com/johanneslumpe/styled-props which can natively work with the generated tuple types. Maybe others will find this helpful as well.
+
+The type generation process itself works, but doesn't yet support all CSS features. E.g. functions are aliased to `string`, instead of an auto-generated helper function which would return a branded type.
+
+All properties are suffixed with `Property` and combined types are suffixed with `Combined`, e.g. `DisplayProperty` and `DisplayPropertyCombined`.
 
 ## Get it
 
-`npm i @johanneslumpe/css-types`
+~~`npm i @johanneslumpe/css-types`~~ - not yet published
 
 ## Use it
 
-Below is a basic example of how to use the lexer:
-
-```ts
-import { lexValueDeclarationGrammar, formatTokens } from '@johanneslumpe/css-types';
-const lexer = lexValueDeclarationGrammar(
-  'hsl( <hue> <percentage> <percentage> [ / <alpha-value> ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )',
-);
-
-// `formatToken` will return a pretty-printed version of the emitted tokens
-// which is useful for easy inspection of the token result
-console.log(formatTokens(lexer.emittedTokens));
-
-// the above will log:
-//
-// hsl(                                                        FUNCTION (FUNCTION_START)
-//   <hue>                                                     DATA_TYPE (BASIC)
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   <percentage>                                              DATA_TYPE (BASIC)
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   <percentage>                                              DATA_TYPE (BASIC)
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   [                                                         GROUP (GROUP_START)
-//     /                                                       LITERAL
-//                                                             COMBINATOR (JUXTAPOSITION)
-//     <alpha-value>                                           DATA_TYPE (BASIC)
-//   ]                                                         GROUP (GROUP_END)
-//   ?                                                         MULTIPLIER (QUESTION_MARK)
-// )                                                           FUNCTION (FUNCTION_END)
-// |                                                           COMBINATOR (SINGLE_BAR)
-// hsl(                                                        FUNCTION (FUNCTION_START)
-//   <hue>                                                     DATA_TYPE (BASIC)
-//   ,                                                         LITERAL
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   <percentage>                                              DATA_TYPE (BASIC)
-//   ,                                                         LITERAL
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   <percentage>                                              DATA_TYPE (BASIC)
-//   ,                                                         LITERAL
-//                                                             COMBINATOR (JUXTAPOSITION)
-//   <alpha-value>                                             DATA_TYPE (BASIC)
-//   ?                                                         MULTIPLIER (QUESTION_MARK)
-// )                                                           FUNCTION (FUNCTION_END)
-```
+TODO
 
 ## Documentation
 

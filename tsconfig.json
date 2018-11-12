@@ -8,7 +8,7 @@
     "declaration": true,
     "sourceMap": true,
     "typeRoots": [
-      "./node_modules/@types", "./types"
+      "./node_modules/@types", "./typings"
     ],
     "lib": [
       "esnext"

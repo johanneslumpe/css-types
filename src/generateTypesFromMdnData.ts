@@ -111,7 +111,7 @@ interface IGenerateTypesFromMdnDataOptions {
 }
 
 /**
- * This is the core function which walks the passed in object and generates
+ * This is the core function which walks the passed object and generates
  * all types
  * @param sourceObject
  * @param options
@@ -146,11 +146,10 @@ export const generateTypesFromMdnData = (
       }
 
       /**
-       * If we enouncter as syntax which contains only keywords
-       * and data types which themselves only contain keywords,
+       * If we encounter a syntax which contains only keywords
+       * and data types, which themselves only contain keywords,
        * then we can inline all data types into their parent and
-       * generate all possible combinations that the grammar
-       * can evaluate to
+       * generate all possible permutations
        */
       if (
         syntaxContainsDataTypes(parsedSyntax) &&
