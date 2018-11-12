@@ -24,7 +24,7 @@ async function format(filepath: string) {
 }
 
 async function generate() {
-  generateAllTypes();
+  await generateAllTypes();
 
   const filenames = await readdir(LIB_PATH);
   const formatted = await Promise.all(
