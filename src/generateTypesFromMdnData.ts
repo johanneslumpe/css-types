@@ -1,37 +1,29 @@
-import {
-  ICssMultiplierTokenType,
-  ICssTokenType,
-} from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import {
-  difference,
-  filter,
-  forEach,
-  map,
-  omit,
-  reduce,
-  some,
-} from 'lodash/fp';
+import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
+import { filter, forEach, map, reduce } from 'lodash/fp';
 import mdnCssTypes from 'mdn-data/css/types.json';
 import ts, { TypeAliasDeclaration } from 'typescript';
 
 import { LENGTH_GENERIC_ARGUMENT, LENGTH_TYPE_NAME } from './constants';
 import { generateTypesNodes } from './generateTypeNodes';
 import {
-  ComponentTypeRepresentation,
-  IComponent,
   INestedComponentArray,
   IParsedSyntaxes,
   RawToken,
   SyntaxLookupFn,
 } from './types';
 import { convertRawTokensToComponents } from './utils/convertRawTokensToComponents';
-import { generateDataTypeLookupKey } from './utils/generateDataTypeLookupKey';
+import { findDataTypeInTree } from './utils/findDataTypeInTree';
+import { generateCombinedKeywords } from './utils/generateCombinedKeywords';
 import { generateTypeCombinations } from './utils/generateTypeCombinations';
 import { generateDefaultStringTypeDeclaration } from './utils/generateTypeReferenceDeclarations';
 import { groupTokensByCombinatorPredence } from './utils/groupTokensByCombinatorPredence';
 import { inlineDataTypes } from './utils/inlineDataTypes';
 import { parenthesesToFunction } from './utils/parenthesesToFunction';
+import { removeCircularAndUnsupportedGrammar } from './utils/removeCircularAndUnsupportedGrammar';
+import { removeInvalidDataTypeReferences } from './utils/removeInvalidDataTypeReferences';
 import { syntaxCanBeCollapsed } from './utils/syntaxCanBeCollapsed';
+import { syntaxContainsDataTypes } from './utils/syntaxContainsDataTypes';
+import { tokensContainUnsupportedSyntax } from './utils/tokensContainUnsupportedSyntax';
 import { typeNameWithSuffix } from './utils/typeNameWithSuffix';
 
 const globalDataTypes = Object.keys(mdnCssTypes);
@@ -81,103 +73,6 @@ const appendSuffixToDataTypes = (tokens: RawToken[], suffix: string) => {
 //   });
 // }
 
-const containsUnsupportedSyntax = (tokens: RawToken[]) =>
-  some(
-    token =>
-      token.type === ICssTokenType.FUNCTION ||
-      token.type === ICssTokenType.LITERAL ||
-      !!(
-        token.type === ICssTokenType.MULTIPLIER &&
-        token.data &&
-        token.data.subType === ICssMultiplierTokenType.HASH_MARK
-      ),
-    tokens,
-  );
-
-const isDataTypeToken = (token: RawToken) =>
-  token.type === ICssTokenType.DATA_TYPE;
-
-const removeCircularAndUnsupportedGrammar = (sourceObject: IParsedSyntaxes) => {
-  const keysPerSource = Object.keys(sourceObject);
-  const keysToRemove: string[] = [];
-  forEach(key => {
-    if (globalDataTypes.includes(key)) {
-      return;
-    }
-
-    const checkCircularKeys = (parsedSyntax: RawToken[]) => {
-      if (containsUnsupportedSyntax(parsedSyntax)) {
-        return;
-      }
-
-      const dataTypes = filter(isDataTypeToken, parsedSyntax);
-
-      forEach(dataType => {
-        const dataTypeKey = generateDataTypeLookupKey(dataType.value);
-        if (dataTypeKey === key) {
-          keysToRemove.push(key);
-          return;
-        }
-
-        if (
-          !globalDataTypes.includes(dataTypeKey) &&
-          sourceObject[dataTypeKey]
-        ) {
-          checkCircularKeys(sourceObject[dataTypeKey]);
-        }
-      }, dataTypes);
-    };
-
-    checkCircularKeys(sourceObject[key]);
-  }, keysPerSource);
-  return omit(keysToRemove, sourceObject);
-};
-
-const removeInvalidDataTypeReferences = (
-  obj: IParsedSyntaxes,
-  availableTypes: string[],
-) => {
-  const allKeys = Object.keys(obj).concat(availableTypes);
-  let keys: string[] = [];
-  let newObject = { ...obj };
-
-  do {
-    const keysToRemove: string[] = [];
-    forEach(key => {
-      const parsedSyntax = newObject[key];
-      const dataTypeKeys = map(
-        token => generateDataTypeLookupKey(token.value),
-        filter(isDataTypeToken, parsedSyntax),
-      );
-      const invalidDataTypes = filter(
-        dataType => !globalDataTypes.includes(dataType),
-        difference(dataTypeKeys, allKeys),
-      );
-      if (invalidDataTypes.length) {
-        keysToRemove.push(key);
-      }
-    }, Object.keys(newObject));
-
-    keys = keysToRemove;
-    newObject = omit(keysToRemove, newObject);
-  } while (keys.length);
-
-  return newObject;
-};
-
-const findDataTypeInTree = (
-  tree: INestedComponentArray,
-  dataType: string,
-): boolean => {
-  return tree.some(
-    node =>
-      Array.isArray(node)
-        ? findDataTypeInTree(node, dataType)
-        : node.type === ICssTokenType.DATA_TYPE &&
-          node.value.includes(dataType),
-  );
-};
-
 const generateTypesForKey = (
   key: string,
   suffix: string,
@@ -208,30 +103,6 @@ export const generateBaseDataTypes = (keysToIgnore: string[]) => [
   ),
 ];
 
-function generateCombinedKeywords(arr: INestedComponentArray) {
-  return arr.reduce(
-    (acc, item) => {
-      if (Array.isArray(item)) {
-        const representation = item.representation;
-        if (isComponentArray(item)) {
-          if (
-            representation &&
-            representation === ComponentTypeRepresentation.TUPLE
-          ) {
-            acc.push(item.reduce((a, i) => `${a} ${i.value}`.trim(), ''));
-          } else {
-            acc.push(...item.map(x => x.value));
-          }
-        }
-      } else {
-        acc.push(item.value);
-      }
-      return acc;
-    },
-    [] as string[],
-  );
-}
-
 interface IGenerateTypesFromMdnDataOptions {
   typeSuffix?: string;
   blacklistPredicate?: (key: string) => boolean;
@@ -239,22 +110,25 @@ interface IGenerateTypesFromMdnDataOptions {
   availableTypes?: string[];
 }
 
-function syntaxContainsDataTypes(arr: RawToken[]) {
-  return some(token => token.type === ICssTokenType.DATA_TYPE, arr);
-}
-
-function isComponentArray(arr: INestedComponentArray): arr is IComponent[] {
-  return arr.every(i => !Array.isArray(i));
-}
+/**
+ * This is the core function which walks the passed in object and generates
+ * all types
+ * @param sourceObject
+ * @param options
+ */
 export const generateTypesFromMdnData = (
   sourceObject: IParsedSyntaxes,
   options: IGenerateTypesFromMdnDataOptions,
 ) => {
   const { availableTypes = [], typeSuffix = '' } = options;
-  const withoutCircular = removeCircularAndUnsupportedGrammar(sourceObject);
+  const withoutCircular = removeCircularAndUnsupportedGrammar(
+    sourceObject,
+    globalDataTypes,
+  );
   const withoutInvalidReferences = removeInvalidDataTypeReferences(
     withoutCircular,
     availableTypes,
+    globalDataTypes,
   );
 
   const typeDeclarations = reduce(
@@ -264,6 +138,13 @@ export const generateTypesFromMdnData = (
       }
 
       const parsedSyntax = withoutInvalidReferences[key];
+
+      if (tokensContainUnsupportedSyntax(parsedSyntax)) {
+        // alias everything that isn't currently parseable to string
+        acc.push(generateDefaultStringTypeDeclaration(key, typeSuffix));
+        return acc;
+      }
+
       /**
        * If we enouncter as syntax which contains only keywords
        * and data types which themselves only contain keywords,
@@ -307,11 +188,11 @@ export const generateTypesFromMdnData = (
         }
       }
 
-      if (containsUnsupportedSyntax(parsedSyntax)) {
-        // alias everything that isn't currently parseable to string
-        acc.push(generateDefaultStringTypeDeclaration(key, typeSuffix));
-        return acc;
-      }
+      /**
+       * After the combined types we still output the tuples
+       * types because some people might prefer them and
+       * it's nice to have both options
+       */
       appendSuffixToDataTypes(parsedSyntax, typeSuffix);
       // convertInfiniteMultiplersToFinite(emittedTokens);
 
@@ -332,7 +213,7 @@ export const generateTypesFromMdnData = (
         // tslint:disable-next-line: no-console
         console.log(key, ':', e.message, 'add string type');
 
-        // types not supported by the lexer will default to `string`
+        // types not supported by the converter will default to `string`
         acc.push(generateDefaultStringTypeDeclaration(key, typeSuffix));
       }
       return acc;

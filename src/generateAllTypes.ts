@@ -112,6 +112,7 @@ forEach(
 // - clean up type `generateTypeCombinations` (DONE)
 // - faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords (DONE)
 
+// - prevent raw data types from being inlined
 // - fold similar tuples into one
 // - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
 // - create color function utils (rgb, hsla, etc) from css grammar to be used within `color` type
