@@ -1,7 +1,6 @@
 import {
   ICssMultiplierTokenType,
   ICssTokenType,
-  lexValueDeclarationGrammar,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
 import {
   difference,
@@ -12,23 +11,30 @@ import {
   reduce,
   some,
 } from 'lodash/fp';
-import { IRawProperties, IRawSyntax, IRawSyntaxes } from 'mdn-data';
 import mdnCssTypes from 'mdn-data/css/types.json';
 import ts, { TypeAliasDeclaration } from 'typescript';
 
-import { LENGTH_TYPE_NAME } from './constants';
+import { LENGTH_GENERIC_ARGUMENT, LENGTH_TYPE_NAME } from './constants';
 import { generateTypesNodes } from './generateTypeNodes';
-import { INestedComponentArray, RawToken } from './types';
+import {
+  ComponentTypeRepresentation,
+  IComponent,
+  INestedComponentArray,
+  IParsedSyntaxes,
+  RawToken,
+  SyntaxLookupFn,
+} from './types';
 import { convertRawTokensToComponents } from './utils/convertRawTokensToComponents';
+import { generateDataTypeLookupKey } from './utils/generateDataTypeLookupKey';
 import { generateTypeCombinations } from './utils/generateTypeCombinations';
 import { generateDefaultStringTypeDeclaration } from './utils/generateTypeReferenceDeclarations';
 import { groupTokensByCombinatorPredence } from './utils/groupTokensByCombinatorPredence';
+import { inlineDataTypes } from './utils/inlineDataTypes';
 import { parenthesesToFunction } from './utils/parenthesesToFunction';
+import { syntaxCanBeCollapsed } from './utils/syntaxCanBeCollapsed';
 import { typeNameWithSuffix } from './utils/typeNameWithSuffix';
 
 const globalDataTypes = Object.keys(mdnCssTypes);
-
-const getDataTypeKey = (str: string) => str.replace(/<\'?(.*?)\'?>/, '$1');
 
 const appendSuffixToDataTypes = (tokens: RawToken[], suffix: string) => {
   forEach(token => {
@@ -91,9 +97,7 @@ const containsUnsupportedSyntax = (tokens: RawToken[]) =>
 const isDataTypeToken = (token: RawToken) =>
   token.type === ICssTokenType.DATA_TYPE;
 
-const removeCircularAndUnsupportedGrammar = (
-  sourceObject: IRawSyntaxes | IRawProperties,
-) => {
+const removeCircularAndUnsupportedGrammar = (sourceObject: IParsedSyntaxes) => {
   const keysPerSource = Object.keys(sourceObject);
   const keysToRemove: string[] = [];
   forEach(key => {
@@ -101,16 +105,15 @@ const removeCircularAndUnsupportedGrammar = (
       return;
     }
 
-    const checkCircularKeys = (syntax: IRawSyntax) => {
-      const { emittedTokens } = lexValueDeclarationGrammar(syntax.syntax);
-      if (containsUnsupportedSyntax(emittedTokens)) {
+    const checkCircularKeys = (parsedSyntax: RawToken[]) => {
+      if (containsUnsupportedSyntax(parsedSyntax)) {
         return;
       }
 
-      const dataTypes = filter(isDataTypeToken, emittedTokens);
+      const dataTypes = filter(isDataTypeToken, parsedSyntax);
 
       forEach(dataType => {
-        const dataTypeKey = getDataTypeKey(dataType.value);
+        const dataTypeKey = generateDataTypeLookupKey(dataType.value);
         if (dataTypeKey === key) {
           keysToRemove.push(key);
           return;
@@ -131,22 +134,20 @@ const removeCircularAndUnsupportedGrammar = (
 };
 
 const removeInvalidDataTypeReferences = (
-  obj: IRawSyntaxes,
+  obj: IParsedSyntaxes,
   availableTypes: string[],
 ) => {
   const allKeys = Object.keys(obj).concat(availableTypes);
-
   let keys: string[] = [];
   let newObject = { ...obj };
 
   do {
     const keysToRemove: string[] = [];
     forEach(key => {
-      const syntax = newObject[key];
-      const { emittedTokens } = lexValueDeclarationGrammar(syntax.syntax);
+      const parsedSyntax = newObject[key];
       const dataTypeKeys = map(
-        token => getDataTypeKey(token.value),
-        filter(isDataTypeToken, emittedTokens),
+        token => generateDataTypeLookupKey(token.value),
+        filter(isDataTypeToken, parsedSyntax),
       );
       const invalidDataTypes = filter(
         dataType => !globalDataTypes.includes(dataType),
@@ -163,24 +164,6 @@ const removeInvalidDataTypeReferences = (
 
   return newObject;
 };
-
-// const generateTypeReferenceDeclaration = (
-//   key: string,
-//   value: string,
-//   suffix: string = '',
-// ) =>
-//   ts.createTypeAliasDeclaration(
-//     [],
-//     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-//     typeNameWithSuffix(parenthesesToFunction(key), suffix),
-//     [],
-//     ts.createTypeReferenceNode(value, []),
-//   );
-
-// const generateDefaultStringTypeDeclaration = (
-//   key: string,
-//   suffix: string = '',
-// ) => generateTypeReferenceDeclaration(key, 'string', suffix);
 
 const findDataTypeInTree = (
   tree: INestedComponentArray,
@@ -208,7 +191,7 @@ const generateTypesForKey = (
     usesLength
       ? [
           ts.createTypeParameterDeclaration(
-            'TLength',
+            LENGTH_GENERIC_ARGUMENT,
             undefined,
             ts.createTypeReferenceNode(LENGTH_TYPE_NAME, []),
           ),
@@ -225,15 +208,47 @@ export const generateBaseDataTypes = (keysToIgnore: string[]) => [
   ),
 ];
 
+function generateCombinedKeywords(arr: INestedComponentArray) {
+  return arr.reduce(
+    (acc, item) => {
+      if (Array.isArray(item)) {
+        const representation = item.representation;
+        if (isComponentArray(item)) {
+          if (
+            representation &&
+            representation === ComponentTypeRepresentation.TUPLE
+          ) {
+            acc.push(item.reduce((a, i) => `${a} ${i.value}`.trim(), ''));
+          } else {
+            acc.push(...item.map(x => x.value));
+          }
+        }
+      } else {
+        acc.push(item.value);
+      }
+      return acc;
+    },
+    [] as string[],
+  );
+}
+
 interface IGenerateTypesFromMdnDataOptions {
   typeSuffix?: string;
   blacklistPredicate?: (key: string) => boolean;
+  lookupFn: SyntaxLookupFn;
   availableTypes?: string[];
 }
 
+function syntaxContainsDataTypes(arr: RawToken[]) {
+  return some(token => token.type === ICssTokenType.DATA_TYPE, arr);
+}
+
+function isComponentArray(arr: INestedComponentArray): arr is IComponent[] {
+  return arr.every(i => !Array.isArray(i));
+}
 export const generateTypesFromMdnData = (
-  sourceObject: IRawSyntaxes,
-  options: IGenerateTypesFromMdnDataOptions = {},
+  sourceObject: IParsedSyntaxes,
+  options: IGenerateTypesFromMdnDataOptions,
 ) => {
   const { availableTypes = [], typeSuffix = '' } = options;
   const withoutCircular = removeCircularAndUnsupportedGrammar(sourceObject);
@@ -248,18 +263,60 @@ export const generateTypesFromMdnData = (
         return acc;
       }
 
-      const syntax = withoutInvalidReferences[key];
-      const { emittedTokens } = lexValueDeclarationGrammar(syntax.syntax);
-      if (containsUnsupportedSyntax(emittedTokens)) {
+      const parsedSyntax = withoutInvalidReferences[key];
+      /**
+       * If we enouncter as syntax which contains only keywords
+       * and data types which themselves only contain keywords,
+       * then we can inline all data types into their parent and
+       * generate all possible combinations that the grammar
+       * can evaluate to
+       */
+      if (
+        syntaxContainsDataTypes(parsedSyntax) &&
+        syntaxCanBeCollapsed(parsedSyntax, options.lookupFn)
+      ) {
+        const inlined = inlineDataTypes(parsedSyntax, options.lookupFn);
+        try {
+          const typeCombinations = generateTypeCombinations(
+            groupTokensByCombinatorPredence(
+              convertRawTokensToComponents(inlined),
+            ),
+          );
+
+          // This should always be true but we still have to check
+          // to ensure type-safety
+          const first = typeCombinations[0];
+          if (Array.isArray(first)) {
+            const combined = generateCombinedKeywords(first);
+
+            acc.push(
+              ts.createTypeAliasDeclaration(
+                [],
+                [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
+                typeNameWithSuffix(`${key}`, `${typeSuffix || ''}-combined`),
+                [],
+                ts.createUnionTypeNode(
+                  // TODO fix `any` type
+                  combined.map(x => ts.createStringLiteral(x) as any),
+                ),
+              ),
+            );
+          }
+        } catch (e) {
+          console.log(key, ': could not create combined syntax');
+        }
+      }
+
+      if (containsUnsupportedSyntax(parsedSyntax)) {
         // alias everything that isn't currently parseable to string
         acc.push(generateDefaultStringTypeDeclaration(key, typeSuffix));
         return acc;
       }
-      appendSuffixToDataTypes(emittedTokens, typeSuffix);
+      appendSuffixToDataTypes(parsedSyntax, typeSuffix);
       // convertInfiniteMultiplersToFinite(emittedTokens);
 
       try {
-        const components = convertRawTokensToComponents(emittedTokens);
+        const components = convertRawTokensToComponents(parsedSyntax);
         const typeCombinations = generateTypeCombinations(
           groupTokensByCombinatorPredence(components),
         );
@@ -273,7 +330,7 @@ export const generateTypesFromMdnData = (
         );
       } catch (e) {
         // tslint:disable-next-line: no-console
-        console.log(key, ' had error:', e.message, 'add string type');
+        console.log(key, ':', e.message, 'add string type');
 
         // types not supported by the lexer will default to `string`
         acc.push(generateDefaultStringTypeDeclaration(key, typeSuffix));

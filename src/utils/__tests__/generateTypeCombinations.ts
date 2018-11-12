@@ -12,7 +12,7 @@ import {
 } from '../createdTypeNestedComponentArrays';
 import { createVoidComponent } from '../createVoidComponent';
 import { generateTypeCombinations } from '../generateTypeCombinations';
-import { keywordToken, multiplierToken } from './utils/tokens';
+import { keywordToken, multiplierToken } from '../stubTokens';
 
 describe('generateTypeCombinations', () => {
   it('single keyword', () => {

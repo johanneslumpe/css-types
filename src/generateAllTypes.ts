@@ -17,6 +17,7 @@ import {
   generateUnitTypesSourceFiles,
 } from './generateUnitTypeSourceFiles';
 import { generateUnitvalueInterface } from './utils/generateUnitvalueInterface';
+import { parseRawSyntaxes } from './utils/parseRawSyntaxes';
 
 const outputDir = path.join(__dirname, TYPES_BUILD_DIR);
 rimraf.sync(outputDir);
@@ -32,12 +33,14 @@ const {
 
 // custom types to prevent invalid references
 // after removing function types
-const customTypes = generateTypesFromMdnData(customSyntaxes, {
+const parsedCustomSyntaxes = parseRawSyntaxes(customSyntaxes);
+const customTypes = generateTypesFromMdnData(parsedCustomSyntaxes, {
   availableTypes: [
     ...map(unitType => generateUnitvalueInterface(unitType.name), unitTypes),
     'i-s-value',
     'i-x-value',
   ],
+  lookupFn: () => undefined,
 });
 
 const baseTypes = generateBaseDataTypes([
@@ -49,10 +52,13 @@ const baseTypes = generateBaseDataTypes([
   ...Object.keys(properties),
 ]);
 
-const syntaxTypes = generateTypesFromMdnData(syntaxes, {
+const parsedSyntaxes = parseRawSyntaxes(syntaxes);
+const syntaxTypes = generateTypesFromMdnData(parsedSyntaxes, {
   blacklistPredicate: isSelectorKey,
+  lookupFn: key => parsedCustomSyntaxes[key] || parsedSyntaxes[key],
 });
-const propertyTypes = generateTypesFromMdnData(properties, {
+const parsedPropertySyntaxes = parseRawSyntaxes(properties);
+const propertyTypes = generateTypesFromMdnData(parsedPropertySyntaxes, {
   availableTypes: syntaxTypes.typeKeys,
   blacklistPredicate: (key: string) => {
     if (isSelectorKey(key) || key.startsWith('media') || key === 'image') {
@@ -64,6 +70,10 @@ const propertyTypes = generateTypesFromMdnData(properties, {
       !!find(key, Object.keys(customSyntaxes))
     );
   },
+  lookupFn: key =>
+    parsedCustomSyntaxes[key] ||
+    parsedPropertySyntaxes[key] ||
+    parsedSyntaxes[key],
   typeSuffix: 'Property',
 });
 
@@ -99,13 +109,13 @@ forEach(
 );
 
 // TODO
-// - length type generics
+// - clean up type `generateTypeCombinations` (DONE)
+// - faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords (DONE)
+
 // - fold similar tuples into one
-// - clean up type `generateTypeCombinations`
 // - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
 // - create color function utils (rgb, hsla, etc) from css grammar to be used within `color` type
 // - support finite version of `+` and `*`
-// - faciliate generation of combined keywords if a syntax is only made up of keywords and data types which contain only keywords
 
 // const grammar = '<length> | <percentage>';
 // console.log('parsing grammar:', grammar);

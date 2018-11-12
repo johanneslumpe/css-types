@@ -11,7 +11,7 @@ import { createComponent } from '../createComponent';
 import { createComponentGroup } from '../createComponentGroup';
 import { groupTokensByCombinatorPredence } from '../groupTokensByCombinatorPredence';
 import { isValidToken } from '../isValidToken';
-import { multiplierToken } from './utils/tokens';
+import { multiplierToken } from '../stubTokens';
 
 function getValidTokenArrayForSyntax(syntax: string): Token[] {
   const { emittedTokens } = lexValueDeclarationGrammar(syntax);

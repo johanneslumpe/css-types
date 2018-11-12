@@ -82,3 +82,9 @@ export interface INestedComponentArray
   extends Array<IComponent | INestedComponentArray> {
   representation?: ComponentTypeRepresentation;
 }
+
+export interface IParsedSyntaxes {
+  [index: string]: RawToken[];
+}
+
+export type SyntaxLookupFn = (key: string) => RawToken[] | undefined;

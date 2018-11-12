@@ -3,7 +3,10 @@ import {
   ICssMultiplierTokenType,
   ICssTokenType,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { CssTokenSubType } from '@johanneslumpe/css-value-declaration-grammer-lexer/lib/types';
+import {
+  CssTokenSubType,
+  ICssGroupTokenType,
+} from '@johanneslumpe/css-value-declaration-grammer-lexer/lib/types';
 
 export interface IFakeToken<T> {
   endPos: number;
@@ -28,6 +31,9 @@ export const fakeToken = <T>(
   type,
   value,
 });
+
+export const groupToken = (value: string, subType: ICssGroupTokenType) =>
+  fakeToken(value, ICssTokenType.GROUP, subType);
 
 export const keywordToken = (value: string) =>
   fakeToken(value, ICssTokenType.KEYWORD);

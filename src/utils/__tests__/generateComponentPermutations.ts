@@ -3,7 +3,7 @@ import { ICssMultiplierTokenType } from '@johanneslumpe/css-value-declaration-gr
 import { createComponent } from '../createComponent';
 import { createVoidComponent } from '../createVoidComponent';
 import { generateComponentPermutations } from '../generateComponentPermutations';
-import { keywordToken, multiplierToken } from './utils/tokens';
+import { keywordToken, multiplierToken } from '../stubTokens';
 
 describe('generateComponentPermutations', () => {
   const voidComponent = createVoidComponent();

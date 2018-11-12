@@ -1,13 +1,9 @@
 import {
-  IAdditionalTokenData,
   ICssMultiplierTokenType,
   ICssTokenType,
   lexValueDeclarationGrammar,
 } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import {
-  CssTokenSubType,
-  ICssCombinatorTokenType,
-} from '@johanneslumpe/css-value-declaration-grammer-lexer/lib/types';
+import { ICssCombinatorTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer/lib/types';
 import { convertRawTokensToComponents } from '../convertRawTokensToComponents';
 import { createCombinatorGroup } from '../createCombinatorGroup';
 import { createComponent } from '../createComponent';
@@ -18,7 +14,7 @@ import {
   IFakeToken,
   keywordToken,
   multiplierToken,
-} from './utils/tokens';
+} from '../stubTokens';
 
 describe('convertRawTokensToComponents', () => {
   it('should throw an error if token list contains errors', () => {
