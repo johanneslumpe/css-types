@@ -2,20 +2,21 @@
   "name": "@johanneslumpe/css-types",
   "version": "0.1.0",
   "description": "TypeScript CSS types and value helpers generated from MDN data",
-  "main": "lib/index.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "tsc -p ./tsconfig.cjs.json --noEmit && jest",
+    "test": "tsc -p ./tsconfig.cjs.test.json --noEmit && jest",
     "lint": "tslint --project tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "test:watch": "jest --watch",
-    "build": "rimraf ./lib && npx ts-node generate",
+    "build": "rimraf ./generated && npx ts-node generate && tsc -p ./tsconfig.cjs.generated.json && tsc -p ./tsconfig.esm.generated.json",
     "prepare": "npm run build && npm run docs",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "docs": "typedoc ./lib --tsconfig ./tsconfig.cjs.json --hideGenerator --readme none --theme markdown --out docs"
+    "docs": "typedoc ./generated --tsconfig ./tsconfig.cjs.generated.json --hideGenerator --readme none --theme markdown --out docs"
   },
   "files": [
     "/lib",

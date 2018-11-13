@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.compile.base.json",
+  "extends": "./tsconfig.compile.generated.json",
   "compilerOptions": {
     "module": "esnext",
     "outDir": "es"

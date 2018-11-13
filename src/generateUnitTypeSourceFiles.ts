@@ -1,4 +1,4 @@
-import { flatten, map } from 'lodash/fp';
+import { flatten, map, sortBy } from 'lodash/fp';
 import { CSSUnitGroups } from 'mdn-data';
 import ts from 'typescript';
 
@@ -12,14 +12,15 @@ import { createUnitFunctionDeclaration } from './utils/createUnitFunctionDeclara
 import { generateTypeName } from './utils/generateTypeName';
 import { getUnits, lengthValueTags } from './utils/getUnits';
 
-const getUnitsWithAdditionalTypes = (tagFilterArray?: CSSUnitGroups[]) => [
-  ...getUnits(tagFilterArray),
-  {
-    brandKey: 'percentage',
-    name: 'Percentage',
-    unit: '%',
-  },
-];
+const getUnitsWithAdditionalTypes = (tagFilterArray?: CSSUnitGroups[]) =>
+  sortBy(x => x.name.toLowerCase(), [
+    ...getUnits(tagFilterArray),
+    {
+      brandKey: 'percentage',
+      name: 'Percentage',
+      unit: '%',
+    },
+  ]);
 
 export function generateUnitInterfaces(
   withAdditionalTypes: boolean,
