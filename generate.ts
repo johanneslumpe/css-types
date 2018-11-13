@@ -27,17 +27,19 @@ async function format(filepath: string) {
 
 async function generate() {
   await generateAllTypes();
-
   const filenames = await readdir(LIB_PATH);
+  await generateIndex(
+    map(filename => `./${filename.replace('.ts', '')}`, filenames),
+  );
+
+  filenames.push('index.ts');
+
   const formatted = await Promise.all(
     filenames.map(filename => format(path.join(LIB_PATH, filename))),
   );
+
   await Promise.all(
     formatted.map(({ contents, filepath }) => writeFile(filepath, contents)),
-  );
-
-  await generateIndex(
-    map(filename => `./${filename.replace('.ts', '')}`, filenames),
   );
 }
 
