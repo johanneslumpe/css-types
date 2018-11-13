@@ -1,15 +1,17 @@
 import * as fs from 'fs';
+import { map } from 'lodash/fp';
 import * as path from 'path';
 import prettier from 'prettier';
 import * as util from 'util';
 
 import { generateAllTypes } from './src/generateAllTypes';
+import { generateIndex } from './src/generateIndex';
 
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
-const LIB_PATH = path.join(__dirname, './lib');
+const LIB_PATH = path.join(__dirname, './generated');
 
 async function format(filepath: string) {
   const contents = await readFile(filepath);
@@ -32,6 +34,10 @@ async function generate() {
   );
   await Promise.all(
     formatted.map(({ contents, filepath }) => writeFile(filepath, contents)),
+  );
+
+  await generateIndex(
+    map(filename => `./${filename.replace('.ts', '')}`, filenames),
   );
 }
 

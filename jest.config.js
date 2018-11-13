@@ -14,7 +14,7 @@ module.exports = {
   collectCoverage: true,
   globals: {
     'ts-jest': {
-      tsConfigFile: 'tsconfig.cjs.json',
+      tsConfigFile: 'tsconfig.cjs.test.json',
     },
   },
 };

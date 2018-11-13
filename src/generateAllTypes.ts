@@ -7,7 +7,7 @@ import rimraf from 'rimraf';
 import ts from 'typescript';
 import * as util from 'util';
 
-import { LENGTH_TYPE_NAME, TYPES_BUILD_DIR } from './constants';
+import { CSS_TYPES_FILE, LENGTH_TYPE_NAME, TYPES_BUILD_DIR } from './constants';
 import { customSyntaxes } from './customSyntaxes';
 import {
   generateBaseDataTypes,
@@ -94,7 +94,7 @@ export async function generateAllTypes() {
 
   const typesOutputSource = ts.updateSourceFileNode(
     ts.createSourceFile(
-      'types.ts',
+      CSS_TYPES_FILE,
       '',
       ts.ScriptTarget.ESNext,
       false,
