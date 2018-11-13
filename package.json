@@ -16,7 +16,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "docs": "typedoc ./generated --tsconfig ./tsconfig.cjs.json --hideGenerator --readme none --theme markdown --out docs"
+    "docs": "typedoc ./generated --tsconfig ./tsconfig.cjs.generated.json --hideGenerator --readme none --theme markdown --out docs"
   },
   "files": [
     "/lib",
