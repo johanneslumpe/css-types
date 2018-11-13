@@ -12,7 +12,7 @@ This library provides TypeScript types for CSS properties. It uses data provided
 
 It has mainly been designed to generate types which could be consumed by https://github.com/johanneslumpe/styled-props which can natively work with the generated tuple types. Maybe others will find this helpful as well.
 
-The type generation process itself works, but doesn't yet support all CSS features. E.g. functions are aliased to `string`, instead of an auto-generated helper function which would return a branded type.
+The type generation process itself works, but doesn't yet support all CSS features. E.g. functions are aliased to `string`, instead of auto-generated helper functions which return branded types.
 
 All properties are suffixed with `Property` and combined types are suffixed with `Combined`, e.g. `DisplayProperty` and `DisplayPropertyCombined`.
 
