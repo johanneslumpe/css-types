@@ -76,7 +76,7 @@
 
 **● String**: *`StringConstructor`*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:457*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:457*
 
 Allows manipulation and formatting of text strings and determination and location of substrings within strings.
 
@@ -98,7 +98,7 @@ ___
 
 *Inherited from String.length*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:431*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:431*
 
 Returns the length of a String object.
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from String.[Symbol.iterator]*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.iterable.d.ts:235*
+*Defined in node_modules/typescript/lib/lib.es2015.iterable.d.ts:235*
 
 Iterator
 
@@ -129,7 +129,7 @@ ___
 
 *Inherited from String.anchor*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:454*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:454*
 
 Returns an HTML anchor element and sets the name attribute to the text value
 
@@ -150,7 +150,7 @@ ___
 
 *Inherited from String.big*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:457*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:457*
 
 Returns a HTML element
 
@@ -165,7 +165,7 @@ ___
 
 *Inherited from String.blink*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:460*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:460*
 
 Returns a HTML element
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from String.bold*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:463*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:463*
 
 Returns a **HTML element**
 
@@ -195,7 +195,7 @@ ___
 
 *Inherited from String.charAt*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:332*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:332*
 
 Returns the character at the specified index.
 
@@ -216,7 +216,7 @@ ___
 
 *Inherited from String.charCodeAt*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:338*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:338*
 
 Returns the Unicode value of the character at the specified location.
 
@@ -237,7 +237,7 @@ ___
 
 *Inherited from String.codePointAt*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:402*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:402*
 
 Returns a nonnegative integer Number less than 1114112 (0x110000) that is the code point value of the UTF-16 encoded code point starting at the string element at position pos in the String resulting from converting this object to a String. If there is no element at that position, the result is undefined. If a valid UTF-16 surrogate pair does not begin at pos, the result is the code unit at pos.
 
@@ -258,7 +258,7 @@ ___
 
 *Inherited from String.concat*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:344*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:344*
 
 Returns a string that contains the concatenation of two or more strings.
 
@@ -279,7 +279,7 @@ ___
 
 *Inherited from String.endsWith*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:418*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:418*
 
 Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) starting at endPosition – length(this). Otherwise returns false.
 
@@ -301,7 +301,7 @@ ___
 
 *Inherited from String.fixed*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:466*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:466*
 
 Returns a HTML element
 
@@ -316,7 +316,7 @@ ___
 
 *Inherited from String.fontcolor*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:469*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:469*
 
 Returns a HTML element and sets the color attribute value
 
@@ -339,7 +339,7 @@ ___
 
 *Inherited from String.fontsize*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:472*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:472*
 
 Returns a HTML element and sets the size attribute value
 
@@ -353,7 +353,7 @@ Returns a HTML element and sets the size attribute value
 
 *Inherited from String.fontsize*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:475*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:475*
 
 Returns a HTML element and sets the size attribute value
 
@@ -374,7 +374,7 @@ ___
 
 *Inherited from String.includes*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:411*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:411*
 
 Returns true if searchString appears as a substring of the result of converting this object to a String, at one or more positions that are greater than or equal to position; otherwise, returns false.
 
@@ -396,7 +396,7 @@ ___
 
 *Inherited from String.indexOf*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:351*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:351*
 
 Returns the position of the first occurrence of a substring.
 
@@ -418,7 +418,7 @@ ___
 
 *Inherited from String.italics*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:478*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:478*
 
 Returns an _HTML element_
 
@@ -433,7 +433,7 @@ ___
 
 *Inherited from String.lastIndexOf*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:358*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:358*
 
 Returns the last occurrence of a substring in the string.
 
@@ -455,7 +455,7 @@ ___
 
 *Inherited from String.link*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:481*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:481*
 
 Returns an HTML element and sets the href attribute value
 
@@ -478,7 +478,7 @@ ___
 
 *Overrides String.localeCompare*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:364*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:364*
 
 Determines whether two strings are equivalent in the current locale.
 
@@ -501,7 +501,7 @@ ___
 
 *Overrides String.match*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:370*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:370*
 
 Matches a string with a regular expression, and returns an array containing the results of that search.
 
@@ -524,7 +524,7 @@ ___
 
 *Inherited from String.normalize*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:426*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:426*
 
 Returns the String value result of normalizing the string into the normalization form named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
 
@@ -538,7 +538,7 @@ Returns the String value result of normalizing the string into the normalization
 
 *Inherited from String.normalize*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:434*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:434*
 
 Returns the String value result of normalizing the string into the normalization form named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
 
@@ -559,7 +559,7 @@ ___
 
 *Inherited from String.padEnd*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2017.string.d.ts:46*
+*Defined in node_modules/typescript/lib/lib.es2017.string.d.ts:46*
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length. The padding is applied from the end (right) of the current string.
 
@@ -581,7 +581,7 @@ ___
 
 *Inherited from String.padStart*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2017.string.d.ts:33*
+*Defined in node_modules/typescript/lib/lib.es2017.string.d.ts:33*
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length. The padding is applied from the start (left) of the current string.
 
@@ -603,7 +603,7 @@ ___
 
 *Inherited from String.repeat*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:441*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:441*
 
 Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
 
@@ -628,7 +628,7 @@ ___
 
 *Overrides String.replace*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:377*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:377*
 
 Replaces text in a string, using a regular expression or search string.
 
@@ -645,7 +645,7 @@ Replaces text in a string, using a regular expression or search string.
 
 *Overrides String.replace*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:384*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:384*
 
 Replaces text in a string, using a regular expression or search string.
 
@@ -669,7 +669,7 @@ ___
 
 *Overrides String.search*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:390*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:390*
 
 Finds the first substring match in a regular expression search.
 
@@ -690,7 +690,7 @@ ___
 
 *Inherited from String.slice*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:398*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:398*
 
 Returns a section of a string.
 
@@ -712,7 +712,7 @@ ___
 
 *Inherited from String.small*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:484*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:484*
 
 Returns a HTML element
 
@@ -729,7 +729,7 @@ ___
 
 *Overrides String.split*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:405*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:405*
 
 Split a string into substrings using the specified separator and return them as an array.
 
@@ -751,7 +751,7 @@ ___
 
 *Inherited from String.startsWith*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:448*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:448*
 
 Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) starting at position. Otherwise returns false.
 
@@ -773,7 +773,7 @@ ___
 
 *Inherited from String.strike*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:487*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:487*
 
 Returns a HTML element
 
@@ -788,7 +788,7 @@ ___
 
 *Inherited from String.sub*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:490*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:490*
 
 Returns a HTML element
 
@@ -803,7 +803,7 @@ ___
 
 *Inherited from String.substr*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:439*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:439*
 
 Gets a substring beginning at the specified location and having the specified length.
 
@@ -825,7 +825,7 @@ ___
 
 *Inherited from String.substring*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:413*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:413*
 
 Returns the substring at the specified location within a String object.
 
@@ -847,7 +847,7 @@ ___
 
 *Inherited from String.sup*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:493*
+*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:493*
 
 Returns a HTML element
 
@@ -862,7 +862,7 @@ ___
 
 *Inherited from String.toLocaleLowerCase*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:419*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:419*
 
 Converts all alphabetic characters to lowercase, taking into account the host environment's current locale.
 
@@ -877,7 +877,7 @@ ___
 
 *Inherited from String.toLocaleUpperCase*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:425*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:425*
 
 Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
 
@@ -892,7 +892,7 @@ ___
 
 *Inherited from String.toLowerCase*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:416*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:416*
 
 Converts all the alphabetic characters in a string to lowercase.
 
@@ -907,7 +907,7 @@ ___
 
 *Inherited from String.toString*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:326*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:326*
 
 Returns a string representation of a string.
 
@@ -922,7 +922,7 @@ ___
 
 *Inherited from String.toUpperCase*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:422*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:422*
 
 Converts all the alphabetic characters in a string to uppercase.
 
@@ -937,7 +937,7 @@ ___
 
 *Inherited from String.trim*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:428*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:428*
 
 Removes the leading and trailing white space and line terminator characters from a string.
 
@@ -952,7 +952,7 @@ ___
 
 *Inherited from String.trimLeft*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/@types/node/index.d.ts:184*
+*Defined in node_modules/@types/node/index.d.ts:184*
 
 Removes whitespace from the left end of a string.
 
@@ -967,7 +967,7 @@ ___
 
 *Inherited from String.trimRight*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/@types/node/index.d.ts:186*
+*Defined in node_modules/@types/node/index.d.ts:186*
 
 Removes whitespace from the right end of a string.
 
@@ -982,7 +982,7 @@ ___
 
 *Inherited from String.valueOf*
 
-*Defined in /Users/johanneslumpe/Developer/experiments/css-types/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:442*
+*Defined in node_modules/typescript/lib/lib.es5.d.ts:442*
 
 Returns the primitive value of the specified object.
 
