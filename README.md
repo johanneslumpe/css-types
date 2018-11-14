@@ -18,7 +18,7 @@ All properties are suffixed with `Property` and combined types are suffixed with
 
 ## Get it
 
-~~`npm i @johanneslumpe/css-types`~~ - not yet published
+`npm i @johanneslumpe/css-types`
 
 ## Use it
 
