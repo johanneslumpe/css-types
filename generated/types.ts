@@ -667,11 +667,8 @@ export type SkewXFunction = string;
 export type SkewYFunction = string;
 export type SepiaFunction = string;
 export type Shadow<TLength = Length> =
-  | [TLength, TLength]
   | [TLength, TLength, Color]
-  | [TLength, TLength, TLength]
   | [TLength, TLength, TLength, Color]
-  | [TLength, TLength, TLength, TLength]
   | [TLength, TLength, TLength, TLength, Color]
   | ['inset', TLength, TLength]
   | ['inset', TLength, TLength, Color]
@@ -680,9 +677,7 @@ export type Shadow<TLength = Length> =
   | ['inset', TLength, TLength, TLength, TLength]
   | ['inset', TLength, TLength, TLength, TLength, Color];
 export type ShadowT<TLength = Length> =
-  | [TLength, TLength]
   | [TLength, TLength, Color]
-  | [TLength, TLength, TLength]
   | [TLength, TLength, TLength, Color];
 export type ShapeBoxCombined = 'border-box' | 'padding-box' | 'content-box' | 'margin-box';
 export type ShapeBox = Box | 'margin-box';
@@ -1842,7 +1837,7 @@ export type Size<TLength = Length> =
   | 'closest-corner'
   | 'farthest-corner'
   | TLength
-  | LengthPercentage<TLength>;
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type StepTimingFunction = string;
 export type Symbol = string | Image | CustomIdent;
 export type Target = TargetCounterFunction | TargetCountersFunction | TargetTextFunction;
@@ -2072,8 +2067,12 @@ export type BorderBottomProperty =
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
 export type BorderBottomColorProperty = Color;
-export type BorderBottomLeftRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
-export type BorderBottomRightRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
+export type BorderBottomLeftRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderBottomRightRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderBottomStylePropertyCombined =
   | 'none'
   | 'hidden'
@@ -2088,18 +2087,18 @@ export type BorderBottomStylePropertyCombined =
 export type BorderBottomStyleProperty = LineStyle;
 export type BorderBottomWidthProperty = LineWidth;
 export type BorderCollapseProperty = 'collapse' | 'separate';
-export type BorderColorProperty = Color;
+export type BorderColorProperty =
+  | Color
+  | [Color, Color]
+  | [Color, Color, Color]
+  | [Color, Color, Color, Color];
 export type BorderImageProperty = string;
 export type BorderImageOutsetProperty<TLength = Length> = TLength | number;
 export type BorderImageRepeatProperty = 'stretch' | 'repeat' | 'round' | 'space';
 export type BorderImageSliceProperty =
-  | NumberPercentage
   | [NumberPercentage, 'fill']
-  | [NumberPercentage, NumberPercentage]
   | [NumberPercentage, NumberPercentage, 'fill']
-  | [NumberPercentage, NumberPercentage, NumberPercentage]
   | [NumberPercentage, NumberPercentage, NumberPercentage, 'fill']
-  | [NumberPercentage, NumberPercentage, NumberPercentage, NumberPercentage]
   | [NumberPercentage, NumberPercentage, NumberPercentage, NumberPercentage, 'fill'];
 export type BorderImageSourceProperty = 'none' | Image;
 export type BorderImageWidthProperty<TLength = Length> =
@@ -2207,7 +2206,11 @@ export type BorderStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderStyleProperty = LineStyle;
+export type BorderStyleProperty =
+  | LineStyle
+  | [LineStyle, LineStyle]
+  | [LineStyle, LineStyle, LineStyle]
+  | [LineStyle, LineStyle, LineStyle, LineStyle];
 export type BorderTopProperty =
   | Color
   | LineStyle
@@ -2217,8 +2220,12 @@ export type BorderTopProperty =
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
 export type BorderTopColorProperty = Color;
-export type BorderTopLeftRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
-export type BorderTopRightRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
+export type BorderTopLeftRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderTopRightRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderTopStylePropertyCombined =
   | 'none'
   | 'hidden'
@@ -2232,7 +2239,11 @@ export type BorderTopStylePropertyCombined =
   | 'outset';
 export type BorderTopStyleProperty = LineStyle;
 export type BorderTopWidthProperty = LineWidth;
-export type BorderWidthProperty = LineWidth;
+export type BorderWidthProperty =
+  | LineWidth
+  | [LineWidth, LineWidth]
+  | [LineWidth, LineWidth, LineWidth]
+  | [LineWidth, LineWidth, LineWidth, LineWidth];
 export type BottomProperty<TLength = Length> = TLength | Percentage | 'auto';
 export type BoxDecorationBreakProperty = 'slice' | 'clone';
 export type BoxShadowProperty = string;
@@ -3154,11 +3165,9 @@ export type RotateProperty =
   | ['x', Angle]
   | ['y', Angle]
   | ['z', Angle]
-  | [number, Angle]
-  | [number, Angle]
-  | [number, Angle];
+  | [number, number, number, Angle];
 export type RowGapProperty<TLength = Length> = 'normal' | LengthPercentage<TLength>;
-export type ScaleProperty = 'none' | number;
+export type ScaleProperty = 'none' | number | [number, number] | [number, number, number];
 export type ScrollBehaviorProperty = 'auto' | 'smooth';
 export type ScrollSnapTypeProperty = 'none' | 'mandatory' | 'proximity';
 export type ShapeImageThresholdProperty = number;

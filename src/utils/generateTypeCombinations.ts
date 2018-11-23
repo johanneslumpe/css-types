@@ -25,8 +25,23 @@ export function generateTypeCombinations(
     map(entity => {
       switch (entity.type) {
         case ICssTokenType.KEYWORD:
-        case ICssTokenType.DATA_TYPE:
+        case ICssTokenType.DATA_TYPE: {
+          if (
+            entity.multiplier &&
+            entity.multiplier.type === ICssMultiplierTokenType.CURLY_BRACES
+          ) {
+            const permutations: INestedComponentArray = generateComponentPermutations(
+              [[entity]],
+            );
+            return createUnionArray(
+              map(
+                arr => createTupleArray(arr as INestedComponentArray),
+                permutations,
+              ),
+            );
+          }
           return entity;
+        }
 
         case ICssTokenType.COMBINATOR: {
           switch (entity.combinator) {

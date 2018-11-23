@@ -12,7 +12,7 @@ import {
 } from '../createdTypeNestedComponentArrays';
 import { createVoidComponent } from '../createVoidComponent';
 import { generateTypeCombinations } from '../generateTypeCombinations';
-import { keywordToken, multiplierToken } from '../stubTokens';
+import { dataTypeToken, keywordToken, multiplierToken } from '../stubTokens';
 
 describe('generateTypeCombinations', () => {
   it('single keyword', () => {
@@ -258,6 +258,22 @@ describe('generateTypeCombinations', () => {
         c,
         createTupleArray([createVoidComponent(), e]),
         createTupleArray([d, e]),
+      ]),
+    ]);
+  });
+
+  it('single datatype with multiplier', () => {
+    const a = createComponent(
+      dataTypeToken('a'),
+      multiplierToken(ICssMultiplierTokenType.CURLY_BRACES, '{1,3}'),
+    );
+    const result = generateTypeCombinations([a]);
+    const voidComp = createVoidComponent();
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([a]),
+        createTupleArray([a, a]),
+        createTupleArray([a, a, a]),
       ]),
     ]);
   });
