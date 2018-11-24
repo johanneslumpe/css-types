@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/johanneslumpe/css-types/compare/v0.2.0...v0.3.0) (2018-11-24)
+
+
+### Features
+
+* add global keywords (inherit, initial, unset) to all property types, fixes [#10](https://github.com/johanneslumpe/css-types/issues/10) ([#11](https://github.com/johanneslumpe/css-types/issues/11)) ([8a3ecd3](https://github.com/johanneslumpe/css-types/commit/8a3ecd3))
+* support curly braces multipliers for groups and map infinite multipliers to capped finite versions, fixes [#2](https://github.com/johanneslumpe/css-types/issues/2) ([#13](https://github.com/johanneslumpe/css-types/issues/13)) ([347f251](https://github.com/johanneslumpe/css-types/commit/347f251))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-11-24)
 
