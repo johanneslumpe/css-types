@@ -57,6 +57,7 @@ export type Angle = IDegValue | IGradValue | IRadValue | ITurnValue;
 export type Color = string;
 export type Flex = IFrValue;
 export type Frequency = IHzValue | IKhzValue;
+export type GlobalKeywords = 'inherit' | 'initial' | 'unset';
 export type InsetFunction = string;
 export type Integer = number;
 export type Number = number;
@@ -1901,6 +1902,9 @@ export type TranslateZFunction = string;
 export type TypeOrUnit = string;
 export type ViewportLength<TLength = Length> = 'auto' | LengthPercentage<TLength>;
 export type AlignContentPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'baseline'
   | 'first baseline'
@@ -1925,12 +1929,16 @@ export type AlignContentPropertyCombined =
   | 'safe flex-start'
   | 'safe flex-end';
 export type AlignContentProperty =
+  | GlobalKeywords
   | 'normal'
   | BaselinePosition
   | ContentDistribution
   | ContentPosition
   | [OverflowPosition, ContentPosition];
 export type AlignItemsPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'stretch'
   | 'baseline'
@@ -1958,12 +1966,16 @@ export type AlignItemsPropertyCombined =
   | 'safe flex-start'
   | 'safe flex-end';
 export type AlignItemsProperty =
+  | GlobalKeywords
   | 'normal'
   | 'stretch'
   | BaselinePosition
   | SelfPosition
   | [OverflowPosition, SelfPosition];
 export type AlignSelfPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'normal'
   | 'stretch'
@@ -1992,13 +2004,15 @@ export type AlignSelfPropertyCombined =
   | 'safe flex-start'
   | 'safe flex-end';
 export type AlignSelfProperty =
+  | GlobalKeywords
   | 'auto'
   | 'normal'
   | 'stretch'
   | BaselinePosition
   | SelfPosition
   | [OverflowPosition, SelfPosition];
-export type AllProperty = 'initial' | 'inherit' | 'unset' | 'revert';
+export type AllPropertyCombined = 'inherit' | 'initial' | 'unset' | 'revert';
+export type AllProperty = GlobalKeywords | 'initial' | 'inherit' | 'unset' | 'revert';
 export type AnimationProperty = string;
 export type AnimationDelayProperty = string;
 export type AnimationDirectionProperty = string;
@@ -2008,18 +2022,25 @@ export type AnimationIterationCountProperty = string;
 export type AnimationNameProperty = string;
 export type AnimationPlayStateProperty = string;
 export type AnimationTimingFunctionProperty = string;
-export type BackfaceVisibilityProperty = 'visible' | 'hidden';
+export type BackfaceVisibilityPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'visible'
+  | 'hidden';
+export type BackfaceVisibilityProperty = GlobalKeywords | 'visible' | 'hidden';
 export type BackgroundAttachmentProperty = string;
 export type BackgroundBlendModeProperty = string;
 export type BackgroundClipProperty = string;
-export type BackgroundColorProperty = Color;
+export type BackgroundColorProperty = GlobalKeywords | Color;
 export type BackgroundImageProperty = string;
 export type BackgroundOriginProperty = string;
 export type BackgroundPositionProperty = string;
 export type BackgroundRepeatProperty = string;
 export type BackgroundSizeProperty = string;
-export type BlockSizeProperty = WidthProperty;
+export type BlockSizeProperty = GlobalKeywords | WidthProperty;
 export type BorderProperty =
+  | GlobalKeywords
   | Color
   | LineStyle
   | [LineStyle, Color]
@@ -2028,6 +2049,7 @@ export type BorderProperty =
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
 export type BorderBlockEndProperty =
+  | GlobalKeywords
   | ColorProperty
   | BorderStyleProperty
   | [BorderStyleProperty, ColorProperty]
@@ -2035,8 +2057,11 @@ export type BorderBlockEndProperty =
   | [BorderWidthProperty, ColorProperty]
   | [BorderWidthProperty, BorderStyleProperty]
   | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderBlockEndColorProperty = ColorProperty;
+export type BorderBlockEndColorProperty = GlobalKeywords | ColorProperty;
 export type BorderBlockEndStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2047,9 +2072,10 @@ export type BorderBlockEndStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderBlockEndStyleProperty = BorderStyleProperty;
-export type BorderBlockEndWidthProperty = BorderWidthProperty;
+export type BorderBlockEndStyleProperty = GlobalKeywords | BorderStyleProperty;
+export type BorderBlockEndWidthProperty = GlobalKeywords | BorderWidthProperty;
 export type BorderBlockStartProperty =
+  | GlobalKeywords
   | ColorProperty
   | BorderStyleProperty
   | [BorderStyleProperty, ColorProperty]
@@ -2057,8 +2083,11 @@ export type BorderBlockStartProperty =
   | [BorderWidthProperty, ColorProperty]
   | [BorderWidthProperty, BorderStyleProperty]
   | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderBlockStartColorProperty = ColorProperty;
+export type BorderBlockStartColorProperty = GlobalKeywords | ColorProperty;
 export type BorderBlockStartStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2069,9 +2098,10 @@ export type BorderBlockStartStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderBlockStartStyleProperty = BorderStyleProperty;
-export type BorderBlockStartWidthProperty = BorderWidthProperty;
+export type BorderBlockStartStyleProperty = GlobalKeywords | BorderStyleProperty;
+export type BorderBlockStartWidthProperty = GlobalKeywords | BorderWidthProperty;
 export type BorderBottomProperty =
+  | GlobalKeywords
   | Color
   | LineStyle
   | [LineStyle, Color]
@@ -2079,14 +2109,19 @@ export type BorderBottomProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
-export type BorderBottomColorProperty = Color;
+export type BorderBottomColorProperty = GlobalKeywords | Color;
 export type BorderBottomLeftRadiusProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderBottomRightRadiusProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderBottomStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2097,18 +2132,34 @@ export type BorderBottomStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderBottomStyleProperty = LineStyle;
-export type BorderBottomWidthProperty = LineWidth;
-export type BorderCollapseProperty = 'collapse' | 'separate';
+export type BorderBottomStyleProperty = GlobalKeywords | LineStyle;
+export type BorderBottomWidthProperty = GlobalKeywords | LineWidth;
+export type BorderCollapsePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'collapse'
+  | 'separate';
+export type BorderCollapseProperty = GlobalKeywords | 'collapse' | 'separate';
 export type BorderColorProperty =
+  | GlobalKeywords
   | Color
   | [Color, Color]
   | [Color, Color, Color]
   | [Color, Color, Color, Color];
 export type BorderImageProperty = string;
-export type BorderImageOutsetProperty<TLength = Length> = TLength | number;
-export type BorderImageRepeatProperty = 'stretch' | 'repeat' | 'round' | 'space';
+export type BorderImageOutsetProperty<TLength = Length> = GlobalKeywords | TLength | number;
+export type BorderImageRepeatPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'stretch'
+  | 'repeat'
+  | 'round'
+  | 'space';
+export type BorderImageRepeatProperty = GlobalKeywords | 'stretch' | 'repeat' | 'round' | 'space';
 export type BorderImageSliceProperty =
+  | GlobalKeywords
   | NumberPercentage
   | [NumberPercentage, 'fill']
   | [NumberPercentage, NumberPercentage]
@@ -2117,12 +2168,14 @@ export type BorderImageSliceProperty =
   | [NumberPercentage, NumberPercentage, NumberPercentage, 'fill']
   | [NumberPercentage, NumberPercentage, NumberPercentage, NumberPercentage]
   | [NumberPercentage, NumberPercentage, NumberPercentage, NumberPercentage, 'fill'];
-export type BorderImageSourceProperty = 'none' | Image;
+export type BorderImageSourceProperty = GlobalKeywords | 'none' | Image;
 export type BorderImageWidthProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | number
   | 'auto';
 export type BorderInlineEndProperty =
+  | GlobalKeywords
   | ColorProperty
   | BorderStyleProperty
   | [BorderStyleProperty, ColorProperty]
@@ -2130,8 +2183,11 @@ export type BorderInlineEndProperty =
   | [BorderWidthProperty, ColorProperty]
   | [BorderWidthProperty, BorderStyleProperty]
   | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderInlineEndColorProperty = ColorProperty;
+export type BorderInlineEndColorProperty = GlobalKeywords | ColorProperty;
 export type BorderInlineEndStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2142,9 +2198,10 @@ export type BorderInlineEndStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderInlineEndStyleProperty = BorderStyleProperty;
-export type BorderInlineEndWidthProperty = BorderWidthProperty;
+export type BorderInlineEndStyleProperty = GlobalKeywords | BorderStyleProperty;
+export type BorderInlineEndWidthProperty = GlobalKeywords | BorderWidthProperty;
 export type BorderInlineStartProperty =
+  | GlobalKeywords
   | ColorProperty
   | BorderStyleProperty
   | [BorderStyleProperty, ColorProperty]
@@ -2152,8 +2209,11 @@ export type BorderInlineStartProperty =
   | [BorderWidthProperty, ColorProperty]
   | [BorderWidthProperty, BorderStyleProperty]
   | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderInlineStartColorProperty = ColorProperty;
+export type BorderInlineStartColorProperty = GlobalKeywords | ColorProperty;
 export type BorderInlineStartStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2164,9 +2224,10 @@ export type BorderInlineStartStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderInlineStartStyleProperty = BorderStyleProperty;
-export type BorderInlineStartWidthProperty = BorderWidthProperty;
+export type BorderInlineStartStyleProperty = GlobalKeywords | BorderStyleProperty;
+export type BorderInlineStartWidthProperty = GlobalKeywords | BorderWidthProperty;
 export type BorderLeftProperty =
+  | GlobalKeywords
   | Color
   | LineStyle
   | [LineStyle, Color]
@@ -2174,8 +2235,11 @@ export type BorderLeftProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
-export type BorderLeftColorProperty = Color;
+export type BorderLeftColorProperty = GlobalKeywords | Color;
 export type BorderLeftStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2186,10 +2250,11 @@ export type BorderLeftStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderLeftStyleProperty = LineStyle;
-export type BorderLeftWidthProperty = LineWidth;
+export type BorderLeftStyleProperty = GlobalKeywords | LineStyle;
+export type BorderLeftWidthProperty = GlobalKeywords | LineWidth;
 export type BorderRadiusProperty = string;
 export type BorderRightProperty =
+  | GlobalKeywords
   | Color
   | LineStyle
   | [LineStyle, Color]
@@ -2197,8 +2262,11 @@ export type BorderRightProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
-export type BorderRightColorProperty = Color;
+export type BorderRightColorProperty = GlobalKeywords | Color;
 export type BorderRightStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2209,10 +2277,13 @@ export type BorderRightStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderRightStyleProperty = LineStyle;
-export type BorderRightWidthProperty = LineWidth;
-export type BorderSpacingProperty<TLength = Length> = TLength | [TLength, TLength];
+export type BorderRightStyleProperty = GlobalKeywords | LineStyle;
+export type BorderRightWidthProperty = GlobalKeywords | LineWidth;
+export type BorderSpacingProperty<TLength = Length> = GlobalKeywords | TLength | [TLength, TLength];
 export type BorderStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2224,11 +2295,13 @@ export type BorderStylePropertyCombined =
   | 'inset'
   | 'outset';
 export type BorderStyleProperty =
+  | GlobalKeywords
   | LineStyle
   | [LineStyle, LineStyle]
   | [LineStyle, LineStyle, LineStyle]
   | [LineStyle, LineStyle, LineStyle, LineStyle];
 export type BorderTopProperty =
+  | GlobalKeywords
   | Color
   | LineStyle
   | [LineStyle, Color]
@@ -2236,14 +2309,19 @@ export type BorderTopProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
-export type BorderTopColorProperty = Color;
+export type BorderTopColorProperty = GlobalKeywords | Color;
 export type BorderTopLeftRadiusProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderTopRightRadiusProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderTopStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2254,18 +2332,64 @@ export type BorderTopStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderTopStyleProperty = LineStyle;
-export type BorderTopWidthProperty = LineWidth;
+export type BorderTopStyleProperty = GlobalKeywords | LineStyle;
+export type BorderTopWidthProperty = GlobalKeywords | LineWidth;
 export type BorderWidthProperty =
+  | GlobalKeywords
   | LineWidth
   | [LineWidth, LineWidth]
   | [LineWidth, LineWidth, LineWidth]
   | [LineWidth, LineWidth, LineWidth, LineWidth];
-export type BottomProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type BoxDecorationBreakProperty = 'slice' | 'clone';
+export type BottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type BoxDecorationBreakPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'slice'
+  | 'clone';
+export type BoxDecorationBreakProperty = GlobalKeywords | 'slice' | 'clone';
 export type BoxShadowProperty = string;
-export type BoxSizingProperty = 'content-box' | 'border-box';
+export type BoxSizingPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'content-box'
+  | 'border-box';
+export type BoxSizingProperty = GlobalKeywords | 'content-box' | 'border-box';
+export type BreakAfterPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'page'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso'
+  | 'avoid-column'
+  | 'column'
+  | 'avoid-region'
+  | 'region';
 export type BreakAfterProperty =
+  | GlobalKeywords
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'page'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso'
+  | 'avoid-column'
+  | 'column'
+  | 'avoid-region'
+  | 'region';
+export type BreakBeforePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'avoid'
   | 'avoid-page'
@@ -2279,6 +2403,7 @@ export type BreakAfterProperty =
   | 'avoid-region'
   | 'region';
 export type BreakBeforeProperty =
+  | GlobalKeywords
   | 'auto'
   | 'avoid'
   | 'avoid-page'
@@ -2291,29 +2416,85 @@ export type BreakBeforeProperty =
   | 'column'
   | 'avoid-region'
   | 'region';
-export type BreakInsideProperty = 'auto' | 'avoid' | 'avoid-page' | 'avoid-column' | 'avoid-region';
-export type CaptionSideProperty =
+export type BreakInsidePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'avoid-column'
+  | 'avoid-region';
+export type BreakInsideProperty =
+  | GlobalKeywords
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'avoid-column'
+  | 'avoid-region';
+export type CaptionSidePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'top'
   | 'bottom'
   | 'block-start'
   | 'block-end'
   | 'inline-start'
   | 'inline-end';
-export type CaretColorProperty = 'auto' | Color;
-export type ClearProperty = 'none' | 'left' | 'right' | 'both' | 'inline-start' | 'inline-end';
-export type ClipProperty = Shape | 'auto';
+export type CaptionSideProperty =
+  | GlobalKeywords
+  | 'top'
+  | 'bottom'
+  | 'block-start'
+  | 'block-end'
+  | 'inline-start'
+  | 'inline-end';
+export type CaretColorProperty = GlobalKeywords | 'auto' | Color;
+export type ClearPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'left'
+  | 'right'
+  | 'both'
+  | 'inline-start'
+  | 'inline-end';
+export type ClearProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'left'
+  | 'right'
+  | 'both'
+  | 'inline-start'
+  | 'inline-end';
+export type ClipProperty = GlobalKeywords | Shape | 'auto';
 export type ClipPathProperty =
+  | GlobalKeywords
   | ClipSource
   | GeometryBox
   | BasicShape
   | [BasicShape, GeometryBox]
   | 'none';
-export type ColorProperty = Color;
-export type ColorAdjustProperty = 'economy' | 'exact';
-export type ColumnCountProperty = Integer | 'auto';
-export type ColumnFillProperty = 'auto' | 'balance' | 'balance-all';
-export type ColumnGapProperty<TLength = Length> = 'normal' | LengthPercentage<TLength>;
+export type ColorProperty = GlobalKeywords | Color;
+export type ColorAdjustPropertyCombined = 'inherit' | 'initial' | 'unset' | 'economy' | 'exact';
+export type ColorAdjustProperty = GlobalKeywords | 'economy' | 'exact';
+export type ColumnCountProperty = GlobalKeywords | Integer | 'auto';
+export type ColumnFillPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'balance'
+  | 'balance-all';
+export type ColumnFillProperty = GlobalKeywords | 'auto' | 'balance' | 'balance-all';
+export type ColumnGapProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'normal'
+  | LengthPercentage<TLength>;
 export type ColumnRuleProperty =
+  | GlobalKeywords
   | ColumnRuleColorProperty
   | ColumnRuleStyleProperty
   | [ColumnRuleStyleProperty, ColumnRuleColorProperty]
@@ -2321,8 +2502,11 @@ export type ColumnRuleProperty =
   | [ColumnRuleWidthProperty, ColumnRuleColorProperty]
   | [ColumnRuleWidthProperty, ColumnRuleStyleProperty]
   | [ColumnRuleWidthProperty, ColumnRuleStyleProperty, ColumnRuleColorProperty];
-export type ColumnRuleColorProperty = Color;
+export type ColumnRuleColorProperty = GlobalKeywords | Color;
 export type ColumnRuleStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'hidden'
   | 'dotted'
@@ -2333,19 +2517,29 @@ export type ColumnRuleStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type ColumnRuleStyleProperty = BorderStyleProperty;
-export type ColumnRuleWidthProperty = BorderWidthProperty;
-export type ColumnSpanProperty = 'none' | 'all';
-export type ColumnWidthProperty<TLength = Length> = TLength | 'auto';
+export type ColumnRuleStyleProperty = GlobalKeywords | BorderStyleProperty;
+export type ColumnRuleWidthProperty = GlobalKeywords | BorderWidthProperty;
+export type ColumnSpanPropertyCombined = 'inherit' | 'initial' | 'unset' | 'none' | 'all';
+export type ColumnSpanProperty = GlobalKeywords | 'none' | 'all';
+export type ColumnWidthProperty<TLength = Length> = GlobalKeywords | TLength | 'auto';
 export type ColumnsProperty =
+  | GlobalKeywords
   | ColumnCountProperty
   | ColumnWidthProperty
   | [ColumnWidthProperty, ColumnCountProperty];
 export type ContentProperty = string;
-export type CounterIncrementProperty = CustomIdent | [CustomIdent, Integer] | 'none';
-export type CounterResetProperty = CustomIdent | [CustomIdent, Integer] | 'none';
-export type DirectionProperty = 'ltr' | 'rtl';
+export type CounterIncrementProperty =
+  | GlobalKeywords
+  | CustomIdent
+  | [CustomIdent, Integer]
+  | 'none';
+export type CounterResetProperty = GlobalKeywords | CustomIdent | [CustomIdent, Integer] | 'none';
+export type DirectionPropertyCombined = 'inherit' | 'initial' | 'unset' | 'ltr' | 'rtl';
+export type DirectionProperty = GlobalKeywords | 'ltr' | 'rtl';
 export type DisplayPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'flow'
   | 'flow-root'
   | 'table'
@@ -2405,6 +2599,7 @@ export type DisplayPropertyCombined =
   | 'inline-flex'
   | 'inline-grid';
 export type DisplayProperty =
+  | GlobalKeywords
   | DisplayInside
   | DisplayOutside
   | [DisplayOutside, DisplayInside]
@@ -2412,18 +2607,36 @@ export type DisplayProperty =
   | DisplayInternal
   | DisplayBox
   | DisplayLegacy;
-export type EmptyCellsProperty = 'show' | 'hide';
-export type FilterProperty = 'none' | FilterFunctionList;
+export type EmptyCellsPropertyCombined = 'inherit' | 'initial' | 'unset' | 'show' | 'hide';
+export type EmptyCellsProperty = GlobalKeywords | 'show' | 'hide';
+export type FilterProperty = GlobalKeywords | 'none' | FilterFunctionList;
 export type FlexProperty =
+  | GlobalKeywords
   | 'none'
   | FlexBasisProperty
   | FlexGrowProperty
   | [FlexGrowProperty, FlexBasisProperty]
   | [FlexGrowProperty, FlexShrinkProperty]
   | [FlexGrowProperty, FlexShrinkProperty, FlexBasisProperty];
-export type FlexBasisProperty = 'content' | WidthProperty;
-export type FlexDirectionProperty = 'row' | 'row-reverse' | 'column' | 'column-reverse';
+export type FlexBasisProperty = GlobalKeywords | 'content' | WidthProperty;
+export type FlexDirectionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'row'
+  | 'row-reverse'
+  | 'column'
+  | 'column-reverse';
+export type FlexDirectionProperty =
+  | GlobalKeywords
+  | 'row'
+  | 'row-reverse'
+  | 'column'
+  | 'column-reverse';
 export type FlexFlowPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'nowrap'
   | 'wrap'
   | 'wrap-reverse'
@@ -2444,30 +2657,92 @@ export type FlexFlowPropertyCombined =
   | 'column-reverse wrap'
   | 'column-reverse wrap-reverse';
 export type FlexFlowProperty =
+  | GlobalKeywords
   | FlexWrapProperty
   | FlexDirectionProperty
   | [FlexDirectionProperty, FlexWrapProperty];
-export type FlexGrowProperty = number;
-export type FlexShrinkProperty = number;
-export type FlexWrapProperty = 'nowrap' | 'wrap' | 'wrap-reverse';
-export type FloatProperty = 'left' | 'right' | 'none' | 'inline-start' | 'inline-end';
+export type FlexGrowProperty = GlobalKeywords | number;
+export type FlexShrinkProperty = GlobalKeywords | number;
+export type FlexWrapPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'nowrap'
+  | 'wrap'
+  | 'wrap-reverse';
+export type FlexWrapProperty = GlobalKeywords | 'nowrap' | 'wrap' | 'wrap-reverse';
+export type FloatPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'left'
+  | 'right'
+  | 'none'
+  | 'inline-start'
+  | 'inline-end';
+export type FloatProperty =
+  | GlobalKeywords
+  | 'left'
+  | 'right'
+  | 'none'
+  | 'inline-start'
+  | 'inline-end';
 export type FontProperty = string;
 export type FontFamilyProperty = string;
 export type FontFeatureSettingsProperty = string;
-export type FontKerningProperty = 'auto' | 'normal' | 'none';
-export type FontLanguageOverrideProperty = 'normal' | string;
-export type FontOpticalSizingProperty = 'auto' | 'none';
+export type FontKerningPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'normal'
+  | 'none';
+export type FontKerningProperty = GlobalKeywords | 'auto' | 'normal' | 'none';
+export type FontLanguageOverrideProperty = GlobalKeywords | 'normal' | string;
+export type FontOpticalSizingPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'none';
+export type FontOpticalSizingProperty = GlobalKeywords | 'auto' | 'none';
 export type FontSizeProperty<TLength = Length> =
+  | GlobalKeywords
   | AbsoluteSize
   | RelativeSize
   | LengthPercentage<TLength>;
-export type FontSizeAdjustProperty = 'none' | number;
-export type FontStretchProperty = FontStretchAbsolute;
-export type FontStyleProperty = 'normal' | 'italic' | 'oblique' | ['oblique', Angle];
-export type FontSynthesisProperty = 'none' | 'style' | 'weight' | ['weight', 'style'];
+export type FontSizeAdjustProperty = GlobalKeywords | 'none' | number;
+export type FontStretchProperty = GlobalKeywords | FontStretchAbsolute;
+export type FontStyleProperty =
+  | GlobalKeywords
+  | 'normal'
+  | 'italic'
+  | 'oblique'
+  | ['oblique', Angle];
+export type FontSynthesisPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'style'
+  | 'weight'
+  | 'weight style';
+export type FontSynthesisProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'style'
+  | 'weight'
+  | ['weight', 'style'];
 export type FontVariantProperty = string;
 export type FontVariantAlternatesProperty = string;
+export type FontVariantCapsPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'small-caps'
+  | 'all-small-caps'
+  | 'petite-caps'
+  | 'all-petite-caps'
+  | 'unicase'
+  | 'titling-caps';
 export type FontVariantCapsProperty =
+  | GlobalKeywords
   | 'normal'
   | 'small-caps'
   | 'all-small-caps'
@@ -2476,6 +2751,9 @@ export type FontVariantCapsProperty =
   | 'unicase'
   | 'titling-caps';
 export type FontVariantEastAsianPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'ruby'
   | 'full-width'
@@ -2519,6 +2797,7 @@ export type FontVariantEastAsianPropertyCombined =
   | 'traditional proportional-width'
   | 'traditional proportional-width ruby';
 export type FontVariantEastAsianProperty =
+  | GlobalKeywords
   | 'normal'
   | 'ruby'
   | EastAsianWidthValues
@@ -2528,6 +2807,9 @@ export type FontVariantEastAsianProperty =
   | [EastAsianVariantValues, EastAsianWidthValues]
   | [EastAsianVariantValues, EastAsianWidthValues, 'ruby'];
 export type FontVariantLigaturesPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'none'
   | 'contextual'
@@ -2611,6 +2893,7 @@ export type FontVariantLigaturesPropertyCombined =
   | 'no-common-ligatures no-discretionary-ligatures no-historical-ligatures contextual'
   | 'no-common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual';
 export type FontVariantLigaturesProperty =
+  | GlobalKeywords
   | 'normal'
   | 'none'
   | ContextualAltValues
@@ -2629,6 +2912,9 @@ export type FontVariantLigaturesProperty =
   | [CommonLigValues, DiscretionaryLigValues, HistoricalLigValues]
   | [CommonLigValues, DiscretionaryLigValues, HistoricalLigValues, ContextualAltValues];
 export type FontVariantNumericPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'slashed-zero'
   | 'ordinal'
@@ -2738,6 +3024,7 @@ export type FontVariantNumericPropertyCombined =
   | 'oldstyle-nums tabular-nums stacked-fractions ordinal'
   | 'oldstyle-nums tabular-nums stacked-fractions ordinal slashed-zero';
 export type FontVariantNumericProperty =
+  | GlobalKeywords
   | 'normal'
   | 'slashed-zero'
   | 'ordinal'
@@ -2770,30 +3057,64 @@ export type FontVariantNumericProperty =
   | [NumericFigureValues, NumericSpacingValues, NumericFractionValues, 'slashed-zero']
   | [NumericFigureValues, NumericSpacingValues, NumericFractionValues, 'ordinal']
   | [NumericFigureValues, NumericSpacingValues, NumericFractionValues, 'ordinal', 'slashed-zero'];
-export type FontVariantPositionProperty = 'normal' | 'sub' | 'super';
-export type FontWeightProperty = FontWeightAbsolute | 'bolder' | 'lighter';
-export type GapProperty = RowGapProperty | [RowGapProperty, ColumnGapProperty];
+export type FontVariantPositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'sub'
+  | 'super';
+export type FontVariantPositionProperty = GlobalKeywords | 'normal' | 'sub' | 'super';
+export type FontWeightProperty = GlobalKeywords | FontWeightAbsolute | 'bolder' | 'lighter';
+export type GapProperty = GlobalKeywords | RowGapProperty | [RowGapProperty, ColumnGapProperty];
 export type GridProperty = string;
 export type GridAreaProperty = string;
-export type GridAutoColumnsProperty = TrackSize;
+export type GridAutoColumnsProperty = GlobalKeywords | TrackSize;
+export type GridAutoFlowPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'dense'
+  | 'row'
+  | 'row dense'
+  | 'column'
+  | 'column dense';
 export type GridAutoFlowProperty =
+  | GlobalKeywords
   | 'dense'
   | 'row'
   | ['row', 'dense']
   | 'column'
   | ['column', 'dense'];
-export type GridAutoRowsProperty = TrackSize;
+export type GridAutoRowsProperty = GlobalKeywords | TrackSize;
 export type GridColumnProperty = string;
-export type GridColumnEndProperty = GridLine;
-export type GridColumnStartProperty = GridLine;
+export type GridColumnEndProperty = GlobalKeywords | GridLine;
+export type GridColumnStartProperty = GlobalKeywords | GridLine;
 export type GridRowProperty = string;
-export type GridRowEndProperty = GridLine;
-export type GridRowStartProperty = GridLine;
+export type GridRowEndProperty = GlobalKeywords | GridLine;
+export type GridRowStartProperty = GlobalKeywords | GridLine;
 export type GridTemplateProperty = string;
-export type GridTemplateAreasProperty = 'none' | string;
-export type GridTemplateColumnsProperty = 'none' | TrackList | AutoTrackList;
-export type GridTemplateRowsProperty = 'none' | TrackList | AutoTrackList;
+export type GridTemplateAreasProperty = GlobalKeywords | 'none' | string;
+export type GridTemplateColumnsProperty = GlobalKeywords | 'none' | TrackList | AutoTrackList;
+export type GridTemplateRowsProperty = GlobalKeywords | 'none' | TrackList | AutoTrackList;
+export type HangingPunctuationPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'last'
+  | 'force-end'
+  | 'force-end last'
+  | 'allow-end'
+  | 'allow-end last'
+  | 'first'
+  | 'first last'
+  | 'first force-end'
+  | 'first force-end last'
+  | 'first allow-end'
+  | 'first allow-end last';
 export type HangingPunctuationProperty =
+  | GlobalKeywords
   | 'none'
   | 'last'
   | 'force-end'
@@ -2807,6 +3128,7 @@ export type HangingPunctuationProperty =
   | ['first', 'allow-end']
   | ['first', 'allow-end', 'last'];
 export type HeightProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | [TLength, 'border-box']
   | [TLength, 'content-box']
@@ -2818,16 +3140,33 @@ export type HeightProperty<TLength = Length> =
   | 'max-content'
   | 'fit-content'
   | 'auto';
-export type HyphensProperty = 'none' | 'manual' | 'auto';
-export type ImageOrientationProperty = 'from-image' | Angle | 'flip' | [Angle, 'flip'];
-export type ImageRenderingProperty = 'auto' | 'crisp-edges' | 'pixelated';
-export type InlineSizeProperty = WidthProperty;
-export type InsetBlockEndProperty = LeftProperty;
-export type InsetBlockStartProperty = LeftProperty;
-export type InsetInlineEndProperty = LeftProperty;
-export type InsetInlineStartProperty = LeftProperty;
-export type IsolationProperty = 'auto' | 'isolate';
+export type HyphensPropertyCombined = 'inherit' | 'initial' | 'unset' | 'none' | 'manual' | 'auto';
+export type HyphensProperty = GlobalKeywords | 'none' | 'manual' | 'auto';
+export type ImageOrientationProperty =
+  | GlobalKeywords
+  | 'from-image'
+  | Angle
+  | 'flip'
+  | [Angle, 'flip'];
+export type ImageRenderingPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'crisp-edges'
+  | 'pixelated';
+export type ImageRenderingProperty = GlobalKeywords | 'auto' | 'crisp-edges' | 'pixelated';
+export type InlineSizeProperty = GlobalKeywords | WidthProperty;
+export type InsetBlockEndProperty = GlobalKeywords | LeftProperty;
+export type InsetBlockStartProperty = GlobalKeywords | LeftProperty;
+export type InsetInlineEndProperty = GlobalKeywords | LeftProperty;
+export type InsetInlineStartProperty = GlobalKeywords | LeftProperty;
+export type IsolationPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'isolate';
+export type IsolationProperty = GlobalKeywords | 'auto' | 'isolate';
 export type JustifyContentPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'space-between'
   | 'space-around'
@@ -2855,6 +3194,7 @@ export type JustifyContentPropertyCombined =
   | 'safe left'
   | 'safe right';
 export type JustifyContentProperty =
+  | GlobalKeywords
   | 'normal'
   | ContentDistribution
   | ContentPosition
@@ -2864,6 +3204,9 @@ export type JustifyContentProperty =
   | [OverflowPosition, 'left']
   | [OverflowPosition, 'right'];
 export type JustifyItemsPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'stretch'
   | 'baseline'
@@ -2901,6 +3244,7 @@ export type JustifyItemsPropertyCombined =
   | 'legacy right'
   | 'legacy center';
 export type JustifyItemsProperty =
+  | GlobalKeywords
   | 'normal'
   | 'stretch'
   | BaselinePosition
@@ -2915,6 +3259,9 @@ export type JustifyItemsProperty =
   | ['legacy', 'right']
   | ['legacy', 'center'];
 export type JustifySelfPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'normal'
   | 'stretch'
@@ -2949,6 +3296,7 @@ export type JustifySelfPropertyCombined =
   | 'safe left'
   | 'safe right';
 export type JustifySelfProperty =
+  | GlobalKeywords
   | 'auto'
   | 'normal'
   | 'stretch'
@@ -2959,11 +3307,25 @@ export type JustifySelfProperty =
   | [OverflowPosition, SelfPosition]
   | [OverflowPosition, 'left']
   | [OverflowPosition, 'right'];
-export type LeftProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type LetterSpacingProperty<TLength = Length> = 'normal' | TLength;
-export type LineBreakProperty = 'auto' | 'loose' | 'normal' | 'strict';
-export type LineHeightProperty<TLength = Length> = 'normal' | number | TLength | Percentage;
+export type LeftProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type LetterSpacingProperty<TLength = Length> = GlobalKeywords | 'normal' | TLength;
+export type LineBreakPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'loose'
+  | 'normal'
+  | 'strict';
+export type LineBreakProperty = GlobalKeywords | 'auto' | 'loose' | 'normal' | 'strict';
+export type LineHeightProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'normal'
+  | number
+  | TLength
+  | Percentage;
 export type ListStyleProperty =
+  | GlobalKeywords
   | ListStyleImageProperty
   | ListStylePositionProperty
   | [ListStylePositionProperty, ListStyleImageProperty]
@@ -2971,18 +3333,24 @@ export type ListStyleProperty =
   | [ListStyleTypeProperty, ListStyleImageProperty]
   | [ListStyleTypeProperty, ListStylePositionProperty]
   | [ListStyleTypeProperty, ListStylePositionProperty, ListStyleImageProperty];
-export type ListStyleImageProperty = Url | 'none';
-export type ListStylePositionProperty = 'inside' | 'outside';
-export type ListStyleTypeProperty = CounterStyle | string | 'none';
-export type MarginProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type MarginBlockEndProperty = MarginLeftProperty;
-export type MarginBlockStartProperty = MarginLeftProperty;
-export type MarginBottomProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type MarginInlineEndProperty = MarginLeftProperty;
-export type MarginInlineStartProperty = MarginLeftProperty;
-export type MarginLeftProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type MarginRightProperty<TLength = Length> = TLength | Percentage | 'auto';
-export type MarginTopProperty<TLength = Length> = TLength | Percentage | 'auto';
+export type ListStyleImageProperty = GlobalKeywords | Url | 'none';
+export type ListStylePositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'inside'
+  | 'outside';
+export type ListStylePositionProperty = GlobalKeywords | 'inside' | 'outside';
+export type ListStyleTypeProperty = GlobalKeywords | CounterStyle | string | 'none';
+export type MarginProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginBlockEndProperty = GlobalKeywords | MarginLeftProperty;
+export type MarginBlockStartProperty = GlobalKeywords | MarginLeftProperty;
+export type MarginBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginInlineEndProperty = GlobalKeywords | MarginLeftProperty;
+export type MarginInlineStartProperty = GlobalKeywords | MarginLeftProperty;
+export type MarginLeftProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginRightProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginTopProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
 export type MaskProperty = string;
 export type MaskClipProperty = string;
 export type MaskCompositeProperty = string;
@@ -2992,8 +3360,10 @@ export type MaskOriginProperty = string;
 export type MaskPositionProperty = string;
 export type MaskRepeatProperty = string;
 export type MaskSizeProperty = string;
-export type MaskTypeProperty = 'luminance' | 'alpha';
+export type MaskTypePropertyCombined = 'inherit' | 'initial' | 'unset' | 'luminance' | 'alpha';
+export type MaskTypeProperty = GlobalKeywords | 'luminance' | 'alpha';
 export type MaxHeightProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | Percentage
   | 'none'
@@ -3002,6 +3372,7 @@ export type MaxHeightProperty<TLength = Length> =
   | 'fit-content'
   | 'fill-available';
 export type MaxWidthProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | Percentage
   | 'none'
@@ -3009,8 +3380,9 @@ export type MaxWidthProperty<TLength = Length> =
   | 'min-content'
   | 'fit-content'
   | 'fill-available';
-export type MinBlockSizeProperty = MinWidthProperty;
+export type MinBlockSizeProperty = GlobalKeywords | MinWidthProperty;
 export type MinHeightProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | Percentage
   | 'auto'
@@ -3018,8 +3390,9 @@ export type MinHeightProperty<TLength = Length> =
   | 'min-content'
   | 'fit-content'
   | 'fill-available';
-export type MinInlineSizeProperty = MinWidthProperty;
+export type MinInlineSizeProperty = GlobalKeywords | MinWidthProperty;
 export type MinWidthProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | Percentage
   | 'auto'
@@ -3028,6 +3401,9 @@ export type MinWidthProperty<TLength = Length> =
   | 'fit-content'
   | 'fill-available';
 export type MixBlendModePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'multiply'
   | 'screen'
@@ -3044,19 +3420,38 @@ export type MixBlendModePropertyCombined =
   | 'saturation'
   | 'color'
   | 'luminosity';
-export type MixBlendModeProperty = BlendMode;
-export type ObjectFitProperty = 'fill' | 'contain' | 'cover' | 'none' | 'scale-down';
+export type MixBlendModeProperty = GlobalKeywords | BlendMode;
+export type ObjectFitPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'fill'
+  | 'contain'
+  | 'cover'
+  | 'none'
+  | 'scale-down';
+export type ObjectFitProperty =
+  | GlobalKeywords
+  | 'fill'
+  | 'contain'
+  | 'cover'
+  | 'none'
+  | 'scale-down';
 export type ObjectPositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'static'
   | 'relative'
   | 'absolute'
   | 'sticky'
   | 'fixed';
-export type ObjectPositionProperty = Position;
-export type OpacityProperty = number;
-export type OrderProperty = Integer;
-export type OrphansProperty = Integer;
+export type ObjectPositionProperty = GlobalKeywords | Position;
+export type OpacityProperty = GlobalKeywords | number;
+export type OrderProperty = GlobalKeywords | Integer;
+export type OrphansProperty = GlobalKeywords | Integer;
 export type OutlineProperty =
+  | GlobalKeywords
   | OutlineWidthProperty
   | OutlineStyleProperty
   | [OutlineStyleProperty, OutlineWidthProperty]
@@ -3064,9 +3459,12 @@ export type OutlineProperty =
   | [OutlineColorProperty, OutlineWidthProperty]
   | [OutlineColorProperty, OutlineStyleProperty]
   | [OutlineColorProperty, OutlineStyleProperty, OutlineWidthProperty];
-export type OutlineColorProperty = Color | 'invert';
-export type OutlineOffsetProperty<TLength = Length> = TLength;
+export type OutlineColorProperty = GlobalKeywords | Color | 'invert';
+export type OutlineOffsetProperty<TLength = Length> = GlobalKeywords | TLength;
 export type OutlineStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'none'
   | 'hidden'
@@ -3078,22 +3476,78 @@ export type OutlineStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type OutlineStyleProperty = 'auto' | BorderStyleProperty;
-export type OutlineWidthProperty = LineWidth;
-export type OverflowProperty = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
-export type OverflowWrapProperty = 'normal' | 'break-word';
-export type OverflowXProperty = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
-export type OverflowYProperty = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
-export type PaddingProperty<TLength = Length> = TLength | Percentage;
-export type PaddingBlockEndProperty = PaddingLeftProperty;
-export type PaddingBlockStartProperty = PaddingLeftProperty;
-export type PaddingBottomProperty<TLength = Length> = TLength | Percentage;
-export type PaddingInlineEndProperty = PaddingLeftProperty;
-export type PaddingInlineStartProperty = PaddingLeftProperty;
-export type PaddingLeftProperty<TLength = Length> = TLength | Percentage;
-export type PaddingRightProperty<TLength = Length> = TLength | Percentage;
-export type PaddingTopProperty<TLength = Length> = TLength | Percentage;
+export type OutlineStyleProperty = GlobalKeywords | 'auto' | BorderStyleProperty;
+export type OutlineWidthProperty = GlobalKeywords | LineWidth;
+export type OverflowPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'visible'
+  | 'hidden'
+  | 'clip'
+  | 'scroll'
+  | 'auto';
+export type OverflowProperty = GlobalKeywords | 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
+export type OverflowWrapPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'break-word';
+export type OverflowWrapProperty = GlobalKeywords | 'normal' | 'break-word';
+export type OverflowXPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'visible'
+  | 'hidden'
+  | 'clip'
+  | 'scroll'
+  | 'auto';
+export type OverflowXProperty = GlobalKeywords | 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
+export type OverflowYPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'visible'
+  | 'hidden'
+  | 'clip'
+  | 'scroll'
+  | 'auto';
+export type OverflowYProperty = GlobalKeywords | 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
+export type PaddingProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingBlockEndProperty = GlobalKeywords | PaddingLeftProperty;
+export type PaddingBlockStartProperty = GlobalKeywords | PaddingLeftProperty;
+export type PaddingBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingInlineEndProperty = GlobalKeywords | PaddingLeftProperty;
+export type PaddingInlineStartProperty = GlobalKeywords | PaddingLeftProperty;
+export type PaddingLeftProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingRightProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingTopProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PageBreakAfterPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'always'
+  | 'avoid'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso';
 export type PageBreakAfterProperty =
+  | GlobalKeywords
+  | 'auto'
+  | 'always'
+  | 'avoid'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso';
+export type PageBreakBeforePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'always'
   | 'avoid'
@@ -3102,6 +3556,7 @@ export type PageBreakAfterProperty =
   | 'recto'
   | 'verso';
 export type PageBreakBeforeProperty =
+  | GlobalKeywords
   | 'auto'
   | 'always'
   | 'avoid'
@@ -3109,16 +3564,23 @@ export type PageBreakBeforeProperty =
   | 'right'
   | 'recto'
   | 'verso';
-export type PageBreakInsideProperty = 'auto' | 'avoid';
-export type PerspectiveProperty<TLength = Length> = 'none' | TLength;
+export type PageBreakInsidePropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'avoid';
+export type PageBreakInsideProperty = GlobalKeywords | 'auto' | 'avoid';
+export type PerspectiveProperty<TLength = Length> = GlobalKeywords | 'none' | TLength;
 export type PerspectiveOriginPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'static'
   | 'relative'
   | 'absolute'
   | 'sticky'
   | 'fixed';
-export type PerspectiveOriginProperty = Position;
+export type PerspectiveOriginProperty = GlobalKeywords | Position;
 export type PlaceContentPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'normal normal'
   | 'normal space-between'
@@ -3150,9 +3612,13 @@ export type PlaceContentPropertyCombined =
   | 'stretch space-evenly'
   | 'stretch stretch';
 export type PlaceContentProperty =
+  | GlobalKeywords
   | AlignContentProperty
   | [AlignContentProperty, JustifyContentProperty];
 export type PlaceItemsPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'normal'
   | 'normal normal'
   | 'normal stretch'
@@ -3161,8 +3627,26 @@ export type PlaceItemsPropertyCombined =
   | 'stretch normal'
   | 'stretch stretch'
   | 'stretch legacy';
-export type PlaceItemsProperty = AlignItemsProperty | [AlignItemsProperty, JustifyItemsProperty];
+export type PlaceItemsProperty =
+  | GlobalKeywords
+  | AlignItemsProperty
+  | [AlignItemsProperty, JustifyItemsProperty];
+export type PointerEventsPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'none'
+  | 'visiblePainted'
+  | 'visibleFill'
+  | 'visibleStroke'
+  | 'visible'
+  | 'painted'
+  | 'fill'
+  | 'stroke'
+  | 'all';
 export type PointerEventsProperty =
+  | GlobalKeywords
   | 'auto'
   | 'none'
   | 'visiblePainted'
@@ -3174,27 +3658,86 @@ export type PointerEventsProperty =
   | 'stroke'
   | 'all'
   | 'inherit';
-export type PositionProperty = 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
-export type QuotesProperty = 'none' | [string, string];
-export type ResizeProperty = 'none' | 'both' | 'horizontal' | 'vertical' | 'block' | 'inline';
-export type RightProperty<TLength = Length> = TLength | Percentage | 'auto';
+export type PositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'static'
+  | 'relative'
+  | 'absolute'
+  | 'sticky'
+  | 'fixed';
+export type PositionProperty =
+  | GlobalKeywords
+  | 'static'
+  | 'relative'
+  | 'absolute'
+  | 'sticky'
+  | 'fixed';
+export type QuotesProperty = GlobalKeywords | 'none' | [string, string];
+export type ResizePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'both'
+  | 'horizontal'
+  | 'vertical'
+  | 'block'
+  | 'inline';
+export type ResizeProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'both'
+  | 'horizontal'
+  | 'vertical'
+  | 'block'
+  | 'inline';
+export type RightProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
 export type RotateProperty =
+  | GlobalKeywords
   | 'none'
   | Angle
   | ['x', Angle]
   | ['y', Angle]
   | ['z', Angle]
   | [number, number, number, Angle];
-export type RowGapProperty<TLength = Length> = 'normal' | LengthPercentage<TLength>;
-export type ScaleProperty = 'none' | number | [number, number] | [number, number, number];
-export type ScrollBehaviorProperty = 'auto' | 'smooth';
-export type ScrollSnapTypeProperty = 'none' | 'mandatory' | 'proximity';
-export type ShapeImageThresholdProperty = number;
-export type ShapeMarginProperty<TLength = Length> = LengthPercentage<TLength>;
-export type ShapeOutsideProperty = 'none' | BasicShape | ShapeBox | [ShapeBox, BasicShape] | Image;
-export type TabSizeProperty<TLength = Length> = Integer | TLength;
-export type TableLayoutProperty = 'auto' | 'fixed';
-export type TextAlignProperty =
+export type RowGapProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'normal'
+  | LengthPercentage<TLength>;
+export type ScaleProperty =
+  | GlobalKeywords
+  | 'none'
+  | number
+  | [number, number]
+  | [number, number, number];
+export type ScrollBehaviorPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'smooth';
+export type ScrollBehaviorProperty = GlobalKeywords | 'auto' | 'smooth';
+export type ScrollSnapTypePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'mandatory'
+  | 'proximity';
+export type ScrollSnapTypeProperty = GlobalKeywords | 'none' | 'mandatory' | 'proximity';
+export type ShapeImageThresholdProperty = GlobalKeywords | number;
+export type ShapeMarginProperty<TLength = Length> = GlobalKeywords | LengthPercentage<TLength>;
+export type ShapeOutsideProperty =
+  | GlobalKeywords
+  | 'none'
+  | BasicShape
+  | ShapeBox
+  | [ShapeBox, BasicShape]
+  | Image;
+export type TabSizeProperty<TLength = Length> = GlobalKeywords | Integer | TLength;
+export type TableLayoutPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'fixed';
+export type TableLayoutProperty = GlobalKeywords | 'auto' | 'fixed';
+export type TextAlignPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'start'
   | 'end'
   | 'left'
@@ -3202,7 +3745,19 @@ export type TextAlignProperty =
   | 'center'
   | 'justify'
   | 'match-parent';
-export type TextAlignLastProperty =
+export type TextAlignProperty =
+  | GlobalKeywords
+  | 'start'
+  | 'end'
+  | 'left'
+  | 'right'
+  | 'center'
+  | 'justify'
+  | 'match-parent';
+export type TextAlignLastPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'auto'
   | 'start'
   | 'end'
@@ -3210,8 +3765,23 @@ export type TextAlignLastProperty =
   | 'right'
   | 'center'
   | 'justify';
-export type TextCombineUprightProperty = 'none' | 'all' | 'digits' | ['digits', Integer];
+export type TextAlignLastProperty =
+  | GlobalKeywords
+  | 'auto'
+  | 'start'
+  | 'end'
+  | 'left'
+  | 'right'
+  | 'center'
+  | 'justify';
+export type TextCombineUprightProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'all'
+  | 'digits'
+  | ['digits', Integer];
 export type TextDecorationProperty =
+  | GlobalKeywords
   | TextDecorationColorProperty
   | TextDecorationStyleProperty
   | [TextDecorationStyleProperty, TextDecorationColorProperty]
@@ -3219,8 +3789,29 @@ export type TextDecorationProperty =
   | [TextDecorationLineProperty, TextDecorationColorProperty]
   | [TextDecorationLineProperty, TextDecorationStyleProperty]
   | [TextDecorationLineProperty, TextDecorationStyleProperty, TextDecorationColorProperty];
-export type TextDecorationColorProperty = Color;
+export type TextDecorationColorProperty = GlobalKeywords | Color;
+export type TextDecorationLinePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'blink'
+  | 'line-through'
+  | 'line-through blink'
+  | 'overline'
+  | 'overline blink'
+  | 'overline line-through'
+  | 'overline line-through blink'
+  | 'underline'
+  | 'underline blink'
+  | 'underline line-through'
+  | 'underline line-through blink'
+  | 'underline overline'
+  | 'underline overline blink'
+  | 'underline overline line-through'
+  | 'underline overline line-through blink';
 export type TextDecorationLineProperty =
+  | GlobalKeywords
   | 'none'
   | 'blink'
   | 'line-through'
@@ -3237,18 +3828,44 @@ export type TextDecorationLineProperty =
   | ['underline', 'overline', 'blink']
   | ['underline', 'overline', 'line-through']
   | ['underline', 'overline', 'line-through', 'blink'];
-export type TextDecorationStyleProperty = 'solid' | 'double' | 'dotted' | 'dashed' | 'wavy';
+export type TextDecorationStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'solid'
+  | 'double'
+  | 'dotted'
+  | 'dashed'
+  | 'wavy';
+export type TextDecorationStyleProperty =
+  | GlobalKeywords
+  | 'solid'
+  | 'double'
+  | 'dotted'
+  | 'dashed'
+  | 'wavy';
 export type TextEmphasisProperty =
+  | GlobalKeywords
   | TextEmphasisColorProperty
   | TextEmphasisStyleProperty
   | [TextEmphasisStyleProperty, TextEmphasisColorProperty];
-export type TextEmphasisColorProperty = Color;
+export type TextEmphasisColorProperty = GlobalKeywords | Color;
+export type TextEmphasisPositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'over right'
+  | 'over left'
+  | 'under right'
+  | 'under left';
 export type TextEmphasisPositionProperty =
+  | GlobalKeywords
   | ['over', 'right']
   | ['over', 'left']
   | ['under', 'right']
   | ['under', 'left'];
 export type TextEmphasisStyleProperty =
+  | GlobalKeywords
   | 'none'
   | 'dot'
   | 'circle'
@@ -3269,34 +3886,124 @@ export type TextEmphasisStyleProperty =
   | ['open', 'sesame']
   | string;
 export type TextIndentProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, 'each-line']
   | [LengthPercentage<TLength>, 'hanging']
   | [LengthPercentage<TLength>, 'hanging', 'each-line'];
-export type TextJustifyProperty = 'auto' | 'inter-character' | 'inter-word' | 'none';
-export type TextOrientationProperty = 'mixed' | 'upright' | 'sideways';
-export type TextOverflowProperty = 'clip' | 'ellipsis' | string;
+export type TextJustifyPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'inter-character'
+  | 'inter-word'
+  | 'none';
+export type TextJustifyProperty =
+  | GlobalKeywords
+  | 'auto'
+  | 'inter-character'
+  | 'inter-word'
+  | 'none';
+export type TextOrientationPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'mixed'
+  | 'upright'
+  | 'sideways';
+export type TextOrientationProperty = GlobalKeywords | 'mixed' | 'upright' | 'sideways';
+export type TextOverflowProperty = GlobalKeywords | 'clip' | 'ellipsis' | string;
+export type TextRenderingPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'optimizeSpeed'
+  | 'optimizeLegibility'
+  | 'geometricPrecision';
 export type TextRenderingProperty =
+  | GlobalKeywords
   | 'auto'
   | 'optimizeSpeed'
   | 'optimizeLegibility'
   | 'geometricPrecision';
 export type TextShadowProperty = string;
-export type TextTransformProperty =
+export type TextTransformPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'none'
   | 'capitalize'
   | 'uppercase'
   | 'lowercase'
   | 'full-width';
+export type TextTransformProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'capitalize'
+  | 'uppercase'
+  | 'lowercase'
+  | 'full-width';
+export type TextUnderlinePositionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'left'
+  | 'right'
+  | 'under'
+  | 'under left'
+  | 'under right';
 export type TextUnderlinePositionProperty =
+  | GlobalKeywords
   | 'auto'
   | 'left'
   | 'right'
   | 'under'
   | ['under', 'left']
   | ['under', 'right'];
-export type TopProperty<TLength = Length> = TLength | Percentage | 'auto';
+export type TopProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type TouchActionPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'none'
+  | 'pinch-zoom'
+  | 'pan-y'
+  | 'pan-y pinch-zoom'
+  | 'pan-up'
+  | 'pan-up pinch-zoom'
+  | 'pan-down'
+  | 'pan-down pinch-zoom'
+  | 'pan-x'
+  | 'pan-x pinch-zoom'
+  | 'pan-x pan-y'
+  | 'pan-x pan-y pinch-zoom'
+  | 'pan-x pan-up'
+  | 'pan-x pan-up pinch-zoom'
+  | 'pan-x pan-down'
+  | 'pan-x pan-down pinch-zoom'
+  | 'pan-left'
+  | 'pan-left pinch-zoom'
+  | 'pan-left pan-y'
+  | 'pan-left pan-y pinch-zoom'
+  | 'pan-left pan-up'
+  | 'pan-left pan-up pinch-zoom'
+  | 'pan-left pan-down'
+  | 'pan-left pan-down pinch-zoom'
+  | 'pan-right'
+  | 'pan-right pinch-zoom'
+  | 'pan-right pan-y'
+  | 'pan-right pan-y pinch-zoom'
+  | 'pan-right pan-up'
+  | 'pan-right pan-up pinch-zoom'
+  | 'pan-right pan-down'
+  | 'pan-right pan-down pinch-zoom'
+  | 'manipulation';
 export type TouchActionProperty =
+  | GlobalKeywords
   | 'auto'
   | 'none'
   | 'pinch-zoom'
@@ -3331,9 +4038,17 @@ export type TouchActionProperty =
   | ['pan-right', 'pan-down']
   | ['pan-right', 'pan-down', 'pinch-zoom']
   | 'manipulation';
-export type TransformProperty = 'none' | TransformList;
-export type TransformBoxProperty = 'border-box' | 'fill-box' | 'view-box';
+export type TransformProperty = GlobalKeywords | 'none' | TransformList;
+export type TransformBoxPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'border-box'
+  | 'fill-box'
+  | 'view-box';
+export type TransformBoxProperty = GlobalKeywords | 'border-box' | 'fill-box' | 'view-box';
 export type TransformOriginProperty<TLength = Length> =
+  | GlobalKeywords
   | LengthPercentage<TLength>
   | 'left'
   | 'center'
@@ -3372,18 +4087,36 @@ export type TransformOriginProperty<TLength = Length> =
   | ['right', 'center', TLength]
   | ['right', 'bottom']
   | ['right', 'bottom', TLength];
-export type TransformStyleProperty = 'flat' | 'preserve-3d';
+export type TransformStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'flat'
+  | 'preserve-3d';
+export type TransformStyleProperty = GlobalKeywords | 'flat' | 'preserve-3d';
 export type TransitionProperty = string;
 export type TransitionDelayProperty = string;
 export type TransitionDurationProperty = string;
 export type TransitionPropertyProperty = string;
 export type TransitionTimingFunctionProperty = string;
 export type TranslateProperty<TLength = Length> =
+  | GlobalKeywords
   | 'none'
   | LengthPercentage<TLength>
   | [LengthPercentage<TLength>, LengthPercentage<TLength>]
   | [LengthPercentage<TLength>, LengthPercentage<TLength>, TLength];
+export type UnicodeBidiPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'embed'
+  | 'isolate'
+  | 'bidi-override'
+  | 'isolate-override'
+  | 'plaintext';
 export type UnicodeBidiProperty =
+  | GlobalKeywords
   | 'normal'
   | 'embed'
   | 'isolate'
@@ -3391,6 +4124,7 @@ export type UnicodeBidiProperty =
   | 'isolate-override'
   | 'plaintext';
 export type VerticalAlignProperty<TLength = Length> =
+  | GlobalKeywords
   | 'baseline'
   | 'sub'
   | 'super'
@@ -3401,10 +4135,33 @@ export type VerticalAlignProperty<TLength = Length> =
   | 'bottom'
   | Percentage
   | TLength;
-export type VisibilityProperty = 'visible' | 'hidden' | 'collapse';
-export type WhiteSpaceProperty = 'normal' | 'pre' | 'nowrap' | 'pre-wrap' | 'pre-line';
-export type WidowsProperty = Integer;
+export type VisibilityPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'visible'
+  | 'hidden'
+  | 'collapse';
+export type VisibilityProperty = GlobalKeywords | 'visible' | 'hidden' | 'collapse';
+export type WhiteSpacePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'pre'
+  | 'nowrap'
+  | 'pre-wrap'
+  | 'pre-line';
+export type WhiteSpaceProperty =
+  | GlobalKeywords
+  | 'normal'
+  | 'pre'
+  | 'nowrap'
+  | 'pre-wrap'
+  | 'pre-line';
+export type WidowsProperty = GlobalKeywords | Integer;
 export type WidthProperty<TLength = Length> =
+  | GlobalKeywords
   | TLength
   | [TLength, 'border-box']
   | [TLength, 'content-box']
@@ -3417,13 +4174,35 @@ export type WidthProperty<TLength = Length> =
   | 'fit-content'
   | 'auto';
 export type WillChangeProperty = string;
-export type WordBreakProperty = 'normal' | 'break-all' | 'keep-all' | 'break-word';
-export type WordSpacingProperty<TLength = Length> = 'normal' | LengthPercentage<TLength>;
-export type WordWrapProperty = 'normal' | 'break-word';
-export type WritingModeProperty =
+export type WordBreakPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'normal'
+  | 'break-all'
+  | 'keep-all'
+  | 'break-word';
+export type WordBreakProperty = GlobalKeywords | 'normal' | 'break-all' | 'keep-all' | 'break-word';
+export type WordSpacingProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'normal'
+  | LengthPercentage<TLength>;
+export type WordWrapPropertyCombined = 'inherit' | 'initial' | 'unset' | 'normal' | 'break-word';
+export type WordWrapProperty = GlobalKeywords | 'normal' | 'break-word';
+export type WritingModePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
   | 'horizontal-tb'
   | 'vertical-rl'
   | 'vertical-lr'
   | 'sideways-rl'
   | 'sideways-lr';
-export type ZIndexProperty = 'auto' | Integer;
+export type WritingModeProperty =
+  | GlobalKeywords
+  | 'horizontal-tb'
+  | 'vertical-rl'
+  | 'vertical-lr'
+  | 'sideways-rl'
+  | 'sideways-lr';
+export type ZIndexProperty = GlobalKeywords | 'auto' | Integer;

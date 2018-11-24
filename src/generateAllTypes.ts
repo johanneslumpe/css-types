@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { find, map } from 'lodash/fp';
+import { find, map, mapValues, reject, some } from 'lodash/fp';
 import properties from 'mdn-data/css/properties.json';
 import syntaxes from 'mdn-data/css/syntaxes.json';
 import * as path from 'path';
@@ -7,12 +7,18 @@ import rimraf from 'rimraf';
 import ts from 'typescript';
 import * as util from 'util';
 
-import { CSS_TYPES_FILE, LENGTH_TYPE_NAME, TYPES_BUILD_DIR } from './constants';
+import {
+  CSS_TYPES_FILE,
+  GLOBAL_KEYWORDS,
+  GLOBAL_KEYWORDS_DATA_TYPE,
+  LENGTH_TYPE_NAME,
+  TYPES_BUILD_DIR,
+} from './constants';
 import { customSyntaxes } from './customSyntaxes';
 import {
   generateBaseDataTypes,
-  generateTypesFromMdnData,
-} from './generateTypesFromMdnData';
+  generateTypesFromRawSyntaxes,
+} from './generateTypesFromRawSyntaxes';
 import {
   generateCombinedLengthType,
   generateUnitTypesSourceFiles,
@@ -36,7 +42,7 @@ export async function generateAllTypes() {
   // custom types to prevent invalid references
   // after removing function types
   const parsedCustomSyntaxes = parseRawSyntaxes(customSyntaxes);
-  const customTypes = generateTypesFromMdnData(parsedCustomSyntaxes, {
+  const customTypes = generateTypesFromRawSyntaxes(parsedCustomSyntaxes, {
     availableTypes: [
       ...map(unitType => generateUnitValueInterface(unitType.name), unitTypes),
       'i-s-value',
@@ -55,7 +61,7 @@ export async function generateAllTypes() {
   ]);
 
   const parsedSyntaxes = parseRawSyntaxes(syntaxes);
-  const syntaxTypes = generateTypesFromMdnData(parsedSyntaxes, {
+  const syntaxTypes = generateTypesFromRawSyntaxes(parsedSyntaxes, {
     blacklistPredicate: isSelectorKey,
     lookupFn: key => {
       // hacky solution to prevent inlining of number data type
@@ -65,9 +71,18 @@ export async function generateAllTypes() {
       return parsedCustomSyntaxes[key] || parsedSyntaxes[key];
     },
   });
-  const parsedPropertySyntaxes = parseRawSyntaxes(properties);
-  const propertyTypes = generateTypesFromMdnData(parsedPropertySyntaxes, {
-    availableTypes: syntaxTypes.typeKeys,
+
+  const parsedPropertySyntaxes = parseRawSyntaxes(
+    mapValues(
+      rawSyntax => ({
+        ...rawSyntax,
+        syntax: `<${GLOBAL_KEYWORDS_DATA_TYPE}> | ${rawSyntax.syntax}`,
+      }),
+      properties,
+    ),
+  );
+  const propertyTypes = generateTypesFromRawSyntaxes(parsedPropertySyntaxes, {
+    availableTypes: [...customTypes.typeKeys, ...syntaxTypes.typeKeys],
     blacklistPredicate: (key: string) => {
       if (isSelectorKey(key) || key.startsWith('media') || key === 'image') {
         return false;
@@ -89,6 +104,16 @@ export async function generateAllTypes() {
         parsedSyntaxes[key]
       );
     },
+    // We are prependig global keywords to every property syntax, resulting in
+    // those values being picked up when generating combined permutations,
+    // which we then have to strip out.
+    postprocessCombinedTypes: types =>
+      reject(
+        combinedType =>
+          !GLOBAL_KEYWORDS.includes(combinedType) &&
+          some(keyword => combinedType.includes(keyword), GLOBAL_KEYWORDS),
+        types,
+      ),
     typeSuffix: 'Property',
   });
 
@@ -125,11 +150,3 @@ export async function generateAllTypes() {
     ),
   );
 }
-
-// TODO
-
-// - generate master types for properties that contain the same keywords
-// - fold similar tuples into one
-// - handle single data-type with curly braces multiplier. doesn't seem to be repeated?!
-// - create color function utils (rgb, hsla, etc) from css grammar to be used within `color` type
-// - support finite version of `+` and `*`
