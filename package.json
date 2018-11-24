@@ -1,6 +1,6 @@
 {
   "name": "@johanneslumpe/css-types",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TypeScript CSS types and value helpers generated from MDN data",
   "main": "lib/index.js",
   "module": "es/index.js",
