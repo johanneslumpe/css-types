@@ -14,10 +14,16 @@
     "build": "npm run generate && tsc -p ./tsconfig.cjs.generated.json && tsc -p ./tsconfig.esm.generated.json",
     "prepare": "npm run build && npm run docs",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
+    "prerelease": "npm run lint && npm run test",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master",
     "docs": "typedoc ./generated --tsconfig ./tsconfig.cjs.generated.json --hideGenerator --readme none --theme markdown --out docs && npx ts-node stripDocPaths.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format",
+      "pre-push": "npm test"
+    }
   },
   "files": [
     "/lib",
@@ -37,12 +43,14 @@
     "@types/recursive-readdir": "^2.2.0",
     "@types/rimraf": "^2.0.2",
     "cli-progress": "^2.1.0",
+    "husky": "^1.2.0",
     "jest": "^23.6.0",
     "lodash": "^4.17.10",
     "mdn-data": "^2.0.0",
     "prettier": "^1.13.7",
     "recursive-readdir": "^2.2.2",
     "rimraf": "^2.6.2",
+    "standard-version": "^4.4.0",
     "ts-jest": "^23.0.1",
     "ts-node": "^7.0.1",
     "ts-node-dev": "^1.0.0-pre.26",
