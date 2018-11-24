@@ -46,7 +46,7 @@
 
 ▸ **ch**(value: *`number`*): [IChValue](../interfaces/_unittypes_.ichvalue.md)
 
-*Defined in [unitUtils.ts:32](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L32)*
+*Defined in [unitUtils.ts:32](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L32)*
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **cm**(value: *`number`*): [ICmValue](../interfaces/_unittypes_.icmvalue.md)
 
-*Defined in [unitUtils.ts:35](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L35)*
+*Defined in [unitUtils.ts:35](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L35)*
 
 **Parameters:**
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **deg**(value: *`number`*): [IDegValue](../interfaces/_unittypes_.idegvalue.md)
 
-*Defined in [unitUtils.ts:38](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L38)*
+*Defined in [unitUtils.ts:38](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L38)*
 
 **Parameters:**
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **dpcm**(value: *`number`*): [IDpcmValue](../interfaces/_unittypes_.idpcmvalue.md)
 
-*Defined in [unitUtils.ts:41](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L41)*
+*Defined in [unitUtils.ts:41](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L41)*
 
 **Parameters:**
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **dpi**(value: *`number`*): [IDpiValue](../interfaces/_unittypes_.idpivalue.md)
 
-*Defined in [unitUtils.ts:44](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L44)*
+*Defined in [unitUtils.ts:44](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L44)*
 
 **Parameters:**
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **dppx**(value: *`number`*): [IDppxValue](../interfaces/_unittypes_.idppxvalue.md)
 
-*Defined in [unitUtils.ts:47](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L47)*
+*Defined in [unitUtils.ts:47](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L47)*
 
 **Parameters:**
 
@@ -148,7 +148,7 @@ ___
 
 ▸ **em**(value: *`number`*): [IEmValue](../interfaces/_unittypes_.iemvalue.md)
 
-*Defined in [unitUtils.ts:50](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L50)*
+*Defined in [unitUtils.ts:50](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L50)*
 
 **Parameters:**
 
@@ -165,7 +165,7 @@ ___
 
 ▸ **ex**(value: *`number`*): [IExValue](../interfaces/_unittypes_.iexvalue.md)
 
-*Defined in [unitUtils.ts:53](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L53)*
+*Defined in [unitUtils.ts:53](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L53)*
 
 **Parameters:**
 
@@ -182,7 +182,7 @@ ___
 
 ▸ **fr**(value: *`number`*): [IFrValue](../interfaces/_unittypes_.ifrvalue.md)
 
-*Defined in [unitUtils.ts:56](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L56)*
+*Defined in [unitUtils.ts:56](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L56)*
 
 **Parameters:**
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **grad**(value: *`number`*): [IGradValue](../interfaces/_unittypes_.igradvalue.md)
 
-*Defined in [unitUtils.ts:59](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L59)*
+*Defined in [unitUtils.ts:59](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L59)*
 
 **Parameters:**
 
@@ -216,7 +216,7 @@ ___
 
 ▸ **hz**(value: *`number`*): [IHzValue](../interfaces/_unittypes_.ihzvalue.md)
 
-*Defined in [unitUtils.ts:62](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L62)*
+*Defined in [unitUtils.ts:62](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L62)*
 
 **Parameters:**
 
@@ -233,7 +233,7 @@ ___
 
 ▸ **inch**(value: *`number`*): [IInchValue](../interfaces/_unittypes_.iinchvalue.md)
 
-*Defined in [unitUtils.ts:65](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L65)*
+*Defined in [unitUtils.ts:65](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L65)*
 
 **Parameters:**
 
@@ -250,7 +250,7 @@ ___
 
 ▸ **khz**(value: *`number`*): [IKhzValue](../interfaces/_unittypes_.ikhzvalue.md)
 
-*Defined in [unitUtils.ts:68](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L68)*
+*Defined in [unitUtils.ts:68](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L68)*
 
 **Parameters:**
 
@@ -267,7 +267,7 @@ ___
 
 ▸ **mm**(value: *`number`*): [IMmValue](../interfaces/_unittypes_.immvalue.md)
 
-*Defined in [unitUtils.ts:71](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L71)*
+*Defined in [unitUtils.ts:71](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L71)*
 
 **Parameters:**
 
@@ -284,7 +284,7 @@ ___
 
 ▸ **ms**(value: *`number`*): [IMsValue](../interfaces/_unittypes_.imsvalue.md)
 
-*Defined in [unitUtils.ts:74](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L74)*
+*Defined in [unitUtils.ts:74](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L74)*
 
 **Parameters:**
 
@@ -301,7 +301,7 @@ ___
 
 ▸ **pc**(value: *`number`*): [IPcValue](../interfaces/_unittypes_.ipcvalue.md)
 
-*Defined in [unitUtils.ts:77](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L77)*
+*Defined in [unitUtils.ts:77](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L77)*
 
 **Parameters:**
 
@@ -318,7 +318,7 @@ ___
 
 ▸ **percentage**(value: *`number`*): [IPercentageValue](../interfaces/_unittypes_.ipercentagevalue.md)
 
-*Defined in [unitUtils.ts:80](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L80)*
+*Defined in [unitUtils.ts:80](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L80)*
 
 **Parameters:**
 
@@ -335,7 +335,7 @@ ___
 
 ▸ **pt**(value: *`number`*): [IPtValue](../interfaces/_unittypes_.iptvalue.md)
 
-*Defined in [unitUtils.ts:83](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L83)*
+*Defined in [unitUtils.ts:83](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L83)*
 
 **Parameters:**
 
@@ -352,7 +352,7 @@ ___
 
 ▸ **px**(value: *`number`*): [IPxValue](../interfaces/_unittypes_.ipxvalue.md)
 
-*Defined in [unitUtils.ts:86](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L86)*
+*Defined in [unitUtils.ts:86](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L86)*
 
 **Parameters:**
 
@@ -369,7 +369,7 @@ ___
 
 ▸ **q**(value: *`number`*): [IQValue](../interfaces/_unittypes_.iqvalue.md)
 
-*Defined in [unitUtils.ts:89](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L89)*
+*Defined in [unitUtils.ts:89](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L89)*
 
 **Parameters:**
 
@@ -386,7 +386,7 @@ ___
 
 ▸ **rad**(value: *`number`*): [IRadValue](../interfaces/_unittypes_.iradvalue.md)
 
-*Defined in [unitUtils.ts:92](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L92)*
+*Defined in [unitUtils.ts:92](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L92)*
 
 **Parameters:**
 
@@ -403,7 +403,7 @@ ___
 
 ▸ **rem**(value: *`number`*): [IRemValue](../interfaces/_unittypes_.iremvalue.md)
 
-*Defined in [unitUtils.ts:95](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L95)*
+*Defined in [unitUtils.ts:95](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L95)*
 
 **Parameters:**
 
@@ -420,7 +420,7 @@ ___
 
 ▸ **s**(value: *`number`*): [ISValue](../interfaces/_unittypes_.isvalue.md)
 
-*Defined in [unitUtils.ts:98](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L98)*
+*Defined in [unitUtils.ts:98](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L98)*
 
 **Parameters:**
 
@@ -437,7 +437,7 @@ ___
 
 ▸ **turn**(value: *`number`*): [ITurnValue](../interfaces/_unittypes_.iturnvalue.md)
 
-*Defined in [unitUtils.ts:101](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L101)*
+*Defined in [unitUtils.ts:101](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L101)*
 
 **Parameters:**
 
@@ -454,7 +454,7 @@ ___
 
 ▸ **vh**(value: *`number`*): [IVhValue](../interfaces/_unittypes_.ivhvalue.md)
 
-*Defined in [unitUtils.ts:104](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L104)*
+*Defined in [unitUtils.ts:104](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L104)*
 
 **Parameters:**
 
@@ -471,7 +471,7 @@ ___
 
 ▸ **vmax**(value: *`number`*): [IVmaxValue](../interfaces/_unittypes_.ivmaxvalue.md)
 
-*Defined in [unitUtils.ts:107](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L107)*
+*Defined in [unitUtils.ts:107](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L107)*
 
 **Parameters:**
 
@@ -488,7 +488,7 @@ ___
 
 ▸ **vmin**(value: *`number`*): [IVminValue](../interfaces/_unittypes_.ivminvalue.md)
 
-*Defined in [unitUtils.ts:110](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L110)*
+*Defined in [unitUtils.ts:110](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L110)*
 
 **Parameters:**
 
@@ -505,7 +505,7 @@ ___
 
 ▸ **vw**(value: *`number`*): [IVwValue](../interfaces/_unittypes_.ivwvalue.md)
 
-*Defined in [unitUtils.ts:113](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L113)*
+*Defined in [unitUtils.ts:113](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L113)*
 
 **Parameters:**
 
@@ -522,7 +522,7 @@ ___
 
 ▸ **x**(value: *`number`*): [IXValue](../interfaces/_unittypes_.ixvalue.md)
 
-*Defined in [unitUtils.ts:116](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitUtils.ts#L116)*
+*Defined in [unitUtils.ts:116](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L116)*
 
 **Parameters:**
 

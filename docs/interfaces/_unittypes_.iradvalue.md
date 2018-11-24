@@ -87,7 +87,7 @@ ___
 
 **● __rad_brand_type__**: *`never`*
 
-*Defined in [unitTypes.ts:62](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L62)*
+*Defined in [unitTypes.ts:62](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitTypes.ts#L62)*
 
 ___
 <a id="length"></a>

@@ -87,7 +87,7 @@ ___
 
 **● __vh_brand_type__**: *`never`*
 
-*Defined in [unitTypes.ts:74](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L74)*
+*Defined in [unitTypes.ts:74](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitTypes.ts#L74)*
 
 ___
 <a id="length"></a>

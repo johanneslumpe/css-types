@@ -87,7 +87,7 @@ ___
 
 **● __rem_brand_type__**: *`never`*
 
-*Defined in [unitTypes.ts:65](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L65)*
+*Defined in [unitTypes.ts:65](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitTypes.ts#L65)*
 
 ___
 <a id="length"></a>
