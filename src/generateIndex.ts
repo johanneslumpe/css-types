@@ -28,7 +28,6 @@ export function generateIndex(filenames: string[]) {
     filenames,
   );
 
-  // const export
   const updatedSource = ts.updateSourceFileNode(
     indexSource,
     exportDeclarations,

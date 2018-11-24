@@ -79,6 +79,7 @@ const generateTypesForKey = (
   value: INestedComponentArray,
 ) => {
   const usesLength = findDataTypeInTree(value, LENGTH_TYPE_NAME.toLowerCase());
+  const types = generateTypesNodes(value);
   return ts.createTypeAliasDeclaration(
     [],
     [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
@@ -92,7 +93,10 @@ const generateTypesForKey = (
           ),
         ]
       : [],
-    generateTypesNodes(value),
+    // There should never be a situtation where we have an array, which
+    // contains more then one item, because our root nodes should always be unions or tuples.
+    // If that is ever the case, then we have a bug.
+    Array.isArray(types) ? types[0] : types,
   );
 };
 
@@ -103,10 +107,67 @@ export const generateBaseDataTypes = (keysToIgnore: string[]) => [
   ),
 ];
 
+interface IGenerateCombinedTypesOptions {
+  parsedSyntax: RawToken[];
+  lookupFn: SyntaxLookupFn;
+  postprocessFn: CombinedTypePostprocessFn;
+  key: string;
+  typeSuffix?: string;
+}
+
+/**
+ * Generates combined types for syntaxes which only
+ * contain keywords and data types, which themselves
+ * only contain keywords and data types.
+ */
+function generateCombinedTypes({
+  parsedSyntax,
+  lookupFn,
+  postprocessFn,
+  key,
+  typeSuffix,
+}: IGenerateCombinedTypesOptions) {
+  if (
+    syntaxContainsDataTypes(parsedSyntax) &&
+    syntaxCanBeCollapsed(parsedSyntax, lookupFn)
+  ) {
+    const inlined = inlineDataTypes(parsedSyntax, lookupFn);
+    try {
+      const typeCombinations = generateTypeCombinations(
+        groupTokensByCombinatorPredence(convertRawTokensToComponents(inlined)),
+      );
+
+      // This should always be true but we still have to check
+      // to ensure type-safety
+      const first = typeCombinations[0];
+      if (Array.isArray(first)) {
+        const combined = postprocessFn(uniq(generateCombinedKeywords(first)));
+        return ts.createTypeAliasDeclaration(
+          [],
+          [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
+          typeNameWithSuffix(`${key}`, `${typeSuffix || ''}-combined`),
+          [],
+          ts.createUnionTypeNode(
+            combined.map(x =>
+              ts.createLiteralTypeNode(ts.createStringLiteral(x)),
+            ),
+          ),
+        );
+      }
+    } catch (e) {
+      // tslint:disable-next-line: no-console
+      console.log(key, ': could not create combined syntax');
+      return undefined;
+    }
+  }
+}
+
+type CombinedTypePostprocessFn = (types: string[]) => string[];
+
 interface IGenerateTypesFromRawSyntaxesOptions {
   typeSuffix?: string;
   blacklistPredicate?: (key: string) => boolean;
-  postprocessCombinedTypes?: (types: string[]) => string[];
+  postprocessCombinedTypes?: CombinedTypePostprocessFn;
   lookupFn: SyntaxLookupFn;
   availableTypes?: string[];
 }
@@ -150,52 +211,19 @@ export const generateTypesFromRawSyntaxes = (
         return acc;
       }
 
-      /**
-       * If we encounter a syntax which contains only keywords
-       * and data types, which themselves only contain keywords,
-       * then we can inline all data types into their parent and
-       * generate all possible permutations
-       */
-      if (
-        syntaxContainsDataTypes(parsedSyntax) &&
-        syntaxCanBeCollapsed(parsedSyntax, options.lookupFn)
-      ) {
-        const inlined = inlineDataTypes(parsedSyntax, options.lookupFn);
-        try {
-          const typeCombinations = generateTypeCombinations(
-            groupTokensByCombinatorPredence(
-              convertRawTokensToComponents(inlined),
-            ),
-          );
-
-          // This should always be true but we still have to check
-          // to ensure type-safety
-          const first = typeCombinations[0];
-          if (Array.isArray(first)) {
-            const combined = postprocessCombinedTypes(
-              uniq(generateCombinedKeywords(first)),
-            );
-            acc.push(
-              ts.createTypeAliasDeclaration(
-                [],
-                [ts.createModifier(ts.SyntaxKind.ExportKeyword)],
-                typeNameWithSuffix(`${key}`, `${typeSuffix || ''}-combined`),
-                [],
-                ts.createUnionTypeNode(
-                  // TODO fix `any` type
-                  combined.map(x => ts.createStringLiteral(x) as any),
-                ),
-              ),
-            );
-          }
-        } catch (e) {
-          // tslint:disable-next-line: no-console
-          console.log(key, ': could not create combined syntax');
-        }
+      const combined = generateCombinedTypes({
+        key,
+        lookupFn: options.lookupFn,
+        parsedSyntax,
+        postprocessFn: postprocessCombinedTypes,
+        typeSuffix,
+      });
+      if (combined) {
+        acc.push(combined);
       }
 
       /**
-       * After the combined types we still output the tuples
+       * After the combined types we still output the tuple
        * types because some people might prefer them and
        * it's nice to have both options
        */

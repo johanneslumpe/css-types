@@ -22,6 +22,12 @@ const getUnitsWithAdditionalTypes = (tagFilterArray?: CSSUnitGroups[]) =>
     },
   ]);
 
+/**
+ * Generates branded unit interfaces, which can be used for typing return values
+ *
+ * @param withAdditionalTypes Whether or not to include additional unit types
+ * @param tagFilterArray An array of `CSSUnitGroups` to filter unit types by
+ */
 export function generateUnitInterfaces(
   withAdditionalTypes: boolean,
   tagFilterArray?: CSSUnitGroups[],
@@ -37,6 +43,10 @@ export function generateUnitInterfaces(
   );
 }
 
+/**
+ * Generates import statements for a given list of interfaces
+ * @param interfaces The interfaces to generate import statements for
+ */
 export const generateUnitTypesImportStatement = (
   interfaces: ts.InterfaceDeclaration[],
 ) =>
@@ -52,6 +62,9 @@ export const generateUnitTypesImportStatement = (
     ts.createStringLiteral(`./${UNIT_TYPES_FILE.replace('.ts', '')}`),
   );
 
+/**
+ * Generates source files for unit utilities and unit types
+ */
 export function generateUnitTypesSourceFiles() {
   const utilsSrc = ts.createSourceFile(
     UNIT_UTILS_FILE,
@@ -86,6 +99,9 @@ export function generateUnitTypesSourceFiles() {
   };
 }
 
+/**
+ * Generates a type which combines all possible css length values
+ */
 export const generateCombinedLengthType = () => {
   const interfaces = generateUnitInterfaces(false, lengthValueTags);
   const importStatement = generateUnitTypesImportStatement(
