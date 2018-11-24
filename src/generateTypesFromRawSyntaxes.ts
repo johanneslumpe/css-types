@@ -93,6 +93,9 @@ const generateTypesForKey = (
           ),
         ]
       : [],
+    // There should never be a situtation where we have an array, which
+    // contains more then one item, because our root nodes should always be unions or tuples.
+    // If that is ever the case, then we have a bug.
     Array.isArray(types) ? types[0] : types,
   );
 };
