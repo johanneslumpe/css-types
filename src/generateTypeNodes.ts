@@ -37,10 +37,7 @@ const genericOverrideMap: { [index: string]: string } = {
 export const generateTsNode = (component: IComponent) => {
   switch (component.type) {
     case ICssTokenType.KEYWORD:
-      return ts.createStringLiteral(component.value);
-
-    case ComponentTypes.VOID:
-      return undefined;
+      return ts.createLiteralTypeNode(ts.createStringLiteral(component.value));
 
     case ICssTokenType.DATA_TYPE:
       const withoutAngleBrackets = component.value.substring(
@@ -67,8 +64,9 @@ export const generateTsNode = (component: IComponent) => {
   }
 };
 
-// TODO fix `any` type
-export const generateTypesNodes = (data: INestedComponentArray): any => {
+export const generateTypesNodes = (
+  data: INestedComponentArray,
+): ts.TypeNode | ts.TypeNode[] => {
   const { representation } = data;
   const componentsWithoutVoid = filter(
     item =>
@@ -106,7 +104,7 @@ export const generateTypesNodes = (data: INestedComponentArray): any => {
 
                 return acc;
               },
-              [] as any[],
+              [] as INestedComponentArray,
               item,
             );
             return generateTypesNodes(flattenedTuples);
@@ -151,21 +149,24 @@ export const generateTypesNodes = (data: INestedComponentArray): any => {
       //   rightNodes.forEach(node => console.log(node.))
       //   return ts.createTupleTypeNode([leftMostNode]);
       // });
-      return ts.createUnionTypeNode(nestedValues);
+      return ts.createUnionTypeNode(flatten(nestedValues));
 
     default: {
       const first = componentsWithoutVoid[0];
-      return componentsWithoutVoid.length === 1 && !Array.isArray(first)
-        ? generateTsNode(first)
-        : compact(
-            map(item => {
-              if (Array.isArray(item)) {
-                const result = generateTypesNodes(item);
-                return Array.isArray(result) ? flatten(result) : result;
-              }
-              return generateTsNode(item);
-            }, componentsWithoutVoid),
-          );
+      if (componentsWithoutVoid.length === 1 && !Array.isArray(first)) {
+        return generateTsNode(first);
+      }
+      return compact(
+        flatten(
+          map(item => {
+            if (Array.isArray(item)) {
+              const result = generateTypesNodes(item);
+              return Array.isArray(result) ? flatten(result) : result;
+            }
+            return generateTsNode(item);
+          }, componentsWithoutVoid),
+        ),
+      );
     }
   }
 };
