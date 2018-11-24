@@ -87,7 +87,7 @@ ___
 
 **● __dpi_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:14*
+*Defined in [unitTypes.ts:14](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L14)*
 
 ___
 <a id="length"></a>

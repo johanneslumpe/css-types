@@ -87,7 +87,7 @@ ___
 
 **● __q_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:59*
+*Defined in [unitTypes.ts:59](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L59)*
 
 ___
 <a id="length"></a>

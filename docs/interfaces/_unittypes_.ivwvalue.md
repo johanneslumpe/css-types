@@ -87,7 +87,7 @@ ___
 
 **● __vw_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:83*
+*Defined in [unitTypes.ts:83](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L83)*
 
 ___
 <a id="length"></a>

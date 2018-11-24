@@ -87,7 +87,7 @@ ___
 
 **● __hz_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:32*
+*Defined in [unitTypes.ts:32](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L32)*
 
 ___
 <a id="length"></a>

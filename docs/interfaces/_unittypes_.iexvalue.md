@@ -87,7 +87,7 @@ ___
 
 **● __ex_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:23*
+*Defined in [unitTypes.ts:23](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L23)*
 
 ___
 <a id="length"></a>

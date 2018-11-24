@@ -87,7 +87,7 @@ ___
 
 **● __dppx_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:17*
+*Defined in [unitTypes.ts:17](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L17)*
 
 ___
 <a id="length"></a>

@@ -87,7 +87,7 @@ ___
 
 **● __deg_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:8*
+*Defined in [unitTypes.ts:8](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L8)*
 
 ___
 <a id="length"></a>

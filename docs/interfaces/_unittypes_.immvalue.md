@@ -87,7 +87,7 @@ ___
 
 **● __mm_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:41*
+*Defined in [unitTypes.ts:41](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L41)*
 
 ___
 <a id="length"></a>

@@ -87,7 +87,7 @@ ___
 
 **● __cm_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:5*
+*Defined in [unitTypes.ts:5](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L5)*
 
 ___
 <a id="length"></a>

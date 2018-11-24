@@ -549,7 +549,7 @@
 **Ƭ AbsoluteSize**: * "xx-small" &#124; "x-small" &#124; "small" &#124; "medium" &#124; "large" &#124; "x-large" &#124; "xx-large"
 *
 
-*Defined in types.ts:68*
+*Defined in [types.ts:68](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L68)*
 
 ___
 <a id="aligncontentproperty"></a>
@@ -559,7 +559,7 @@ ___
 **Ƭ AlignContentProperty**: * "normal" &#124; [BaselinePosition](_types_.md#baselineposition) &#124; [ContentDistribution](_types_.md#contentdistribution) &#124; [ContentPosition](_types_.md#contentposition) &#124; [[OverflowPosition](_types_.md#overflowposition), [ContentPosition](_types_.md#contentposition)]
 *
 
-*Defined in types.ts:1919*
+*Defined in [types.ts:1927](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1927)*
 
 ___
 <a id="aligncontentpropertycombined"></a>
@@ -569,7 +569,7 @@ ___
 **Ƭ AlignContentPropertyCombined**: * "normal" &#124; "baseline" &#124; "first baseline" &#124; "last baseline" &#124; "space-between" &#124; "space-around" &#124; "space-evenly" &#124; "stretch" &#124; "center" &#124; "start" &#124; "end" &#124; "flex-start" &#124; "flex-end" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe flex-start" &#124; "safe flex-end"
 *
 
-*Defined in types.ts:1895*
+*Defined in [types.ts:1903](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1903)*
 
 ___
 <a id="alignitemsproperty"></a>
@@ -579,7 +579,7 @@ ___
 **Ƭ AlignItemsProperty**: * "normal" &#124; "stretch" &#124; [BaselinePosition](_types_.md#baselineposition) &#124; [SelfPosition](_types_.md#selfposition) &#124; [[OverflowPosition](_types_.md#overflowposition), [SelfPosition](_types_.md#selfposition)]
 *
 
-*Defined in types.ts:1952*
+*Defined in [types.ts:1960](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1960)*
 
 ___
 <a id="alignitemspropertycombined"></a>
@@ -589,7 +589,7 @@ ___
 **Ƭ AlignItemsPropertyCombined**: * "normal" &#124; "stretch" &#124; "baseline" &#124; "first baseline" &#124; "last baseline" &#124; "center" &#124; "start" &#124; "end" &#124; "self-start" &#124; "self-end" &#124; "flex-start" &#124; "flex-end" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe self-start" &#124; "unsafe self-end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe self-start" &#124; "safe self-end" &#124; "safe flex-start" &#124; "safe flex-end"
 *
 
-*Defined in types.ts:1925*
+*Defined in [types.ts:1933](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1933)*
 
 ___
 <a id="alignselfproperty"></a>
@@ -599,7 +599,7 @@ ___
 **Ƭ AlignSelfProperty**: * "auto" &#124; "normal" &#124; "stretch" &#124; [BaselinePosition](_types_.md#baselineposition) &#124; [SelfPosition](_types_.md#selfposition) &#124; [[OverflowPosition](_types_.md#overflowposition), [SelfPosition](_types_.md#selfposition)]
 *
 
-*Defined in types.ts:1986*
+*Defined in [types.ts:1994](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1994)*
 
 ___
 <a id="alignselfpropertycombined"></a>
@@ -609,7 +609,7 @@ ___
 **Ƭ AlignSelfPropertyCombined**: * "auto" &#124; "normal" &#124; "stretch" &#124; "baseline" &#124; "first baseline" &#124; "last baseline" &#124; "center" &#124; "start" &#124; "end" &#124; "self-start" &#124; "self-end" &#124; "flex-start" &#124; "flex-end" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe self-start" &#124; "unsafe self-end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe self-start" &#124; "safe self-end" &#124; "safe flex-start" &#124; "safe flex-end"
 *
 
-*Defined in types.ts:1958*
+*Defined in [types.ts:1966](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1966)*
 
 ___
 <a id="allproperty"></a>
@@ -619,7 +619,7 @@ ___
 **Ƭ AllProperty**: * "initial" &#124; "inherit" &#124; "unset" &#124; "revert"
 *
 
-*Defined in types.ts:1993*
+*Defined in [types.ts:2001](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2001)*
 
 ___
 <a id="alphavalue"></a>
@@ -629,7 +629,7 @@ ___
 **Ƭ AlphaValue**: * `number` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:76*
+*Defined in [types.ts:76](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L76)*
 
 ___
 <a id="anplusb"></a>
@@ -638,7 +638,7 @@ ___
 
 **Ƭ AnPlusB**: *`string`*
 
-*Defined in types.ts:49*
+*Defined in [types.ts:49](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L49)*
 
 ___
 <a id="angle"></a>
@@ -648,7 +648,7 @@ ___
 **Ƭ Angle**: * [IDegValue](../interfaces/_unittypes_.idegvalue.md) &#124; [IGradValue](../interfaces/_unittypes_.igradvalue.md) &#124; [IRadValue](../interfaces/_unittypes_.iradvalue.md) &#124; [ITurnValue](../interfaces/_unittypes_.iturnvalue.md)
 *
 
-*Defined in types.ts:56*
+*Defined in [types.ts:56](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L56)*
 
 ___
 <a id="anglepercentage"></a>
@@ -658,7 +658,7 @@ ___
 **Ƭ AnglePercentage**: * [Angle](_types_.md#angle) &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:77*
+*Defined in [types.ts:77](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L77)*
 
 ___
 <a id="animateablefeature"></a>
@@ -668,7 +668,7 @@ ___
 **Ƭ AnimateableFeature**: * "scroll-position" &#124; "contents" &#124; [CustomIdent](_types_.md#customident)
 *
 
-*Defined in types.ts:78*
+*Defined in [types.ts:78](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L78)*
 
 ___
 <a id="animationdelayproperty"></a>
@@ -677,7 +677,7 @@ ___
 
 **Ƭ AnimationDelayProperty**: *`string`*
 
-*Defined in types.ts:1995*
+*Defined in [types.ts:2003](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2003)*
 
 ___
 <a id="animationdirectionproperty"></a>
@@ -686,7 +686,7 @@ ___
 
 **Ƭ AnimationDirectionProperty**: *`string`*
 
-*Defined in types.ts:1996*
+*Defined in [types.ts:2004](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2004)*
 
 ___
 <a id="animationdurationproperty"></a>
@@ -695,7 +695,7 @@ ___
 
 **Ƭ AnimationDurationProperty**: *`string`*
 
-*Defined in types.ts:1997*
+*Defined in [types.ts:2005](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2005)*
 
 ___
 <a id="animationfillmodeproperty"></a>
@@ -704,7 +704,7 @@ ___
 
 **Ƭ AnimationFillModeProperty**: *`string`*
 
-*Defined in types.ts:1998*
+*Defined in [types.ts:2006](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2006)*
 
 ___
 <a id="animationiterationcountproperty"></a>
@@ -713,7 +713,7 @@ ___
 
 **Ƭ AnimationIterationCountProperty**: *`string`*
 
-*Defined in types.ts:1999*
+*Defined in [types.ts:2007](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2007)*
 
 ___
 <a id="animationnameproperty"></a>
@@ -722,7 +722,7 @@ ___
 
 **Ƭ AnimationNameProperty**: *`string`*
 
-*Defined in types.ts:2000*
+*Defined in [types.ts:2008](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2008)*
 
 ___
 <a id="animationplaystateproperty"></a>
@@ -731,7 +731,7 @@ ___
 
 **Ƭ AnimationPlayStateProperty**: *`string`*
 
-*Defined in types.ts:2001*
+*Defined in [types.ts:2009](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2009)*
 
 ___
 <a id="animationproperty"></a>
@@ -740,7 +740,7 @@ ___
 
 **Ƭ AnimationProperty**: *`string`*
 
-*Defined in types.ts:1994*
+*Defined in [types.ts:2002](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2002)*
 
 ___
 <a id="animationtimingfunctionproperty"></a>
@@ -749,7 +749,7 @@ ___
 
 **Ƭ AnimationTimingFunctionProperty**: *`string`*
 
-*Defined in types.ts:2002*
+*Defined in [types.ts:2010](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2010)*
 
 ___
 <a id="attachment"></a>
@@ -759,7 +759,7 @@ ___
 **Ƭ Attachment**: * "scroll" &#124; "fixed" &#124; "local"
 *
 
-*Defined in types.ts:79*
+*Defined in [types.ts:79](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L79)*
 
 ___
 <a id="attrmatcher"></a>
@@ -768,7 +768,7 @@ ___
 
 **Ƭ AttrMatcher**: *`string`*
 
-*Defined in types.ts:80*
+*Defined in [types.ts:80](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L80)*
 
 ___
 <a id="attrmodifier"></a>
@@ -777,7 +777,7 @@ ___
 
 **Ƭ AttrModifier**: *"i"*
 
-*Defined in types.ts:81*
+*Defined in [types.ts:81](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L81)*
 
 ___
 <a id="autorepeat"></a>
@@ -786,7 +786,7 @@ ___
 
 **Ƭ AutoRepeat**: *`string`*
 
-*Defined in types.ts:82*
+*Defined in [types.ts:82](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L82)*
 
 ___
 <a id="autotracklist"></a>
@@ -795,7 +795,7 @@ ___
 
 **Ƭ AutoTrackList**: *`string`*
 
-*Defined in types.ts:83*
+*Defined in [types.ts:83](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L83)*
 
 ___
 <a id="backfacevisibilityproperty"></a>
@@ -805,7 +805,7 @@ ___
 **Ƭ BackfaceVisibilityProperty**: * "visible" &#124; "hidden"
 *
 
-*Defined in types.ts:2003*
+*Defined in [types.ts:2011](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2011)*
 
 ___
 <a id="backgroundattachmentproperty"></a>
@@ -814,7 +814,7 @@ ___
 
 **Ƭ BackgroundAttachmentProperty**: *`string`*
 
-*Defined in types.ts:2004*
+*Defined in [types.ts:2012](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2012)*
 
 ___
 <a id="backgroundblendmodeproperty"></a>
@@ -823,7 +823,7 @@ ___
 
 **Ƭ BackgroundBlendModeProperty**: *`string`*
 
-*Defined in types.ts:2005*
+*Defined in [types.ts:2013](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2013)*
 
 ___
 <a id="backgroundclipproperty"></a>
@@ -832,7 +832,7 @@ ___
 
 **Ƭ BackgroundClipProperty**: *`string`*
 
-*Defined in types.ts:2006*
+*Defined in [types.ts:2014](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2014)*
 
 ___
 <a id="backgroundcolorproperty"></a>
@@ -841,7 +841,7 @@ ___
 
 **Ƭ BackgroundColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2007*
+*Defined in [types.ts:2015](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2015)*
 
 ___
 <a id="backgroundimageproperty"></a>
@@ -850,7 +850,7 @@ ___
 
 **Ƭ BackgroundImageProperty**: *`string`*
 
-*Defined in types.ts:2008*
+*Defined in [types.ts:2016](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2016)*
 
 ___
 <a id="backgroundoriginproperty"></a>
@@ -859,7 +859,7 @@ ___
 
 **Ƭ BackgroundOriginProperty**: *`string`*
 
-*Defined in types.ts:2009*
+*Defined in [types.ts:2017](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2017)*
 
 ___
 <a id="backgroundpositionproperty"></a>
@@ -868,7 +868,7 @@ ___
 
 **Ƭ BackgroundPositionProperty**: *`string`*
 
-*Defined in types.ts:2010*
+*Defined in [types.ts:2018](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2018)*
 
 ___
 <a id="backgroundrepeatproperty"></a>
@@ -877,7 +877,7 @@ ___
 
 **Ƭ BackgroundRepeatProperty**: *`string`*
 
-*Defined in types.ts:2011*
+*Defined in [types.ts:2019](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2019)*
 
 ___
 <a id="backgroundsizeproperty"></a>
@@ -886,7 +886,7 @@ ___
 
 **Ƭ BackgroundSizeProperty**: *`string`*
 
-*Defined in types.ts:2012*
+*Defined in [types.ts:2020](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2020)*
 
 ___
 <a id="baselineposition"></a>
@@ -896,7 +896,7 @@ ___
 **Ƭ BaselinePosition**: * "baseline" &#124; ["first", "baseline"] &#124; ["last", "baseline"]
 *
 
-*Defined in types.ts:84*
+*Defined in [types.ts:84](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L84)*
 
 ___
 <a id="basicshape"></a>
@@ -906,7 +906,7 @@ ___
 **Ƭ BasicShape**: * [InsetFunction](_types_.md#insetfunction) &#124; [CircleFunction](_types_.md#circlefunction) &#124; [EllipseFunction](_types_.md#ellipsefunction) &#124; [PolygonFunction](_types_.md#polygonfunction)
 *
 
-*Defined in types.ts:85*
+*Defined in [types.ts:85](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L85)*
 
 ___
 <a id="bgimage"></a>
@@ -916,7 +916,7 @@ ___
 **Ƭ BgImage**: * "none" &#124; [Image](_types_.md#image)
 *
 
-*Defined in types.ts:86*
+*Defined in [types.ts:86](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L86)*
 
 ___
 <a id="bglayer"></a>
@@ -925,7 +925,7 @@ ___
 
 **Ƭ BgLayer**: *`string`*
 
-*Defined in types.ts:87*
+*Defined in [types.ts:87](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L87)*
 
 ___
 <a id="bgposition"></a>
@@ -935,7 +935,7 @@ ___
 **Ƭ BgPosition**: * "left" &#124; "center" &#124; "right" &#124; "top" &#124; "bottom" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; ["left", "top"] &#124; ["left", "center"] &#124; ["left", "bottom"] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["center", "top"] &#124; ["center", "center"] &#124; ["center", "bottom"] &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", "top"] &#124; ["right", "center"] &#124; ["right", "bottom"] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["center", "center"] &#124; ["center", "top"] &#124; ["center", "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["center", "bottom"] &#124; ["center", "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", "center"] &#124; ["left", "top"] &#124; ["left", "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", "bottom"] &#124; ["left", "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", "center"] &#124; ["right", "top"] &#124; ["right", "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", "bottom"] &#124; ["right", "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
 *
 
-*Defined in types.ts:88*
+*Defined in [types.ts:88](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L88)*
 
 ___
 <a id="bgsize"></a>
@@ -945,7 +945,7 @@ ___
 **Ƭ BgSize**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; "auto" &#124; "cover" &#124; "contain"
 *
 
-*Defined in types.ts:136*
+*Defined in [types.ts:136](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L136)*
 
 ___
 <a id="blendmode"></a>
@@ -955,7 +955,7 @@ ___
 **Ƭ BlendMode**: * "normal" &#124; "multiply" &#124; "screen" &#124; "overlay" &#124; "darken" &#124; "lighten" &#124; "color-dodge" &#124; "color-burn" &#124; "hard-light" &#124; "soft-light" &#124; "difference" &#124; "exclusion" &#124; "hue" &#124; "saturation" &#124; "color" &#124; "luminosity"
 *
 
-*Defined in types.ts:138*
+*Defined in [types.ts:138](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L138)*
 
 ___
 <a id="blocksizeproperty"></a>
@@ -964,7 +964,7 @@ ___
 
 **Ƭ BlockSizeProperty**: *[WidthProperty](_types_.md#widthproperty)*
 
-*Defined in types.ts:2013*
+*Defined in [types.ts:2021](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2021)*
 
 ___
 <a id="blurfunction"></a>
@@ -973,7 +973,7 @@ ___
 
 **Ƭ BlurFunction**: *`string`*
 
-*Defined in types.ts:137*
+*Defined in [types.ts:137](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L137)*
 
 ___
 <a id="borderblockendcolorproperty"></a>
@@ -982,7 +982,7 @@ ___
 
 **Ƭ BorderBlockEndColorProperty**: *[ColorProperty](_types_.md#colorproperty)*
 
-*Defined in types.ts:2030*
+*Defined in [types.ts:2038](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2038)*
 
 ___
 <a id="borderblockendproperty"></a>
@@ -992,7 +992,7 @@ ___
 **Ƭ BorderBlockEndProperty**: * [ColorProperty](_types_.md#colorproperty) &#124; [BorderStyleProperty](_types_.md#borderstyleproperty) &#124; [[BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [BorderWidthProperty](_types_.md#borderwidthproperty) &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)]
 *
 
-*Defined in types.ts:2022*
+*Defined in [types.ts:2030](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2030)*
 
 ___
 <a id="borderblockendstyleproperty"></a>
@@ -1001,7 +1001,7 @@ ___
 
 **Ƭ BorderBlockEndStyleProperty**: *[BorderStyleProperty](_types_.md#borderstyleproperty)*
 
-*Defined in types.ts:2042*
+*Defined in [types.ts:2050](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2050)*
 
 ___
 <a id="borderblockendstylepropertycombined"></a>
@@ -1011,7 +1011,7 @@ ___
 **Ƭ BorderBlockEndStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2031*
+*Defined in [types.ts:2039](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2039)*
 
 ___
 <a id="borderblockendwidthproperty"></a>
@@ -1020,7 +1020,7 @@ ___
 
 **Ƭ BorderBlockEndWidthProperty**: *[BorderWidthProperty](_types_.md#borderwidthproperty)*
 
-*Defined in types.ts:2043*
+*Defined in [types.ts:2051](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2051)*
 
 ___
 <a id="borderblockstartcolorproperty"></a>
@@ -1029,7 +1029,7 @@ ___
 
 **Ƭ BorderBlockStartColorProperty**: *[ColorProperty](_types_.md#colorproperty)*
 
-*Defined in types.ts:2052*
+*Defined in [types.ts:2060](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2060)*
 
 ___
 <a id="borderblockstartproperty"></a>
@@ -1039,7 +1039,7 @@ ___
 **Ƭ BorderBlockStartProperty**: * [ColorProperty](_types_.md#colorproperty) &#124; [BorderStyleProperty](_types_.md#borderstyleproperty) &#124; [[BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [BorderWidthProperty](_types_.md#borderwidthproperty) &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)]
 *
 
-*Defined in types.ts:2044*
+*Defined in [types.ts:2052](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2052)*
 
 ___
 <a id="borderblockstartstyleproperty"></a>
@@ -1048,7 +1048,7 @@ ___
 
 **Ƭ BorderBlockStartStyleProperty**: *[BorderStyleProperty](_types_.md#borderstyleproperty)*
 
-*Defined in types.ts:2064*
+*Defined in [types.ts:2072](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2072)*
 
 ___
 <a id="borderblockstartstylepropertycombined"></a>
@@ -1058,7 +1058,7 @@ ___
 **Ƭ BorderBlockStartStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2053*
+*Defined in [types.ts:2061](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2061)*
 
 ___
 <a id="borderblockstartwidthproperty"></a>
@@ -1067,7 +1067,7 @@ ___
 
 **Ƭ BorderBlockStartWidthProperty**: *[BorderWidthProperty](_types_.md#borderwidthproperty)*
 
-*Defined in types.ts:2065*
+*Defined in [types.ts:2073](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2073)*
 
 ___
 <a id="borderbottomcolorproperty"></a>
@@ -1076,16 +1076,17 @@ ___
 
 **Ƭ BorderBottomColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2074*
+*Defined in [types.ts:2082](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2082)*
 
 ___
 <a id="borderbottomleftradiusproperty"></a>
 
 ###  BorderBottomLeftRadiusProperty
 
-**Ƭ BorderBottomLeftRadiusProperty**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
+**Ƭ BorderBottomLeftRadiusProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
+*
 
-*Defined in types.ts:2075*
+*Defined in [types.ts:2083](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2083)*
 
 ___
 <a id="borderbottomproperty"></a>
@@ -1095,16 +1096,17 @@ ___
 **Ƭ BorderBottomProperty**: * [Color](_types_.md#color) &#124; [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [Color](_types_.md#color)] &#124; [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [Color](_types_.md#color)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle), [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:2066*
+*Defined in [types.ts:2074](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2074)*
 
 ___
 <a id="borderbottomrightradiusproperty"></a>
 
 ###  BorderBottomRightRadiusProperty
 
-**Ƭ BorderBottomRightRadiusProperty**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
+**Ƭ BorderBottomRightRadiusProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
+*
 
-*Defined in types.ts:2076*
+*Defined in [types.ts:2086](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2086)*
 
 ___
 <a id="borderbottomstyleproperty"></a>
@@ -1113,7 +1115,7 @@ ___
 
 **Ƭ BorderBottomStyleProperty**: *[LineStyle](_types_.md#linestyle)*
 
-*Defined in types.ts:2088*
+*Defined in [types.ts:2100](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2100)*
 
 ___
 <a id="borderbottomstylepropertycombined"></a>
@@ -1123,7 +1125,7 @@ ___
 **Ƭ BorderBottomStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2077*
+*Defined in [types.ts:2089](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2089)*
 
 ___
 <a id="borderbottomwidthproperty"></a>
@@ -1132,7 +1134,7 @@ ___
 
 **Ƭ BorderBottomWidthProperty**: *[LineWidth](_types_.md#linewidth)*
 
-*Defined in types.ts:2089*
+*Defined in [types.ts:2101](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2101)*
 
 ___
 <a id="bordercollapseproperty"></a>
@@ -1142,16 +1144,17 @@ ___
 **Ƭ BorderCollapseProperty**: * "collapse" &#124; "separate"
 *
 
-*Defined in types.ts:2090*
+*Defined in [types.ts:2102](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2102)*
 
 ___
 <a id="bordercolorproperty"></a>
 
 ###  BorderColorProperty
 
-**Ƭ BorderColorProperty**: *[Color](_types_.md#color)*
+**Ƭ BorderColorProperty**: * [Color](_types_.md#color) &#124; [[Color](_types_.md#color), [Color](_types_.md#color)] &#124; [[Color](_types_.md#color), [Color](_types_.md#color), [Color](_types_.md#color)] &#124; [[Color](_types_.md#color), [Color](_types_.md#color), [Color](_types_.md#color), [Color](_types_.md#color)]
+*
 
-*Defined in types.ts:2091*
+*Defined in [types.ts:2103](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2103)*
 
 ___
 <a id="borderimageoutsetproperty"></a>
@@ -1161,7 +1164,7 @@ ___
 **Ƭ BorderImageOutsetProperty**: * `TLength` &#124; `number`
 *
 
-*Defined in types.ts:2093*
+*Defined in [types.ts:2109](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2109)*
 
 ___
 <a id="borderimageproperty"></a>
@@ -1170,7 +1173,7 @@ ___
 
 **Ƭ BorderImageProperty**: *`string`*
 
-*Defined in types.ts:2092*
+*Defined in [types.ts:2108](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2108)*
 
 ___
 <a id="borderimagerepeatproperty"></a>
@@ -1180,7 +1183,7 @@ ___
 **Ƭ BorderImageRepeatProperty**: * "stretch" &#124; "repeat" &#124; "round" &#124; "space"
 *
 
-*Defined in types.ts:2094*
+*Defined in [types.ts:2110](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2110)*
 
 ___
 <a id="borderimagesliceproperty"></a>
@@ -1190,7 +1193,7 @@ ___
 **Ƭ BorderImageSliceProperty**: * [NumberPercentage](_types_.md#numberpercentage) &#124; [[NumberPercentage](_types_.md#numberpercentage), "fill"] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage)] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), "fill"] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage)] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), "fill"] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage)] &#124; [[NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), [NumberPercentage](_types_.md#numberpercentage), "fill"]
 *
 
-*Defined in types.ts:2095*
+*Defined in [types.ts:2111](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2111)*
 
 ___
 <a id="borderimagesourceproperty"></a>
@@ -1200,7 +1203,7 @@ ___
 **Ƭ BorderImageSourceProperty**: * "none" &#124; [Image](_types_.md#image)
 *
 
-*Defined in types.ts:2104*
+*Defined in [types.ts:2120](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2120)*
 
 ___
 <a id="borderimagewidthproperty"></a>
@@ -1210,7 +1213,7 @@ ___
 **Ƭ BorderImageWidthProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; `number` &#124; "auto"
 *
 
-*Defined in types.ts:2105*
+*Defined in [types.ts:2121](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2121)*
 
 ___
 <a id="borderinlineendcolorproperty"></a>
@@ -1219,7 +1222,7 @@ ___
 
 **Ƭ BorderInlineEndColorProperty**: *[ColorProperty](_types_.md#colorproperty)*
 
-*Defined in types.ts:2117*
+*Defined in [types.ts:2133](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2133)*
 
 ___
 <a id="borderinlineendproperty"></a>
@@ -1229,7 +1232,7 @@ ___
 **Ƭ BorderInlineEndProperty**: * [ColorProperty](_types_.md#colorproperty) &#124; [BorderStyleProperty](_types_.md#borderstyleproperty) &#124; [[BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [BorderWidthProperty](_types_.md#borderwidthproperty) &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)]
 *
 
-*Defined in types.ts:2109*
+*Defined in [types.ts:2125](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2125)*
 
 ___
 <a id="borderinlineendstyleproperty"></a>
@@ -1238,7 +1241,7 @@ ___
 
 **Ƭ BorderInlineEndStyleProperty**: *[BorderStyleProperty](_types_.md#borderstyleproperty)*
 
-*Defined in types.ts:2129*
+*Defined in [types.ts:2145](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2145)*
 
 ___
 <a id="borderinlineendstylepropertycombined"></a>
@@ -1248,7 +1251,7 @@ ___
 **Ƭ BorderInlineEndStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2118*
+*Defined in [types.ts:2134](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2134)*
 
 ___
 <a id="borderinlineendwidthproperty"></a>
@@ -1257,7 +1260,7 @@ ___
 
 **Ƭ BorderInlineEndWidthProperty**: *[BorderWidthProperty](_types_.md#borderwidthproperty)*
 
-*Defined in types.ts:2130*
+*Defined in [types.ts:2146](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2146)*
 
 ___
 <a id="borderinlinestartcolorproperty"></a>
@@ -1266,7 +1269,7 @@ ___
 
 **Ƭ BorderInlineStartColorProperty**: *[ColorProperty](_types_.md#colorproperty)*
 
-*Defined in types.ts:2139*
+*Defined in [types.ts:2155](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2155)*
 
 ___
 <a id="borderinlinestartproperty"></a>
@@ -1276,7 +1279,7 @@ ___
 **Ƭ BorderInlineStartProperty**: * [ColorProperty](_types_.md#colorproperty) &#124; [BorderStyleProperty](_types_.md#borderstyleproperty) &#124; [[BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [BorderWidthProperty](_types_.md#borderwidthproperty) &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [ColorProperty](_types_.md#colorproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty)] &#124; [[BorderWidthProperty](_types_.md#borderwidthproperty), [BorderStyleProperty](_types_.md#borderstyleproperty), [ColorProperty](_types_.md#colorproperty)]
 *
 
-*Defined in types.ts:2131*
+*Defined in [types.ts:2147](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2147)*
 
 ___
 <a id="borderinlinestartstyleproperty"></a>
@@ -1285,7 +1288,7 @@ ___
 
 **Ƭ BorderInlineStartStyleProperty**: *[BorderStyleProperty](_types_.md#borderstyleproperty)*
 
-*Defined in types.ts:2151*
+*Defined in [types.ts:2167](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2167)*
 
 ___
 <a id="borderinlinestartstylepropertycombined"></a>
@@ -1295,7 +1298,7 @@ ___
 **Ƭ BorderInlineStartStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2140*
+*Defined in [types.ts:2156](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2156)*
 
 ___
 <a id="borderinlinestartwidthproperty"></a>
@@ -1304,7 +1307,7 @@ ___
 
 **Ƭ BorderInlineStartWidthProperty**: *[BorderWidthProperty](_types_.md#borderwidthproperty)*
 
-*Defined in types.ts:2152*
+*Defined in [types.ts:2168](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2168)*
 
 ___
 <a id="borderleftcolorproperty"></a>
@@ -1313,7 +1316,7 @@ ___
 
 **Ƭ BorderLeftColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2161*
+*Defined in [types.ts:2177](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2177)*
 
 ___
 <a id="borderleftproperty"></a>
@@ -1323,7 +1326,7 @@ ___
 **Ƭ BorderLeftProperty**: * [Color](_types_.md#color) &#124; [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [Color](_types_.md#color)] &#124; [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [Color](_types_.md#color)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle), [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:2153*
+*Defined in [types.ts:2169](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2169)*
 
 ___
 <a id="borderleftstyleproperty"></a>
@@ -1332,7 +1335,7 @@ ___
 
 **Ƭ BorderLeftStyleProperty**: *[LineStyle](_types_.md#linestyle)*
 
-*Defined in types.ts:2173*
+*Defined in [types.ts:2189](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2189)*
 
 ___
 <a id="borderleftstylepropertycombined"></a>
@@ -1342,7 +1345,7 @@ ___
 **Ƭ BorderLeftStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2162*
+*Defined in [types.ts:2178](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2178)*
 
 ___
 <a id="borderleftwidthproperty"></a>
@@ -1351,7 +1354,7 @@ ___
 
 **Ƭ BorderLeftWidthProperty**: *[LineWidth](_types_.md#linewidth)*
 
-*Defined in types.ts:2174*
+*Defined in [types.ts:2190](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2190)*
 
 ___
 <a id="borderproperty"></a>
@@ -1361,7 +1364,7 @@ ___
 **Ƭ BorderProperty**: * [Color](_types_.md#color) &#124; [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [Color](_types_.md#color)] &#124; [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [Color](_types_.md#color)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle), [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:2014*
+*Defined in [types.ts:2022](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2022)*
 
 ___
 <a id="borderradiusproperty"></a>
@@ -1370,7 +1373,7 @@ ___
 
 **Ƭ BorderRadiusProperty**: *`string`*
 
-*Defined in types.ts:2175*
+*Defined in [types.ts:2191](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2191)*
 
 ___
 <a id="borderrightcolorproperty"></a>
@@ -1379,7 +1382,7 @@ ___
 
 **Ƭ BorderRightColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2184*
+*Defined in [types.ts:2200](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2200)*
 
 ___
 <a id="borderrightproperty"></a>
@@ -1389,7 +1392,7 @@ ___
 **Ƭ BorderRightProperty**: * [Color](_types_.md#color) &#124; [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [Color](_types_.md#color)] &#124; [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [Color](_types_.md#color)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle), [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:2176*
+*Defined in [types.ts:2192](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2192)*
 
 ___
 <a id="borderrightstyleproperty"></a>
@@ -1398,7 +1401,7 @@ ___
 
 **Ƭ BorderRightStyleProperty**: *[LineStyle](_types_.md#linestyle)*
 
-*Defined in types.ts:2196*
+*Defined in [types.ts:2212](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2212)*
 
 ___
 <a id="borderrightstylepropertycombined"></a>
@@ -1408,7 +1411,7 @@ ___
 **Ƭ BorderRightStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2185*
+*Defined in [types.ts:2201](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2201)*
 
 ___
 <a id="borderrightwidthproperty"></a>
@@ -1417,7 +1420,7 @@ ___
 
 **Ƭ BorderRightWidthProperty**: *[LineWidth](_types_.md#linewidth)*
 
-*Defined in types.ts:2197*
+*Defined in [types.ts:2213](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2213)*
 
 ___
 <a id="borderspacingproperty"></a>
@@ -1427,16 +1430,17 @@ ___
 **Ƭ BorderSpacingProperty**: * `TLength` &#124; [`TLength`, `TLength`]
 *
 
-*Defined in types.ts:2198*
+*Defined in [types.ts:2214](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2214)*
 
 ___
 <a id="borderstyleproperty"></a>
 
 ###  BorderStyleProperty
 
-**Ƭ BorderStyleProperty**: *[LineStyle](_types_.md#linestyle)*
+**Ƭ BorderStyleProperty**: * [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle)] &#124; [[LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle)] &#124; [[LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle), [LineStyle](_types_.md#linestyle)]
+*
 
-*Defined in types.ts:2210*
+*Defined in [types.ts:2226](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2226)*
 
 ___
 <a id="borderstylepropertycombined"></a>
@@ -1446,7 +1450,7 @@ ___
 **Ƭ BorderStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2199*
+*Defined in [types.ts:2215](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2215)*
 
 ___
 <a id="bordertopcolorproperty"></a>
@@ -1455,16 +1459,17 @@ ___
 
 **Ƭ BorderTopColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2219*
+*Defined in [types.ts:2239](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2239)*
 
 ___
 <a id="bordertopleftradiusproperty"></a>
 
 ###  BorderTopLeftRadiusProperty
 
-**Ƭ BorderTopLeftRadiusProperty**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
+**Ƭ BorderTopLeftRadiusProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
+*
 
-*Defined in types.ts:2220*
+*Defined in [types.ts:2240](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2240)*
 
 ___
 <a id="bordertopproperty"></a>
@@ -1474,16 +1479,17 @@ ___
 **Ƭ BorderTopProperty**: * [Color](_types_.md#color) &#124; [LineStyle](_types_.md#linestyle) &#124; [[LineStyle](_types_.md#linestyle), [Color](_types_.md#color)] &#124; [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [Color](_types_.md#color)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle)] &#124; [[LineWidth](_types_.md#linewidth), [LineStyle](_types_.md#linestyle), [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:2211*
+*Defined in [types.ts:2231](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2231)*
 
 ___
 <a id="bordertoprightradiusproperty"></a>
 
 ###  BorderTopRightRadiusProperty
 
-**Ƭ BorderTopRightRadiusProperty**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
+**Ƭ BorderTopRightRadiusProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
+*
 
-*Defined in types.ts:2221*
+*Defined in [types.ts:2243](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2243)*
 
 ___
 <a id="bordertopstyleproperty"></a>
@@ -1492,7 +1498,7 @@ ___
 
 **Ƭ BorderTopStyleProperty**: *[LineStyle](_types_.md#linestyle)*
 
-*Defined in types.ts:2233*
+*Defined in [types.ts:2257](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2257)*
 
 ___
 <a id="bordertopstylepropertycombined"></a>
@@ -1502,7 +1508,7 @@ ___
 **Ƭ BorderTopStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2222*
+*Defined in [types.ts:2246](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2246)*
 
 ___
 <a id="bordertopwidthproperty"></a>
@@ -1511,16 +1517,17 @@ ___
 
 **Ƭ BorderTopWidthProperty**: *[LineWidth](_types_.md#linewidth)*
 
-*Defined in types.ts:2234*
+*Defined in [types.ts:2258](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2258)*
 
 ___
 <a id="borderwidthproperty"></a>
 
 ###  BorderWidthProperty
 
-**Ƭ BorderWidthProperty**: *[LineWidth](_types_.md#linewidth)*
+**Ƭ BorderWidthProperty**: * [LineWidth](_types_.md#linewidth) &#124; [[LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth)] &#124; [[LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth)] &#124; [[LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth), [LineWidth](_types_.md#linewidth)]
+*
 
-*Defined in types.ts:2235*
+*Defined in [types.ts:2259](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2259)*
 
 ___
 <a id="bottomproperty"></a>
@@ -1530,7 +1537,7 @@ ___
 **Ƭ BottomProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2236*
+*Defined in [types.ts:2264](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2264)*
 
 ___
 <a id="box"></a>
@@ -1540,7 +1547,7 @@ ___
 **Ƭ Box**: * "border-box" &#124; "padding-box" &#124; "content-box"
 *
 
-*Defined in types.ts:155*
+*Defined in [types.ts:155](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L155)*
 
 ___
 <a id="boxdecorationbreakproperty"></a>
@@ -1550,7 +1557,7 @@ ___
 **Ƭ BoxDecorationBreakProperty**: * "slice" &#124; "clone"
 *
 
-*Defined in types.ts:2237*
+*Defined in [types.ts:2265](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2265)*
 
 ___
 <a id="boxshadowproperty"></a>
@@ -1559,7 +1566,7 @@ ___
 
 **Ƭ BoxShadowProperty**: *`string`*
 
-*Defined in types.ts:2238*
+*Defined in [types.ts:2266](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2266)*
 
 ___
 <a id="boxsizingproperty"></a>
@@ -1569,7 +1576,7 @@ ___
 **Ƭ BoxSizingProperty**: * "content-box" &#124; "border-box"
 *
 
-*Defined in types.ts:2239*
+*Defined in [types.ts:2267](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2267)*
 
 ___
 <a id="breakafterproperty"></a>
@@ -1579,7 +1586,7 @@ ___
 **Ƭ BreakAfterProperty**: * "auto" &#124; "avoid" &#124; "avoid-page" &#124; "page" &#124; "left" &#124; "right" &#124; "recto" &#124; "verso" &#124; "avoid-column" &#124; "column" &#124; "avoid-region" &#124; "region"
 *
 
-*Defined in types.ts:2240*
+*Defined in [types.ts:2268](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2268)*
 
 ___
 <a id="breakbeforeproperty"></a>
@@ -1589,7 +1596,7 @@ ___
 **Ƭ BreakBeforeProperty**: * "auto" &#124; "avoid" &#124; "avoid-page" &#124; "page" &#124; "left" &#124; "right" &#124; "recto" &#124; "verso" &#124; "avoid-column" &#124; "column" &#124; "avoid-region" &#124; "region"
 *
 
-*Defined in types.ts:2253*
+*Defined in [types.ts:2281](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2281)*
 
 ___
 <a id="breakinsideproperty"></a>
@@ -1599,7 +1606,7 @@ ___
 **Ƭ BreakInsideProperty**: * "auto" &#124; "avoid" &#124; "avoid-page" &#124; "avoid-column" &#124; "avoid-region"
 *
 
-*Defined in types.ts:2266*
+*Defined in [types.ts:2294](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2294)*
 
 ___
 <a id="brightnessfunction"></a>
@@ -1608,7 +1615,7 @@ ___
 
 **Ƭ BrightnessFunction**: *`string`*
 
-*Defined in types.ts:156*
+*Defined in [types.ts:156](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L156)*
 
 ___
 <a id="calcfunction"></a>
@@ -1617,7 +1624,7 @@ ___
 
 **Ƭ CalcFunction**: *`string`*
 
-*Defined in types.ts:157*
+*Defined in [types.ts:157](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L157)*
 
 ___
 <a id="calcproduct"></a>
@@ -1626,7 +1633,7 @@ ___
 
 **Ƭ CalcProduct**: *`string`*
 
-*Defined in types.ts:159*
+*Defined in [types.ts:159](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L159)*
 
 ___
 <a id="calcsum"></a>
@@ -1635,7 +1642,7 @@ ___
 
 **Ƭ CalcSum**: *`string`*
 
-*Defined in types.ts:158*
+*Defined in [types.ts:158](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L158)*
 
 ___
 <a id="captionsideproperty"></a>
@@ -1645,7 +1652,7 @@ ___
 **Ƭ CaptionSideProperty**: * "top" &#124; "bottom" &#124; "block-start" &#124; "block-end" &#124; "inline-start" &#124; "inline-end"
 *
 
-*Defined in types.ts:2267*
+*Defined in [types.ts:2295](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2295)*
 
 ___
 <a id="caretcolorproperty"></a>
@@ -1655,7 +1662,7 @@ ___
 **Ƭ CaretColorProperty**: * "auto" &#124; [Color](_types_.md#color)
 *
 
-*Defined in types.ts:2274*
+*Defined in [types.ts:2302](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2302)*
 
 ___
 <a id="cffinalimage"></a>
@@ -1665,7 +1672,7 @@ ___
 **Ƭ CfFinalImage**: * [Image](_types_.md#image) &#124; [Color](_types_.md#color)
 *
 
-*Defined in types.ts:160*
+*Defined in [types.ts:160](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L160)*
 
 ___
 <a id="cfmixingimage"></a>
@@ -1675,7 +1682,7 @@ ___
 **Ƭ CfMixingImage**: * [Image](_types_.md#image) &#124; [[Percentage](_types_.md#percentage), [Image](_types_.md#image)]
 *
 
-*Defined in types.ts:161*
+*Defined in [types.ts:161](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L161)*
 
 ___
 <a id="circlefunction"></a>
@@ -1684,7 +1691,7 @@ ___
 
 **Ƭ CircleFunction**: *`string`*
 
-*Defined in types.ts:162*
+*Defined in [types.ts:162](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L162)*
 
 ___
 <a id="clearproperty"></a>
@@ -1694,7 +1701,7 @@ ___
 **Ƭ ClearProperty**: * "none" &#124; "left" &#124; "right" &#124; "both" &#124; "inline-start" &#124; "inline-end"
 *
 
-*Defined in types.ts:2275*
+*Defined in [types.ts:2303](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2303)*
 
 ___
 <a id="clippathproperty"></a>
@@ -1704,7 +1711,7 @@ ___
 **Ƭ ClipPathProperty**: * [ClipSource](_types_.md#clipsource) &#124; [GeometryBox](_types_.md#geometrybox) &#124; [BasicShape](_types_.md#basicshape) &#124; [[BasicShape](_types_.md#basicshape), [GeometryBox](_types_.md#geometrybox)] &#124; "none"
 *
 
-*Defined in types.ts:2277*
+*Defined in [types.ts:2305](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2305)*
 
 ___
 <a id="clipproperty"></a>
@@ -1714,7 +1721,7 @@ ___
 **Ƭ ClipProperty**: * [Shape](_types_.md#shape) &#124; "auto"
 *
 
-*Defined in types.ts:2276*
+*Defined in [types.ts:2304](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2304)*
 
 ___
 <a id="clipsource"></a>
@@ -1723,7 +1730,7 @@ ___
 
 **Ƭ ClipSource**: *[Url](_types_.md#url)*
 
-*Defined in types.ts:163*
+*Defined in [types.ts:163](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L163)*
 
 ___
 <a id="color"></a>
@@ -1732,7 +1739,7 @@ ___
 
 **Ƭ Color**: *`string`*
 
-*Defined in types.ts:57*
+*Defined in [types.ts:57](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L57)*
 
 ___
 <a id="coloradjustproperty"></a>
@@ -1742,7 +1749,7 @@ ___
 **Ƭ ColorAdjustProperty**: * "economy" &#124; "exact"
 *
 
-*Defined in types.ts:2284*
+*Defined in [types.ts:2312](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2312)*
 
 ___
 <a id="colorproperty"></a>
@@ -1751,7 +1758,7 @@ ___
 
 **Ƭ ColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2283*
+*Defined in [types.ts:2311](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2311)*
 
 ___
 <a id="colorstop"></a>
@@ -1761,7 +1768,7 @@ ___
 **Ƭ ColorStop**: * [Color](_types_.md#color) &#124; [[Color](_types_.md#color), [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
 *
 
-*Defined in types.ts:164*
+*Defined in [types.ts:164](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L164)*
 
 ___
 <a id="colorstoplist"></a>
@@ -1770,7 +1777,7 @@ ___
 
 **Ƭ ColorStopList**: *`string`*
 
-*Defined in types.ts:165*
+*Defined in [types.ts:165](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L165)*
 
 ___
 <a id="columncountproperty"></a>
@@ -1780,7 +1787,7 @@ ___
 **Ƭ ColumnCountProperty**: * [Integer](_types_.md#integer) &#124; "auto"
 *
 
-*Defined in types.ts:2285*
+*Defined in [types.ts:2313](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2313)*
 
 ___
 <a id="columnfillproperty"></a>
@@ -1790,7 +1797,7 @@ ___
 **Ƭ ColumnFillProperty**: * "auto" &#124; "balance" &#124; "balance-all"
 *
 
-*Defined in types.ts:2286*
+*Defined in [types.ts:2314](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2314)*
 
 ___
 <a id="columngapproperty"></a>
@@ -1800,7 +1807,7 @@ ___
 **Ƭ ColumnGapProperty**: * "normal" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
 *
 
-*Defined in types.ts:2287*
+*Defined in [types.ts:2315](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2315)*
 
 ___
 <a id="columnrulecolorproperty"></a>
@@ -1809,7 +1816,7 @@ ___
 
 **Ƭ ColumnRuleColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:2296*
+*Defined in [types.ts:2324](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2324)*
 
 ___
 <a id="columnruleproperty"></a>
@@ -1819,7 +1826,7 @@ ___
 **Ƭ ColumnRuleProperty**: * [ColumnRuleColorProperty](_types_.md#columnrulecolorproperty) &#124; [ColumnRuleStyleProperty](_types_.md#columnrulestyleproperty) &#124; [[ColumnRuleStyleProperty](_types_.md#columnrulestyleproperty), [ColumnRuleColorProperty](_types_.md#columnrulecolorproperty)] &#124; [ColumnRuleWidthProperty](_types_.md#columnrulewidthproperty) &#124; [[ColumnRuleWidthProperty](_types_.md#columnrulewidthproperty), [ColumnRuleColorProperty](_types_.md#columnrulecolorproperty)] &#124; [[ColumnRuleWidthProperty](_types_.md#columnrulewidthproperty), [ColumnRuleStyleProperty](_types_.md#columnrulestyleproperty)] &#124; [[ColumnRuleWidthProperty](_types_.md#columnrulewidthproperty), [ColumnRuleStyleProperty](_types_.md#columnrulestyleproperty), [ColumnRuleColorProperty](_types_.md#columnrulecolorproperty)]
 *
 
-*Defined in types.ts:2288*
+*Defined in [types.ts:2316](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2316)*
 
 ___
 <a id="columnrulestyleproperty"></a>
@@ -1828,7 +1835,7 @@ ___
 
 **Ƭ ColumnRuleStyleProperty**: *[BorderStyleProperty](_types_.md#borderstyleproperty)*
 
-*Defined in types.ts:2308*
+*Defined in [types.ts:2336](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2336)*
 
 ___
 <a id="columnrulestylepropertycombined"></a>
@@ -1838,7 +1845,7 @@ ___
 **Ƭ ColumnRuleStylePropertyCombined**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:2297*
+*Defined in [types.ts:2325](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2325)*
 
 ___
 <a id="columnrulewidthproperty"></a>
@@ -1847,7 +1854,7 @@ ___
 
 **Ƭ ColumnRuleWidthProperty**: *[BorderWidthProperty](_types_.md#borderwidthproperty)*
 
-*Defined in types.ts:2309*
+*Defined in [types.ts:2337](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2337)*
 
 ___
 <a id="columnspanproperty"></a>
@@ -1857,7 +1864,7 @@ ___
 **Ƭ ColumnSpanProperty**: * "none" &#124; "all"
 *
 
-*Defined in types.ts:2310*
+*Defined in [types.ts:2338](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2338)*
 
 ___
 <a id="columnwidthproperty"></a>
@@ -1867,7 +1874,7 @@ ___
 **Ƭ ColumnWidthProperty**: * `TLength` &#124; "auto"
 *
 
-*Defined in types.ts:2311*
+*Defined in [types.ts:2339](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2339)*
 
 ___
 <a id="columnsproperty"></a>
@@ -1877,7 +1884,7 @@ ___
 **Ƭ ColumnsProperty**: * [ColumnCountProperty](_types_.md#columncountproperty) &#124; [ColumnWidthProperty](_types_.md#columnwidthproperty) &#124; [[ColumnWidthProperty](_types_.md#columnwidthproperty), [ColumnCountProperty](_types_.md#columncountproperty)]
 *
 
-*Defined in types.ts:2312*
+*Defined in [types.ts:2340](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2340)*
 
 ___
 <a id="commonligvalues"></a>
@@ -1887,7 +1894,7 @@ ___
 **Ƭ CommonLigValues**: * "common-ligatures" &#124; "no-common-ligatures"
 *
 
-*Defined in types.ts:166*
+*Defined in [types.ts:166](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L166)*
 
 ___
 <a id="compositestyle"></a>
@@ -1897,7 +1904,7 @@ ___
 **Ƭ CompositeStyle**: * "clear" &#124; "copy" &#124; "source-over" &#124; "source-in" &#124; "source-out" &#124; "source-atop" &#124; "destination-over" &#124; "destination-in" &#124; "destination-out" &#124; "destination-atop" &#124; "xor"
 *
 
-*Defined in types.ts:167*
+*Defined in [types.ts:167](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L167)*
 
 ___
 <a id="compositingoperator"></a>
@@ -1907,7 +1914,7 @@ ___
 **Ƭ CompositingOperator**: * "add" &#124; "subtract" &#124; "intersect" &#124; "exclude"
 *
 
-*Defined in types.ts:179*
+*Defined in [types.ts:179](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L179)*
 
 ___
 <a id="contentdistribution"></a>
@@ -1917,7 +1924,7 @@ ___
 **Ƭ ContentDistribution**: * "space-between" &#124; "space-around" &#124; "space-evenly" &#124; "stretch"
 *
 
-*Defined in types.ts:181*
+*Defined in [types.ts:181](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L181)*
 
 ___
 <a id="contentlist"></a>
@@ -1927,7 +1934,7 @@ ___
 **Ƭ ContentList**: * `string` &#124; "contents" &#124; [Image](_types_.md#image) &#124; [Quote](_types_.md#quote) &#124; [Target](_types_.md#target) &#124; [LeaderFunction](_types_.md#leaderfunction)
 *
 
-*Defined in types.ts:182*
+*Defined in [types.ts:182](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L182)*
 
 ___
 <a id="contentposition"></a>
@@ -1937,7 +1944,7 @@ ___
 **Ƭ ContentPosition**: * "center" &#124; "start" &#124; "end" &#124; "flex-start" &#124; "flex-end"
 *
 
-*Defined in types.ts:183*
+*Defined in [types.ts:183](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L183)*
 
 ___
 <a id="contentproperty"></a>
@@ -1946,7 +1953,7 @@ ___
 
 **Ƭ ContentProperty**: *`string`*
 
-*Defined in types.ts:2316*
+*Defined in [types.ts:2344](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2344)*
 
 ___
 <a id="contentreplacement"></a>
@@ -1955,7 +1962,7 @@ ___
 
 **Ƭ ContentReplacement**: *[Image](_types_.md#image)*
 
-*Defined in types.ts:184*
+*Defined in [types.ts:184](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L184)*
 
 ___
 <a id="contextualaltvalues"></a>
@@ -1965,7 +1972,7 @@ ___
 **Ƭ ContextualAltValues**: * "contextual" &#124; "no-contextual"
 *
 
-*Defined in types.ts:180*
+*Defined in [types.ts:180](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L180)*
 
 ___
 <a id="contrastfunction"></a>
@@ -1974,7 +1981,7 @@ ___
 
 **Ƭ ContrastFunction**: *`string`*
 
-*Defined in types.ts:185*
+*Defined in [types.ts:185](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L185)*
 
 ___
 <a id="counterincrementproperty"></a>
@@ -1984,7 +1991,7 @@ ___
 **Ƭ CounterIncrementProperty**: * [CustomIdent](_types_.md#customident) &#124; [[CustomIdent](_types_.md#customident), [Integer](_types_.md#integer)] &#124; "none"
 *
 
-*Defined in types.ts:2317*
+*Defined in [types.ts:2345](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2345)*
 
 ___
 <a id="counterresetproperty"></a>
@@ -1994,7 +2001,7 @@ ___
 **Ƭ CounterResetProperty**: * [CustomIdent](_types_.md#customident) &#124; [[CustomIdent](_types_.md#customident), [Integer](_types_.md#integer)] &#124; "none"
 *
 
-*Defined in types.ts:2318*
+*Defined in [types.ts:2346](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2346)*
 
 ___
 <a id="counterstyle"></a>
@@ -2003,7 +2010,7 @@ ___
 
 **Ƭ CounterStyle**: *`string`*
 
-*Defined in types.ts:186*
+*Defined in [types.ts:186](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L186)*
 
 ___
 <a id="counterstylename"></a>
@@ -2012,7 +2019,7 @@ ___
 
 **Ƭ CounterStyleName**: *[CustomIdent](_types_.md#customident)*
 
-*Defined in types.ts:187*
+*Defined in [types.ts:187](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L187)*
 
 ___
 <a id="crossfadefunction"></a>
@@ -2021,7 +2028,7 @@ ___
 
 **Ƭ CrossFadeFunction**: *`string`*
 
-*Defined in types.ts:188*
+*Defined in [types.ts:188](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L188)*
 
 ___
 <a id="cubicbeziertimingfunction"></a>
@@ -2030,7 +2037,7 @@ ___
 
 **Ƭ CubicBezierTimingFunction**: *`string`*
 
-*Defined in types.ts:189*
+*Defined in [types.ts:189](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L189)*
 
 ___
 <a id="customident"></a>
@@ -2039,7 +2046,7 @@ ___
 
 **Ƭ CustomIdent**: *`string`*
 
-*Defined in types.ts:50*
+*Defined in [types.ts:50](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L50)*
 
 ___
 <a id="deprecatedsystemcolor"></a>
@@ -2049,7 +2056,7 @@ ___
 **Ƭ DeprecatedSystemColor**: * "ActiveBorder" &#124; "ActiveCaption" &#124; "AppWorkspace" &#124; "Background" &#124; "ButtonFace" &#124; "ButtonHighlight" &#124; "ButtonShadow" &#124; "ButtonText" &#124; "CaptionText" &#124; "GrayText" &#124; "Highlight" &#124; "HighlightText" &#124; "InactiveBorder" &#124; "InactiveCaption" &#124; "InactiveCaptionText" &#124; "InfoBackground" &#124; "InfoText" &#124; "Menu" &#124; "MenuText" &#124; "Scrollbar" &#124; "ThreeDDarkShadow" &#124; "ThreeDFace" &#124; "ThreeDHighlight" &#124; "ThreeDLightShadow" &#124; "ThreeDShadow" &#124; "Window" &#124; "WindowFrame" &#124; "WindowText"
 *
 
-*Defined in types.ts:190*
+*Defined in [types.ts:190](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L190)*
 
 ___
 <a id="directionproperty"></a>
@@ -2059,7 +2066,7 @@ ___
 **Ƭ DirectionProperty**: * "ltr" &#124; "rtl"
 *
 
-*Defined in types.ts:2319*
+*Defined in [types.ts:2347](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2347)*
 
 ___
 <a id="discretionaryligvalues"></a>
@@ -2069,7 +2076,7 @@ ___
 **Ƭ DiscretionaryLigValues**: * "discretionary-ligatures" &#124; "no-discretionary-ligatures"
 *
 
-*Defined in types.ts:219*
+*Defined in [types.ts:219](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L219)*
 
 ___
 <a id="displaybox"></a>
@@ -2079,7 +2086,7 @@ ___
 **Ƭ DisplayBox**: * "contents" &#124; "none"
 *
 
-*Defined in types.ts:220*
+*Defined in [types.ts:220](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L220)*
 
 ___
 <a id="displayinside"></a>
@@ -2089,7 +2096,7 @@ ___
 **Ƭ DisplayInside**: * "flow" &#124; "flow-root" &#124; "table" &#124; "flex" &#124; "grid" &#124; "ruby"
 *
 
-*Defined in types.ts:221*
+*Defined in [types.ts:221](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L221)*
 
 ___
 <a id="displayinternal"></a>
@@ -2099,7 +2106,7 @@ ___
 **Ƭ DisplayInternal**: * "table-row-group" &#124; "table-header-group" &#124; "table-footer-group" &#124; "table-row" &#124; "table-cell" &#124; "table-column-group" &#124; "table-column" &#124; "table-caption" &#124; "ruby-base" &#124; "ruby-text" &#124; "ruby-base-container" &#124; "ruby-text-container"
 *
 
-*Defined in types.ts:222*
+*Defined in [types.ts:222](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L222)*
 
 ___
 <a id="displaylegacy"></a>
@@ -2109,7 +2116,7 @@ ___
 **Ƭ DisplayLegacy**: * "inline-block" &#124; "inline-list-item" &#124; "inline-table" &#124; "inline-flex" &#124; "inline-grid"
 *
 
-*Defined in types.ts:235*
+*Defined in [types.ts:235](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L235)*
 
 ___
 <a id="displaylistitem"></a>
@@ -2119,7 +2126,7 @@ ___
 **Ƭ DisplayListitem**: * "list-item" &#124; ["flow", "list-item"] &#124; ["flow-root", "list-item"] &#124; [[DisplayOutside](_types_.md#displayoutside), "list-item"] &#124; [[DisplayOutside](_types_.md#displayoutside), "flow", "list-item"] &#124; [[DisplayOutside](_types_.md#displayoutside), "flow-root", "list-item"]
 *
 
-*Defined in types.ts:254*
+*Defined in [types.ts:254](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L254)*
 
 ___
 <a id="displaylistitemcombined"></a>
@@ -2129,7 +2136,7 @@ ___
 **Ƭ DisplayListitemCombined**: * "list-item" &#124; "flow list-item" &#124; "flow-root list-item" &#124; "block list-item" &#124; "block flow list-item" &#124; "block flow-root list-item" &#124; "inline list-item" &#124; "inline flow list-item" &#124; "inline flow-root list-item" &#124; "run-in list-item" &#124; "run-in flow list-item" &#124; "run-in flow-root list-item"
 *
 
-*Defined in types.ts:241*
+*Defined in [types.ts:241](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L241)*
 
 ___
 <a id="displayoutside"></a>
@@ -2139,7 +2146,7 @@ ___
 **Ƭ DisplayOutside**: * "block" &#124; "inline" &#124; "run-in"
 *
 
-*Defined in types.ts:261*
+*Defined in [types.ts:261](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L261)*
 
 ___
 <a id="displayproperty"></a>
@@ -2149,7 +2156,7 @@ ___
 **Ƭ DisplayProperty**: * [DisplayInside](_types_.md#displayinside) &#124; [DisplayOutside](_types_.md#displayoutside) &#124; [[DisplayOutside](_types_.md#displayoutside), [DisplayInside](_types_.md#displayinside)] &#124; [DisplayListitem](_types_.md#displaylistitem) &#124; [DisplayInternal](_types_.md#displayinternal) &#124; [DisplayBox](_types_.md#displaybox) &#124; [DisplayLegacy](_types_.md#displaylegacy)
 *
 
-*Defined in types.ts:2379*
+*Defined in [types.ts:2407](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2407)*
 
 ___
 <a id="displaypropertycombined"></a>
@@ -2159,7 +2166,7 @@ ___
 **Ƭ DisplayPropertyCombined**: * "flow" &#124; "flow-root" &#124; "table" &#124; "flex" &#124; "grid" &#124; "ruby" &#124; "block" &#124; "block flow" &#124; "block flow-root" &#124; "block table" &#124; "block flex" &#124; "block grid" &#124; "block ruby" &#124; "inline" &#124; "inline flow" &#124; "inline flow-root" &#124; "inline table" &#124; "inline flex" &#124; "inline grid" &#124; "inline ruby" &#124; "run-in" &#124; "run-in flow" &#124; "run-in flow-root" &#124; "run-in table" &#124; "run-in flex" &#124; "run-in grid" &#124; "run-in ruby" &#124; "list-item" &#124; "flow list-item" &#124; "flow-root list-item" &#124; "block list-item" &#124; "block flow list-item" &#124; "block flow-root list-item" &#124; "inline list-item" &#124; "inline flow list-item" &#124; "inline flow-root list-item" &#124; "run-in list-item" &#124; "run-in flow list-item" &#124; "run-in flow-root list-item" &#124; "table-row-group" &#124; "table-header-group" &#124; "table-footer-group" &#124; "table-row" &#124; "table-cell" &#124; "table-column-group" &#124; "table-column" &#124; "table-caption" &#124; "ruby-base" &#124; "ruby-text" &#124; "ruby-base-container" &#124; "ruby-text-container" &#124; "contents" &#124; "none" &#124; "inline-block" &#124; "inline-list-item" &#124; "inline-table" &#124; "inline-flex" &#124; "inline-grid"
 *
 
-*Defined in types.ts:2320*
+*Defined in [types.ts:2348](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2348)*
 
 ___
 <a id="dropshadowfunction"></a>
@@ -2168,7 +2175,7 @@ ___
 
 **Ƭ DropShadowFunction**: *`string`*
 
-*Defined in types.ts:262*
+*Defined in [types.ts:262](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L262)*
 
 ___
 <a id="eastasianvariantvalues"></a>
@@ -2178,7 +2185,7 @@ ___
 **Ƭ EastAsianVariantValues**: * "jis78" &#124; "jis83" &#124; "jis90" &#124; "jis04" &#124; "simplified" &#124; "traditional"
 *
 
-*Defined in types.ts:263*
+*Defined in [types.ts:263](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L263)*
 
 ___
 <a id="eastasianwidthvalues"></a>
@@ -2188,7 +2195,7 @@ ___
 **Ƭ EastAsianWidthValues**: * "full-width" &#124; "proportional-width"
 *
 
-*Defined in types.ts:270*
+*Defined in [types.ts:270](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L270)*
 
 ___
 <a id="elementfunction"></a>
@@ -2197,7 +2204,7 @@ ___
 
 **Ƭ ElementFunction**: *`string`*
 
-*Defined in types.ts:271*
+*Defined in [types.ts:271](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L271)*
 
 ___
 <a id="ellipsefunction"></a>
@@ -2206,7 +2213,7 @@ ___
 
 **Ƭ EllipseFunction**: *`string`*
 
-*Defined in types.ts:272*
+*Defined in [types.ts:272](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L272)*
 
 ___
 <a id="emptycellsproperty"></a>
@@ -2216,7 +2223,7 @@ ___
 **Ƭ EmptyCellsProperty**: * "show" &#124; "hide"
 *
 
-*Defined in types.ts:2387*
+*Defined in [types.ts:2415](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2415)*
 
 ___
 <a id="endingshape"></a>
@@ -2226,17 +2233,17 @@ ___
 **Ƭ EndingShape**: * "circle" &#124; "ellipse"
 *
 
-*Defined in types.ts:273*
+*Defined in [types.ts:273](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L273)*
 
 ___
 <a id="explicittracklist"></a>
 
 ###  ExplicitTrackList
 
-**Ƭ ExplicitTrackList**: * [[TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)]
+**Ƭ ExplicitTrackList**: * [TrackSize](_types_.md#tracksize) &#124; [[TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)]
 *
 
-*Defined in types.ts:274*
+*Defined in [types.ts:274](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L274)*
 
 ___
 <a id="familyname"></a>
@@ -2246,7 +2253,7 @@ ___
 **Ƭ FamilyName**: * `string` &#124; [CustomIdent](_types_.md#customident)
 *
 
-*Defined in types.ts:275*
+*Defined in [types.ts:279](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L279)*
 
 ___
 <a id="featuretagvalue"></a>
@@ -2256,7 +2263,7 @@ ___
 **Ƭ FeatureTagValue**: * `string` &#124; [`string`, [Integer](_types_.md#integer)] &#124; [`string`, "on"] &#124; [`string`, "off"]
 *
 
-*Defined in types.ts:276*
+*Defined in [types.ts:280](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L280)*
 
 ___
 <a id="featuretype"></a>
@@ -2265,7 +2272,7 @@ ___
 
 **Ƭ FeatureType**: *`string`*
 
-*Defined in types.ts:277*
+*Defined in [types.ts:281](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L281)*
 
 ___
 <a id="featurevalueblock"></a>
@@ -2274,7 +2281,7 @@ ___
 
 **Ƭ FeatureValueBlock**: *`string`*
 
-*Defined in types.ts:278*
+*Defined in [types.ts:282](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L282)*
 
 ___
 <a id="featurevalueblocklist"></a>
@@ -2283,7 +2290,7 @@ ___
 
 **Ƭ FeatureValueBlockList**: *[FeatureValueBlock](_types_.md#featurevalueblock)*
 
-*Defined in types.ts:279*
+*Defined in [types.ts:283](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L283)*
 
 ___
 <a id="featurevaluedeclaration"></a>
@@ -2292,7 +2299,7 @@ ___
 
 **Ƭ FeatureValueDeclaration**: *`string`*
 
-*Defined in types.ts:280*
+*Defined in [types.ts:284](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L284)*
 
 ___
 <a id="featurevaluedeclarationlist"></a>
@@ -2301,7 +2308,7 @@ ___
 
 **Ƭ FeatureValueDeclarationList**: *[FeatureValueDeclaration](_types_.md#featurevaluedeclaration)*
 
-*Defined in types.ts:281*
+*Defined in [types.ts:285](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L285)*
 
 ___
 <a id="featurevaluename"></a>
@@ -2310,7 +2317,7 @@ ___
 
 **Ƭ FeatureValueName**: *[CustomIdent](_types_.md#customident)*
 
-*Defined in types.ts:282*
+*Defined in [types.ts:286](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L286)*
 
 ___
 <a id="fillrule"></a>
@@ -2320,7 +2327,7 @@ ___
 **Ƭ FillRule**: * "nonzero" &#124; "evenodd"
 *
 
-*Defined in types.ts:283*
+*Defined in [types.ts:287](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L287)*
 
 ___
 <a id="filterfunction"></a>
@@ -2330,7 +2337,7 @@ ___
 **Ƭ FilterFunction**: * [BlurFunction](_types_.md#blurfunction) &#124; [BrightnessFunction](_types_.md#brightnessfunction) &#124; [ContrastFunction](_types_.md#contrastfunction) &#124; [DropShadowFunction](_types_.md#dropshadowfunction) &#124; [GrayscaleFunction](_types_.md#grayscalefunction) &#124; [HueRotateFunction](_types_.md#huerotatefunction) &#124; [InvertFunction](_types_.md#invertfunction) &#124; [OpacityFunction](_types_.md#opacityfunction) &#124; [SaturateFunction](_types_.md#saturatefunction) &#124; [SepiaFunction](_types_.md#sepiafunction)
 *
 
-*Defined in types.ts:284*
+*Defined in [types.ts:288](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L288)*
 
 ___
 <a id="filterfunctionlist"></a>
@@ -2340,7 +2347,7 @@ ___
 **Ƭ FilterFunctionList**: * [FilterFunction](_types_.md#filterfunction) &#124; [Url](_types_.md#url)
 *
 
-*Defined in types.ts:295*
+*Defined in [types.ts:299](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L299)*
 
 ___
 <a id="filterproperty"></a>
@@ -2350,7 +2357,7 @@ ___
 **Ƭ FilterProperty**: * "none" &#124; [FilterFunctionList](_types_.md#filterfunctionlist)
 *
 
-*Defined in types.ts:2388*
+*Defined in [types.ts:2416](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2416)*
 
 ___
 <a id="fitcontentfunction"></a>
@@ -2359,7 +2366,7 @@ ___
 
 **Ƭ FitContentFunction**: *`string`*
 
-*Defined in types.ts:296*
+*Defined in [types.ts:300](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L300)*
 
 ___
 <a id="fixedbreadth"></a>
@@ -2368,7 +2375,7 @@ ___
 
 **Ƭ FixedBreadth**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
 
-*Defined in types.ts:297*
+*Defined in [types.ts:301](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L301)*
 
 ___
 <a id="fixedsize"></a>
@@ -2377,7 +2384,7 @@ ___
 
 **Ƭ FixedSize**: *`string`*
 
-*Defined in types.ts:298*
+*Defined in [types.ts:302](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L302)*
 
 ___
 <a id="flex"></a>
@@ -2386,7 +2393,7 @@ ___
 
 **Ƭ Flex**: *[IFrValue](../interfaces/_unittypes_.ifrvalue.md)*
 
-*Defined in types.ts:58*
+*Defined in [types.ts:58](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L58)*
 
 ___
 <a id="flexbasisproperty"></a>
@@ -2396,7 +2403,7 @@ ___
 **Ƭ FlexBasisProperty**: * "content" &#124; [WidthProperty](_types_.md#widthproperty)
 *
 
-*Defined in types.ts:2394*
+*Defined in [types.ts:2424](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2424)*
 
 ___
 <a id="flexdirectionproperty"></a>
@@ -2406,7 +2413,7 @@ ___
 **Ƭ FlexDirectionProperty**: * "row" &#124; "row-reverse" &#124; "column" &#124; "column-reverse"
 *
 
-*Defined in types.ts:2395*
+*Defined in [types.ts:2425](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2425)*
 
 ___
 <a id="flexflowproperty"></a>
@@ -2416,7 +2423,7 @@ ___
 **Ƭ FlexFlowProperty**: * [FlexWrapProperty](_types_.md#flexwrapproperty) &#124; [FlexDirectionProperty](_types_.md#flexdirectionproperty) &#124; [[FlexDirectionProperty](_types_.md#flexdirectionproperty), [FlexWrapProperty](_types_.md#flexwrapproperty)]
 *
 
-*Defined in types.ts:2416*
+*Defined in [types.ts:2446](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2446)*
 
 ___
 <a id="flexflowpropertycombined"></a>
@@ -2426,7 +2433,7 @@ ___
 **Ƭ FlexFlowPropertyCombined**: * "nowrap" &#124; "wrap" &#124; "wrap-reverse" &#124; "row" &#124; "row nowrap" &#124; "row wrap" &#124; "row wrap-reverse" &#124; "row-reverse" &#124; "row-reverse nowrap" &#124; "row-reverse wrap" &#124; "row-reverse wrap-reverse" &#124; "column" &#124; "column nowrap" &#124; "column wrap" &#124; "column wrap-reverse" &#124; "column-reverse" &#124; "column-reverse nowrap" &#124; "column-reverse wrap" &#124; "column-reverse wrap-reverse"
 *
 
-*Defined in types.ts:2396*
+*Defined in [types.ts:2426](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2426)*
 
 ___
 <a id="flexgrowproperty"></a>
@@ -2435,17 +2442,17 @@ ___
 
 **Ƭ FlexGrowProperty**: *`number`*
 
-*Defined in types.ts:2420*
+*Defined in [types.ts:2450](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2450)*
 
 ___
 <a id="flexproperty"></a>
 
 ###  FlexProperty
 
-**Ƭ FlexProperty**: * "none" &#124; [FlexBasisProperty](_types_.md#flexbasisproperty) &#124; [[FlexGrowProperty](_types_.md#flexgrowproperty), [FlexBasisProperty](_types_.md#flexbasisproperty)] &#124; [[FlexGrowProperty](_types_.md#flexgrowproperty), [FlexShrinkProperty](_types_.md#flexshrinkproperty), [FlexBasisProperty](_types_.md#flexbasisproperty)]
+**Ƭ FlexProperty**: * "none" &#124; [FlexBasisProperty](_types_.md#flexbasisproperty) &#124; [FlexGrowProperty](_types_.md#flexgrowproperty) &#124; [[FlexGrowProperty](_types_.md#flexgrowproperty), [FlexBasisProperty](_types_.md#flexbasisproperty)] &#124; [[FlexGrowProperty](_types_.md#flexgrowproperty), [FlexShrinkProperty](_types_.md#flexshrinkproperty)] &#124; [[FlexGrowProperty](_types_.md#flexgrowproperty), [FlexShrinkProperty](_types_.md#flexshrinkproperty), [FlexBasisProperty](_types_.md#flexbasisproperty)]
 *
 
-*Defined in types.ts:2389*
+*Defined in [types.ts:2417](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2417)*
 
 ___
 <a id="flexshrinkproperty"></a>
@@ -2454,7 +2461,7 @@ ___
 
 **Ƭ FlexShrinkProperty**: *`number`*
 
-*Defined in types.ts:2421*
+*Defined in [types.ts:2451](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2451)*
 
 ___
 <a id="flexwrapproperty"></a>
@@ -2464,7 +2471,7 @@ ___
 **Ƭ FlexWrapProperty**: * "nowrap" &#124; "wrap" &#124; "wrap-reverse"
 *
 
-*Defined in types.ts:2422*
+*Defined in [types.ts:2452](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2452)*
 
 ___
 <a id="floatproperty"></a>
@@ -2474,7 +2481,7 @@ ___
 **Ƭ FloatProperty**: * "left" &#124; "right" &#124; "none" &#124; "inline-start" &#124; "inline-end"
 *
 
-*Defined in types.ts:2423*
+*Defined in [types.ts:2453](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2453)*
 
 ___
 <a id="fontfamilyproperty"></a>
@@ -2483,7 +2490,7 @@ ___
 
 **Ƭ FontFamilyProperty**: *`string`*
 
-*Defined in types.ts:2425*
+*Defined in [types.ts:2455](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2455)*
 
 ___
 <a id="fontfeaturesettingsproperty"></a>
@@ -2492,7 +2499,7 @@ ___
 
 **Ƭ FontFeatureSettingsProperty**: *`string`*
 
-*Defined in types.ts:2426*
+*Defined in [types.ts:2456](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2456)*
 
 ___
 <a id="fontkerningproperty"></a>
@@ -2502,7 +2509,7 @@ ___
 **Ƭ FontKerningProperty**: * "auto" &#124; "normal" &#124; "none"
 *
 
-*Defined in types.ts:2427*
+*Defined in [types.ts:2457](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2457)*
 
 ___
 <a id="fontlanguageoverrideproperty"></a>
@@ -2512,7 +2519,7 @@ ___
 **Ƭ FontLanguageOverrideProperty**: * "normal" &#124; `string`
 *
 
-*Defined in types.ts:2428*
+*Defined in [types.ts:2458](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2458)*
 
 ___
 <a id="fontopticalsizingproperty"></a>
@@ -2522,7 +2529,7 @@ ___
 **Ƭ FontOpticalSizingProperty**: * "auto" &#124; "none"
 *
 
-*Defined in types.ts:2429*
+*Defined in [types.ts:2459](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2459)*
 
 ___
 <a id="fontproperty"></a>
@@ -2531,7 +2538,7 @@ ___
 
 **Ƭ FontProperty**: *`string`*
 
-*Defined in types.ts:2424*
+*Defined in [types.ts:2454](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2454)*
 
 ___
 <a id="fontsizeadjustproperty"></a>
@@ -2541,7 +2548,7 @@ ___
 **Ƭ FontSizeAdjustProperty**: * "none" &#124; `number`
 *
 
-*Defined in types.ts:2434*
+*Defined in [types.ts:2464](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2464)*
 
 ___
 <a id="fontsizeproperty"></a>
@@ -2551,7 +2558,7 @@ ___
 **Ƭ FontSizeProperty**: * [AbsoluteSize](_types_.md#absolutesize) &#124; [RelativeSize](_types_.md#relativesize) &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
 *
 
-*Defined in types.ts:2430*
+*Defined in [types.ts:2460](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2460)*
 
 ___
 <a id="fontstretchabsolute"></a>
@@ -2561,7 +2568,7 @@ ___
 **Ƭ FontStretchAbsolute**: * "normal" &#124; "ultra-condensed" &#124; "extra-condensed" &#124; "condensed" &#124; "semi-condensed" &#124; "semi-expanded" &#124; "expanded" &#124; "extra-expanded" &#124; "ultra-expanded" &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:299*
+*Defined in [types.ts:303](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L303)*
 
 ___
 <a id="fontstretchproperty"></a>
@@ -2570,7 +2577,7 @@ ___
 
 **Ƭ FontStretchProperty**: *[FontStretchAbsolute](_types_.md#fontstretchabsolute)*
 
-*Defined in types.ts:2435*
+*Defined in [types.ts:2465](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2465)*
 
 ___
 <a id="fontstyleproperty"></a>
@@ -2580,7 +2587,7 @@ ___
 **Ƭ FontStyleProperty**: * "normal" &#124; "italic" &#124; "oblique" &#124; ["oblique", [Angle](_types_.md#angle)]
 *
 
-*Defined in types.ts:2436*
+*Defined in [types.ts:2466](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2466)*
 
 ___
 <a id="fontsynthesisproperty"></a>
@@ -2590,7 +2597,7 @@ ___
 **Ƭ FontSynthesisProperty**: * "none" &#124; "style" &#124; "weight" &#124; ["weight", "style"]
 *
 
-*Defined in types.ts:2437*
+*Defined in [types.ts:2467](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2467)*
 
 ___
 <a id="fontvariantalternatesproperty"></a>
@@ -2599,7 +2606,7 @@ ___
 
 **Ƭ FontVariantAlternatesProperty**: *`string`*
 
-*Defined in types.ts:2439*
+*Defined in [types.ts:2469](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2469)*
 
 ___
 <a id="fontvariantcapsproperty"></a>
@@ -2609,7 +2616,7 @@ ___
 **Ƭ FontVariantCapsProperty**: * "normal" &#124; "small-caps" &#124; "all-small-caps" &#124; "petite-caps" &#124; "all-petite-caps" &#124; "unicase" &#124; "titling-caps"
 *
 
-*Defined in types.ts:2440*
+*Defined in [types.ts:2470](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2470)*
 
 ___
 <a id="fontvariantcss21"></a>
@@ -2619,7 +2626,7 @@ ___
 **Ƭ FontVariantCss21**: * "normal" &#124; "small-caps"
 *
 
-*Defined in types.ts:310*
+*Defined in [types.ts:314](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L314)*
 
 ___
 <a id="fontvarianteastasianproperty"></a>
@@ -2629,7 +2636,7 @@ ___
 **Ƭ FontVariantEastAsianProperty**: * "normal" &#124; "ruby" &#124; [EastAsianWidthValues](_types_.md#eastasianwidthvalues) &#124; [[EastAsianWidthValues](_types_.md#eastasianwidthvalues), "ruby"] &#124; [EastAsianVariantValues](_types_.md#eastasianvariantvalues) &#124; [[EastAsianVariantValues](_types_.md#eastasianvariantvalues), "ruby"] &#124; [[EastAsianVariantValues](_types_.md#eastasianvariantvalues), [EastAsianWidthValues](_types_.md#eastasianwidthvalues)] &#124; [[EastAsianVariantValues](_types_.md#eastasianvariantvalues), [EastAsianWidthValues](_types_.md#eastasianwidthvalues), "ruby"]
 *
 
-*Defined in types.ts:2491*
+*Defined in [types.ts:2521](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2521)*
 
 ___
 <a id="fontvarianteastasianpropertycombined"></a>
@@ -2639,7 +2646,7 @@ ___
 **Ƭ FontVariantEastAsianPropertyCombined**: * "normal" &#124; "ruby" &#124; "full-width" &#124; "full-width ruby" &#124; "proportional-width" &#124; "proportional-width ruby" &#124; "jis78" &#124; "jis78 ruby" &#124; "jis78 full-width" &#124; "jis78 full-width ruby" &#124; "jis78 proportional-width" &#124; "jis78 proportional-width ruby" &#124; "jis83" &#124; "jis83 ruby" &#124; "jis83 full-width" &#124; "jis83 full-width ruby" &#124; "jis83 proportional-width" &#124; "jis83 proportional-width ruby" &#124; "jis90" &#124; "jis90 ruby" &#124; "jis90 full-width" &#124; "jis90 full-width ruby" &#124; "jis90 proportional-width" &#124; "jis90 proportional-width ruby" &#124; "jis04" &#124; "jis04 ruby" &#124; "jis04 full-width" &#124; "jis04 full-width ruby" &#124; "jis04 proportional-width" &#124; "jis04 proportional-width ruby" &#124; "simplified" &#124; "simplified ruby" &#124; "simplified full-width" &#124; "simplified full-width ruby" &#124; "simplified proportional-width" &#124; "simplified proportional-width ruby" &#124; "traditional" &#124; "traditional ruby" &#124; "traditional full-width" &#124; "traditional full-width ruby" &#124; "traditional proportional-width" &#124; "traditional proportional-width ruby"
 *
 
-*Defined in types.ts:2448*
+*Defined in [types.ts:2478](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2478)*
 
 ___
 <a id="fontvariantligaturesproperty"></a>
@@ -2649,7 +2656,7 @@ ___
 **Ƭ FontVariantLigaturesProperty**: * "normal" &#124; "none" &#124; [ContextualAltValues](_types_.md#contextualaltvalues) &#124; [HistoricalLigValues](_types_.md#historicalligvalues) &#124; [[HistoricalLigValues](_types_.md#historicalligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [DiscretionaryLigValues](_types_.md#discretionaryligvalues) &#124; [[DiscretionaryLigValues](_types_.md#discretionaryligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [[DiscretionaryLigValues](_types_.md#discretionaryligvalues), [HistoricalLigValues](_types_.md#historicalligvalues)] &#124; [[DiscretionaryLigValues](_types_.md#discretionaryligvalues), [HistoricalLigValues](_types_.md#historicalligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [CommonLigValues](_types_.md#commonligvalues) &#124; [[CommonLigValues](_types_.md#commonligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [HistoricalLigValues](_types_.md#historicalligvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [HistoricalLigValues](_types_.md#historicalligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [DiscretionaryLigValues](_types_.md#discretionaryligvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [DiscretionaryLigValues](_types_.md#discretionaryligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [DiscretionaryLigValues](_types_.md#discretionaryligvalues), [HistoricalLigValues](_types_.md#historicalligvalues)] &#124; [[CommonLigValues](_types_.md#commonligvalues), [DiscretionaryLigValues](_types_.md#discretionaryligvalues), [HistoricalLigValues](_types_.md#historicalligvalues), [ContextualAltValues](_types_.md#contextualaltvalues)]
 *
 
-*Defined in types.ts:2583*
+*Defined in [types.ts:2613](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2613)*
 
 ___
 <a id="fontvariantligaturespropertycombined"></a>
@@ -2659,7 +2666,7 @@ ___
 **Ƭ FontVariantLigaturesPropertyCombined**: * "normal" &#124; "none" &#124; "contextual" &#124; "no-contextual" &#124; "historical-ligatures" &#124; "historical-ligatures contextual" &#124; "historical-ligatures no-contextual" &#124; "no-historical-ligatures" &#124; "no-historical-ligatures contextual" &#124; "no-historical-ligatures no-contextual" &#124; "discretionary-ligatures" &#124; "discretionary-ligatures contextual" &#124; "discretionary-ligatures no-contextual" &#124; "discretionary-ligatures historical-ligatures" &#124; "discretionary-ligatures historical-ligatures contextual" &#124; "discretionary-ligatures historical-ligatures no-contextual" &#124; "discretionary-ligatures no-historical-ligatures" &#124; "discretionary-ligatures no-historical-ligatures contextual" &#124; "discretionary-ligatures no-historical-ligatures no-contextual" &#124; "no-discretionary-ligatures" &#124; "no-discretionary-ligatures contextual" &#124; "no-discretionary-ligatures no-contextual" &#124; "no-discretionary-ligatures historical-ligatures" &#124; "no-discretionary-ligatures historical-ligatures contextual" &#124; "no-discretionary-ligatures historical-ligatures no-contextual" &#124; "no-discretionary-ligatures no-historical-ligatures" &#124; "no-discretionary-ligatures no-historical-ligatures contextual" &#124; "no-discretionary-ligatures no-historical-ligatures no-contextual" &#124; "common-ligatures" &#124; "common-ligatures contextual" &#124; "common-ligatures no-contextual" &#124; "common-ligatures historical-ligatures" &#124; "common-ligatures historical-ligatures contextual" &#124; "common-ligatures historical-ligatures no-contextual" &#124; "common-ligatures no-historical-ligatures" &#124; "common-ligatures no-historical-ligatures contextual" &#124; "common-ligatures no-historical-ligatures no-contextual" &#124; "common-ligatures discretionary-ligatures" &#124; "common-ligatures discretionary-ligatures contextual" &#124; "common-ligatures discretionary-ligatures no-contextual" &#124; "common-ligatures discretionary-ligatures historical-ligatures" &#124; "common-ligatures discretionary-ligatures historical-ligatures contextual" &#124; "common-ligatures discretionary-ligatures historical-ligatures no-contextual" &#124; "common-ligatures discretionary-ligatures no-historical-ligatures" &#124; "common-ligatures discretionary-ligatures no-historical-ligatures contextual" &#124; "common-ligatures discretionary-ligatures no-historical-ligatures no-contextual" &#124; "common-ligatures no-discretionary-ligatures" &#124; "common-ligatures no-discretionary-ligatures contextual" &#124; "common-ligatures no-discretionary-ligatures no-contextual" &#124; "common-ligatures no-discretionary-ligatures historical-ligatures" &#124; "common-ligatures no-discretionary-ligatures historical-ligatures contextual" &#124; "common-ligatures no-discretionary-ligatures historical-ligatures no-contextual" &#124; "common-ligatures no-discretionary-ligatures no-historical-ligatures" &#124; "common-ligatures no-discretionary-ligatures no-historical-ligatures contextual" &#124; "common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual" &#124; "no-common-ligatures" &#124; "no-common-ligatures contextual" &#124; "no-common-ligatures no-contextual" &#124; "no-common-ligatures historical-ligatures" &#124; "no-common-ligatures historical-ligatures contextual" &#124; "no-common-ligatures historical-ligatures no-contextual" &#124; "no-common-ligatures no-historical-ligatures" &#124; "no-common-ligatures no-historical-ligatures contextual" &#124; "no-common-ligatures no-historical-ligatures no-contextual" &#124; "no-common-ligatures discretionary-ligatures" &#124; "no-common-ligatures discretionary-ligatures contextual" &#124; "no-common-ligatures discretionary-ligatures no-contextual" &#124; "no-common-ligatures discretionary-ligatures historical-ligatures" &#124; "no-common-ligatures discretionary-ligatures historical-ligatures contextual" &#124; "no-common-ligatures discretionary-ligatures historical-ligatures no-contextual" &#124; "no-common-ligatures discretionary-ligatures no-historical-ligatures" &#124; "no-common-ligatures discretionary-ligatures no-historical-ligatures contextual" &#124; "no-common-ligatures discretionary-ligatures no-historical-ligatures no-contextual" &#124; "no-common-ligatures no-discretionary-ligatures" &#124; "no-common-ligatures no-discretionary-ligatures contextual" &#124; "no-common-ligatures no-discretionary-ligatures no-contextual" &#124; "no-common-ligatures no-discretionary-ligatures historical-ligatures" &#124; "no-common-ligatures no-discretionary-ligatures historical-ligatures contextual" &#124; "no-common-ligatures no-discretionary-ligatures historical-ligatures no-contextual" &#124; "no-common-ligatures no-discretionary-ligatures no-historical-ligatures" &#124; "no-common-ligatures no-discretionary-ligatures no-historical-ligatures contextual" &#124; "no-common-ligatures no-discretionary-ligatures no-historical-ligatures no-contextual"
 *
 
-*Defined in types.ts:2500*
+*Defined in [types.ts:2530](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2530)*
 
 ___
 <a id="fontvariantnumericproperty"></a>
@@ -2669,7 +2676,7 @@ ___
 **Ƭ FontVariantNumericProperty**: * "normal" &#124; "slashed-zero" &#124; "ordinal" &#124; ["ordinal", "slashed-zero"] &#124; [NumericFractionValues](_types_.md#numericfractionvalues) &#124; [[NumericFractionValues](_types_.md#numericfractionvalues), "slashed-zero"] &#124; [[NumericFractionValues](_types_.md#numericfractionvalues), "ordinal"] &#124; [[NumericFractionValues](_types_.md#numericfractionvalues), "ordinal", "slashed-zero"] &#124; [NumericSpacingValues](_types_.md#numericspacingvalues) &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), "slashed-zero"] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), "ordinal"] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), "ordinal", "slashed-zero"] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues)] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "slashed-zero"] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal"] &#124; [[NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal", "slashed-zero"] &#124; [NumericFigureValues](_types_.md#numericfigurevalues) &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), "ordinal"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), "ordinal", "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericFractionValues](_types_.md#numericfractionvalues)] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericFractionValues](_types_.md#numericfractionvalues), "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal", "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues)] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), "ordinal"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), "ordinal", "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues)] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "slashed-zero"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal"] &#124; [[NumericFigureValues](_types_.md#numericfigurevalues), [NumericSpacingValues](_types_.md#numericspacingvalues), [NumericFractionValues](_types_.md#numericfractionvalues), "ordinal", "slashed-zero"]
 *
 
-*Defined in types.ts:2710*
+*Defined in [types.ts:2740](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2740)*
 
 ___
 <a id="fontvariantnumericpropertycombined"></a>
@@ -2679,7 +2686,7 @@ ___
 **Ƭ FontVariantNumericPropertyCombined**: * "normal" &#124; "slashed-zero" &#124; "ordinal" &#124; "ordinal slashed-zero" &#124; "diagonal-fractions" &#124; "diagonal-fractions slashed-zero" &#124; "diagonal-fractions ordinal" &#124; "diagonal-fractions ordinal slashed-zero" &#124; "stacked-fractions" &#124; "stacked-fractions slashed-zero" &#124; "stacked-fractions ordinal" &#124; "stacked-fractions ordinal slashed-zero" &#124; "proportional-nums" &#124; "proportional-nums slashed-zero" &#124; "proportional-nums ordinal" &#124; "proportional-nums ordinal slashed-zero" &#124; "proportional-nums diagonal-fractions" &#124; "proportional-nums diagonal-fractions slashed-zero" &#124; "proportional-nums diagonal-fractions ordinal" &#124; "proportional-nums diagonal-fractions ordinal slashed-zero" &#124; "proportional-nums stacked-fractions" &#124; "proportional-nums stacked-fractions slashed-zero" &#124; "proportional-nums stacked-fractions ordinal" &#124; "proportional-nums stacked-fractions ordinal slashed-zero" &#124; "tabular-nums" &#124; "tabular-nums slashed-zero" &#124; "tabular-nums ordinal" &#124; "tabular-nums ordinal slashed-zero" &#124; "tabular-nums diagonal-fractions" &#124; "tabular-nums diagonal-fractions slashed-zero" &#124; "tabular-nums diagonal-fractions ordinal" &#124; "tabular-nums diagonal-fractions ordinal slashed-zero" &#124; "tabular-nums stacked-fractions" &#124; "tabular-nums stacked-fractions slashed-zero" &#124; "tabular-nums stacked-fractions ordinal" &#124; "tabular-nums stacked-fractions ordinal slashed-zero" &#124; "lining-nums" &#124; "lining-nums slashed-zero" &#124; "lining-nums ordinal" &#124; "lining-nums ordinal slashed-zero" &#124; "lining-nums diagonal-fractions" &#124; "lining-nums diagonal-fractions slashed-zero" &#124; "lining-nums diagonal-fractions ordinal" &#124; "lining-nums diagonal-fractions ordinal slashed-zero" &#124; "lining-nums stacked-fractions" &#124; "lining-nums stacked-fractions slashed-zero" &#124; "lining-nums stacked-fractions ordinal" &#124; "lining-nums stacked-fractions ordinal slashed-zero" &#124; "lining-nums proportional-nums" &#124; "lining-nums proportional-nums slashed-zero" &#124; "lining-nums proportional-nums ordinal" &#124; "lining-nums proportional-nums ordinal slashed-zero" &#124; "lining-nums proportional-nums diagonal-fractions" &#124; "lining-nums proportional-nums diagonal-fractions slashed-zero" &#124; "lining-nums proportional-nums diagonal-fractions ordinal" &#124; "lining-nums proportional-nums diagonal-fractions ordinal slashed-zero" &#124; "lining-nums proportional-nums stacked-fractions" &#124; "lining-nums proportional-nums stacked-fractions slashed-zero" &#124; "lining-nums proportional-nums stacked-fractions ordinal" &#124; "lining-nums proportional-nums stacked-fractions ordinal slashed-zero" &#124; "lining-nums tabular-nums" &#124; "lining-nums tabular-nums slashed-zero" &#124; "lining-nums tabular-nums ordinal" &#124; "lining-nums tabular-nums ordinal slashed-zero" &#124; "lining-nums tabular-nums diagonal-fractions" &#124; "lining-nums tabular-nums diagonal-fractions slashed-zero" &#124; "lining-nums tabular-nums diagonal-fractions ordinal" &#124; "lining-nums tabular-nums diagonal-fractions ordinal slashed-zero" &#124; "lining-nums tabular-nums stacked-fractions" &#124; "lining-nums tabular-nums stacked-fractions slashed-zero" &#124; "lining-nums tabular-nums stacked-fractions ordinal" &#124; "lining-nums tabular-nums stacked-fractions ordinal slashed-zero" &#124; "oldstyle-nums" &#124; "oldstyle-nums slashed-zero" &#124; "oldstyle-nums ordinal" &#124; "oldstyle-nums ordinal slashed-zero" &#124; "oldstyle-nums diagonal-fractions" &#124; "oldstyle-nums diagonal-fractions slashed-zero" &#124; "oldstyle-nums diagonal-fractions ordinal" &#124; "oldstyle-nums diagonal-fractions ordinal slashed-zero" &#124; "oldstyle-nums stacked-fractions" &#124; "oldstyle-nums stacked-fractions slashed-zero" &#124; "oldstyle-nums stacked-fractions ordinal" &#124; "oldstyle-nums stacked-fractions ordinal slashed-zero" &#124; "oldstyle-nums proportional-nums" &#124; "oldstyle-nums proportional-nums slashed-zero" &#124; "oldstyle-nums proportional-nums ordinal" &#124; "oldstyle-nums proportional-nums ordinal slashed-zero" &#124; "oldstyle-nums proportional-nums diagonal-fractions" &#124; "oldstyle-nums proportional-nums diagonal-fractions slashed-zero" &#124; "oldstyle-nums proportional-nums diagonal-fractions ordinal" &#124; "oldstyle-nums proportional-nums diagonal-fractions ordinal slashed-zero" &#124; "oldstyle-nums proportional-nums stacked-fractions" &#124; "oldstyle-nums proportional-nums stacked-fractions slashed-zero" &#124; "oldstyle-nums proportional-nums stacked-fractions ordinal" &#124; "oldstyle-nums proportional-nums stacked-fractions ordinal slashed-zero" &#124; "oldstyle-nums tabular-nums" &#124; "oldstyle-nums tabular-nums slashed-zero" &#124; "oldstyle-nums tabular-nums ordinal" &#124; "oldstyle-nums tabular-nums ordinal slashed-zero" &#124; "oldstyle-nums tabular-nums diagonal-fractions" &#124; "oldstyle-nums tabular-nums diagonal-fractions slashed-zero" &#124; "oldstyle-nums tabular-nums diagonal-fractions ordinal" &#124; "oldstyle-nums tabular-nums diagonal-fractions ordinal slashed-zero" &#124; "oldstyle-nums tabular-nums stacked-fractions" &#124; "oldstyle-nums tabular-nums stacked-fractions slashed-zero" &#124; "oldstyle-nums tabular-nums stacked-fractions ordinal" &#124; "oldstyle-nums tabular-nums stacked-fractions ordinal slashed-zero"
 *
 
-*Defined in types.ts:2601*
+*Defined in [types.ts:2631](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2631)*
 
 ___
 <a id="fontvariantpositionproperty"></a>
@@ -2689,7 +2696,7 @@ ___
 **Ƭ FontVariantPositionProperty**: * "normal" &#124; "sub" &#124; "super"
 *
 
-*Defined in types.ts:2743*
+*Defined in [types.ts:2773](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2773)*
 
 ___
 <a id="fontvariantproperty"></a>
@@ -2698,7 +2705,7 @@ ___
 
 **Ƭ FontVariantProperty**: *`string`*
 
-*Defined in types.ts:2438*
+*Defined in [types.ts:2468](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2468)*
 
 ___
 <a id="fontweightabsolute"></a>
@@ -2708,7 +2715,7 @@ ___
 **Ƭ FontWeightAbsolute**: * "normal" &#124; "bold" &#124; `number`
 *
 
-*Defined in types.ts:311*
+*Defined in [types.ts:315](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L315)*
 
 ___
 <a id="fontweightproperty"></a>
@@ -2718,7 +2725,7 @@ ___
 **Ƭ FontWeightProperty**: * [FontWeightAbsolute](_types_.md#fontweightabsolute) &#124; "bolder" &#124; "lighter"
 *
 
-*Defined in types.ts:2744*
+*Defined in [types.ts:2774](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2774)*
 
 ___
 <a id="framestimingfunction"></a>
@@ -2727,7 +2734,7 @@ ___
 
 **Ƭ FramesTimingFunction**: *`string`*
 
-*Defined in types.ts:312*
+*Defined in [types.ts:316](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L316)*
 
 ___
 <a id="frequency"></a>
@@ -2737,7 +2744,7 @@ ___
 **Ƭ Frequency**: * [IHzValue](../interfaces/_unittypes_.ihzvalue.md) &#124; [IKhzValue](../interfaces/_unittypes_.ikhzvalue.md)
 *
 
-*Defined in types.ts:59*
+*Defined in [types.ts:59](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L59)*
 
 ___
 <a id="frequencypercentage"></a>
@@ -2747,7 +2754,7 @@ ___
 **Ƭ FrequencyPercentage**: * [Frequency](_types_.md#frequency) &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:313*
+*Defined in [types.ts:317](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L317)*
 
 ___
 <a id="gapproperty"></a>
@@ -2757,7 +2764,7 @@ ___
 **Ƭ GapProperty**: * [RowGapProperty](_types_.md#rowgapproperty) &#124; [[RowGapProperty](_types_.md#rowgapproperty), [ColumnGapProperty](_types_.md#columngapproperty)]
 *
 
-*Defined in types.ts:2745*
+*Defined in [types.ts:2775](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2775)*
 
 ___
 <a id="genericfamily"></a>
@@ -2767,7 +2774,7 @@ ___
 **Ƭ GenericFamily**: * "serif" &#124; "sans-serif" &#124; "cursive" &#124; "fantasy" &#124; "monospace"
 *
 
-*Defined in types.ts:314*
+*Defined in [types.ts:318](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L318)*
 
 ___
 <a id="genericname"></a>
@@ -2777,7 +2784,7 @@ ___
 **Ƭ GenericName**: * "serif" &#124; "sans-serif" &#124; "cursive" &#124; "fantasy" &#124; "monospace"
 *
 
-*Defined in types.ts:315*
+*Defined in [types.ts:319](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L319)*
 
 ___
 <a id="geometrybox"></a>
@@ -2787,7 +2794,7 @@ ___
 **Ƭ GeometryBox**: * [ShapeBox](_types_.md#shapebox) &#124; "fill-box" &#124; "stroke-box" &#124; "view-box"
 *
 
-*Defined in types.ts:324*
+*Defined in [types.ts:328](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L328)*
 
 ___
 <a id="geometryboxcombined"></a>
@@ -2797,7 +2804,7 @@ ___
 **Ƭ GeometryBoxCombined**: * "border-box" &#124; "padding-box" &#124; "content-box" &#124; "margin-box" &#124; "fill-box" &#124; "stroke-box" &#124; "view-box"
 *
 
-*Defined in types.ts:316*
+*Defined in [types.ts:320](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L320)*
 
 ___
 <a id="gradient"></a>
@@ -2807,7 +2814,7 @@ ___
 **Ƭ Gradient**: * [LinearGradientFunction](_types_.md#lineargradientfunction) &#124; [RepeatingLinearGradientFunction](_types_.md#repeatinglineargradientfunction) &#124; [RadialGradientFunction](_types_.md#radialgradientfunction) &#124; [RepeatingRadialGradientFunction](_types_.md#repeatingradialgradientfunction)
 *
 
-*Defined in types.ts:325*
+*Defined in [types.ts:329](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L329)*
 
 ___
 <a id="grayscalefunction"></a>
@@ -2816,7 +2823,7 @@ ___
 
 **Ƭ GrayscaleFunction**: *`string`*
 
-*Defined in types.ts:330*
+*Defined in [types.ts:334](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L334)*
 
 ___
 <a id="gridareaproperty"></a>
@@ -2825,7 +2832,7 @@ ___
 
 **Ƭ GridAreaProperty**: *`string`*
 
-*Defined in types.ts:2747*
+*Defined in [types.ts:2777](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2777)*
 
 ___
 <a id="gridautocolumnsproperty"></a>
@@ -2834,7 +2841,7 @@ ___
 
 **Ƭ GridAutoColumnsProperty**: *[TrackSize](_types_.md#tracksize)*
 
-*Defined in types.ts:2748*
+*Defined in [types.ts:2778](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2778)*
 
 ___
 <a id="gridautoflowproperty"></a>
@@ -2844,7 +2851,7 @@ ___
 **Ƭ GridAutoFlowProperty**: * "dense" &#124; "row" &#124; ["row", "dense"] &#124; "column" &#124; ["column", "dense"]
 *
 
-*Defined in types.ts:2749*
+*Defined in [types.ts:2779](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2779)*
 
 ___
 <a id="gridautorowsproperty"></a>
@@ -2853,7 +2860,7 @@ ___
 
 **Ƭ GridAutoRowsProperty**: *[TrackSize](_types_.md#tracksize)*
 
-*Defined in types.ts:2755*
+*Defined in [types.ts:2785](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2785)*
 
 ___
 <a id="gridcolumnendproperty"></a>
@@ -2862,7 +2869,7 @@ ___
 
 **Ƭ GridColumnEndProperty**: *[GridLine](_types_.md#gridline)*
 
-*Defined in types.ts:2757*
+*Defined in [types.ts:2787](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2787)*
 
 ___
 <a id="gridcolumnproperty"></a>
@@ -2871,7 +2878,7 @@ ___
 
 **Ƭ GridColumnProperty**: *`string`*
 
-*Defined in types.ts:2756*
+*Defined in [types.ts:2786](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2786)*
 
 ___
 <a id="gridcolumnstartproperty"></a>
@@ -2880,7 +2887,7 @@ ___
 
 **Ƭ GridColumnStartProperty**: *[GridLine](_types_.md#gridline)*
 
-*Defined in types.ts:2758*
+*Defined in [types.ts:2788](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2788)*
 
 ___
 <a id="gridline"></a>
@@ -2890,7 +2897,7 @@ ___
 **Ƭ GridLine**: * "auto" &#124; [CustomIdent](_types_.md#customident) &#124; [Integer](_types_.md#integer) &#124; [[Integer](_types_.md#integer), [CustomIdent](_types_.md#customident)] &#124; ["span", [CustomIdent](_types_.md#customident)] &#124; ["span", [Integer](_types_.md#integer)] &#124; ["span", [Integer](_types_.md#integer), [CustomIdent](_types_.md#customident)]
 *
 
-*Defined in types.ts:331*
+*Defined in [types.ts:335](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L335)*
 
 ___
 <a id="gridproperty"></a>
@@ -2899,7 +2906,7 @@ ___
 
 **Ƭ GridProperty**: *`string`*
 
-*Defined in types.ts:2746*
+*Defined in [types.ts:2776](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2776)*
 
 ___
 <a id="gridrowendproperty"></a>
@@ -2908,7 +2915,7 @@ ___
 
 **Ƭ GridRowEndProperty**: *[GridLine](_types_.md#gridline)*
 
-*Defined in types.ts:2760*
+*Defined in [types.ts:2790](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2790)*
 
 ___
 <a id="gridrowproperty"></a>
@@ -2917,7 +2924,7 @@ ___
 
 **Ƭ GridRowProperty**: *`string`*
 
-*Defined in types.ts:2759*
+*Defined in [types.ts:2789](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2789)*
 
 ___
 <a id="gridrowstartproperty"></a>
@@ -2926,7 +2933,7 @@ ___
 
 **Ƭ GridRowStartProperty**: *[GridLine](_types_.md#gridline)*
 
-*Defined in types.ts:2761*
+*Defined in [types.ts:2791](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2791)*
 
 ___
 <a id="gridtemplateareasproperty"></a>
@@ -2936,7 +2943,7 @@ ___
 **Ƭ GridTemplateAreasProperty**: * "none" &#124; `string`
 *
 
-*Defined in types.ts:2763*
+*Defined in [types.ts:2793](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2793)*
 
 ___
 <a id="gridtemplatecolumnsproperty"></a>
@@ -2946,7 +2953,7 @@ ___
 **Ƭ GridTemplateColumnsProperty**: * "none" &#124; [TrackList](_types_.md#tracklist) &#124; [AutoTrackList](_types_.md#autotracklist)
 *
 
-*Defined in types.ts:2764*
+*Defined in [types.ts:2794](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2794)*
 
 ___
 <a id="gridtemplateproperty"></a>
@@ -2955,7 +2962,7 @@ ___
 
 **Ƭ GridTemplateProperty**: *`string`*
 
-*Defined in types.ts:2762*
+*Defined in [types.ts:2792](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2792)*
 
 ___
 <a id="gridtemplaterowsproperty"></a>
@@ -2965,7 +2972,7 @@ ___
 **Ƭ GridTemplateRowsProperty**: * "none" &#124; [TrackList](_types_.md#tracklist) &#124; [AutoTrackList](_types_.md#autotracklist)
 *
 
-*Defined in types.ts:2765*
+*Defined in [types.ts:2795](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2795)*
 
 ___
 <a id="hangingpunctuationproperty"></a>
@@ -2975,7 +2982,7 @@ ___
 **Ƭ HangingPunctuationProperty**: * "none" &#124; "last" &#124; "force-end" &#124; ["force-end", "last"] &#124; "allow-end" &#124; ["allow-end", "last"] &#124; "first" &#124; ["first", "last"] &#124; ["first", "force-end"] &#124; ["first", "force-end", "last"] &#124; ["first", "allow-end"] &#124; ["first", "allow-end", "last"]
 *
 
-*Defined in types.ts:2766*
+*Defined in [types.ts:2796](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2796)*
 
 ___
 <a id="heightproperty"></a>
@@ -2985,7 +2992,7 @@ ___
 **Ƭ HeightProperty**: * `TLength` &#124; [`TLength`, "border-box"] &#124; [`TLength`, "content-box"] &#124; [Percentage](_types_.md#percentage) &#124; [[Percentage](_types_.md#percentage), "border-box"] &#124; [[Percentage](_types_.md#percentage), "content-box"] &#124; "available" &#124; "min-content" &#124; "max-content" &#124; "fit-content" &#124; "auto"
 *
 
-*Defined in types.ts:2779*
+*Defined in [types.ts:2809](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2809)*
 
 ___
 <a id="historicalligvalues"></a>
@@ -2995,7 +3002,7 @@ ___
 **Ƭ HistoricalLigValues**: * "historical-ligatures" &#124; "no-historical-ligatures"
 *
 
-*Defined in types.ts:339*
+*Defined in [types.ts:343](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L343)*
 
 ___
 <a id="hslfunction"></a>
@@ -3004,7 +3011,7 @@ ___
 
 **Ƭ HslFunction**: *`string`*
 
-*Defined in types.ts:340*
+*Defined in [types.ts:344](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L344)*
 
 ___
 <a id="hslafunction"></a>
@@ -3013,7 +3020,7 @@ ___
 
 **Ƭ HslaFunction**: *`string`*
 
-*Defined in types.ts:341*
+*Defined in [types.ts:345](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L345)*
 
 ___
 <a id="hue"></a>
@@ -3023,7 +3030,7 @@ ___
 **Ƭ Hue**: * `number` &#124; [Angle](_types_.md#angle)
 *
 
-*Defined in types.ts:342*
+*Defined in [types.ts:346](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L346)*
 
 ___
 <a id="huerotatefunction"></a>
@@ -3032,7 +3039,7 @@ ___
 
 **Ƭ HueRotateFunction**: *`string`*
 
-*Defined in types.ts:343*
+*Defined in [types.ts:347](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L347)*
 
 ___
 <a id="hyphensproperty"></a>
@@ -3042,7 +3049,7 @@ ___
 **Ƭ HyphensProperty**: * "none" &#124; "manual" &#124; "auto"
 *
 
-*Defined in types.ts:2791*
+*Defined in [types.ts:2821](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2821)*
 
 ___
 <a id="ident"></a>
@@ -3051,7 +3058,7 @@ ___
 
 **Ƭ Ident**: *`string`*
 
-*Defined in types.ts:51*
+*Defined in [types.ts:51](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L51)*
 
 ___
 <a id="image"></a>
@@ -3061,7 +3068,7 @@ ___
 **Ƭ Image**: * [Url](_types_.md#url) &#124; [ImageFunction](_types_.md#imagefunction) &#124; [ImageSetFunction](_types_.md#imagesetfunction) &#124; [ElementFunction](_types_.md#elementfunction) &#124; [CrossFadeFunction](_types_.md#crossfadefunction) &#124; [Gradient](_types_.md#gradient)
 *
 
-*Defined in types.ts:344*
+*Defined in [types.ts:348](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L348)*
 
 ___
 <a id="imagefunction"></a>
@@ -3070,7 +3077,7 @@ ___
 
 **Ƭ ImageFunction**: *`string`*
 
-*Defined in types.ts:351*
+*Defined in [types.ts:355](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L355)*
 
 ___
 <a id="imageorientationproperty"></a>
@@ -3080,7 +3087,7 @@ ___
 **Ƭ ImageOrientationProperty**: * "from-image" &#124; [Angle](_types_.md#angle) &#124; "flip" &#124; [[Angle](_types_.md#angle), "flip"]
 *
 
-*Defined in types.ts:2792*
+*Defined in [types.ts:2822](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2822)*
 
 ___
 <a id="imagerenderingproperty"></a>
@@ -3090,7 +3097,7 @@ ___
 **Ƭ ImageRenderingProperty**: * "auto" &#124; "crisp-edges" &#124; "pixelated"
 *
 
-*Defined in types.ts:2793*
+*Defined in [types.ts:2823](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2823)*
 
 ___
 <a id="imagesetfunction"></a>
@@ -3099,7 +3106,7 @@ ___
 
 **Ƭ ImageSetFunction**: *`string`*
 
-*Defined in types.ts:352*
+*Defined in [types.ts:356](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L356)*
 
 ___
 <a id="imagesetoption"></a>
@@ -3109,7 +3116,7 @@ ___
 **Ƭ ImageSetOption**: * [[Image](_types_.md#image), [Resolution](_types_.md#resolution)] &#124; [`string`, [Resolution](_types_.md#resolution)]
 *
 
-*Defined in types.ts:353*
+*Defined in [types.ts:357](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L357)*
 
 ___
 <a id="inflexiblebreadth"></a>
@@ -3119,7 +3126,7 @@ ___
 **Ƭ InflexibleBreadth**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "min-content" &#124; "max-content" &#124; "auto"
 *
 
-*Defined in types.ts:354*
+*Defined in [types.ts:358](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L358)*
 
 ___
 <a id="inlinesizeproperty"></a>
@@ -3128,7 +3135,7 @@ ___
 
 **Ƭ InlineSizeProperty**: *[WidthProperty](_types_.md#widthproperty)*
 
-*Defined in types.ts:2794*
+*Defined in [types.ts:2824](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2824)*
 
 ___
 <a id="insetblockendproperty"></a>
@@ -3137,7 +3144,7 @@ ___
 
 **Ƭ InsetBlockEndProperty**: *[LeftProperty](_types_.md#leftproperty)*
 
-*Defined in types.ts:2795*
+*Defined in [types.ts:2825](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2825)*
 
 ___
 <a id="insetblockstartproperty"></a>
@@ -3146,7 +3153,7 @@ ___
 
 **Ƭ InsetBlockStartProperty**: *[LeftProperty](_types_.md#leftproperty)*
 
-*Defined in types.ts:2796*
+*Defined in [types.ts:2826](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2826)*
 
 ___
 <a id="insetfunction"></a>
@@ -3155,7 +3162,7 @@ ___
 
 **Ƭ InsetFunction**: *`string`*
 
-*Defined in types.ts:60*
+*Defined in [types.ts:60](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L60)*
 
 ___
 <a id="insetinlineendproperty"></a>
@@ -3164,7 +3171,7 @@ ___
 
 **Ƭ InsetInlineEndProperty**: *[LeftProperty](_types_.md#leftproperty)*
 
-*Defined in types.ts:2797*
+*Defined in [types.ts:2827](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2827)*
 
 ___
 <a id="insetinlinestartproperty"></a>
@@ -3173,7 +3180,7 @@ ___
 
 **Ƭ InsetInlineStartProperty**: *[LeftProperty](_types_.md#leftproperty)*
 
-*Defined in types.ts:2798*
+*Defined in [types.ts:2828](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2828)*
 
 ___
 <a id="integer"></a>
@@ -3182,7 +3189,7 @@ ___
 
 **Ƭ Integer**: *`number`*
 
-*Defined in types.ts:61*
+*Defined in [types.ts:61](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L61)*
 
 ___
 <a id="invertfunction"></a>
@@ -3191,7 +3198,7 @@ ___
 
 **Ƭ InvertFunction**: *`string`*
 
-*Defined in types.ts:360*
+*Defined in [types.ts:364](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L364)*
 
 ___
 <a id="isolationproperty"></a>
@@ -3201,7 +3208,7 @@ ___
 **Ƭ IsolationProperty**: * "auto" &#124; "isolate"
 *
 
-*Defined in types.ts:2799*
+*Defined in [types.ts:2829](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2829)*
 
 ___
 <a id="justifycontentproperty"></a>
@@ -3211,7 +3218,7 @@ ___
 **Ƭ JustifyContentProperty**: * "normal" &#124; [ContentDistribution](_types_.md#contentdistribution) &#124; [ContentPosition](_types_.md#contentposition) &#124; "left" &#124; "right" &#124; [[OverflowPosition](_types_.md#overflowposition), [ContentPosition](_types_.md#contentposition)] &#124; [[OverflowPosition](_types_.md#overflowposition), "left"] &#124; [[OverflowPosition](_types_.md#overflowposition), "right"]
 *
 
-*Defined in types.ts:2827*
+*Defined in [types.ts:2857](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2857)*
 
 ___
 <a id="justifycontentpropertycombined"></a>
@@ -3221,7 +3228,7 @@ ___
 **Ƭ JustifyContentPropertyCombined**: * "normal" &#124; "space-between" &#124; "space-around" &#124; "space-evenly" &#124; "stretch" &#124; "center" &#124; "start" &#124; "end" &#124; "flex-start" &#124; "flex-end" &#124; "left" &#124; "right" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "unsafe left" &#124; "unsafe right" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe flex-start" &#124; "safe flex-end" &#124; "safe left" &#124; "safe right"
 *
 
-*Defined in types.ts:2800*
+*Defined in [types.ts:2830](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2830)*
 
 ___
 <a id="justifyitemsproperty"></a>
@@ -3231,7 +3238,7 @@ ___
 **Ƭ JustifyItemsProperty**: * "normal" &#124; "stretch" &#124; [BaselinePosition](_types_.md#baselineposition) &#124; [SelfPosition](_types_.md#selfposition) &#124; "left" &#124; "right" &#124; [[OverflowPosition](_types_.md#overflowposition), [SelfPosition](_types_.md#selfposition)] &#124; [[OverflowPosition](_types_.md#overflowposition), "left"] &#124; [[OverflowPosition](_types_.md#overflowposition), "right"] &#124; "legacy" &#124; ["legacy", "left"] &#124; ["legacy", "right"] &#124; ["legacy", "center"]
 *
 
-*Defined in types.ts:2873*
+*Defined in [types.ts:2903](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2903)*
 
 ___
 <a id="justifyitemspropertycombined"></a>
@@ -3241,7 +3248,7 @@ ___
 **Ƭ JustifyItemsPropertyCombined**: * "normal" &#124; "stretch" &#124; "baseline" &#124; "first baseline" &#124; "last baseline" &#124; "center" &#124; "start" &#124; "end" &#124; "self-start" &#124; "self-end" &#124; "flex-start" &#124; "flex-end" &#124; "left" &#124; "right" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe self-start" &#124; "unsafe self-end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "unsafe left" &#124; "unsafe right" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe self-start" &#124; "safe self-end" &#124; "safe flex-start" &#124; "safe flex-end" &#124; "safe left" &#124; "safe right" &#124; "legacy" &#124; "legacy left" &#124; "legacy right" &#124; "legacy center"
 *
 
-*Defined in types.ts:2836*
+*Defined in [types.ts:2866](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2866)*
 
 ___
 <a id="justifyselfproperty"></a>
@@ -3251,7 +3258,7 @@ ___
 **Ƭ JustifySelfProperty**: * "auto" &#124; "normal" &#124; "stretch" &#124; [BaselinePosition](_types_.md#baselineposition) &#124; [SelfPosition](_types_.md#selfposition) &#124; "left" &#124; "right" &#124; [[OverflowPosition](_types_.md#overflowposition), [SelfPosition](_types_.md#selfposition)] &#124; [[OverflowPosition](_types_.md#overflowposition), "left"] &#124; [[OverflowPosition](_types_.md#overflowposition), "right"]
 *
 
-*Defined in types.ts:2921*
+*Defined in [types.ts:2951](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2951)*
 
 ___
 <a id="justifyselfpropertycombined"></a>
@@ -3261,7 +3268,7 @@ ___
 **Ƭ JustifySelfPropertyCombined**: * "auto" &#124; "normal" &#124; "stretch" &#124; "baseline" &#124; "first baseline" &#124; "last baseline" &#124; "center" &#124; "start" &#124; "end" &#124; "self-start" &#124; "self-end" &#124; "flex-start" &#124; "flex-end" &#124; "left" &#124; "right" &#124; "unsafe center" &#124; "unsafe start" &#124; "unsafe end" &#124; "unsafe self-start" &#124; "unsafe self-end" &#124; "unsafe flex-start" &#124; "unsafe flex-end" &#124; "unsafe left" &#124; "unsafe right" &#124; "safe center" &#124; "safe start" &#124; "safe end" &#124; "safe self-start" &#124; "safe self-end" &#124; "safe flex-start" &#124; "safe flex-end" &#124; "safe left" &#124; "safe right"
 *
 
-*Defined in types.ts:2887*
+*Defined in [types.ts:2917](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2917)*
 
 ___
 <a id="keyframeblock"></a>
@@ -3270,7 +3277,7 @@ ___
 
 **Ƭ KeyframeBlock**: *`string`*
 
-*Defined in types.ts:362*
+*Defined in [types.ts:366](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L366)*
 
 ___
 <a id="keyframeblocklist"></a>
@@ -3279,7 +3286,7 @@ ___
 
 **Ƭ KeyframeBlockList**: *[KeyframeBlock](_types_.md#keyframeblock)*
 
-*Defined in types.ts:363*
+*Defined in [types.ts:367](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L367)*
 
 ___
 <a id="keyframesname"></a>
@@ -3289,7 +3296,7 @@ ___
 **Ƭ KeyframesName**: * [CustomIdent](_types_.md#customident) &#124; `string`
 *
 
-*Defined in types.ts:361*
+*Defined in [types.ts:365](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L365)*
 
 ___
 <a id="leaderfunction"></a>
@@ -3298,7 +3305,7 @@ ___
 
 **Ƭ LeaderFunction**: *`string`*
 
-*Defined in types.ts:364*
+*Defined in [types.ts:368](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L368)*
 
 ___
 <a id="leadertype"></a>
@@ -3308,7 +3315,7 @@ ___
 **Ƭ LeaderType**: * "dotted" &#124; "solid" &#124; "space" &#124; `string`
 *
 
-*Defined in types.ts:365*
+*Defined in [types.ts:369](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L369)*
 
 ___
 <a id="leftproperty"></a>
@@ -3318,7 +3325,7 @@ ___
 **Ƭ LeftProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2932*
+*Defined in [types.ts:2962](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2962)*
 
 ___
 <a id="length"></a>
@@ -3328,7 +3335,7 @@ ___
 **Ƭ Length**: * [IChValue](../interfaces/_unittypes_.ichvalue.md) &#124; [ICmValue](../interfaces/_unittypes_.icmvalue.md) &#124; [IEmValue](../interfaces/_unittypes_.iemvalue.md) &#124; [IExValue](../interfaces/_unittypes_.iexvalue.md) &#124; [IFrValue](../interfaces/_unittypes_.ifrvalue.md) &#124; [IInchValue](../interfaces/_unittypes_.iinchvalue.md) &#124; [IMmValue](../interfaces/_unittypes_.immvalue.md) &#124; [IPcValue](../interfaces/_unittypes_.ipcvalue.md) &#124; [IPtValue](../interfaces/_unittypes_.iptvalue.md) &#124; [IPxValue](../interfaces/_unittypes_.ipxvalue.md) &#124; [IQValue](../interfaces/_unittypes_.iqvalue.md) &#124; [IRemValue](../interfaces/_unittypes_.iremvalue.md) &#124; [IVhValue](../interfaces/_unittypes_.ivhvalue.md) &#124; [IVmaxValue](../interfaces/_unittypes_.ivmaxvalue.md) &#124; [IVminValue](../interfaces/_unittypes_.ivminvalue.md) &#124; [IVwValue](../interfaces/_unittypes_.ivwvalue.md)
 *
 
-*Defined in types.ts:32*
+*Defined in [types.ts:32](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L32)*
 
 ___
 <a id="lengthpercentage"></a>
@@ -3338,7 +3345,7 @@ ___
 **Ƭ LengthPercentage**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:366*
+*Defined in [types.ts:370](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L370)*
 
 ___
 <a id="letterspacingproperty"></a>
@@ -3348,7 +3355,7 @@ ___
 **Ƭ LetterSpacingProperty**: * "normal" &#124; `TLength`
 *
 
-*Defined in types.ts:2933*
+*Defined in [types.ts:2963](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2963)*
 
 ___
 <a id="linebreakproperty"></a>
@@ -3358,7 +3365,7 @@ ___
 **Ƭ LineBreakProperty**: * "auto" &#124; "loose" &#124; "normal" &#124; "strict"
 *
 
-*Defined in types.ts:2934*
+*Defined in [types.ts:2964](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2964)*
 
 ___
 <a id="lineheightproperty"></a>
@@ -3368,7 +3375,7 @@ ___
 **Ƭ LineHeightProperty**: * "normal" &#124; `number` &#124; `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:2935*
+*Defined in [types.ts:2965](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2965)*
 
 ___
 <a id="linenames"></a>
@@ -3377,7 +3384,7 @@ ___
 
 **Ƭ LineNames**: *`string`*
 
-*Defined in types.ts:367*
+*Defined in [types.ts:371](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L371)*
 
 ___
 <a id="linestyle"></a>
@@ -3387,7 +3394,7 @@ ___
 **Ƭ LineStyle**: * "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:368*
+*Defined in [types.ts:372](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L372)*
 
 ___
 <a id="linewidth"></a>
@@ -3397,7 +3404,7 @@ ___
 **Ƭ LineWidth**: * `TLength` &#124; "thin" &#124; "medium" &#124; "thick"
 *
 
-*Defined in types.ts:379*
+*Defined in [types.ts:383](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L383)*
 
 ___
 <a id="lineargradientfunction"></a>
@@ -3406,7 +3413,7 @@ ___
 
 **Ƭ LinearGradientFunction**: *`string`*
 
-*Defined in types.ts:380*
+*Defined in [types.ts:384](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L384)*
 
 ___
 <a id="liststyleimageproperty"></a>
@@ -3416,7 +3423,7 @@ ___
 **Ƭ ListStyleImageProperty**: * [Url](_types_.md#url) &#124; "none"
 *
 
-*Defined in types.ts:2944*
+*Defined in [types.ts:2974](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2974)*
 
 ___
 <a id="liststylepositionproperty"></a>
@@ -3426,7 +3433,7 @@ ___
 **Ƭ ListStylePositionProperty**: * "inside" &#124; "outside"
 *
 
-*Defined in types.ts:2945*
+*Defined in [types.ts:2975](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2975)*
 
 ___
 <a id="liststyleproperty"></a>
@@ -3436,7 +3443,7 @@ ___
 **Ƭ ListStyleProperty**: * [ListStyleImageProperty](_types_.md#liststyleimageproperty) &#124; [ListStylePositionProperty](_types_.md#liststylepositionproperty) &#124; [[ListStylePositionProperty](_types_.md#liststylepositionproperty), [ListStyleImageProperty](_types_.md#liststyleimageproperty)] &#124; [ListStyleTypeProperty](_types_.md#liststyletypeproperty) &#124; [[ListStyleTypeProperty](_types_.md#liststyletypeproperty), [ListStyleImageProperty](_types_.md#liststyleimageproperty)] &#124; [[ListStyleTypeProperty](_types_.md#liststyletypeproperty), [ListStylePositionProperty](_types_.md#liststylepositionproperty)] &#124; [[ListStyleTypeProperty](_types_.md#liststyletypeproperty), [ListStylePositionProperty](_types_.md#liststylepositionproperty), [ListStyleImageProperty](_types_.md#liststyleimageproperty)]
 *
 
-*Defined in types.ts:2936*
+*Defined in [types.ts:2966](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2966)*
 
 ___
 <a id="liststyletypeproperty"></a>
@@ -3446,7 +3453,7 @@ ___
 **Ƭ ListStyleTypeProperty**: * [CounterStyle](_types_.md#counterstyle) &#124; `string` &#124; "none"
 *
 
-*Defined in types.ts:2946*
+*Defined in [types.ts:2976](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2976)*
 
 ___
 <a id="marginblockendproperty"></a>
@@ -3455,7 +3462,7 @@ ___
 
 **Ƭ MarginBlockEndProperty**: *[MarginLeftProperty](_types_.md#marginleftproperty)*
 
-*Defined in types.ts:2948*
+*Defined in [types.ts:2978](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2978)*
 
 ___
 <a id="marginblockstartproperty"></a>
@@ -3464,7 +3471,7 @@ ___
 
 **Ƭ MarginBlockStartProperty**: *[MarginLeftProperty](_types_.md#marginleftproperty)*
 
-*Defined in types.ts:2949*
+*Defined in [types.ts:2979](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2979)*
 
 ___
 <a id="marginbottomproperty"></a>
@@ -3474,7 +3481,7 @@ ___
 **Ƭ MarginBottomProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2950*
+*Defined in [types.ts:2980](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2980)*
 
 ___
 <a id="margininlineendproperty"></a>
@@ -3483,7 +3490,7 @@ ___
 
 **Ƭ MarginInlineEndProperty**: *[MarginLeftProperty](_types_.md#marginleftproperty)*
 
-*Defined in types.ts:2951*
+*Defined in [types.ts:2981](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2981)*
 
 ___
 <a id="margininlinestartproperty"></a>
@@ -3492,7 +3499,7 @@ ___
 
 **Ƭ MarginInlineStartProperty**: *[MarginLeftProperty](_types_.md#marginleftproperty)*
 
-*Defined in types.ts:2952*
+*Defined in [types.ts:2982](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2982)*
 
 ___
 <a id="marginleftproperty"></a>
@@ -3502,7 +3509,7 @@ ___
 **Ƭ MarginLeftProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2953*
+*Defined in [types.ts:2983](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2983)*
 
 ___
 <a id="marginproperty"></a>
@@ -3512,7 +3519,7 @@ ___
 **Ƭ MarginProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2947*
+*Defined in [types.ts:2977](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2977)*
 
 ___
 <a id="marginrightproperty"></a>
@@ -3522,7 +3529,7 @@ ___
 **Ƭ MarginRightProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2954*
+*Defined in [types.ts:2984](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2984)*
 
 ___
 <a id="margintopproperty"></a>
@@ -3532,7 +3539,7 @@ ___
 **Ƭ MarginTopProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:2955*
+*Defined in [types.ts:2985](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2985)*
 
 ___
 <a id="maskclipproperty"></a>
@@ -3541,7 +3548,7 @@ ___
 
 **Ƭ MaskClipProperty**: *`string`*
 
-*Defined in types.ts:2957*
+*Defined in [types.ts:2987](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2987)*
 
 ___
 <a id="maskcompositeproperty"></a>
@@ -3550,7 +3557,7 @@ ___
 
 **Ƭ MaskCompositeProperty**: *`string`*
 
-*Defined in types.ts:2958*
+*Defined in [types.ts:2988](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2988)*
 
 ___
 <a id="maskimageproperty"></a>
@@ -3559,7 +3566,7 @@ ___
 
 **Ƭ MaskImageProperty**: *`string`*
 
-*Defined in types.ts:2959*
+*Defined in [types.ts:2989](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2989)*
 
 ___
 <a id="masklayer"></a>
@@ -3568,7 +3575,7 @@ ___
 
 **Ƭ MaskLayer**: *`string`*
 
-*Defined in types.ts:381*
+*Defined in [types.ts:385](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L385)*
 
 ___
 <a id="maskmodeproperty"></a>
@@ -3577,7 +3584,7 @@ ___
 
 **Ƭ MaskModeProperty**: *`string`*
 
-*Defined in types.ts:2960*
+*Defined in [types.ts:2990](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2990)*
 
 ___
 <a id="maskoriginproperty"></a>
@@ -3586,7 +3593,7 @@ ___
 
 **Ƭ MaskOriginProperty**: *`string`*
 
-*Defined in types.ts:2961*
+*Defined in [types.ts:2991](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2991)*
 
 ___
 <a id="maskposition"></a>
@@ -3596,7 +3603,7 @@ ___
 **Ƭ MaskPosition**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; "left" &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", "top"] &#124; ["left", "center"] &#124; ["left", "bottom"] &#124; "center" &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["center", "top"] &#124; ["center", "center"] &#124; ["center", "bottom"] &#124; "right" &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", "top"] &#124; ["right", "center"] &#124; ["right", "bottom"]
 *
 
-*Defined in types.ts:382*
+*Defined in [types.ts:386](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L386)*
 
 ___
 <a id="maskpositionproperty"></a>
@@ -3605,7 +3612,7 @@ ___
 
 **Ƭ MaskPositionProperty**: *`string`*
 
-*Defined in types.ts:2962*
+*Defined in [types.ts:2992](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2992)*
 
 ___
 <a id="maskproperty"></a>
@@ -3614,7 +3621,7 @@ ___
 
 **Ƭ MaskProperty**: *`string`*
 
-*Defined in types.ts:2956*
+*Defined in [types.ts:2986](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2986)*
 
 ___
 <a id="maskreference"></a>
@@ -3624,7 +3631,7 @@ ___
 **Ƭ MaskReference**: * "none" &#124; [Image](_types_.md#image) &#124; [MaskSource](_types_.md#masksource)
 *
 
-*Defined in types.ts:403*
+*Defined in [types.ts:407](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L407)*
 
 ___
 <a id="maskrepeatproperty"></a>
@@ -3633,7 +3640,7 @@ ___
 
 **Ƭ MaskRepeatProperty**: *`string`*
 
-*Defined in types.ts:2963*
+*Defined in [types.ts:2993](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2993)*
 
 ___
 <a id="masksizeproperty"></a>
@@ -3642,7 +3649,7 @@ ___
 
 **Ƭ MaskSizeProperty**: *`string`*
 
-*Defined in types.ts:2964*
+*Defined in [types.ts:2994](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2994)*
 
 ___
 <a id="masksource"></a>
@@ -3651,7 +3658,7 @@ ___
 
 **Ƭ MaskSource**: *[Url](_types_.md#url)*
 
-*Defined in types.ts:404*
+*Defined in [types.ts:408](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L408)*
 
 ___
 <a id="masktypeproperty"></a>
@@ -3661,7 +3668,7 @@ ___
 **Ƭ MaskTypeProperty**: * "luminance" &#124; "alpha"
 *
 
-*Defined in types.ts:2965*
+*Defined in [types.ts:2995](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2995)*
 
 ___
 <a id="maskingmode"></a>
@@ -3671,7 +3678,7 @@ ___
 **Ƭ MaskingMode**: * "alpha" &#124; "luminance" &#124; "match-source"
 *
 
-*Defined in types.ts:405*
+*Defined in [types.ts:409](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L409)*
 
 ___
 <a id="matrix3dfunction"></a>
@@ -3680,7 +3687,7 @@ ___
 
 **Ƭ Matrix3DFunction**: *`string`*
 
-*Defined in types.ts:407*
+*Defined in [types.ts:411](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L411)*
 
 ___
 <a id="matrixfunction"></a>
@@ -3689,7 +3696,7 @@ ___
 
 **Ƭ MatrixFunction**: *`string`*
 
-*Defined in types.ts:406*
+*Defined in [types.ts:410](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L410)*
 
 ___
 <a id="maxheightproperty"></a>
@@ -3699,7 +3706,7 @@ ___
 **Ƭ MaxHeightProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "none" &#124; "max-content" &#124; "min-content" &#124; "fit-content" &#124; "fill-available"
 *
 
-*Defined in types.ts:2966*
+*Defined in [types.ts:2996](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L2996)*
 
 ___
 <a id="maxwidthproperty"></a>
@@ -3709,7 +3716,7 @@ ___
 **Ƭ MaxWidthProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "none" &#124; "max-content" &#124; "min-content" &#124; "fit-content" &#124; "fill-available"
 *
 
-*Defined in types.ts:2974*
+*Defined in [types.ts:3004](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3004)*
 
 ___
 <a id="mediaand"></a>
@@ -3718,7 +3725,7 @@ ___
 
 **Ƭ MediaAnd**: *[[MediaInParens](_types_.md#mediainparens), "and", [MediaInParens](_types_.md#mediainparens)]*
 
-*Defined in types.ts:408*
+*Defined in [types.ts:412](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L412)*
 
 ___
 <a id="mediacondition"></a>
@@ -3728,7 +3735,7 @@ ___
 **Ƭ MediaCondition**: * [MediaNot](_types_.md#medianot) &#124; [MediaAnd](_types_.md#mediaand) &#124; [MediaOr](_types_.md#mediaor) &#124; [MediaInParens](_types_.md#mediainparens)
 *
 
-*Defined in types.ts:409*
+*Defined in [types.ts:413](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L413)*
 
 ___
 <a id="mediaconditionwithoutor"></a>
@@ -3738,7 +3745,7 @@ ___
 **Ƭ MediaConditionWithoutOr**: * [MediaNot](_types_.md#medianot) &#124; [MediaAnd](_types_.md#mediaand) &#124; [MediaInParens](_types_.md#mediainparens)
 *
 
-*Defined in types.ts:410*
+*Defined in [types.ts:414](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L414)*
 
 ___
 <a id="mediafeature"></a>
@@ -3747,7 +3754,7 @@ ___
 
 **Ƭ MediaFeature**: *`string`*
 
-*Defined in types.ts:411*
+*Defined in [types.ts:415](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L415)*
 
 ___
 <a id="mediainparens"></a>
@@ -3756,7 +3763,7 @@ ___
 
 **Ƭ MediaInParens**: *`string`*
 
-*Defined in types.ts:412*
+*Defined in [types.ts:416](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L416)*
 
 ___
 <a id="medianot"></a>
@@ -3765,7 +3772,7 @@ ___
 
 **Ƭ MediaNot**: *["not", [MediaInParens](_types_.md#mediainparens)]*
 
-*Defined in types.ts:413*
+*Defined in [types.ts:417](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L417)*
 
 ___
 <a id="mediaor"></a>
@@ -3774,7 +3781,7 @@ ___
 
 **Ƭ MediaOr**: *[[MediaInParens](_types_.md#mediainparens), "or", [MediaInParens](_types_.md#mediainparens)]*
 
-*Defined in types.ts:414*
+*Defined in [types.ts:418](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L418)*
 
 ___
 <a id="mediaquery"></a>
@@ -3784,7 +3791,7 @@ ___
 **Ƭ MediaQuery**: * [MediaCondition](_types_.md#mediacondition) &#124; [MediaType](_types_.md#mediatype) &#124; [[MediaType](_types_.md#mediatype), "and", [MediaConditionWithoutOr](_types_.md#mediaconditionwithoutor)] &#124; ["not", [MediaType](_types_.md#mediatype)] &#124; ["not", [MediaType](_types_.md#mediatype), "and", [MediaConditionWithoutOr](_types_.md#mediaconditionwithoutor)] &#124; ["only", [MediaType](_types_.md#mediatype)] &#124; ["only", [MediaType](_types_.md#mediatype), "and", [MediaConditionWithoutOr](_types_.md#mediaconditionwithoutor)]
 *
 
-*Defined in types.ts:415*
+*Defined in [types.ts:419](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L419)*
 
 ___
 <a id="mediaquerylist"></a>
@@ -3793,7 +3800,7 @@ ___
 
 **Ƭ MediaQueryList**: *`string`*
 
-*Defined in types.ts:423*
+*Defined in [types.ts:427](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L427)*
 
 ___
 <a id="mediatype"></a>
@@ -3802,7 +3809,7 @@ ___
 
 **Ƭ MediaType**: *[Ident](_types_.md#ident)*
 
-*Defined in types.ts:424*
+*Defined in [types.ts:428](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L428)*
 
 ___
 <a id="mfboolean"></a>
@@ -3811,7 +3818,7 @@ ___
 
 **Ƭ MfBoolean**: *[MfName](_types_.md#mfname)*
 
-*Defined in types.ts:425*
+*Defined in [types.ts:429](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L429)*
 
 ___
 <a id="mfname"></a>
@@ -3820,7 +3827,7 @@ ___
 
 **Ƭ MfName**: *[Ident](_types_.md#ident)*
 
-*Defined in types.ts:426*
+*Defined in [types.ts:430](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L430)*
 
 ___
 <a id="mfplain"></a>
@@ -3829,7 +3836,7 @@ ___
 
 **Ƭ MfPlain**: *`string`*
 
-*Defined in types.ts:427*
+*Defined in [types.ts:431](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L431)*
 
 ___
 <a id="mfrange"></a>
@@ -3838,7 +3845,7 @@ ___
 
 **Ƭ MfRange**: *`string`*
 
-*Defined in types.ts:428*
+*Defined in [types.ts:432](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L432)*
 
 ___
 <a id="minblocksizeproperty"></a>
@@ -3847,7 +3854,7 @@ ___
 
 **Ƭ MinBlockSizeProperty**: *[MinWidthProperty](_types_.md#minwidthproperty)*
 
-*Defined in types.ts:2982*
+*Defined in [types.ts:3012](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3012)*
 
 ___
 <a id="minheightproperty"></a>
@@ -3857,7 +3864,7 @@ ___
 **Ƭ MinHeightProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto" &#124; "max-content" &#124; "min-content" &#124; "fit-content" &#124; "fill-available"
 *
 
-*Defined in types.ts:2983*
+*Defined in [types.ts:3013](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3013)*
 
 ___
 <a id="mininlinesizeproperty"></a>
@@ -3866,7 +3873,7 @@ ___
 
 **Ƭ MinInlineSizeProperty**: *[MinWidthProperty](_types_.md#minwidthproperty)*
 
-*Defined in types.ts:2991*
+*Defined in [types.ts:3021](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3021)*
 
 ___
 <a id="minwidthproperty"></a>
@@ -3876,7 +3883,7 @@ ___
 **Ƭ MinWidthProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto" &#124; "max-content" &#124; "min-content" &#124; "fit-content" &#124; "fill-available"
 *
 
-*Defined in types.ts:2992*
+*Defined in [types.ts:3022](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3022)*
 
 ___
 <a id="minmaxfunction"></a>
@@ -3885,7 +3892,7 @@ ___
 
 **Ƭ MinmaxFunction**: *`string`*
 
-*Defined in types.ts:429*
+*Defined in [types.ts:433](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L433)*
 
 ___
 <a id="mixblendmodeproperty"></a>
@@ -3894,7 +3901,7 @@ ___
 
 **Ƭ MixBlendModeProperty**: *[BlendMode](_types_.md#blendmode)*
 
-*Defined in types.ts:3017*
+*Defined in [types.ts:3047](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3047)*
 
 ___
 <a id="mixblendmodepropertycombined"></a>
@@ -3904,7 +3911,7 @@ ___
 **Ƭ MixBlendModePropertyCombined**: * "normal" &#124; "multiply" &#124; "screen" &#124; "overlay" &#124; "darken" &#124; "lighten" &#124; "color-dodge" &#124; "color-burn" &#124; "hard-light" &#124; "soft-light" &#124; "difference" &#124; "exclusion" &#124; "hue" &#124; "saturation" &#124; "color" &#124; "luminosity"
 *
 
-*Defined in types.ts:3000*
+*Defined in [types.ts:3030](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3030)*
 
 ___
 <a id="namedcolor"></a>
@@ -3914,7 +3921,7 @@ ___
 **Ƭ NamedColor**: * "transparent" &#124; "aliceblue" &#124; "antiquewhite" &#124; "aqua" &#124; "aquamarine" &#124; "azure" &#124; "beige" &#124; "bisque" &#124; "black" &#124; "blanchedalmond" &#124; "blue" &#124; "blueviolet" &#124; "brown" &#124; "burlywood" &#124; "cadetblue" &#124; "chartreuse" &#124; "chocolate" &#124; "coral" &#124; "cornflowerblue" &#124; "cornsilk" &#124; "crimson" &#124; "cyan" &#124; "darkblue" &#124; "darkcyan" &#124; "darkgoldenrod" &#124; "darkgray" &#124; "darkgreen" &#124; "darkgrey" &#124; "darkkhaki" &#124; "darkmagenta" &#124; "darkolivegreen" &#124; "darkorange" &#124; "darkorchid" &#124; "darkred" &#124; "darksalmon" &#124; "darkseagreen" &#124; "darkslateblue" &#124; "darkslategray" &#124; "darkslategrey" &#124; "darkturquoise" &#124; "darkviolet" &#124; "deeppink" &#124; "deepskyblue" &#124; "dimgray" &#124; "dimgrey" &#124; "dodgerblue" &#124; "firebrick" &#124; "floralwhite" &#124; "forestgreen" &#124; "fuchsia" &#124; "gainsboro" &#124; "ghostwhite" &#124; "gold" &#124; "goldenrod" &#124; "gray" &#124; "green" &#124; "greenyellow" &#124; "grey" &#124; "honeydew" &#124; "hotpink" &#124; "indianred" &#124; "indigo" &#124; "ivory" &#124; "khaki" &#124; "lavender" &#124; "lavenderblush" &#124; "lawngreen" &#124; "lemonchiffon" &#124; "lightblue" &#124; "lightcoral" &#124; "lightcyan" &#124; "lightgoldenrodyellow" &#124; "lightgray" &#124; "lightgreen" &#124; "lightgrey" &#124; "lightpink" &#124; "lightsalmon" &#124; "lightseagreen" &#124; "lightskyblue" &#124; "lightslategray" &#124; "lightslategrey" &#124; "lightsteelblue" &#124; "lightyellow" &#124; "lime" &#124; "limegreen" &#124; "linen" &#124; "magenta" &#124; "maroon" &#124; "mediumaquamarine" &#124; "mediumblue" &#124; "mediumorchid" &#124; "mediumpurple" &#124; "mediumseagreen" &#124; "mediumslateblue" &#124; "mediumspringgreen" &#124; "mediumturquoise" &#124; "mediumvioletred" &#124; "midnightblue" &#124; "mintcream" &#124; "mistyrose" &#124; "moccasin" &#124; "navajowhite" &#124; "navy" &#124; "oldlace" &#124; "olive" &#124; "olivedrab" &#124; "orange" &#124; "orangered" &#124; "orchid" &#124; "palegoldenrod" &#124; "palegreen" &#124; "paleturquoise" &#124; "palevioletred" &#124; "papayawhip" &#124; "peachpuff" &#124; "peru" &#124; "pink" &#124; "plum" &#124; "powderblue" &#124; "purple" &#124; "rebeccapurple" &#124; "red" &#124; "rosybrown" &#124; "royalblue" &#124; "saddlebrown" &#124; "salmon" &#124; "sandybrown" &#124; "seagreen" &#124; "seashell" &#124; "sienna" &#124; "silver" &#124; "skyblue" &#124; "slateblue" &#124; "slategray" &#124; "slategrey" &#124; "snow" &#124; "springgreen" &#124; "steelblue" &#124; "tan" &#124; "teal" &#124; "thistle" &#124; "tomato" &#124; "turquoise" &#124; "violet" &#124; "wheat" &#124; "white" &#124; "whitesmoke" &#124; "yellow" &#124; "yellowgreen"
 *
 
-*Defined in types.ts:430*
+*Defined in [types.ts:434](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L434)*
 
 ___
 <a id="namespaceprefix"></a>
@@ -3923,7 +3930,7 @@ ___
 
 **Ƭ NamespacePrefix**: *[Ident](_types_.md#ident)*
 
-*Defined in types.ts:580*
+*Defined in [types.ts:584](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L584)*
 
 ___
 <a id="nth"></a>
@@ -3933,7 +3940,7 @@ ___
 **Ƭ Nth**: * [AnPlusB](_types_.md#anplusb) &#124; "even" &#124; "odd"
 *
 
-*Defined in types.ts:585*
+*Defined in [types.ts:589](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L589)*
 
 ___
 <a id="number"></a>
@@ -3942,7 +3949,7 @@ ___
 
 **Ƭ Number**: *`number`*
 
-*Defined in types.ts:62*
+*Defined in [types.ts:62](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L62)*
 
 ___
 <a id="numberpercentage"></a>
@@ -3952,7 +3959,7 @@ ___
 **Ƭ NumberPercentage**: * `number` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:581*
+*Defined in [types.ts:585](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L585)*
 
 ___
 <a id="numericfigurevalues"></a>
@@ -3962,7 +3969,7 @@ ___
 **Ƭ NumericFigureValues**: * "lining-nums" &#124; "oldstyle-nums"
 *
 
-*Defined in types.ts:582*
+*Defined in [types.ts:586](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L586)*
 
 ___
 <a id="numericfractionvalues"></a>
@@ -3972,7 +3979,7 @@ ___
 **Ƭ NumericFractionValues**: * "diagonal-fractions" &#124; "stacked-fractions"
 *
 
-*Defined in types.ts:583*
+*Defined in [types.ts:587](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L587)*
 
 ___
 <a id="numericspacingvalues"></a>
@@ -3982,7 +3989,7 @@ ___
 **Ƭ NumericSpacingValues**: * "proportional-nums" &#124; "tabular-nums"
 *
 
-*Defined in types.ts:584*
+*Defined in [types.ts:588](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L588)*
 
 ___
 <a id="objectfitproperty"></a>
@@ -3992,7 +3999,7 @@ ___
 **Ƭ ObjectFitProperty**: * "fill" &#124; "contain" &#124; "cover" &#124; "none" &#124; "scale-down"
 *
 
-*Defined in types.ts:3018*
+*Defined in [types.ts:3048](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3048)*
 
 ___
 <a id="objectpositionproperty"></a>
@@ -4001,7 +4008,7 @@ ___
 
 **Ƭ ObjectPositionProperty**: *[Position](_types_.md#position)*
 
-*Defined in types.ts:3025*
+*Defined in [types.ts:3055](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3055)*
 
 ___
 <a id="objectpositionpropertycombined"></a>
@@ -4011,7 +4018,7 @@ ___
 **Ƭ ObjectPositionPropertyCombined**: * "static" &#124; "relative" &#124; "absolute" &#124; "sticky" &#124; "fixed"
 *
 
-*Defined in types.ts:3019*
+*Defined in [types.ts:3049](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3049)*
 
 ___
 <a id="opacityfunction"></a>
@@ -4020,7 +4027,7 @@ ___
 
 **Ƭ OpacityFunction**: *`string`*
 
-*Defined in types.ts:586*
+*Defined in [types.ts:590](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L590)*
 
 ___
 <a id="opacityproperty"></a>
@@ -4029,7 +4036,7 @@ ___
 
 **Ƭ OpacityProperty**: *`number`*
 
-*Defined in types.ts:3026*
+*Defined in [types.ts:3056](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3056)*
 
 ___
 <a id="orderproperty"></a>
@@ -4038,7 +4045,7 @@ ___
 
 **Ƭ OrderProperty**: *[Integer](_types_.md#integer)*
 
-*Defined in types.ts:3027*
+*Defined in [types.ts:3057](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3057)*
 
 ___
 <a id="orphansproperty"></a>
@@ -4047,7 +4054,7 @@ ___
 
 **Ƭ OrphansProperty**: *[Integer](_types_.md#integer)*
 
-*Defined in types.ts:3028*
+*Defined in [types.ts:3058](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3058)*
 
 ___
 <a id="outlinecolorproperty"></a>
@@ -4057,7 +4064,7 @@ ___
 **Ƭ OutlineColorProperty**: * [Color](_types_.md#color) &#124; "invert"
 *
 
-*Defined in types.ts:3037*
+*Defined in [types.ts:3067](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3067)*
 
 ___
 <a id="outlineoffsetproperty"></a>
@@ -4066,7 +4073,7 @@ ___
 
 **Ƭ OutlineOffsetProperty**: *`TLength`*
 
-*Defined in types.ts:3038*
+*Defined in [types.ts:3068](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3068)*
 
 ___
 <a id="outlineproperty"></a>
@@ -4076,7 +4083,7 @@ ___
 **Ƭ OutlineProperty**: * [OutlineWidthProperty](_types_.md#outlinewidthproperty) &#124; [OutlineStyleProperty](_types_.md#outlinestyleproperty) &#124; [[OutlineStyleProperty](_types_.md#outlinestyleproperty), [OutlineWidthProperty](_types_.md#outlinewidthproperty)] &#124; [OutlineColorProperty](_types_.md#outlinecolorproperty) &#124; [[OutlineColorProperty](_types_.md#outlinecolorproperty), [OutlineWidthProperty](_types_.md#outlinewidthproperty)] &#124; [[OutlineColorProperty](_types_.md#outlinecolorproperty), [OutlineStyleProperty](_types_.md#outlinestyleproperty)] &#124; [[OutlineColorProperty](_types_.md#outlinecolorproperty), [OutlineStyleProperty](_types_.md#outlinestyleproperty), [OutlineWidthProperty](_types_.md#outlinewidthproperty)]
 *
 
-*Defined in types.ts:3029*
+*Defined in [types.ts:3059](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3059)*
 
 ___
 <a id="outlineradius"></a>
@@ -4086,7 +4093,7 @@ ___
 **Ƭ OutlineRadius**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:588*
+*Defined in [types.ts:592](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L592)*
 
 ___
 <a id="outlinestyleproperty"></a>
@@ -4096,7 +4103,7 @@ ___
 **Ƭ OutlineStyleProperty**: * "auto" &#124; [BorderStyleProperty](_types_.md#borderstyleproperty)
 *
 
-*Defined in types.ts:3051*
+*Defined in [types.ts:3081](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3081)*
 
 ___
 <a id="outlinestylepropertycombined"></a>
@@ -4106,7 +4113,7 @@ ___
 **Ƭ OutlineStylePropertyCombined**: * "auto" &#124; "none" &#124; "hidden" &#124; "dotted" &#124; "dashed" &#124; "solid" &#124; "double" &#124; "groove" &#124; "ridge" &#124; "inset" &#124; "outset"
 *
 
-*Defined in types.ts:3039*
+*Defined in [types.ts:3069](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3069)*
 
 ___
 <a id="outlinewidthproperty"></a>
@@ -4115,7 +4122,7 @@ ___
 
 **Ƭ OutlineWidthProperty**: *[LineWidth](_types_.md#linewidth)*
 
-*Defined in types.ts:3052*
+*Defined in [types.ts:3082](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3082)*
 
 ___
 <a id="overflowposition"></a>
@@ -4125,7 +4132,7 @@ ___
 **Ƭ OverflowPosition**: * "unsafe" &#124; "safe"
 *
 
-*Defined in types.ts:587*
+*Defined in [types.ts:591](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L591)*
 
 ___
 <a id="overflowproperty"></a>
@@ -4135,7 +4142,7 @@ ___
 **Ƭ OverflowProperty**: * "visible" &#124; "hidden" &#124; "clip" &#124; "scroll" &#124; "auto"
 *
 
-*Defined in types.ts:3053*
+*Defined in [types.ts:3083](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3083)*
 
 ___
 <a id="overflowwrapproperty"></a>
@@ -4145,7 +4152,7 @@ ___
 **Ƭ OverflowWrapProperty**: * "normal" &#124; "break-word"
 *
 
-*Defined in types.ts:3054*
+*Defined in [types.ts:3084](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3084)*
 
 ___
 <a id="overflowxproperty"></a>
@@ -4155,7 +4162,7 @@ ___
 **Ƭ OverflowXProperty**: * "visible" &#124; "hidden" &#124; "clip" &#124; "scroll" &#124; "auto"
 *
 
-*Defined in types.ts:3055*
+*Defined in [types.ts:3085](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3085)*
 
 ___
 <a id="overflowyproperty"></a>
@@ -4165,7 +4172,7 @@ ___
 **Ƭ OverflowYProperty**: * "visible" &#124; "hidden" &#124; "clip" &#124; "scroll" &#124; "auto"
 *
 
-*Defined in types.ts:3056*
+*Defined in [types.ts:3086](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3086)*
 
 ___
 <a id="paddingblockendproperty"></a>
@@ -4174,7 +4181,7 @@ ___
 
 **Ƭ PaddingBlockEndProperty**: *[PaddingLeftProperty](_types_.md#paddingleftproperty)*
 
-*Defined in types.ts:3058*
+*Defined in [types.ts:3088](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3088)*
 
 ___
 <a id="paddingblockstartproperty"></a>
@@ -4183,7 +4190,7 @@ ___
 
 **Ƭ PaddingBlockStartProperty**: *[PaddingLeftProperty](_types_.md#paddingleftproperty)*
 
-*Defined in types.ts:3059*
+*Defined in [types.ts:3089](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3089)*
 
 ___
 <a id="paddingbottomproperty"></a>
@@ -4193,7 +4200,7 @@ ___
 **Ƭ PaddingBottomProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:3060*
+*Defined in [types.ts:3090](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3090)*
 
 ___
 <a id="paddinginlineendproperty"></a>
@@ -4202,7 +4209,7 @@ ___
 
 **Ƭ PaddingInlineEndProperty**: *[PaddingLeftProperty](_types_.md#paddingleftproperty)*
 
-*Defined in types.ts:3061*
+*Defined in [types.ts:3091](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3091)*
 
 ___
 <a id="paddinginlinestartproperty"></a>
@@ -4211,7 +4218,7 @@ ___
 
 **Ƭ PaddingInlineStartProperty**: *[PaddingLeftProperty](_types_.md#paddingleftproperty)*
 
-*Defined in types.ts:3062*
+*Defined in [types.ts:3092](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3092)*
 
 ___
 <a id="paddingleftproperty"></a>
@@ -4221,7 +4228,7 @@ ___
 **Ƭ PaddingLeftProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:3063*
+*Defined in [types.ts:3093](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3093)*
 
 ___
 <a id="paddingproperty"></a>
@@ -4231,7 +4238,7 @@ ___
 **Ƭ PaddingProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:3057*
+*Defined in [types.ts:3087](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3087)*
 
 ___
 <a id="paddingrightproperty"></a>
@@ -4241,7 +4248,7 @@ ___
 **Ƭ PaddingRightProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:3064*
+*Defined in [types.ts:3094](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3094)*
 
 ___
 <a id="paddingtopproperty"></a>
@@ -4251,7 +4258,7 @@ ___
 **Ƭ PaddingTopProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:3065*
+*Defined in [types.ts:3095](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3095)*
 
 ___
 <a id="pagebreakafterproperty"></a>
@@ -4261,7 +4268,7 @@ ___
 **Ƭ PageBreakAfterProperty**: * "auto" &#124; "always" &#124; "avoid" &#124; "left" &#124; "right" &#124; "recto" &#124; "verso"
 *
 
-*Defined in types.ts:3066*
+*Defined in [types.ts:3096](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3096)*
 
 ___
 <a id="pagebreakbeforeproperty"></a>
@@ -4271,7 +4278,7 @@ ___
 **Ƭ PageBreakBeforeProperty**: * "auto" &#124; "always" &#124; "avoid" &#124; "left" &#124; "right" &#124; "recto" &#124; "verso"
 *
 
-*Defined in types.ts:3074*
+*Defined in [types.ts:3104](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3104)*
 
 ___
 <a id="pagebreakinsideproperty"></a>
@@ -4281,7 +4288,7 @@ ___
 **Ƭ PageBreakInsideProperty**: * "auto" &#124; "avoid"
 *
 
-*Defined in types.ts:3082*
+*Defined in [types.ts:3112](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3112)*
 
 ___
 <a id="pagemarginbox"></a>
@@ -4290,7 +4297,7 @@ ___
 
 **Ƭ PageMarginBox**: *`string`*
 
-*Defined in types.ts:589*
+*Defined in [types.ts:593](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L593)*
 
 ___
 <a id="pagemarginboxtype"></a>
@@ -4299,7 +4306,7 @@ ___
 
 **Ƭ PageMarginBoxType**: *`string`*
 
-*Defined in types.ts:590*
+*Defined in [types.ts:594](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L594)*
 
 ___
 <a id="percentage"></a>
@@ -4308,7 +4315,7 @@ ___
 
 **Ƭ Percentage**: *[IPercentageValue](../interfaces/_unittypes_.ipercentagevalue.md)*
 
-*Defined in types.ts:63*
+*Defined in [types.ts:63](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L63)*
 
 ___
 <a id="perspectivefunction"></a>
@@ -4317,7 +4324,7 @@ ___
 
 **Ƭ PerspectiveFunction**: *`string`*
 
-*Defined in types.ts:591*
+*Defined in [types.ts:595](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L595)*
 
 ___
 <a id="perspectiveoriginproperty"></a>
@@ -4326,7 +4333,7 @@ ___
 
 **Ƭ PerspectiveOriginProperty**: *[Position](_types_.md#position)*
 
-*Defined in types.ts:3090*
+*Defined in [types.ts:3120](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3120)*
 
 ___
 <a id="perspectiveoriginpropertycombined"></a>
@@ -4336,7 +4343,7 @@ ___
 **Ƭ PerspectiveOriginPropertyCombined**: * "static" &#124; "relative" &#124; "absolute" &#124; "sticky" &#124; "fixed"
 *
 
-*Defined in types.ts:3084*
+*Defined in [types.ts:3114](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3114)*
 
 ___
 <a id="perspectiveproperty"></a>
@@ -4346,7 +4353,7 @@ ___
 **Ƭ PerspectiveProperty**: * "none" &#124; `TLength`
 *
 
-*Defined in types.ts:3083*
+*Defined in [types.ts:3113](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3113)*
 
 ___
 <a id="placecontentproperty"></a>
@@ -4356,7 +4363,7 @@ ___
 **Ƭ PlaceContentProperty**: * [AlignContentProperty](_types_.md#aligncontentproperty) &#124; [[AlignContentProperty](_types_.md#aligncontentproperty), [JustifyContentProperty](_types_.md#justifycontentproperty)]
 *
 
-*Defined in types.ts:3122*
+*Defined in [types.ts:3152](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3152)*
 
 ___
 <a id="placecontentpropertycombined"></a>
@@ -4366,7 +4373,7 @@ ___
 **Ƭ PlaceContentPropertyCombined**: * "normal" &#124; "normal normal" &#124; "normal space-between" &#124; "normal space-around" &#124; "normal space-evenly" &#124; "normal stretch" &#124; "space-between" &#124; "space-between normal" &#124; "space-between space-between" &#124; "space-between space-around" &#124; "space-between space-evenly" &#124; "space-between stretch" &#124; "space-around" &#124; "space-around normal" &#124; "space-around space-between" &#124; "space-around space-around" &#124; "space-around space-evenly" &#124; "space-around stretch" &#124; "space-evenly" &#124; "space-evenly normal" &#124; "space-evenly space-between" &#124; "space-evenly space-around" &#124; "space-evenly space-evenly" &#124; "space-evenly stretch" &#124; "stretch" &#124; "stretch normal" &#124; "stretch space-between" &#124; "stretch space-around" &#124; "stretch space-evenly" &#124; "stretch stretch"
 *
 
-*Defined in types.ts:3091*
+*Defined in [types.ts:3121](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3121)*
 
 ___
 <a id="placeitemsproperty"></a>
@@ -4376,7 +4383,7 @@ ___
 **Ƭ PlaceItemsProperty**: * [AlignItemsProperty](_types_.md#alignitemsproperty) &#124; [[AlignItemsProperty](_types_.md#alignitemsproperty), [JustifyItemsProperty](_types_.md#justifyitemsproperty)]
 *
 
-*Defined in types.ts:3134*
+*Defined in [types.ts:3164](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3164)*
 
 ___
 <a id="placeitemspropertycombined"></a>
@@ -4386,7 +4393,7 @@ ___
 **Ƭ PlaceItemsPropertyCombined**: * "normal" &#124; "normal normal" &#124; "normal stretch" &#124; "normal legacy" &#124; "stretch" &#124; "stretch normal" &#124; "stretch stretch" &#124; "stretch legacy"
 *
 
-*Defined in types.ts:3125*
+*Defined in [types.ts:3155](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3155)*
 
 ___
 <a id="pointereventsproperty"></a>
@@ -4396,7 +4403,7 @@ ___
 **Ƭ PointerEventsProperty**: * "auto" &#124; "none" &#124; "visiblePainted" &#124; "visibleFill" &#124; "visibleStroke" &#124; "visible" &#124; "painted" &#124; "fill" &#124; "stroke" &#124; "all" &#124; "inherit"
 *
 
-*Defined in types.ts:3135*
+*Defined in [types.ts:3165](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3165)*
 
 ___
 <a id="polygonfunction"></a>
@@ -4405,7 +4412,7 @@ ___
 
 **Ƭ PolygonFunction**: *`string`*
 
-*Defined in types.ts:592*
+*Defined in [types.ts:596](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L596)*
 
 ___
 <a id="position"></a>
@@ -4415,7 +4422,7 @@ ___
 **Ƭ Position**: * "top" &#124; "center" &#124; "bottom" &#124; "left" &#124; ["left", "top"] &#124; ["left", "center"] &#124; ["left", "bottom"] &#124; "center" &#124; ["center", "top"] &#124; ["center", "center"] &#124; ["center", "bottom"] &#124; "right" &#124; ["right", "top"] &#124; ["right", "center"] &#124; ["right", "bottom"] &#124; "left" &#124; ["left", "top"] &#124; ["left", "center"] &#124; ["left", "bottom"] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; "center" &#124; ["center", "top"] &#124; ["center", "center"] &#124; ["center", "bottom"] &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; "right" &#124; ["right", "top"] &#124; ["right", "center"] &#124; ["right", "bottom"] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
 *
 
-*Defined in types.ts:593*
+*Defined in [types.ts:597](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L597)*
 
 ___
 <a id="positionproperty"></a>
@@ -4425,7 +4432,7 @@ ___
 **Ƭ PositionProperty**: * "static" &#124; "relative" &#124; "absolute" &#124; "sticky" &#124; "fixed"
 *
 
-*Defined in types.ts:3147*
+*Defined in [types.ts:3177](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3177)*
 
 ___
 <a id="pseudopage"></a>
@@ -4434,7 +4441,7 @@ ___
 
 **Ƭ PseudoPage**: *`string`*
 
-*Defined in types.ts:633*
+*Defined in [types.ts:637](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L637)*
 
 ___
 <a id="quote"></a>
@@ -4444,7 +4451,7 @@ ___
 **Ƭ Quote**: * "open-quote" &#124; "close-quote" &#124; "no-open-quote" &#124; "no-close-quote"
 *
 
-*Defined in types.ts:634*
+*Defined in [types.ts:638](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L638)*
 
 ___
 <a id="quotesproperty"></a>
@@ -4454,7 +4461,7 @@ ___
 **Ƭ QuotesProperty**: * "none" &#124; [`string`, `string`]
 *
 
-*Defined in types.ts:3148*
+*Defined in [types.ts:3178](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3178)*
 
 ___
 <a id="radialgradientfunction"></a>
@@ -4463,7 +4470,7 @@ ___
 
 **Ƭ RadialGradientFunction**: *`string`*
 
-*Defined in types.ts:635*
+*Defined in [types.ts:639](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L639)*
 
 ___
 <a id="ratio"></a>
@@ -4472,7 +4479,7 @@ ___
 
 **Ƭ Ratio**: *`string`*
 
-*Defined in types.ts:52*
+*Defined in [types.ts:52](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L52)*
 
 ___
 <a id="relativesize"></a>
@@ -4482,7 +4489,7 @@ ___
 **Ƭ RelativeSize**: * "larger" &#124; "smaller"
 *
 
-*Defined in types.ts:636*
+*Defined in [types.ts:640](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L640)*
 
 ___
 <a id="repeatstyle"></a>
@@ -4492,7 +4499,7 @@ ___
 **Ƭ RepeatStyle**: * "repeat-x" &#124; "repeat-y" &#124; "repeat" &#124; "space" &#124; "round" &#124; "no-repeat"
 *
 
-*Defined in types.ts:637*
+*Defined in [types.ts:641](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L641)*
 
 ___
 <a id="repeatinglineargradientfunction"></a>
@@ -4501,7 +4508,7 @@ ___
 
 **Ƭ RepeatingLinearGradientFunction**: *`string`*
 
-*Defined in types.ts:638*
+*Defined in [types.ts:642](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L642)*
 
 ___
 <a id="repeatingradialgradientfunction"></a>
@@ -4510,7 +4517,7 @@ ___
 
 **Ƭ RepeatingRadialGradientFunction**: *`string`*
 
-*Defined in types.ts:639*
+*Defined in [types.ts:643](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L643)*
 
 ___
 <a id="resizeproperty"></a>
@@ -4520,7 +4527,7 @@ ___
 **Ƭ ResizeProperty**: * "none" &#124; "both" &#124; "horizontal" &#124; "vertical" &#124; "block" &#124; "inline"
 *
 
-*Defined in types.ts:3149*
+*Defined in [types.ts:3179](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3179)*
 
 ___
 <a id="resolution"></a>
@@ -4530,7 +4537,7 @@ ___
 **Ƭ Resolution**: * [IDpiValue](../interfaces/_unittypes_.idpivalue.md) &#124; [IDpcmValue](../interfaces/_unittypes_.idpcmvalue.md) &#124; [IDppxValue](../interfaces/_unittypes_.idppxvalue.md) &#124; [IXValue](../interfaces/_unittypes_.ixvalue.md)
 *
 
-*Defined in types.ts:64*
+*Defined in [types.ts:64](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L64)*
 
 ___
 <a id="rgbfunction"></a>
@@ -4539,7 +4546,7 @@ ___
 
 **Ƭ RgbFunction**: *`string`*
 
-*Defined in types.ts:640*
+*Defined in [types.ts:644](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L644)*
 
 ___
 <a id="rgbafunction"></a>
@@ -4548,7 +4555,7 @@ ___
 
 **Ƭ RgbaFunction**: *`string`*
 
-*Defined in types.ts:641*
+*Defined in [types.ts:645](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L645)*
 
 ___
 <a id="rightproperty"></a>
@@ -4558,7 +4565,7 @@ ___
 **Ƭ RightProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:3150*
+*Defined in [types.ts:3180](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3180)*
 
 ___
 <a id="rotate3dfunction"></a>
@@ -4567,7 +4574,7 @@ ___
 
 **Ƭ Rotate3DFunction**: *`string`*
 
-*Defined in types.ts:643*
+*Defined in [types.ts:647](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L647)*
 
 ___
 <a id="rotatefunction"></a>
@@ -4576,17 +4583,17 @@ ___
 
 **Ƭ RotateFunction**: *`string`*
 
-*Defined in types.ts:642*
+*Defined in [types.ts:646](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L646)*
 
 ___
 <a id="rotateproperty"></a>
 
 ###  RotateProperty
 
-**Ƭ RotateProperty**: * "none" &#124; [Angle](_types_.md#angle) &#124; ["x", [Angle](_types_.md#angle)] &#124; ["y", [Angle](_types_.md#angle)] &#124; ["z", [Angle](_types_.md#angle)] &#124; [`number`, [Angle](_types_.md#angle)] &#124; [`number`, [Angle](_types_.md#angle)] &#124; [`number`, [Angle](_types_.md#angle)]
+**Ƭ RotateProperty**: * "none" &#124; [Angle](_types_.md#angle) &#124; ["x", [Angle](_types_.md#angle)] &#124; ["y", [Angle](_types_.md#angle)] &#124; ["z", [Angle](_types_.md#angle)] &#124; [`number`, `number`, `number`, [Angle](_types_.md#angle)]
 *
 
-*Defined in types.ts:3151*
+*Defined in [types.ts:3181](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3181)*
 
 ___
 <a id="rotatexfunction"></a>
@@ -4595,7 +4602,7 @@ ___
 
 **Ƭ RotateXFunction**: *`string`*
 
-*Defined in types.ts:644*
+*Defined in [types.ts:648](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L648)*
 
 ___
 <a id="rotateyfunction"></a>
@@ -4604,7 +4611,7 @@ ___
 
 **Ƭ RotateYFunction**: *`string`*
 
-*Defined in types.ts:645*
+*Defined in [types.ts:649](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L649)*
 
 ___
 <a id="rotatezfunction"></a>
@@ -4613,7 +4620,7 @@ ___
 
 **Ƭ RotateZFunction**: *`string`*
 
-*Defined in types.ts:646*
+*Defined in [types.ts:650](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L650)*
 
 ___
 <a id="rowgapproperty"></a>
@@ -4623,7 +4630,7 @@ ___
 **Ƭ RowGapProperty**: * "normal" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
 *
 
-*Defined in types.ts:3160*
+*Defined in [types.ts:3188](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3188)*
 
 ___
 <a id="saturatefunction"></a>
@@ -4632,7 +4639,7 @@ ___
 
 **Ƭ SaturateFunction**: *`string`*
 
-*Defined in types.ts:647*
+*Defined in [types.ts:651](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L651)*
 
 ___
 <a id="scale3dfunction"></a>
@@ -4641,7 +4648,7 @@ ___
 
 **Ƭ Scale3DFunction**: *`string`*
 
-*Defined in types.ts:649*
+*Defined in [types.ts:653](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L653)*
 
 ___
 <a id="scalefunction"></a>
@@ -4650,17 +4657,17 @@ ___
 
 **Ƭ ScaleFunction**: *`string`*
 
-*Defined in types.ts:648*
+*Defined in [types.ts:652](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L652)*
 
 ___
 <a id="scaleproperty"></a>
 
 ###  ScaleProperty
 
-**Ƭ ScaleProperty**: * "none" &#124; `number`
+**Ƭ ScaleProperty**: * "none" &#124; `number` &#124; [`number`, `number`] &#124; [`number`, `number`, `number`]
 *
 
-*Defined in types.ts:3161*
+*Defined in [types.ts:3189](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3189)*
 
 ___
 <a id="scalexfunction"></a>
@@ -4669,7 +4676,7 @@ ___
 
 **Ƭ ScaleXFunction**: *`string`*
 
-*Defined in types.ts:650*
+*Defined in [types.ts:654](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L654)*
 
 ___
 <a id="scaleyfunction"></a>
@@ -4678,7 +4685,7 @@ ___
 
 **Ƭ ScaleYFunction**: *`string`*
 
-*Defined in types.ts:651*
+*Defined in [types.ts:655](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L655)*
 
 ___
 <a id="scalezfunction"></a>
@@ -4687,7 +4694,7 @@ ___
 
 **Ƭ ScaleZFunction**: *`string`*
 
-*Defined in types.ts:652*
+*Defined in [types.ts:656](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L656)*
 
 ___
 <a id="scrollbehaviorproperty"></a>
@@ -4697,7 +4704,7 @@ ___
 **Ƭ ScrollBehaviorProperty**: * "auto" &#124; "smooth"
 *
 
-*Defined in types.ts:3162*
+*Defined in [types.ts:3190](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3190)*
 
 ___
 <a id="scrollsnaptypeproperty"></a>
@@ -4707,7 +4714,7 @@ ___
 **Ƭ ScrollSnapTypeProperty**: * "none" &#124; "mandatory" &#124; "proximity"
 *
 
-*Defined in types.ts:3163*
+*Defined in [types.ts:3191](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3191)*
 
 ___
 <a id="selfposition"></a>
@@ -4717,7 +4724,7 @@ ___
 **Ƭ SelfPosition**: * "center" &#124; "start" &#124; "end" &#124; "self-start" &#124; "self-end" &#124; "flex-start" &#124; "flex-end"
 *
 
-*Defined in types.ts:653*
+*Defined in [types.ts:657](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L657)*
 
 ___
 <a id="sepiafunction"></a>
@@ -4726,7 +4733,7 @@ ___
 
 **Ƭ SepiaFunction**: *`string`*
 
-*Defined in types.ts:668*
+*Defined in [types.ts:672](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L672)*
 
 ___
 <a id="shadow"></a>
@@ -4736,7 +4743,7 @@ ___
 **Ƭ Shadow**: * [`TLength`, `TLength`] &#124; [`TLength`, `TLength`, [Color](_types_.md#color)] &#124; [`TLength`, `TLength`, `TLength`] &#124; [`TLength`, `TLength`, `TLength`, [Color](_types_.md#color)] &#124; [`TLength`, `TLength`, `TLength`, `TLength`] &#124; [`TLength`, `TLength`, `TLength`, `TLength`, [Color](_types_.md#color)] &#124; ["inset", `TLength`, `TLength`] &#124; ["inset", `TLength`, `TLength`, [Color](_types_.md#color)] &#124; ["inset", `TLength`, `TLength`, `TLength`] &#124; ["inset", `TLength`, `TLength`, `TLength`, [Color](_types_.md#color)] &#124; ["inset", `TLength`, `TLength`, `TLength`, `TLength`] &#124; ["inset", `TLength`, `TLength`, `TLength`, `TLength`, [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:669*
+*Defined in [types.ts:673](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L673)*
 
 ___
 <a id="shadowt"></a>
@@ -4746,7 +4753,7 @@ ___
 **Ƭ ShadowT**: * [`TLength`, `TLength`] &#124; [`TLength`, `TLength`, [Color](_types_.md#color)] &#124; [`TLength`, `TLength`, `TLength`] &#124; [`TLength`, `TLength`, `TLength`, [Color](_types_.md#color)]
 *
 
-*Defined in types.ts:682*
+*Defined in [types.ts:686](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L686)*
 
 ___
 <a id="shape"></a>
@@ -4755,7 +4762,7 @@ ___
 
 **Ƭ Shape**: *`string`*
 
-*Defined in types.ts:65*
+*Defined in [types.ts:65](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L65)*
 
 ___
 <a id="shapebox"></a>
@@ -4765,7 +4772,7 @@ ___
 **Ƭ ShapeBox**: * [Box](_types_.md#box) &#124; "margin-box"
 *
 
-*Defined in types.ts:688*
+*Defined in [types.ts:692](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L692)*
 
 ___
 <a id="shapeboxcombined"></a>
@@ -4775,7 +4782,7 @@ ___
 **Ƭ ShapeBoxCombined**: * "border-box" &#124; "padding-box" &#124; "content-box" &#124; "margin-box"
 *
 
-*Defined in types.ts:687*
+*Defined in [types.ts:691](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L691)*
 
 ___
 <a id="shapeimagethresholdproperty"></a>
@@ -4784,7 +4791,7 @@ ___
 
 **Ƭ ShapeImageThresholdProperty**: *`number`*
 
-*Defined in types.ts:3164*
+*Defined in [types.ts:3192](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3192)*
 
 ___
 <a id="shapemarginproperty"></a>
@@ -4793,7 +4800,7 @@ ___
 
 **Ƭ ShapeMarginProperty**: *[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>*
 
-*Defined in types.ts:3165*
+*Defined in [types.ts:3193](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3193)*
 
 ___
 <a id="shapeoutsideproperty"></a>
@@ -4803,7 +4810,7 @@ ___
 **Ƭ ShapeOutsideProperty**: * "none" &#124; [BasicShape](_types_.md#basicshape) &#124; [ShapeBox](_types_.md#shapebox) &#124; [[ShapeBox](_types_.md#shapebox), [BasicShape](_types_.md#basicshape)] &#124; [Image](_types_.md#image)
 *
 
-*Defined in types.ts:3166*
+*Defined in [types.ts:3194](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3194)*
 
 ___
 <a id="shaperadius"></a>
@@ -4813,7 +4820,7 @@ ___
 **Ƭ ShapeRadius**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; "closest-side" &#124; "farthest-side"
 *
 
-*Defined in types.ts:661*
+*Defined in [types.ts:665](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L665)*
 
 ___
 <a id="sideorcorner"></a>
@@ -4823,7 +4830,7 @@ ___
 **Ƭ SideOrCorner**: * "top" &#124; "bottom" &#124; "left" &#124; ["left", "top"] &#124; ["left", "bottom"] &#124; "right" &#124; ["right", "top"] &#124; ["right", "bottom"]
 *
 
-*Defined in types.ts:689*
+*Defined in [types.ts:693](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L693)*
 
 ___
 <a id="singleanimation"></a>
@@ -4833,7 +4840,7 @@ ___
 **Ƭ SingleAnimation**: * "none" &#124; [KeyframesName](_types_.md#keyframesname) &#124; [SingleAnimationPlayState](_types_.md#singleanimationplaystate) &#124; [[SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [SingleAnimationFillMode](_types_.md#singleanimationfillmode) &#124; [[SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [SingleAnimationDirection](_types_.md#singleanimationdirection) &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount) &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [Time](_types_.md#time) &#124; [[Time](_types_.md#time), "none"] &#124; [[Time](_types_.md#time), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [SingleTimingFunction](_types_.md#singletimingfunction) &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [Time](_types_.md#time) &#124; [[Time](_types_.md#time), "none"] &#124; [[Time](_types_.md#time), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [KeyframesName](_types_.md#keyframesname)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate)] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), "none"] &#124; [[Time](_types_.md#time), [SingleTimingFunction](_types_.md#singletimingfunction), [Time](_types_.md#time), [SingleAnimationIterationCount](_types_.md#singleanimationiterationcount), [SingleAnimationDirection](_types_.md#singleanimationdirection), [SingleAnimationFillMode](_types_.md#singleanimationfillmode), [SingleAnimationPlayState](_types_.md#singleanimationplaystate), [KeyframesName](_types_.md#keyframesname)]
 *
 
-*Defined in types.ts:698*
+*Defined in [types.ts:702](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L702)*
 
 ___
 <a id="singleanimationdirection"></a>
@@ -4843,7 +4850,7 @@ ___
 **Ƭ SingleAnimationDirection**: * "normal" &#124; "reverse" &#124; "alternate" &#124; "alternate-reverse"
 *
 
-*Defined in types.ts:1804*
+*Defined in [types.ts:1808](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1808)*
 
 ___
 <a id="singleanimationfillmode"></a>
@@ -4853,7 +4860,7 @@ ___
 **Ƭ SingleAnimationFillMode**: * "none" &#124; "forwards" &#124; "backwards" &#124; "both"
 *
 
-*Defined in types.ts:1805*
+*Defined in [types.ts:1809](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1809)*
 
 ___
 <a id="singleanimationiterationcount"></a>
@@ -4863,7 +4870,7 @@ ___
 **Ƭ SingleAnimationIterationCount**: * "infinite" &#124; `number`
 *
 
-*Defined in types.ts:1806*
+*Defined in [types.ts:1810](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1810)*
 
 ___
 <a id="singleanimationplaystate"></a>
@@ -4873,7 +4880,7 @@ ___
 **Ƭ SingleAnimationPlayState**: * "running" &#124; "paused"
 *
 
-*Defined in types.ts:1807*
+*Defined in [types.ts:1811](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1811)*
 
 ___
 <a id="singletimingfunction"></a>
@@ -4883,7 +4890,7 @@ ___
 **Ƭ SingleTimingFunction**: * "linear" &#124; [CubicBezierTimingFunction](_types_.md#cubicbeziertimingfunction) &#124; [StepTimingFunction](_types_.md#steptimingfunction) &#124; [FramesTimingFunction](_types_.md#framestimingfunction)
 *
 
-*Defined in types.ts:1808*
+*Defined in [types.ts:1812](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1812)*
 
 ___
 <a id="singletransition"></a>
@@ -4893,7 +4900,7 @@ ___
 **Ƭ SingleTransition**: * [Time](_types_.md#time) &#124; [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction) &#124; [[SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)] &#124; [Time](_types_.md#time) &#124; [[Time](_types_.md#time), [Time](_types_.md#time)] &#124; [[Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction)] &#124; [[Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)] &#124; "none" &#124; ["none", [Time](_types_.md#time)] &#124; ["none", [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction)] &#124; ["none", [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)] &#124; ["none", [Time](_types_.md#time)] &#124; ["none", [Time](_types_.md#time), [Time](_types_.md#time)] &#124; ["none", [Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction)] &#124; ["none", [Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)] &#124; [SingleTransitionProperty](_types_.md#singletransitionproperty) &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [Time](_types_.md#time)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [Time](_types_.md#time)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [Time](_types_.md#time), [Time](_types_.md#time)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction)] &#124; [[SingleTransitionProperty](_types_.md#singletransitionproperty), [Time](_types_.md#time), [SingleTransitionTimingFunction](_types_.md#singletransitiontimingfunction), [Time](_types_.md#time)]
 *
 
-*Defined in types.ts:1813*
+*Defined in [types.ts:1817](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1817)*
 
 ___
 <a id="singletransitionproperty"></a>
@@ -4903,7 +4910,7 @@ ___
 **Ƭ SingleTransitionProperty**: * "all" &#124; [CustomIdent](_types_.md#customident)
 *
 
-*Defined in types.ts:1838*
+*Defined in [types.ts:1842](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1842)*
 
 ___
 <a id="singletransitiontimingfunction"></a>
@@ -4912,17 +4919,17 @@ ___
 
 **Ƭ SingleTransitionTimingFunction**: *[SingleTimingFunction](_types_.md#singletimingfunction)*
 
-*Defined in types.ts:1837*
+*Defined in [types.ts:1841](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1841)*
 
 ___
 <a id="size"></a>
 
 ###  Size
 
-**Ƭ Size**: * "closest-side" &#124; "farthest-side" &#124; "closest-corner" &#124; "farthest-corner" &#124; `TLength` &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
+**Ƭ Size**: * "closest-side" &#124; "farthest-side" &#124; "closest-corner" &#124; "farthest-corner" &#124; `TLength` &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>]
 *
 
-*Defined in types.ts:1839*
+*Defined in [types.ts:1843](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1843)*
 
 ___
 <a id="skewfunction"></a>
@@ -4931,7 +4938,7 @@ ___
 
 **Ƭ SkewFunction**: *`string`*
 
-*Defined in types.ts:665*
+*Defined in [types.ts:669](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L669)*
 
 ___
 <a id="skewxfunction"></a>
@@ -4940,7 +4947,7 @@ ___
 
 **Ƭ SkewXFunction**: *`string`*
 
-*Defined in types.ts:666*
+*Defined in [types.ts:670](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L670)*
 
 ___
 <a id="skewyfunction"></a>
@@ -4949,7 +4956,7 @@ ___
 
 **Ƭ SkewYFunction**: *`string`*
 
-*Defined in types.ts:667*
+*Defined in [types.ts:671](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L671)*
 
 ___
 <a id="steptimingfunction"></a>
@@ -4958,7 +4965,7 @@ ___
 
 **Ƭ StepTimingFunction**: *`string`*
 
-*Defined in types.ts:1846*
+*Defined in [types.ts:1850](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1850)*
 
 ___
 <a id="string"></a>
@@ -4967,7 +4974,7 @@ ___
 
 **Ƭ String**: *`string`*
 
-*Defined in types.ts:53*
+*Defined in [types.ts:53](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L53)*
 
 ___
 <a id="symbol"></a>
@@ -4977,7 +4984,7 @@ ___
 **Ƭ Symbol**: * `string` &#124; [Image](_types_.md#image) &#124; [CustomIdent](_types_.md#customident)
 *
 
-*Defined in types.ts:1847*
+*Defined in [types.ts:1851](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1851)*
 
 ___
 <a id="tabsizeproperty"></a>
@@ -4987,7 +4994,7 @@ ___
 **Ƭ TabSizeProperty**: * [Integer](_types_.md#integer) &#124; `TLength`
 *
 
-*Defined in types.ts:3167*
+*Defined in [types.ts:3195](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3195)*
 
 ___
 <a id="tablelayoutproperty"></a>
@@ -4997,7 +5004,7 @@ ___
 **Ƭ TableLayoutProperty**: * "auto" &#124; "fixed"
 *
 
-*Defined in types.ts:3168*
+*Defined in [types.ts:3196](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3196)*
 
 ___
 <a id="target"></a>
@@ -5007,7 +5014,7 @@ ___
 **Ƭ Target**: * [TargetCounterFunction](_types_.md#targetcounterfunction) &#124; [TargetCountersFunction](_types_.md#targetcountersfunction) &#124; [TargetTextFunction](_types_.md#targettextfunction)
 *
 
-*Defined in types.ts:1848*
+*Defined in [types.ts:1852](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1852)*
 
 ___
 <a id="targetcounterfunction"></a>
@@ -5016,7 +5023,7 @@ ___
 
 **Ƭ TargetCounterFunction**: *`string`*
 
-*Defined in types.ts:1849*
+*Defined in [types.ts:1853](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1853)*
 
 ___
 <a id="targetcountersfunction"></a>
@@ -5025,7 +5032,7 @@ ___
 
 **Ƭ TargetCountersFunction**: *`string`*
 
-*Defined in types.ts:1850*
+*Defined in [types.ts:1854](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1854)*
 
 ___
 <a id="targettextfunction"></a>
@@ -5034,7 +5041,7 @@ ___
 
 **Ƭ TargetTextFunction**: *`string`*
 
-*Defined in types.ts:1851*
+*Defined in [types.ts:1855](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1855)*
 
 ___
 <a id="textalignlastproperty"></a>
@@ -5044,7 +5051,7 @@ ___
 **Ƭ TextAlignLastProperty**: * "auto" &#124; "start" &#124; "end" &#124; "left" &#124; "right" &#124; "center" &#124; "justify"
 *
 
-*Defined in types.ts:3177*
+*Defined in [types.ts:3205](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3205)*
 
 ___
 <a id="textalignproperty"></a>
@@ -5054,7 +5061,7 @@ ___
 **Ƭ TextAlignProperty**: * "start" &#124; "end" &#124; "left" &#124; "right" &#124; "center" &#124; "justify" &#124; "match-parent"
 *
 
-*Defined in types.ts:3169*
+*Defined in [types.ts:3197](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3197)*
 
 ___
 <a id="textcombineuprightproperty"></a>
@@ -5064,7 +5071,7 @@ ___
 **Ƭ TextCombineUprightProperty**: * "none" &#124; "all" &#124; "digits" &#124; ["digits", [Integer](_types_.md#integer)]
 *
 
-*Defined in types.ts:3185*
+*Defined in [types.ts:3213](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3213)*
 
 ___
 <a id="textdecorationcolorproperty"></a>
@@ -5073,7 +5080,7 @@ ___
 
 **Ƭ TextDecorationColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:3194*
+*Defined in [types.ts:3222](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3222)*
 
 ___
 <a id="textdecorationlineproperty"></a>
@@ -5083,7 +5090,7 @@ ___
 **Ƭ TextDecorationLineProperty**: * "none" &#124; "blink" &#124; "line-through" &#124; ["line-through", "blink"] &#124; "overline" &#124; ["overline", "blink"] &#124; ["overline", "line-through"] &#124; ["overline", "line-through", "blink"] &#124; "underline" &#124; ["underline", "blink"] &#124; ["underline", "line-through"] &#124; ["underline", "line-through", "blink"] &#124; ["underline", "overline"] &#124; ["underline", "overline", "blink"] &#124; ["underline", "overline", "line-through"] &#124; ["underline", "overline", "line-through", "blink"]
 *
 
-*Defined in types.ts:3195*
+*Defined in [types.ts:3223](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3223)*
 
 ___
 <a id="textdecorationproperty"></a>
@@ -5093,7 +5100,7 @@ ___
 **Ƭ TextDecorationProperty**: * [TextDecorationColorProperty](_types_.md#textdecorationcolorproperty) &#124; [TextDecorationStyleProperty](_types_.md#textdecorationstyleproperty) &#124; [[TextDecorationStyleProperty](_types_.md#textdecorationstyleproperty), [TextDecorationColorProperty](_types_.md#textdecorationcolorproperty)] &#124; [TextDecorationLineProperty](_types_.md#textdecorationlineproperty) &#124; [[TextDecorationLineProperty](_types_.md#textdecorationlineproperty), [TextDecorationColorProperty](_types_.md#textdecorationcolorproperty)] &#124; [[TextDecorationLineProperty](_types_.md#textdecorationlineproperty), [TextDecorationStyleProperty](_types_.md#textdecorationstyleproperty)] &#124; [[TextDecorationLineProperty](_types_.md#textdecorationlineproperty), [TextDecorationStyleProperty](_types_.md#textdecorationstyleproperty), [TextDecorationColorProperty](_types_.md#textdecorationcolorproperty)]
 *
 
-*Defined in types.ts:3186*
+*Defined in [types.ts:3214](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3214)*
 
 ___
 <a id="textdecorationstyleproperty"></a>
@@ -5103,7 +5110,7 @@ ___
 **Ƭ TextDecorationStyleProperty**: * "solid" &#124; "double" &#124; "dotted" &#124; "dashed" &#124; "wavy"
 *
 
-*Defined in types.ts:3212*
+*Defined in [types.ts:3240](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3240)*
 
 ___
 <a id="textemphasiscolorproperty"></a>
@@ -5112,7 +5119,7 @@ ___
 
 **Ƭ TextEmphasisColorProperty**: *[Color](_types_.md#color)*
 
-*Defined in types.ts:3217*
+*Defined in [types.ts:3245](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3245)*
 
 ___
 <a id="textemphasispositionproperty"></a>
@@ -5122,7 +5129,7 @@ ___
 **Ƭ TextEmphasisPositionProperty**: * ["over", "right"] &#124; ["over", "left"] &#124; ["under", "right"] &#124; ["under", "left"]
 *
 
-*Defined in types.ts:3218*
+*Defined in [types.ts:3246](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3246)*
 
 ___
 <a id="textemphasisproperty"></a>
@@ -5132,7 +5139,7 @@ ___
 **Ƭ TextEmphasisProperty**: * [TextEmphasisColorProperty](_types_.md#textemphasiscolorproperty) &#124; [TextEmphasisStyleProperty](_types_.md#textemphasisstyleproperty) &#124; [[TextEmphasisStyleProperty](_types_.md#textemphasisstyleproperty), [TextEmphasisColorProperty](_types_.md#textemphasiscolorproperty)]
 *
 
-*Defined in types.ts:3213*
+*Defined in [types.ts:3241](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3241)*
 
 ___
 <a id="textemphasisstyleproperty"></a>
@@ -5142,7 +5149,7 @@ ___
 **Ƭ TextEmphasisStyleProperty**: * "none" &#124; "dot" &#124; "circle" &#124; "double-circle" &#124; "triangle" &#124; "sesame" &#124; "filled" &#124; ["filled", "dot"] &#124; ["filled", "circle"] &#124; ["filled", "double-circle"] &#124; ["filled", "triangle"] &#124; ["filled", "sesame"] &#124; "open" &#124; ["open", "dot"] &#124; ["open", "circle"] &#124; ["open", "double-circle"] &#124; ["open", "triangle"] &#124; ["open", "sesame"] &#124; `string`
 *
 
-*Defined in types.ts:3223*
+*Defined in [types.ts:3251](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3251)*
 
 ___
 <a id="textindentproperty"></a>
@@ -5152,7 +5159,7 @@ ___
 **Ƭ TextIndentProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "each-line"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "hanging"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "hanging", "each-line"]
 *
 
-*Defined in types.ts:3243*
+*Defined in [types.ts:3271](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3271)*
 
 ___
 <a id="textjustifyproperty"></a>
@@ -5162,7 +5169,7 @@ ___
 **Ƭ TextJustifyProperty**: * "auto" &#124; "inter-character" &#124; "inter-word" &#124; "none"
 *
 
-*Defined in types.ts:3248*
+*Defined in [types.ts:3276](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3276)*
 
 ___
 <a id="textorientationproperty"></a>
@@ -5172,7 +5179,7 @@ ___
 **Ƭ TextOrientationProperty**: * "mixed" &#124; "upright" &#124; "sideways"
 *
 
-*Defined in types.ts:3249*
+*Defined in [types.ts:3277](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3277)*
 
 ___
 <a id="textoverflowproperty"></a>
@@ -5182,7 +5189,7 @@ ___
 **Ƭ TextOverflowProperty**: * "clip" &#124; "ellipsis" &#124; `string`
 *
 
-*Defined in types.ts:3250*
+*Defined in [types.ts:3278](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3278)*
 
 ___
 <a id="textrenderingproperty"></a>
@@ -5192,7 +5199,7 @@ ___
 **Ƭ TextRenderingProperty**: * "auto" &#124; "optimizeSpeed" &#124; "optimizeLegibility" &#124; "geometricPrecision"
 *
 
-*Defined in types.ts:3251*
+*Defined in [types.ts:3279](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3279)*
 
 ___
 <a id="textshadowproperty"></a>
@@ -5201,7 +5208,7 @@ ___
 
 **Ƭ TextShadowProperty**: *`string`*
 
-*Defined in types.ts:3256*
+*Defined in [types.ts:3284](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3284)*
 
 ___
 <a id="texttransformproperty"></a>
@@ -5211,7 +5218,7 @@ ___
 **Ƭ TextTransformProperty**: * "none" &#124; "capitalize" &#124; "uppercase" &#124; "lowercase" &#124; "full-width"
 *
 
-*Defined in types.ts:3257*
+*Defined in [types.ts:3285](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3285)*
 
 ___
 <a id="textunderlinepositionproperty"></a>
@@ -5221,7 +5228,7 @@ ___
 **Ƭ TextUnderlinePositionProperty**: * "auto" &#124; "left" &#124; "right" &#124; "under" &#124; ["under", "left"] &#124; ["under", "right"]
 *
 
-*Defined in types.ts:3263*
+*Defined in [types.ts:3291](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3291)*
 
 ___
 <a id="time"></a>
@@ -5231,7 +5238,7 @@ ___
 **Ƭ Time**: * [ISValue](../interfaces/_unittypes_.isvalue.md) &#124; [IMsValue](../interfaces/_unittypes_.imsvalue.md)
 *
 
-*Defined in types.ts:66*
+*Defined in [types.ts:66](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L66)*
 
 ___
 <a id="timepercentage"></a>
@@ -5241,7 +5248,7 @@ ___
 **Ƭ TimePercentage**: * [Time](_types_.md#time) &#124; [Percentage](_types_.md#percentage)
 *
 
-*Defined in types.ts:1852*
+*Defined in [types.ts:1856](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1856)*
 
 ___
 <a id="timingfunction"></a>
@@ -5250,7 +5257,7 @@ ___
 
 **Ƭ TimingFunction**: *`string`*
 
-*Defined in types.ts:54*
+*Defined in [types.ts:54](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L54)*
 
 ___
 <a id="topproperty"></a>
@@ -5260,7 +5267,7 @@ ___
 **Ƭ TopProperty**: * `TLength` &#124; [Percentage](_types_.md#percentage) &#124; "auto"
 *
 
-*Defined in types.ts:3270*
+*Defined in [types.ts:3298](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3298)*
 
 ___
 <a id="touchactionproperty"></a>
@@ -5270,7 +5277,7 @@ ___
 **Ƭ TouchActionProperty**: * "auto" &#124; "none" &#124; "pinch-zoom" &#124; "pan-y" &#124; ["pan-y", "pinch-zoom"] &#124; "pan-up" &#124; ["pan-up", "pinch-zoom"] &#124; "pan-down" &#124; ["pan-down", "pinch-zoom"] &#124; "pan-x" &#124; ["pan-x", "pinch-zoom"] &#124; ["pan-x", "pan-y"] &#124; ["pan-x", "pan-y", "pinch-zoom"] &#124; ["pan-x", "pan-up"] &#124; ["pan-x", "pan-up", "pinch-zoom"] &#124; ["pan-x", "pan-down"] &#124; ["pan-x", "pan-down", "pinch-zoom"] &#124; "pan-left" &#124; ["pan-left", "pinch-zoom"] &#124; ["pan-left", "pan-y"] &#124; ["pan-left", "pan-y", "pinch-zoom"] &#124; ["pan-left", "pan-up"] &#124; ["pan-left", "pan-up", "pinch-zoom"] &#124; ["pan-left", "pan-down"] &#124; ["pan-left", "pan-down", "pinch-zoom"] &#124; "pan-right" &#124; ["pan-right", "pinch-zoom"] &#124; ["pan-right", "pan-y"] &#124; ["pan-right", "pan-y", "pinch-zoom"] &#124; ["pan-right", "pan-up"] &#124; ["pan-right", "pan-up", "pinch-zoom"] &#124; ["pan-right", "pan-down"] &#124; ["pan-right", "pan-down", "pinch-zoom"] &#124; "manipulation"
 *
 
-*Defined in types.ts:3271*
+*Defined in [types.ts:3299](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3299)*
 
 ___
 <a id="trackbreadth"></a>
@@ -5280,17 +5287,17 @@ ___
 **Ƭ TrackBreadth**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [Flex](_types_.md#flex) &#124; "min-content" &#124; "max-content" &#124; "auto"
 *
 
-*Defined in types.ts:1853*
+*Defined in [types.ts:1857](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1857)*
 
 ___
 <a id="tracklist"></a>
 
 ###  TrackList
 
-**Ƭ TrackList**: * [[TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [[TrackRepeat](_types_.md#trackrepeat), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackRepeat](_types_.md#trackrepeat), [LineNames](_types_.md#linenames)]
+**Ƭ TrackList**: * [TrackSize](_types_.md#tracksize) &#124; [[TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [TrackRepeat](_types_.md#trackrepeat) &#124; [[TrackRepeat](_types_.md#trackrepeat), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize)] &#124; [[LineNames](_types_.md#linenames), [TrackSize](_types_.md#tracksize), [LineNames](_types_.md#linenames)] &#124; [[LineNames](_types_.md#linenames), [TrackRepeat](_types_.md#trackrepeat)] &#124; [[LineNames](_types_.md#linenames), [TrackRepeat](_types_.md#trackrepeat), [LineNames](_types_.md#linenames)]
 *
 
-*Defined in types.ts:1859*
+*Defined in [types.ts:1863](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1863)*
 
 ___
 <a id="trackrepeat"></a>
@@ -5299,7 +5306,7 @@ ___
 
 **Ƭ TrackRepeat**: *`string`*
 
-*Defined in types.ts:67*
+*Defined in [types.ts:67](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L67)*
 
 ___
 <a id="tracksize"></a>
@@ -5308,7 +5315,7 @@ ___
 
 **Ƭ TrackSize**: *`string`*
 
-*Defined in types.ts:1864*
+*Defined in [types.ts:1872](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1872)*
 
 ___
 <a id="transformboxproperty"></a>
@@ -5318,7 +5325,7 @@ ___
 **Ƭ TransformBoxProperty**: * "border-box" &#124; "fill-box" &#124; "view-box"
 *
 
-*Defined in types.ts:3307*
+*Defined in [types.ts:3335](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3335)*
 
 ___
 <a id="transformfunction"></a>
@@ -5328,7 +5335,7 @@ ___
 **Ƭ TransformFunction**: * [MatrixFunction](_types_.md#matrixfunction) &#124; [TranslateFunction](_types_.md#translatefunction) &#124; [TranslateXFunction](_types_.md#translatexfunction) &#124; [TranslateYFunction](_types_.md#translateyfunction) &#124; [ScaleFunction](_types_.md#scalefunction) &#124; [ScaleXFunction](_types_.md#scalexfunction) &#124; [ScaleYFunction](_types_.md#scaleyfunction) &#124; [RotateFunction](_types_.md#rotatefunction) &#124; [SkewFunction](_types_.md#skewfunction) &#124; [SkewXFunction](_types_.md#skewxfunction) &#124; [SkewYFunction](_types_.md#skewyfunction) &#124; [Matrix3DFunction](_types_.md#matrix3dfunction) &#124; [Translate3DFunction](_types_.md#translate3dfunction) &#124; [TranslateZFunction](_types_.md#translatezfunction) &#124; [Scale3DFunction](_types_.md#scale3dfunction) &#124; [ScaleZFunction](_types_.md#scalezfunction) &#124; [Rotate3DFunction](_types_.md#rotate3dfunction) &#124; [RotateXFunction](_types_.md#rotatexfunction) &#124; [RotateYFunction](_types_.md#rotateyfunction) &#124; [RotateZFunction](_types_.md#rotatezfunction) &#124; [PerspectiveFunction](_types_.md#perspectivefunction)
 *
 
-*Defined in types.ts:1865*
+*Defined in [types.ts:1873](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1873)*
 
 ___
 <a id="transformlist"></a>
@@ -5337,17 +5344,17 @@ ___
 
 **Ƭ TransformList**: *[TransformFunction](_types_.md#transformfunction)*
 
-*Defined in types.ts:1887*
+*Defined in [types.ts:1895](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1895)*
 
 ___
 <a id="transformoriginproperty"></a>
 
 ###  TransformOriginProperty
 
-**Ƭ TransformOriginProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; "left" &#124; "center" &#124; "right" &#124; "top" &#124; "bottom" &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center", `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", `TLength`] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["left", "top", `TLength`] &#124; ["left", "center", `TLength`] &#124; ["left", "bottom", `TLength`] &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["center", "top", `TLength`] &#124; ["center", "center", `TLength`] &#124; ["center", "bottom", `TLength`] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["right", "top", `TLength`] &#124; ["right", "center", `TLength`] &#124; ["right", "bottom", `TLength`]
+**Ƭ TransformOriginProperty**: * [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; "left" &#124; "center" &#124; "right" &#124; "top" &#124; "bottom" &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "top", `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "center", `TLength`] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom"] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, "bottom", `TLength`] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["left", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["left", "top"] &#124; ["left", "top", `TLength`] &#124; ["left", "center"] &#124; ["left", "center", `TLength`] &#124; ["left", "bottom"] &#124; ["left", "bottom", `TLength`] &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["center", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["center", "top"] &#124; ["center", "top", `TLength`] &#124; ["center", "center"] &#124; ["center", "center", `TLength`] &#124; ["center", "bottom"] &#124; ["center", "bottom", `TLength`] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; ["right", [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`] &#124; ["right", "top"] &#124; ["right", "top", `TLength`] &#124; ["right", "center"] &#124; ["right", "center", `TLength`] &#124; ["right", "bottom"] &#124; ["right", "bottom", `TLength`]
 *
 
-*Defined in types.ts:3308*
+*Defined in [types.ts:3336](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3336)*
 
 ___
 <a id="transformproperty"></a>
@@ -5357,7 +5364,7 @@ ___
 **Ƭ TransformProperty**: * "none" &#124; [TransformList](_types_.md#transformlist)
 *
 
-*Defined in types.ts:3306*
+*Defined in [types.ts:3334](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3334)*
 
 ___
 <a id="transformstyleproperty"></a>
@@ -5367,7 +5374,7 @@ ___
 **Ƭ TransformStyleProperty**: * "flat" &#124; "preserve-3d"
 *
 
-*Defined in types.ts:3331*
+*Defined in [types.ts:3375](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3375)*
 
 ___
 <a id="transitiondelayproperty"></a>
@@ -5376,7 +5383,7 @@ ___
 
 **Ƭ TransitionDelayProperty**: *`string`*
 
-*Defined in types.ts:3333*
+*Defined in [types.ts:3377](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3377)*
 
 ___
 <a id="transitiondurationproperty"></a>
@@ -5385,7 +5392,7 @@ ___
 
 **Ƭ TransitionDurationProperty**: *`string`*
 
-*Defined in types.ts:3334*
+*Defined in [types.ts:3378](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3378)*
 
 ___
 <a id="transitionproperty"></a>
@@ -5394,7 +5401,7 @@ ___
 
 **Ƭ TransitionProperty**: *`string`*
 
-*Defined in types.ts:3332*
+*Defined in [types.ts:3376](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3376)*
 
 ___
 <a id="transitionpropertyproperty"></a>
@@ -5403,7 +5410,7 @@ ___
 
 **Ƭ TransitionPropertyProperty**: *`string`*
 
-*Defined in types.ts:3335*
+*Defined in [types.ts:3379](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3379)*
 
 ___
 <a id="transitiontimingfunctionproperty"></a>
@@ -5412,7 +5419,7 @@ ___
 
 **Ƭ TransitionTimingFunctionProperty**: *`string`*
 
-*Defined in types.ts:3336*
+*Defined in [types.ts:3380](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3380)*
 
 ___
 <a id="translate3dfunction"></a>
@@ -5421,7 +5428,7 @@ ___
 
 **Ƭ Translate3DFunction**: *`string`*
 
-*Defined in types.ts:1889*
+*Defined in [types.ts:1897](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1897)*
 
 ___
 <a id="translatefunction"></a>
@@ -5430,7 +5437,7 @@ ___
 
 **Ƭ TranslateFunction**: *`string`*
 
-*Defined in types.ts:1888*
+*Defined in [types.ts:1896](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1896)*
 
 ___
 <a id="translateproperty"></a>
@@ -5440,7 +5447,7 @@ ___
 **Ƭ TranslateProperty**: * "none" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`> &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>] &#124; [[LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>, `TLength`]
 *
 
-*Defined in types.ts:3337*
+*Defined in [types.ts:3381](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3381)*
 
 ___
 <a id="translatexfunction"></a>
@@ -5449,7 +5456,7 @@ ___
 
 **Ƭ TranslateXFunction**: *`string`*
 
-*Defined in types.ts:1890*
+*Defined in [types.ts:1898](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1898)*
 
 ___
 <a id="translateyfunction"></a>
@@ -5458,7 +5465,7 @@ ___
 
 **Ƭ TranslateYFunction**: *`string`*
 
-*Defined in types.ts:1891*
+*Defined in [types.ts:1899](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1899)*
 
 ___
 <a id="translatezfunction"></a>
@@ -5467,7 +5474,7 @@ ___
 
 **Ƭ TranslateZFunction**: *`string`*
 
-*Defined in types.ts:1892*
+*Defined in [types.ts:1900](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1900)*
 
 ___
 <a id="typeorunit"></a>
@@ -5476,7 +5483,7 @@ ___
 
 **Ƭ TypeOrUnit**: *`string`*
 
-*Defined in types.ts:1893*
+*Defined in [types.ts:1901](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1901)*
 
 ___
 <a id="unicodebidiproperty"></a>
@@ -5486,7 +5493,7 @@ ___
 **Ƭ UnicodeBidiProperty**: * "normal" &#124; "embed" &#124; "isolate" &#124; "bidi-override" &#124; "isolate-override" &#124; "plaintext"
 *
 
-*Defined in types.ts:3342*
+*Defined in [types.ts:3386](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3386)*
 
 ___
 <a id="url"></a>
@@ -5495,7 +5502,7 @@ ___
 
 **Ƭ Url**: *`string`*
 
-*Defined in types.ts:55*
+*Defined in [types.ts:55](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L55)*
 
 ___
 <a id="verticalalignproperty"></a>
@@ -5505,7 +5512,7 @@ ___
 **Ƭ VerticalAlignProperty**: * "baseline" &#124; "sub" &#124; "super" &#124; "text-top" &#124; "text-bottom" &#124; "middle" &#124; "top" &#124; "bottom" &#124; [Percentage](_types_.md#percentage) &#124; `TLength`
 *
 
-*Defined in types.ts:3349*
+*Defined in [types.ts:3393](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3393)*
 
 ___
 <a id="viewportlength"></a>
@@ -5515,7 +5522,7 @@ ___
 **Ƭ ViewportLength**: * "auto" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
 *
 
-*Defined in types.ts:1894*
+*Defined in [types.ts:1902](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L1902)*
 
 ___
 <a id="visibilityproperty"></a>
@@ -5525,7 +5532,7 @@ ___
 **Ƭ VisibilityProperty**: * "visible" &#124; "hidden" &#124; "collapse"
 *
 
-*Defined in types.ts:3360*
+*Defined in [types.ts:3404](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3404)*
 
 ___
 <a id="whitespaceproperty"></a>
@@ -5535,7 +5542,7 @@ ___
 **Ƭ WhiteSpaceProperty**: * "normal" &#124; "pre" &#124; "nowrap" &#124; "pre-wrap" &#124; "pre-line"
 *
 
-*Defined in types.ts:3361*
+*Defined in [types.ts:3405](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3405)*
 
 ___
 <a id="widowsproperty"></a>
@@ -5544,7 +5551,7 @@ ___
 
 **Ƭ WidowsProperty**: *[Integer](_types_.md#integer)*
 
-*Defined in types.ts:3362*
+*Defined in [types.ts:3406](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3406)*
 
 ___
 <a id="widthproperty"></a>
@@ -5554,7 +5561,7 @@ ___
 **Ƭ WidthProperty**: * `TLength` &#124; [`TLength`, "border-box"] &#124; [`TLength`, "content-box"] &#124; [Percentage](_types_.md#percentage) &#124; [[Percentage](_types_.md#percentage), "border-box"] &#124; [[Percentage](_types_.md#percentage), "content-box"] &#124; "available" &#124; "min-content" &#124; "max-content" &#124; "fit-content" &#124; "auto"
 *
 
-*Defined in types.ts:3363*
+*Defined in [types.ts:3407](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3407)*
 
 ___
 <a id="willchangeproperty"></a>
@@ -5563,7 +5570,7 @@ ___
 
 **Ƭ WillChangeProperty**: *`string`*
 
-*Defined in types.ts:3375*
+*Defined in [types.ts:3419](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3419)*
 
 ___
 <a id="wordbreakproperty"></a>
@@ -5573,7 +5580,7 @@ ___
 **Ƭ WordBreakProperty**: * "normal" &#124; "break-all" &#124; "keep-all" &#124; "break-word"
 *
 
-*Defined in types.ts:3376*
+*Defined in [types.ts:3420](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3420)*
 
 ___
 <a id="wordspacingproperty"></a>
@@ -5583,7 +5590,7 @@ ___
 **Ƭ WordSpacingProperty**: * "normal" &#124; [LengthPercentage](_types_.md#lengthpercentage)<`TLength`>
 *
 
-*Defined in types.ts:3377*
+*Defined in [types.ts:3421](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3421)*
 
 ___
 <a id="wordwrapproperty"></a>
@@ -5593,7 +5600,7 @@ ___
 **Ƭ WordWrapProperty**: * "normal" &#124; "break-word"
 *
 
-*Defined in types.ts:3378*
+*Defined in [types.ts:3422](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3422)*
 
 ___
 <a id="writingmodeproperty"></a>
@@ -5603,7 +5610,7 @@ ___
 **Ƭ WritingModeProperty**: * "horizontal-tb" &#124; "vertical-rl" &#124; "vertical-lr" &#124; "sideways-rl" &#124; "sideways-lr"
 *
 
-*Defined in types.ts:3379*
+*Defined in [types.ts:3423](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3423)*
 
 ___
 <a id="zindexproperty"></a>
@@ -5613,7 +5620,7 @@ ___
 **Ƭ ZIndexProperty**: * "auto" &#124; [Integer](_types_.md#integer)
 *
 
-*Defined in types.ts:3385*
+*Defined in [types.ts:3429](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/types.ts#L3429)*
 
 ___
 

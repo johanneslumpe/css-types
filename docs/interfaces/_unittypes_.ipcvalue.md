@@ -87,7 +87,7 @@ ___
 
 **● __pc_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:47*
+*Defined in [unitTypes.ts:47](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L47)*
 
 ___
 <a id="length"></a>

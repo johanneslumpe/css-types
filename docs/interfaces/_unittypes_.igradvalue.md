@@ -87,7 +87,7 @@ ___
 
 **● __grad_brand_type__**: *`never`*
 
-*Defined in unitTypes.ts:29*
+*Defined in [unitTypes.ts:29](https://github.com/johanneslumpe/css-types/blob/062d0fd/generated/unitTypes.ts#L29)*
 
 ___
 <a id="length"></a>
