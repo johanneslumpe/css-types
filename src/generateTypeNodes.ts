@@ -87,6 +87,11 @@ export const generateTypesNodes = (
           flatMap(item => {
             if (!Array.isArray(item)) {
               return generateTypesNodes([item]);
+            } else if (
+              // we have to preserve unions within tuples
+              item.representation === ComponentTypeRepresentation.UNION
+            ) {
+              return generateTypesNodes(item);
             }
 
             // nested tuple nodes need to be lifted up into their parent tuples

@@ -5,6 +5,10 @@ import ts from 'typescript';
 import * as util from 'util';
 import { TYPES_BUILD_DIR } from './constants';
 
+/**
+ * Generates the main index file with all exports
+ * @param filenames The filename of the files of which to export all named export
+ */
 export function generateIndex(filenames: string[]) {
   const printer = ts.createPrinter({
     newLine: ts.NewLineKind.LineFeed,
