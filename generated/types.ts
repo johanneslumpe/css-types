@@ -271,7 +271,11 @@ export type EastAsianWidthValues = 'full-width' | 'proportional-width';
 export type ElementFunction = string;
 export type EllipseFunction = string;
 export type EndingShape = 'circle' | 'ellipse';
-export type ExplicitTrackList = [TrackSize, LineNames] | [LineNames, TrackSize, LineNames];
+export type ExplicitTrackList =
+  | TrackSize
+  | [TrackSize, LineNames]
+  | [LineNames, TrackSize]
+  | [LineNames, TrackSize, LineNames];
 export type FamilyName = string | CustomIdent;
 export type FeatureTagValue = string | [string, Integer] | [string, 'on'] | [string, 'off'];
 export type FeatureType = string;
@@ -1842,7 +1846,7 @@ export type Size<TLength = Length> =
   | 'closest-corner'
   | 'farthest-corner'
   | TLength
-  | LengthPercentage<TLength>;
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type StepTimingFunction = string;
 export type Symbol = string | Image | CustomIdent;
 export type Target = TargetCounterFunction | TargetCountersFunction | TargetTextFunction;
@@ -1857,9 +1861,13 @@ export type TrackBreadth<TLength = Length> =
   | 'max-content'
   | 'auto';
 export type TrackList =
+  | TrackSize
   | [TrackSize, LineNames]
+  | TrackRepeat
   | [TrackRepeat, LineNames]
+  | [LineNames, TrackSize]
   | [LineNames, TrackSize, LineNames]
+  | [LineNames, TrackRepeat]
   | [LineNames, TrackRepeat, LineNames];
 export type TrackSize = string;
 export type TransformFunction =
@@ -2072,8 +2080,12 @@ export type BorderBottomProperty =
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
 export type BorderBottomColorProperty = Color;
-export type BorderBottomLeftRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
-export type BorderBottomRightRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
+export type BorderBottomLeftRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderBottomRightRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderBottomStylePropertyCombined =
   | 'none'
   | 'hidden'
@@ -2088,7 +2100,11 @@ export type BorderBottomStylePropertyCombined =
 export type BorderBottomStyleProperty = LineStyle;
 export type BorderBottomWidthProperty = LineWidth;
 export type BorderCollapseProperty = 'collapse' | 'separate';
-export type BorderColorProperty = Color;
+export type BorderColorProperty =
+  | Color
+  | [Color, Color]
+  | [Color, Color, Color]
+  | [Color, Color, Color, Color];
 export type BorderImageProperty = string;
 export type BorderImageOutsetProperty<TLength = Length> = TLength | number;
 export type BorderImageRepeatProperty = 'stretch' | 'repeat' | 'round' | 'space';
@@ -2207,7 +2223,11 @@ export type BorderStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderStyleProperty = LineStyle;
+export type BorderStyleProperty =
+  | LineStyle
+  | [LineStyle, LineStyle]
+  | [LineStyle, LineStyle, LineStyle]
+  | [LineStyle, LineStyle, LineStyle, LineStyle];
 export type BorderTopProperty =
   | Color
   | LineStyle
@@ -2217,8 +2237,12 @@ export type BorderTopProperty =
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
 export type BorderTopColorProperty = Color;
-export type BorderTopLeftRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
-export type BorderTopRightRadiusProperty<TLength = Length> = LengthPercentage<TLength>;
+export type BorderTopLeftRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderTopRightRadiusProperty<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderTopStylePropertyCombined =
   | 'none'
   | 'hidden'
@@ -2232,7 +2256,11 @@ export type BorderTopStylePropertyCombined =
   | 'outset';
 export type BorderTopStyleProperty = LineStyle;
 export type BorderTopWidthProperty = LineWidth;
-export type BorderWidthProperty = LineWidth;
+export type BorderWidthProperty =
+  | LineWidth
+  | [LineWidth, LineWidth]
+  | [LineWidth, LineWidth, LineWidth]
+  | [LineWidth, LineWidth, LineWidth, LineWidth];
 export type BottomProperty<TLength = Length> = TLength | Percentage | 'auto';
 export type BoxDecorationBreakProperty = 'slice' | 'clone';
 export type BoxShadowProperty = string;
@@ -2389,7 +2417,9 @@ export type FilterProperty = 'none' | FilterFunctionList;
 export type FlexProperty =
   | 'none'
   | FlexBasisProperty
+  | FlexGrowProperty
   | [FlexGrowProperty, FlexBasisProperty]
+  | [FlexGrowProperty, FlexShrinkProperty]
   | [FlexGrowProperty, FlexShrinkProperty, FlexBasisProperty];
 export type FlexBasisProperty = 'content' | WidthProperty;
 export type FlexDirectionProperty = 'row' | 'row-reverse' | 'column' | 'column-reverse';
@@ -3154,11 +3184,9 @@ export type RotateProperty =
   | ['x', Angle]
   | ['y', Angle]
   | ['z', Angle]
-  | [number, Angle]
-  | [number, Angle]
-  | [number, Angle];
+  | [number, number, number, Angle];
 export type RowGapProperty<TLength = Length> = 'normal' | LengthPercentage<TLength>;
-export type ScaleProperty = 'none' | number;
+export type ScaleProperty = 'none' | number | [number, number] | [number, number, number];
 export type ScrollBehaviorProperty = 'auto' | 'smooth';
 export type ScrollSnapTypeProperty = 'none' | 'mandatory' | 'proximity';
 export type ShapeImageThresholdProperty = number;
@@ -3312,21 +3340,37 @@ export type TransformOriginProperty<TLength = Length> =
   | 'right'
   | 'top'
   | 'bottom'
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>]
   | [LengthPercentage<TLength>, LengthPercentage<TLength>, TLength]
+  | [LengthPercentage<TLength>, 'top']
   | [LengthPercentage<TLength>, 'top', TLength]
+  | [LengthPercentage<TLength>, 'center']
   | [LengthPercentage<TLength>, 'center', TLength]
+  | [LengthPercentage<TLength>, 'bottom']
   | [LengthPercentage<TLength>, 'bottom', TLength]
+  | ['left', LengthPercentage<TLength>]
   | ['left', LengthPercentage<TLength>, TLength]
+  | ['left', 'top']
   | ['left', 'top', TLength]
+  | ['left', 'center']
   | ['left', 'center', TLength]
+  | ['left', 'bottom']
   | ['left', 'bottom', TLength]
+  | ['center', LengthPercentage<TLength>]
   | ['center', LengthPercentage<TLength>, TLength]
+  | ['center', 'top']
   | ['center', 'top', TLength]
+  | ['center', 'center']
   | ['center', 'center', TLength]
+  | ['center', 'bottom']
   | ['center', 'bottom', TLength]
+  | ['right', LengthPercentage<TLength>]
   | ['right', LengthPercentage<TLength>, TLength]
+  | ['right', 'top']
   | ['right', 'top', TLength]
+  | ['right', 'center']
   | ['right', 'center', TLength]
+  | ['right', 'bottom']
   | ['right', 'bottom', TLength];
 export type TransformStyleProperty = 'flat' | 'preserve-3d';
 export type TransitionProperty = string;

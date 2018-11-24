@@ -1,5 +1,13 @@
 import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { compact, filter, flatMap, map, reduce, reject } from 'lodash/fp';
+import {
+  compact,
+  filter,
+  flatMap,
+  flatten,
+  map,
+  reduce,
+  reject,
+} from 'lodash/fp';
 import ts from 'typescript';
 
 import { LENGTH_TYPE_NAME } from './constants';
@@ -72,7 +80,8 @@ export const generateTypesNodes = (data: INestedComponentArray): any => {
     case ComponentTypeRepresentation.TUPLE: {
       // no need for a tuple type if we only have a single value
       if (componentsWithoutVoid.length === 1) {
-        return generateTypesNodes([componentsWithoutVoid[0]]);
+        const value = componentsWithoutVoid[0];
+        return generateTypesNodes(Array.isArray(value) ? value : [value]);
       }
 
       return ts.createTupleTypeNode(
@@ -149,10 +158,13 @@ export const generateTypesNodes = (data: INestedComponentArray): any => {
       return componentsWithoutVoid.length === 1 && !Array.isArray(first)
         ? generateTsNode(first)
         : compact(
-            map(
-              item => (Array.isArray(item) ? undefined : generateTsNode(item)),
-              componentsWithoutVoid,
-            ),
+            map(item => {
+              if (Array.isArray(item)) {
+                const result = generateTypesNodes(item);
+                return Array.isArray(result) ? flatten(result) : result;
+              }
+              return generateTsNode(item);
+            }, componentsWithoutVoid),
           );
     }
   }

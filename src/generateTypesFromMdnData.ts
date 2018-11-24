@@ -201,6 +201,7 @@ export const generateTypesFromMdnData = (
         const typeCombinations = generateTypeCombinations(
           groupTokensByCombinatorPredence(components),
         );
+
         const first = typeCombinations[0];
         acc.push(
           generateTypesForKey(
