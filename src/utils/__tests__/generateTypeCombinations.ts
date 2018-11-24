@@ -263,17 +263,42 @@ describe('generateTypeCombinations', () => {
   });
 
   it('single datatype with multiplier', () => {
+    // a{1,3}
     const a = createComponent(
       dataTypeToken('a'),
       multiplierToken(ICssMultiplierTokenType.CURLY_BRACES, '{1,3}'),
     );
     const result = generateTypeCombinations([a]);
-    const voidComp = createVoidComponent();
     expect(result).toEqual([
       createUnionArray([
         createTupleArray([a]),
         createTupleArray([a, a]),
         createTupleArray([a, a, a]),
+      ]),
+    ]);
+  });
+
+  it('multiplied keyword with optional keyword', () => {
+    // a{1,2} && b?
+    const a = createComponent(
+      keywordToken('a'),
+      multiplierToken(ICssMultiplierTokenType.CURLY_BRACES, '{1,2}'),
+    );
+    const b = createComponent(
+      keywordToken('b'),
+      multiplierToken(ICssMultiplierTokenType.QUESTION_MARK),
+    );
+
+    const result = generateTypeCombinations([
+      createCombinatorGroup(ICssCombinatorTokenType.DOUBLE_AMPERSAND, [a, b]),
+    ]);
+
+    expect(result).toEqual([
+      createUnionArray([
+        createTupleArray([createTupleArray([a]), createVoidComponent()]),
+        createTupleArray([createTupleArray([a]), b]),
+        createTupleArray([createTupleArray([a, a]), createVoidComponent()]),
+        createTupleArray([createTupleArray([a, a]), b]),
       ]),
     ]);
   });
