@@ -14,7 +14,7 @@
     "build": "npm run generate && tsc -p ./tsconfig.cjs.generated.json && tsc -p ./tsconfig.esm.generated.json",
     "prepare": "npm run build && npm run docs",
     "prepublishOnly": "npm test && npm run lint",
-    "prerelease": "npm run lint && npm run test",
+    "prerelease": "npm run lint && npm run test && npm run docs && git add -A ./docs && git commit -m 'chore: update docs'",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin master",
     "docs": "typedoc ./generated --tsconfig ./tsconfig.cjs.generated.json --hideGenerator --readme none --theme markdown --out docs && npx ts-node stripDocPaths.ts"
