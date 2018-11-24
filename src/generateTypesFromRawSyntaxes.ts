@@ -11,6 +11,7 @@ import {
   RawToken,
   SyntaxLookupFn,
 } from './types';
+import { convertInfiniteMultiplersToFinite } from './utils/convertInfiniteMultiplersToFinite';
 import { convertRawTokensToComponents } from './utils/convertRawTokensToComponents';
 import { findDataTypeInTree } from './utils/findDataTypeInTree';
 import { generateCombinedKeywords } from './utils/generateCombinedKeywords';
@@ -40,38 +41,6 @@ const appendSuffixToDataTypes = (tokens: RawToken[], suffix: string) => {
     token.value = parenthesesToFunction(token.value);
   }, tokens);
 };
-
-// function isPlusMultiplier(token: RawToken) {
-//   return (
-//     token.type === ICssTokenType.MULTIPLIER &&
-//     token.data &&
-//     token.data.subType === ICssMultiplierTokenType.PLUS
-//   );
-// }
-// function isAsteriskMultiplier(token: RawToken) {
-//   return (
-//     token.type === ICssTokenType.MULTIPLIER &&
-//     token.data &&
-//     token.data.subType === ICssMultiplierTokenType.ASTERISK
-//   );
-// }
-
-// /**
-//  * Converts infinite multipliers like `+` and `*` to opinionated, finite `{}` versions.
-//  * Opinionated, because they will have a cap at 10 repetitions
-//  * @param tokens
-//  * @param suffix
-//  */
-// function convertInfiniteMultiplersToFinite(tokens: RawToken[]) {
-//   tokens.forEach(token => {
-//     const isPlus = isPlusMultiplier(token);
-//     const isAsterisk = isAsteriskMultiplier(token);
-//     if (isPlus || isAsterisk) {
-//       token.data!.subType = ICssMultiplierTokenType.CURLY_BRACES;
-//       token.value = isPlus ? `{1,9}` : '{0,9}';
-//     }
-//   });
-// }
 
 const generateTypesForKey = (
   key: string,
@@ -222,14 +191,12 @@ export const generateTypesFromRawSyntaxes = (
         acc.push(combined);
       }
 
-      /**
-       * After the combined types we still output the tuple
-       * types because some people might prefer them and
-       * it's nice to have both options
-       */
       appendSuffixToDataTypes(parsedSyntax, typeSuffix);
-      // convertInfiniteMultiplersToFinite(emittedTokens);
+      convertInfiniteMultiplersToFinite(parsedSyntax);
 
+      // After the combined types we still output the tuple
+      // types because some people might prefer them and
+      // it's nice to have both options
       try {
         const components = convertRawTokensToComponents(parsedSyntax);
         const typeCombinations = generateTypeCombinations(

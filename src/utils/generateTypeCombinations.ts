@@ -126,6 +126,27 @@ export function generateTypeCombinations(
             generateTypeCombinations(entity.entities),
           );
 
+          if (
+            entity.multiplier &&
+            entity.multiplier.type === ICssMultiplierTokenType.CURLY_BRACES
+          ) {
+            const arr: INestedComponentArray = [];
+            for (
+              let i = entity.multiplier.min;
+              i <= entity.multiplier.max;
+              i++
+            ) {
+              if (i === 1) {
+                arr.push(combinations);
+              } else {
+                const args = new Array(i);
+                args.fill(createUnionArray(combinations));
+                arr.push(createTupleArray(args));
+              }
+            }
+            return createUnionArray(arr);
+          }
+
           const final: INestedComponentArray =
             entity.multiplier &&
             entity.multiplier.type === ICssMultiplierTokenType.QUESTION_MARK

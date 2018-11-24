@@ -134,7 +134,12 @@ export type BgPosition<TLength = Length> =
   | ['right', LengthPercentage<TLength>, 'top', LengthPercentage<TLength>]
   | ['right', LengthPercentage<TLength>, 'bottom']
   | ['right', LengthPercentage<TLength>, 'bottom', LengthPercentage<TLength>];
-export type BgSize<TLength = Length> = LengthPercentage<TLength> | 'auto' | 'cover' | 'contain';
+export type BgSize<TLength = Length> =
+  | LengthPercentage<TLength>
+  | 'auto'
+  | [LengthPercentage<TLength> | 'auto', LengthPercentage<TLength> | 'auto']
+  | 'cover'
+  | 'contain';
 export type BlurFunction = string;
 export type BlendMode =
   | 'normal'
@@ -180,7 +185,62 @@ export type CompositeStyle =
 export type CompositingOperator = 'add' | 'subtract' | 'intersect' | 'exclude';
 export type ContextualAltValues = 'contextual' | 'no-contextual';
 export type ContentDistribution = 'space-between' | 'space-around' | 'space-evenly' | 'stretch';
-export type ContentList = string | 'contents' | Image | Quote | Target | LeaderFunction;
+export type ContentList =
+  | string
+  | 'contents'
+  | Image
+  | Quote
+  | Target
+  | LeaderFunction
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ]
+  | [
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction,
+      string | 'contents' | Image | Quote | Target | LeaderFunction
+    ];
 export type ContentPosition = 'center' | 'start' | 'end' | 'flex-start' | 'flex-end';
 export type ContentReplacement = Image;
 export type ContrastFunction = string;
@@ -274,14 +334,161 @@ export type EllipseFunction = string;
 export type EndingShape = 'circle' | 'ellipse';
 export type ExplicitTrackList =
   | TrackSize
-  | [TrackSize, LineNames]
   | [LineNames, TrackSize]
-  | [LineNames, TrackSize, LineNames];
-export type FamilyName = string | CustomIdent;
+  | [TrackSize, LineNames, TrackSize, LineNames]
+  | [TrackSize | [LineNames, TrackSize], TrackSize | [LineNames, TrackSize]]
+  | [TrackSize | [LineNames, TrackSize], TrackSize | [LineNames, TrackSize], LineNames]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize]
+    ]
+  | [
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      TrackSize | [LineNames, TrackSize],
+      LineNames
+    ];
+export type FamilyName =
+  | string
+  | CustomIdent
+  | [CustomIdent, CustomIdent]
+  | [CustomIdent, CustomIdent, CustomIdent]
+  | [CustomIdent, CustomIdent, CustomIdent, CustomIdent]
+  | [CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent]
+  | [CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent]
+  | [CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent, CustomIdent]
+  | [
+      CustomIdent,
+      CustomIdent,
+      CustomIdent,
+      CustomIdent,
+      CustomIdent,
+      CustomIdent,
+      CustomIdent,
+      CustomIdent
+    ];
 export type FeatureTagValue = string | [string, Integer] | [string, 'on'] | [string, 'off'];
 export type FeatureType = string;
 export type FeatureValueBlock = string;
-export type FeatureValueBlockList = FeatureValueBlock;
+export type FeatureValueBlockList =
+  | FeatureValueBlock
+  | [FeatureValueBlock, FeatureValueBlock]
+  | [FeatureValueBlock, FeatureValueBlock, FeatureValueBlock]
+  | [FeatureValueBlock, FeatureValueBlock, FeatureValueBlock, FeatureValueBlock]
+  | [FeatureValueBlock, FeatureValueBlock, FeatureValueBlock, FeatureValueBlock, FeatureValueBlock]
+  | [
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock
+    ]
+  | [
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock
+    ]
+  | [
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock,
+      FeatureValueBlock
+    ];
 export type FeatureValueDeclaration = string;
 export type FeatureValueDeclarationList = FeatureValueDeclaration;
 export type FeatureValueName = CustomIdent;
@@ -297,7 +504,46 @@ export type FilterFunction =
   | OpacityFunction
   | SaturateFunction
   | SepiaFunction;
-export type FilterFunctionList = FilterFunction | Url;
+export type FilterFunctionList =
+  | FilterFunction
+  | Url
+  | [FilterFunction | Url, FilterFunction | Url]
+  | [FilterFunction | Url, FilterFunction | Url, FilterFunction | Url]
+  | [FilterFunction | Url, FilterFunction | Url, FilterFunction | Url, FilterFunction | Url]
+  | [
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url
+    ]
+  | [
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url
+    ]
+  | [
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url
+    ]
+  | [
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url,
+      FilterFunction | Url
+    ];
 export type FitContentFunction = string;
 export type FixedBreadth<TLength = Length> = LengthPercentage<TLength>;
 export type FixedSize = string;
@@ -365,7 +611,32 @@ export type InflexibleBreadth<TLength = Length> =
 export type InvertFunction = string;
 export type KeyframesName = CustomIdent | string;
 export type KeyframeBlock = string;
-export type KeyframeBlockList = KeyframeBlock;
+export type KeyframeBlockList =
+  | KeyframeBlock
+  | [KeyframeBlock, KeyframeBlock]
+  | [KeyframeBlock, KeyframeBlock, KeyframeBlock]
+  | [KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock]
+  | [KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock]
+  | [KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock, KeyframeBlock]
+  | [
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock
+    ]
+  | [
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock,
+      KeyframeBlock
+    ];
 export type LeaderFunction = string;
 export type LeaderType = 'dotted' | 'solid' | 'space' | string;
 export type LengthPercentage<TLength = Length> = TLength | Percentage;
@@ -410,13 +681,109 @@ export type MaskSource = Url;
 export type MaskingMode = 'alpha' | 'luminance' | 'match-source';
 export type MatrixFunction = string;
 export type Matrix3DFunction = string;
-export type MediaAnd = [MediaInParens, 'and', MediaInParens];
+export type MediaAnd =
+  | [MediaInParens, 'and', MediaInParens]
+  | [MediaInParens, ['and', MediaInParens], ['and', MediaInParens]]
+  | [MediaInParens, ['and', MediaInParens], ['and', MediaInParens], ['and', MediaInParens]]
+  | [
+      MediaInParens,
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens],
+      ['and', MediaInParens]
+    ];
 export type MediaCondition = MediaNot | MediaAnd | MediaOr | MediaInParens;
 export type MediaConditionWithoutOr = MediaNot | MediaAnd | MediaInParens;
 export type MediaFeature = string;
 export type MediaInParens = string;
 export type MediaNot = ['not', MediaInParens];
-export type MediaOr = [MediaInParens, 'or', MediaInParens];
+export type MediaOr =
+  | [MediaInParens, 'or', MediaInParens]
+  | [MediaInParens, ['or', MediaInParens], ['or', MediaInParens]]
+  | [MediaInParens, ['or', MediaInParens], ['or', MediaInParens], ['or', MediaInParens]]
+  | [
+      MediaInParens,
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens]
+    ]
+  | [
+      MediaInParens,
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens],
+      ['or', MediaInParens]
+    ];
 export type MediaQuery =
   | MediaCondition
   | MediaType
@@ -639,7 +1006,14 @@ export type PseudoPage = string;
 export type Quote = 'open-quote' | 'close-quote' | 'no-open-quote' | 'no-close-quote';
 export type RadialGradientFunction = string;
 export type RelativeSize = 'larger' | 'smaller';
-export type RepeatStyle = 'repeat-x' | 'repeat-y' | 'repeat' | 'space' | 'round' | 'no-repeat';
+export type RepeatStyle =
+  | 'repeat-x'
+  | 'repeat-y'
+  | 'repeat'
+  | 'space'
+  | 'round'
+  | 'no-repeat'
+  | ['repeat' | 'space' | 'round' | 'no-repeat', 'repeat' | 'space' | 'round' | 'no-repeat'];
 export type RepeatingLinearGradientFunction = string;
 export type RepeatingRadialGradientFunction = string;
 export type RgbFunction = string;
@@ -1863,13 +2237,115 @@ export type TrackBreadth<TLength = Length> =
   | 'auto';
 export type TrackList =
   | TrackSize
-  | [TrackSize, LineNames]
   | TrackRepeat
-  | [TrackRepeat, LineNames]
   | [LineNames, TrackSize]
-  | [LineNames, TrackSize, LineNames]
   | [LineNames, TrackRepeat]
-  | [LineNames, TrackRepeat, LineNames];
+  | [TrackSize, TrackRepeat, LineNames, TrackSize, LineNames, TrackRepeat, LineNames]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat]
+    ]
+  | [
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      TrackSize | TrackRepeat | [LineNames, TrackSize] | [LineNames, TrackRepeat],
+      LineNames
+    ];
 export type TrackSize = string;
 export type TransformFunction =
   | MatrixFunction
@@ -1893,7 +2369,39 @@ export type TransformFunction =
   | RotateYFunction
   | RotateZFunction
   | PerspectiveFunction;
-export type TransformList = TransformFunction;
+export type TransformList =
+  | TransformFunction
+  | [TransformFunction, TransformFunction]
+  | [TransformFunction, TransformFunction, TransformFunction]
+  | [TransformFunction, TransformFunction, TransformFunction, TransformFunction]
+  | [TransformFunction, TransformFunction, TransformFunction, TransformFunction, TransformFunction]
+  | [
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction
+    ]
+  | [
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction
+    ]
+  | [
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction,
+      TransformFunction
+    ];
 export type TranslateFunction = string;
 export type Translate3DFunction = string;
 export type TranslateXFunction = string;
@@ -2148,7 +2656,13 @@ export type BorderColorProperty =
   | [Color, Color, Color]
   | [Color, Color, Color, Color];
 export type BorderImageProperty = string;
-export type BorderImageOutsetProperty<TLength = Length> = GlobalKeywords | TLength | number;
+export type BorderImageOutsetProperty<TLength = Length> =
+  | GlobalKeywords
+  | TLength
+  | number
+  | [TLength | number, TLength | number]
+  | [TLength | number, TLength | number, TLength | number]
+  | [TLength | number, TLength | number, TLength | number, TLength | number];
 export type BorderImageRepeatPropertyCombined =
   | 'inherit'
   | 'initial'
@@ -2157,7 +2671,13 @@ export type BorderImageRepeatPropertyCombined =
   | 'repeat'
   | 'round'
   | 'space';
-export type BorderImageRepeatProperty = GlobalKeywords | 'stretch' | 'repeat' | 'round' | 'space';
+export type BorderImageRepeatProperty =
+  | GlobalKeywords
+  | 'stretch'
+  | 'repeat'
+  | 'round'
+  | 'space'
+  | ['stretch' | 'repeat' | 'round' | 'space', 'stretch' | 'repeat' | 'round' | 'space'];
 export type BorderImageSliceProperty =
   | GlobalKeywords
   | NumberPercentage
@@ -2173,7 +2693,19 @@ export type BorderImageWidthProperty<TLength = Length> =
   | GlobalKeywords
   | LengthPercentage<TLength>
   | number
-  | 'auto';
+  | 'auto'
+  | [LengthPercentage<TLength> | number | 'auto', LengthPercentage<TLength> | number | 'auto']
+  | [
+      LengthPercentage<TLength> | number | 'auto',
+      LengthPercentage<TLength> | number | 'auto',
+      LengthPercentage<TLength> | number | 'auto'
+    ]
+  | [
+      LengthPercentage<TLength> | number | 'auto',
+      LengthPercentage<TLength> | number | 'auto',
+      LengthPercentage<TLength> | number | 'auto',
+      LengthPercentage<TLength> | number | 'auto'
+    ];
 export type BorderInlineEndProperty =
   | GlobalKeywords
   | ColorProperty
@@ -2532,8 +3064,104 @@ export type CounterIncrementProperty =
   | GlobalKeywords
   | CustomIdent
   | [CustomIdent, Integer]
+  | [CustomIdent | [CustomIdent, Integer], CustomIdent | [CustomIdent, Integer]]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
   | 'none';
-export type CounterResetProperty = GlobalKeywords | CustomIdent | [CustomIdent, Integer] | 'none';
+export type CounterResetProperty =
+  | GlobalKeywords
+  | CustomIdent
+  | [CustomIdent, Integer]
+  | [CustomIdent | [CustomIdent, Integer], CustomIdent | [CustomIdent, Integer]]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | [
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer],
+      CustomIdent | [CustomIdent, Integer]
+    ]
+  | 'none';
 export type DirectionPropertyCombined = 'inherit' | 'initial' | 'unset' | 'ltr' | 'rtl';
 export type DirectionProperty = GlobalKeywords | 'ltr' | 'rtl';
 export type DisplayPropertyCombined =
@@ -3069,7 +3697,16 @@ export type FontWeightProperty = GlobalKeywords | FontWeightAbsolute | 'bolder' 
 export type GapProperty = GlobalKeywords | RowGapProperty | [RowGapProperty, ColumnGapProperty];
 export type GridProperty = string;
 export type GridAreaProperty = string;
-export type GridAutoColumnsProperty = GlobalKeywords | TrackSize;
+export type GridAutoColumnsProperty =
+  | GlobalKeywords
+  | TrackSize
+  | [TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize];
 export type GridAutoFlowPropertyCombined =
   | 'inherit'
   | 'initial'
@@ -3086,7 +3723,16 @@ export type GridAutoFlowProperty =
   | ['row', 'dense']
   | 'column'
   | ['column', 'dense'];
-export type GridAutoRowsProperty = GlobalKeywords | TrackSize;
+export type GridAutoRowsProperty =
+  | GlobalKeywords
+  | TrackSize
+  | [TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize]
+  | [TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize, TrackSize];
 export type GridColumnProperty = string;
 export type GridColumnEndProperty = GlobalKeywords | GridLine;
 export type GridColumnStartProperty = GlobalKeywords | GridLine;
@@ -3094,7 +3740,17 @@ export type GridRowProperty = string;
 export type GridRowEndProperty = GlobalKeywords | GridLine;
 export type GridRowStartProperty = GlobalKeywords | GridLine;
 export type GridTemplateProperty = string;
-export type GridTemplateAreasProperty = GlobalKeywords | 'none' | string;
+export type GridTemplateAreasProperty =
+  | GlobalKeywords
+  | 'none'
+  | string
+  | [string, string]
+  | [string, string, string]
+  | [string, string, string, string]
+  | [string, string, string, string, string]
+  | [string, string, string, string, string, string]
+  | [string, string, string, string, string, string, string]
+  | [string, string, string, string, string, string, string, string];
 export type GridTemplateColumnsProperty = GlobalKeywords | 'none' | TrackList | AutoTrackList;
 export type GridTemplateRowsProperty = GlobalKeywords | 'none' | TrackList | AutoTrackList;
 export type HangingPunctuationPropertyCombined =
@@ -3342,7 +3998,19 @@ export type ListStylePositionPropertyCombined =
   | 'outside';
 export type ListStylePositionProperty = GlobalKeywords | 'inside' | 'outside';
 export type ListStyleTypeProperty = GlobalKeywords | CounterStyle | string | 'none';
-export type MarginProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginProperty<TLength = Length> =
+  | GlobalKeywords
+  | TLength
+  | Percentage
+  | 'auto'
+  | [TLength | Percentage | 'auto', TLength | Percentage | 'auto']
+  | [TLength | Percentage | 'auto', TLength | Percentage | 'auto', TLength | Percentage | 'auto']
+  | [
+      TLength | Percentage | 'auto',
+      TLength | Percentage | 'auto',
+      TLength | Percentage | 'auto',
+      TLength | Percentage | 'auto'
+    ];
 export type MarginBlockEndProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginBlockStartProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
@@ -3487,7 +4155,17 @@ export type OverflowPropertyCombined =
   | 'clip'
   | 'scroll'
   | 'auto';
-export type OverflowProperty = GlobalKeywords | 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
+export type OverflowProperty =
+  | GlobalKeywords
+  | 'visible'
+  | 'hidden'
+  | 'clip'
+  | 'scroll'
+  | 'auto'
+  | [
+      'visible' | 'hidden' | 'clip' | 'scroll' | 'auto',
+      'visible' | 'hidden' | 'clip' | 'scroll' | 'auto'
+    ];
 export type OverflowWrapPropertyCombined =
   | 'inherit'
   | 'initial'
@@ -3515,7 +4193,13 @@ export type OverflowYPropertyCombined =
   | 'scroll'
   | 'auto';
 export type OverflowYProperty = GlobalKeywords | 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto';
-export type PaddingProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingProperty<TLength = Length> =
+  | GlobalKeywords
+  | TLength
+  | Percentage
+  | [TLength | Percentage, TLength | Percentage]
+  | [TLength | Percentage, TLength | Percentage, TLength | Percentage]
+  | [TLength | Percentage, TLength | Percentage, TLength | Percentage, TLength | Percentage];
 export type PaddingBlockEndProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingBlockStartProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
@@ -3674,7 +4358,41 @@ export type PositionProperty =
   | 'absolute'
   | 'sticky'
   | 'fixed';
-export type QuotesProperty = GlobalKeywords | 'none' | [string, string];
+export type QuotesProperty =
+  | GlobalKeywords
+  | 'none'
+  | [string, string]
+  | [[string, string], [string, string]]
+  | [[string, string], [string, string], [string, string]]
+  | [[string, string], [string, string], [string, string], [string, string]]
+  | [[string, string], [string, string], [string, string], [string, string], [string, string]]
+  | [
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string]
+    ]
+  | [
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string]
+    ]
+  | [
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string],
+      [string, string]
+    ];
 export type ResizePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -3913,7 +4631,12 @@ export type TextOrientationPropertyCombined =
   | 'upright'
   | 'sideways';
 export type TextOrientationProperty = GlobalKeywords | 'mixed' | 'upright' | 'sideways';
-export type TextOverflowProperty = GlobalKeywords | 'clip' | 'ellipsis' | string;
+export type TextOverflowProperty =
+  | GlobalKeywords
+  | 'clip'
+  | 'ellipsis'
+  | string
+  | ['clip' | 'ellipsis' | string, 'clip' | 'ellipsis' | string];
 export type TextRenderingPropertyCombined =
   | 'inherit'
   | 'initial'
