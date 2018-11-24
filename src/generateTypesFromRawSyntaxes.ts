@@ -1,5 +1,5 @@
 import { ICssTokenType } from '@johanneslumpe/css-value-declaration-grammer-lexer';
-import { filter, forEach, map, reduce } from 'lodash/fp';
+import { filter, forEach, map, reduce, uniq } from 'lodash/fp';
 import mdnCssTypes from 'mdn-data/css/types.json';
 import ts, { TypeAliasDeclaration } from 'typescript';
 
@@ -103,9 +103,10 @@ export const generateBaseDataTypes = (keysToIgnore: string[]) => [
   ),
 ];
 
-interface IGenerateTypesFromMdnDataOptions {
+interface IGenerateTypesFromRawSyntaxesOptions {
   typeSuffix?: string;
   blacklistPredicate?: (key: string) => boolean;
+  postprocessCombinedTypes?: (types: string[]) => string[];
   lookupFn: SyntaxLookupFn;
   availableTypes?: string[];
 }
@@ -116,11 +117,15 @@ interface IGenerateTypesFromMdnDataOptions {
  * @param sourceObject
  * @param options
  */
-export const generateTypesFromMdnData = (
+export const generateTypesFromRawSyntaxes = (
   sourceObject: IParsedSyntaxes,
-  options: IGenerateTypesFromMdnDataOptions,
+  options: IGenerateTypesFromRawSyntaxesOptions,
 ) => {
-  const { availableTypes = [], typeSuffix = '' } = options;
+  const {
+    availableTypes = [],
+    typeSuffix = '',
+    postprocessCombinedTypes = (x: string[]) => x,
+  } = options;
   const withoutCircular = removeCircularAndUnsupportedGrammar(
     sourceObject,
     globalDataTypes,
@@ -167,8 +172,9 @@ export const generateTypesFromMdnData = (
           // to ensure type-safety
           const first = typeCombinations[0];
           if (Array.isArray(first)) {
-            const combined = generateCombinedKeywords(first);
-
+            const combined = postprocessCombinedTypes(
+              uniq(generateCombinedKeywords(first)),
+            );
             acc.push(
               ts.createTypeAliasDeclaration(
                 [],

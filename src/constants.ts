@@ -4,3 +4,5 @@ export const LENGTH_TYPE_NAME = 'Length';
 export const CSS_TYPES_FILE = 'types.ts';
 export const UNIT_TYPES_FILE = 'unitTypes.ts';
 export const UNIT_UTILS_FILE = 'unitUtils.ts';
+export const GLOBAL_KEYWORDS = ['inherit', 'initial', 'unset'];
+export const GLOBAL_KEYWORDS_DATA_TYPE = 'global-keywords';
