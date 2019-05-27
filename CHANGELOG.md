@@ -1,6 +1,20 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.4.0](https://github.com/johanneslumpe/css-types/compare/v0.3.0...v0.4.0) (2019-05-27)
+
+
+### chore
+
+* **style:** remove `I` prefix from generated types ([80e7b78](https://github.com/johanneslumpe/css-types/commit/80e7b78))
+
+
+### BREAKING CHANGES
+
+* **style:** Interfaces are now generated without leading `I` prefix.
+
+
 
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/johanneslumpe/css-types/compare/v0.2.0...v0.3.0) (2018-11-24)
