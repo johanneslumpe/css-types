@@ -69,13 +69,10 @@ const generateTypesForKey = (
   );
 };
 
-export const generateBaseDataTypes = (keysToIgnore: string[]) => [
-  map(
-    key => generateDefaultStringTypeDeclaration(key),
-    filter(key => !keysToIgnore.includes(key), globalDataTypes),
-  ),
-];
-
+export const generateBaseDataTypes = (keysToIgnore: string[]) => {
+  const filtered = filter(key => !keysToIgnore.includes(key), globalDataTypes);
+  return [map(key => generateDefaultStringTypeDeclaration(key), filtered)];
+};
 interface IGenerateCombinedTypesOptions {
   parsedSyntax: RawToken[];
   lookupFn: SyntaxLookupFn;
