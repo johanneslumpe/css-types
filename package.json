@@ -38,7 +38,7 @@
     "@johanneslumpe/css-value-declaration-grammer-lexer": "^0.1.4",
     "@types/cli-progress": "^1.8.0",
     "@types/jest": "^24.0.13",
-    "@types/lodash": "^4.14.116",
+    "@types/lodash": "^4.14.132",
     "@types/prettier": "^1.13.2",
     "@types/recursive-readdir": "^2.2.0",
     "@types/rimraf": "^2.0.2",

@@ -17,13 +17,15 @@ export function removeInvalidDataTypeReferences(
     const keysToRemove: string[] = [];
     forEach(key => {
       const parsedSyntax = newObject[key];
+      const filteredTokens = filter(isDataTypeToken, parsedSyntax);
       const dataTypeKeys = map(
         token => generateDataTypeLookupKey(token.value),
-        filter(isDataTypeToken, parsedSyntax),
+        filteredTokens,
       );
+      const dataTypesDifference = difference(dataTypeKeys, allKeys);
       const invalidDataTypes = filter(
         dataType => !globalDataTypes.includes(dataType),
-        difference(dataTypeKeys, allKeys),
+        dataTypesDifference,
       );
       if (invalidDataTypes.length) {
         keysToRemove.push(key);

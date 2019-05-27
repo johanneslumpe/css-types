@@ -110,7 +110,8 @@ export function generateTypeCombinations(
 
         case ICssTokenType.GROUP: {
           const r1 = generateTypeCombinations(entity.entities);
-
+          const accDefault: ComponentTypeRepresentation =
+            ComponentTypeRepresentation.NONE;
           // we lift the nested representation up when resolving the group
           const type: ComponentTypeRepresentation = reduce(
             (acc, item) => {
@@ -118,7 +119,7 @@ export function generateTypeCombinations(
                 ? acc || item.representation || ComponentTypeRepresentation.NONE
                 : acc;
             },
-            ComponentTypeRepresentation.NONE,
+            accDefault as ComponentTypeRepresentation,
             r1,
           );
 

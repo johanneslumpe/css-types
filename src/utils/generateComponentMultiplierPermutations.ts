@@ -40,6 +40,10 @@ export function generateComponentMultiplierPermutations(
     throw new Error('Cannot compute infinite permutations');
   }
 
+  const permutations = map(
+    i => Array<IComponent>(i).fill(component),
+    range(min, max + 1),
+  );
   return reduce(
     (acc, permutation) => {
       const data = map(componentArray => {
@@ -53,6 +57,6 @@ export function generateComponentMultiplierPermutations(
       return acc.concat(data);
     },
     result,
-    map(i => Array<IComponent>(i).fill(component), range(min, max + 1)),
+    permutations,
   );
 }
