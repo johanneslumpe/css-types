@@ -1,51 +1,51 @@
 import {
-  IChValue,
-  ICmValue,
-  IDegValue,
-  IDpcmValue,
-  IDpiValue,
-  IDppxValue,
-  IEmValue,
-  IExValue,
-  IFrValue,
-  IGradValue,
-  IHzValue,
-  IInchValue,
-  IKhzValue,
-  IMmValue,
-  IMsValue,
-  IPcValue,
-  IPercentageValue,
-  IPtValue,
-  IPxValue,
-  IQValue,
-  IRadValue,
-  IRemValue,
-  ISValue,
-  ITurnValue,
-  IVhValue,
-  IVmaxValue,
-  IVminValue,
-  IVwValue,
-  IXValue
+  ChValue,
+  CmValue,
+  DegValue,
+  DpcmValue,
+  DpiValue,
+  DppxValue,
+  EmValue,
+  ExValue,
+  FrValue,
+  GradValue,
+  HzValue,
+  InchValue,
+  KhzValue,
+  MmValue,
+  MsValue,
+  PcValue,
+  PercentageValue,
+  PtValue,
+  PxValue,
+  QValue,
+  RadValue,
+  RemValue,
+  SValue,
+  TurnValue,
+  VhValue,
+  VmaxValue,
+  VminValue,
+  VwValue,
+  XValue
 } from './unitTypes';
 export type Length =
-  | IChValue
-  | ICmValue
-  | IEmValue
-  | IExValue
-  | IFrValue
-  | IInchValue
-  | IMmValue
-  | IPcValue
-  | IPtValue
-  | IPxValue
-  | IQValue
-  | IRemValue
-  | IVhValue
-  | IVmaxValue
-  | IVminValue
-  | IVwValue;
+  | ChValue
+  | CmValue
+  | EmValue
+  | ExValue
+  | FrValue
+  | InchValue
+  | MmValue
+  | PcValue
+  | PtValue
+  | PxValue
+  | QValue
+  | RemValue
+  | VhValue
+  | VmaxValue
+  | VminValue
+  | VwValue;
 export type AnPlusB = string;
 export type CustomIdent = string;
 export type Dimension = string;
@@ -54,18 +54,18 @@ export type Ratio = string;
 export type String = string;
 export type TimingFunction = string;
 export type Url = string;
-export type Angle = IDegValue | IGradValue | IRadValue | ITurnValue;
+export type Angle = DegValue | GradValue | RadValue | TurnValue;
 export type Color = string;
-export type Flex = IFrValue;
-export type Frequency = IHzValue | IKhzValue;
+export type Flex = FrValue;
+export type Frequency = HzValue | KhzValue;
 export type GlobalKeywords = 'inherit' | 'initial' | 'unset';
 export type InsetFunction = string;
 export type Integer = number;
 export type Number = number;
-export type Percentage = IPercentageValue;
-export type Resolution = IDpiValue | IDpcmValue | IDppxValue | IXValue;
+export type Percentage = PercentageValue;
+export type Resolution = DpiValue | DpcmValue | DppxValue | XValue;
 export type Shape = string;
-export type Time = ISValue | IMsValue;
+export type Time = SValue | MsValue;
 export type TrackRepeat = string;
 export type AbsoluteSize =
   | 'xx-small'

@@ -1,87 +1,87 @@
-export interface IChValue extends String {
+export interface ChValue extends String {
   __ch_brand_type__: never;
 }
-export interface ICmValue extends String {
+export interface CmValue extends String {
   __cm_brand_type__: never;
 }
-export interface IDegValue extends String {
+export interface DegValue extends String {
   __deg_brand_type__: never;
 }
-export interface IDpcmValue extends String {
+export interface DpcmValue extends String {
   __dpcm_brand_type__: never;
 }
-export interface IDpiValue extends String {
+export interface DpiValue extends String {
   __dpi_brand_type__: never;
 }
-export interface IDppxValue extends String {
+export interface DppxValue extends String {
   __dppx_brand_type__: never;
 }
-export interface IEmValue extends String {
+export interface EmValue extends String {
   __em_brand_type__: never;
 }
-export interface IExValue extends String {
+export interface ExValue extends String {
   __ex_brand_type__: never;
 }
-export interface IFrValue extends String {
+export interface FrValue extends String {
   __fr_brand_type__: never;
 }
-export interface IGradValue extends String {
+export interface GradValue extends String {
   __grad_brand_type__: never;
 }
-export interface IHzValue extends String {
+export interface HzValue extends String {
   __hz_brand_type__: never;
 }
-export interface IInchValue extends String {
+export interface InchValue extends String {
   __in_brand_type__: never;
 }
-export interface IKhzValue extends String {
+export interface KhzValue extends String {
   __khz_brand_type__: never;
 }
-export interface IMmValue extends String {
+export interface MmValue extends String {
   __mm_brand_type__: never;
 }
-export interface IMsValue extends String {
+export interface MsValue extends String {
   __ms_brand_type__: never;
 }
-export interface IPcValue extends String {
+export interface PcValue extends String {
   __pc_brand_type__: never;
 }
-export interface IPercentageValue extends String {
+export interface PercentageValue extends String {
   __percentage_brand_type__: never;
 }
-export interface IPtValue extends String {
+export interface PtValue extends String {
   __pt_brand_type__: never;
 }
-export interface IPxValue extends String {
+export interface PxValue extends String {
   __px_brand_type__: never;
 }
-export interface IQValue extends String {
+export interface QValue extends String {
   __q_brand_type__: never;
 }
-export interface IRadValue extends String {
+export interface RadValue extends String {
   __rad_brand_type__: never;
 }
-export interface IRemValue extends String {
+export interface RemValue extends String {
   __rem_brand_type__: never;
 }
-export interface ISValue extends String {
+export interface SValue extends String {
   __s_brand_type__: never;
 }
-export interface ITurnValue extends String {
+export interface TurnValue extends String {
   __turn_brand_type__: never;
 }
-export interface IVhValue extends String {
+export interface VhValue extends String {
   __vh_brand_type__: never;
 }
-export interface IVmaxValue extends String {
+export interface VmaxValue extends String {
   __vmax_brand_type__: never;
 }
-export interface IVminValue extends String {
+export interface VminValue extends String {
   __vmin_brand_type__: never;
 }
-export interface IVwValue extends String {
+export interface VwValue extends String {
   __vw_brand_type__: never;
 }
-export interface IXValue extends String {
+export interface XValue extends String {
   __x_brand_type__: never;
 }
