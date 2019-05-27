@@ -1,12 +1,12 @@
-[@johanneslumpe/css-types](../README.md) > ["unitTypes"](../modules/_unittypes_.md) > [IPercentageValue](../interfaces/_unittypes_.ipercentagevalue.md)
+[@johanneslumpe/css-types](../README.md) > ["unitTypes"](../modules/_unittypes_.md) > [GradValue](../interfaces/_unittypes_.gradvalue.md)
 
-# Interface: IPercentageValue
+# Interface: GradValue
 
 ## Hierarchy
 
  `String`
 
-**↳ IPercentageValue**
+**↳ GradValue**
 
 ## Indexable
 
@@ -15,56 +15,56 @@
 
 ### Properties
 
-* [String](_unittypes_.ipercentagevalue.md#string)
-* [__percentage_brand_type__](_unittypes_.ipercentagevalue.md#__percentage_brand_type__)
-* [length](_unittypes_.ipercentagevalue.md#length)
+* [String](_unittypes_.gradvalue.md#string)
+* [__grad_brand_type__](_unittypes_.gradvalue.md#__grad_brand_type__)
+* [length](_unittypes_.gradvalue.md#length)
 
 ### Methods
 
-* [__@iterator](_unittypes_.ipercentagevalue.md#___iterator)
-* [anchor](_unittypes_.ipercentagevalue.md#anchor)
-* [big](_unittypes_.ipercentagevalue.md#big)
-* [blink](_unittypes_.ipercentagevalue.md#blink)
-* [bold](_unittypes_.ipercentagevalue.md#bold)
-* [charAt](_unittypes_.ipercentagevalue.md#charat)
-* [charCodeAt](_unittypes_.ipercentagevalue.md#charcodeat)
-* [codePointAt](_unittypes_.ipercentagevalue.md#codepointat)
-* [concat](_unittypes_.ipercentagevalue.md#concat)
-* [endsWith](_unittypes_.ipercentagevalue.md#endswith)
-* [fixed](_unittypes_.ipercentagevalue.md#fixed)
-* [fontcolor](_unittypes_.ipercentagevalue.md#fontcolor)
-* [fontsize](_unittypes_.ipercentagevalue.md#fontsize)
-* [includes](_unittypes_.ipercentagevalue.md#includes)
-* [indexOf](_unittypes_.ipercentagevalue.md#indexof)
-* [italics](_unittypes_.ipercentagevalue.md#italics)
-* [lastIndexOf](_unittypes_.ipercentagevalue.md#lastindexof)
-* [link](_unittypes_.ipercentagevalue.md#link)
-* [localeCompare](_unittypes_.ipercentagevalue.md#localecompare)
-* [match](_unittypes_.ipercentagevalue.md#match)
-* [normalize](_unittypes_.ipercentagevalue.md#normalize)
-* [padEnd](_unittypes_.ipercentagevalue.md#padend)
-* [padStart](_unittypes_.ipercentagevalue.md#padstart)
-* [repeat](_unittypes_.ipercentagevalue.md#repeat)
-* [replace](_unittypes_.ipercentagevalue.md#replace)
-* [search](_unittypes_.ipercentagevalue.md#search)
-* [slice](_unittypes_.ipercentagevalue.md#slice)
-* [small](_unittypes_.ipercentagevalue.md#small)
-* [split](_unittypes_.ipercentagevalue.md#split)
-* [startsWith](_unittypes_.ipercentagevalue.md#startswith)
-* [strike](_unittypes_.ipercentagevalue.md#strike)
-* [sub](_unittypes_.ipercentagevalue.md#sub)
-* [substr](_unittypes_.ipercentagevalue.md#substr)
-* [substring](_unittypes_.ipercentagevalue.md#substring)
-* [sup](_unittypes_.ipercentagevalue.md#sup)
-* [toLocaleLowerCase](_unittypes_.ipercentagevalue.md#tolocalelowercase)
-* [toLocaleUpperCase](_unittypes_.ipercentagevalue.md#tolocaleuppercase)
-* [toLowerCase](_unittypes_.ipercentagevalue.md#tolowercase)
-* [toString](_unittypes_.ipercentagevalue.md#tostring)
-* [toUpperCase](_unittypes_.ipercentagevalue.md#touppercase)
-* [trim](_unittypes_.ipercentagevalue.md#trim)
-* [trimLeft](_unittypes_.ipercentagevalue.md#trimleft)
-* [trimRight](_unittypes_.ipercentagevalue.md#trimright)
-* [valueOf](_unittypes_.ipercentagevalue.md#valueof)
+* [__@iterator](_unittypes_.gradvalue.md#___iterator)
+* [anchor](_unittypes_.gradvalue.md#anchor)
+* [big](_unittypes_.gradvalue.md#big)
+* [blink](_unittypes_.gradvalue.md#blink)
+* [bold](_unittypes_.gradvalue.md#bold)
+* [charAt](_unittypes_.gradvalue.md#charat)
+* [charCodeAt](_unittypes_.gradvalue.md#charcodeat)
+* [codePointAt](_unittypes_.gradvalue.md#codepointat)
+* [concat](_unittypes_.gradvalue.md#concat)
+* [endsWith](_unittypes_.gradvalue.md#endswith)
+* [fixed](_unittypes_.gradvalue.md#fixed)
+* [fontcolor](_unittypes_.gradvalue.md#fontcolor)
+* [fontsize](_unittypes_.gradvalue.md#fontsize)
+* [includes](_unittypes_.gradvalue.md#includes)
+* [indexOf](_unittypes_.gradvalue.md#indexof)
+* [italics](_unittypes_.gradvalue.md#italics)
+* [lastIndexOf](_unittypes_.gradvalue.md#lastindexof)
+* [link](_unittypes_.gradvalue.md#link)
+* [localeCompare](_unittypes_.gradvalue.md#localecompare)
+* [match](_unittypes_.gradvalue.md#match)
+* [normalize](_unittypes_.gradvalue.md#normalize)
+* [padEnd](_unittypes_.gradvalue.md#padend)
+* [padStart](_unittypes_.gradvalue.md#padstart)
+* [repeat](_unittypes_.gradvalue.md#repeat)
+* [replace](_unittypes_.gradvalue.md#replace)
+* [search](_unittypes_.gradvalue.md#search)
+* [slice](_unittypes_.gradvalue.md#slice)
+* [small](_unittypes_.gradvalue.md#small)
+* [split](_unittypes_.gradvalue.md#split)
+* [startsWith](_unittypes_.gradvalue.md#startswith)
+* [strike](_unittypes_.gradvalue.md#strike)
+* [sub](_unittypes_.gradvalue.md#sub)
+* [substr](_unittypes_.gradvalue.md#substr)
+* [substring](_unittypes_.gradvalue.md#substring)
+* [sup](_unittypes_.gradvalue.md#sup)
+* [toLocaleLowerCase](_unittypes_.gradvalue.md#tolocalelowercase)
+* [toLocaleUpperCase](_unittypes_.gradvalue.md#tolocaleuppercase)
+* [toLowerCase](_unittypes_.gradvalue.md#tolowercase)
+* [toString](_unittypes_.gradvalue.md#tostring)
+* [toUpperCase](_unittypes_.gradvalue.md#touppercase)
+* [trim](_unittypes_.gradvalue.md#trim)
+* [trimLeft](_unittypes_.gradvalue.md#trimleft)
+* [trimRight](_unittypes_.gradvalue.md#trimright)
+* [valueOf](_unittypes_.gradvalue.md#valueof)
 
 ---
 
@@ -76,18 +76,18 @@
 
 **● String**: *`StringConstructor`*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:457*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:517*
 
 Allows manipulation and formatting of text strings and determination and location of substrings within strings.
 
 ___
-<a id="__percentage_brand_type__"></a>
+<a id="__grad_brand_type__"></a>
 
-###  __percentage_brand_type__
+###  __grad_brand_type__
 
-**● __percentage_brand_type__**: *`never`*
+**● __grad_brand_type__**: *`never`*
 
-*Defined in [unitTypes.ts:50](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitTypes.ts#L50)*
+*Defined in [unitTypes.ts:29](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitTypes.ts#L29)*
 
 ___
 <a id="length"></a>
@@ -98,7 +98,7 @@ ___
 
 *Inherited from String.length*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:431*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:491*
 
 Returns the length of a String object.
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from String.[Symbol.iterator]*
 
-*Defined in node_modules/typescript/lib/lib.es2015.iterable.d.ts:235*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.iterable.d.ts:235*
 
 Iterator
 
@@ -129,13 +129,13 @@ ___
 
 *Inherited from String.anchor*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:454*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:454*
 
 Returns an HTML anchor element and sets the name attribute to the text value
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | name | `string` |   |
 
@@ -150,7 +150,7 @@ ___
 
 *Inherited from String.big*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:457*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:457*
 
 Returns a HTML element
 
@@ -165,7 +165,7 @@ ___
 
 *Inherited from String.blink*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:460*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:460*
 
 Returns a HTML element
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from String.bold*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:463*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:463*
 
 Returns a **HTML element**
 
@@ -195,13 +195,13 @@ ___
 
 *Inherited from String.charAt*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:332*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:392*
 
 Returns the character at the specified index.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | pos | `number` |  The zero-based index of the desired character. |
 
@@ -216,13 +216,13 @@ ___
 
 *Inherited from String.charCodeAt*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:338*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:398*
 
 Returns the Unicode value of the character at the specified location.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | index | `number` |  The zero-based index of the desired character. If there is no character at the specified index, NaN is returned. |
 
@@ -233,21 +233,21 @@ ___
 
 ###  codePointAt
 
-▸ **codePointAt**(pos: *`number`*):  `number` &#124; `undefined`
+▸ **codePointAt**(pos: *`number`*): `number` \| `undefined`
 
 *Inherited from String.codePointAt*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:402*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:402*
 
 Returns a nonnegative integer Number less than 1114112 (0x110000) that is the code point value of the UTF-16 encoded code point starting at the string element at position pos in the String resulting from converting this object to a String. If there is no element at that position, the result is undefined. If a valid UTF-16 surrogate pair does not begin at pos, the result is the code unit at pos.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | pos | `number` |
 
-**Returns:**  `number` &#124; `undefined`
+**Returns:** `number` \| `undefined`
 
 ___
 <a id="concat"></a>
@@ -258,13 +258,13 @@ ___
 
 *Inherited from String.concat*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:344*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:404*
 
 Returns a string that contains the concatenation of two or more strings.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | `Rest` strings | `string`[] |  The strings to append to the end of the string. |
 
@@ -275,20 +275,20 @@ ___
 
 ###  endsWith
 
-▸ **endsWith**(searchString: *`string`*, endPosition?: * `undefined` &#124; `number`*): `boolean`
+▸ **endsWith**(searchString: *`string`*, endPosition?: *`undefined` \| `number`*): `boolean`
 
 *Inherited from String.endsWith*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:418*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:418*
 
 Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) starting at endPosition – length(this). Otherwise returns false.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | searchString | `string` |
-| `Optional` endPosition |  `undefined` &#124; `number`|
+| `Optional` endPosition | `undefined` \| `number` |
 
 **Returns:** `boolean`
 
@@ -301,7 +301,7 @@ ___
 
 *Inherited from String.fixed*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:466*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:466*
 
 Returns a HTML element
 
@@ -316,13 +316,13 @@ ___
 
 *Inherited from String.fontcolor*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:469*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:469*
 
 Returns a HTML element and sets the color attribute value
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | color | `string` |
 
@@ -339,13 +339,13 @@ ___
 
 *Inherited from String.fontsize*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:472*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:472*
 
 Returns a HTML element and sets the size attribute value
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | size | `number` |
 
@@ -353,13 +353,13 @@ Returns a HTML element and sets the size attribute value
 
 *Inherited from String.fontsize*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:475*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:475*
 
 Returns a HTML element and sets the size attribute value
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | size | `string` |
 
@@ -370,20 +370,20 @@ ___
 
 ###  includes
 
-▸ **includes**(searchString: *`string`*, position?: * `undefined` &#124; `number`*): `boolean`
+▸ **includes**(searchString: *`string`*, position?: *`undefined` \| `number`*): `boolean`
 
 *Inherited from String.includes*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:411*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:411*
 
 Returns true if searchString appears as a substring of the result of converting this object to a String, at one or more positions that are greater than or equal to position; otherwise, returns false.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | searchString | `string` |  search string |
-| `Optional` position |  `undefined` &#124; `number`|  If position is undefined, 0 is assumed, so as to search all of the String. |
+| `Optional` position | `undefined` \| `number` |  If position is undefined, 0 is assumed, so as to search all of the String. |
 
 **Returns:** `boolean`
 
@@ -392,20 +392,20 @@ ___
 
 ###  indexOf
 
-▸ **indexOf**(searchString: *`string`*, position?: * `undefined` &#124; `number`*): `number`
+▸ **indexOf**(searchString: *`string`*, position?: *`undefined` \| `number`*): `number`
 
 *Inherited from String.indexOf*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:351*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:411*
 
 Returns the position of the first occurrence of a substring.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | searchString | `string` |  The substring to search for in the string |
-| `Optional` position |  `undefined` &#124; `number`|  The index at which to begin searching the String object. If omitted, search starts at the beginning of the string. |
+| `Optional` position | `undefined` \| `number` |  The index at which to begin searching the String object. If omitted, search starts at the beginning of the string. |
 
 **Returns:** `number`
 
@@ -418,7 +418,7 @@ ___
 
 *Inherited from String.italics*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:478*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:478*
 
 Returns an _HTML element_
 
@@ -429,20 +429,20 @@ ___
 
 ###  lastIndexOf
 
-▸ **lastIndexOf**(searchString: *`string`*, position?: * `undefined` &#124; `number`*): `number`
+▸ **lastIndexOf**(searchString: *`string`*, position?: *`undefined` \| `number`*): `number`
 
 *Inherited from String.lastIndexOf*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:358*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:418*
 
 Returns the last occurrence of a substring in the string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | searchString | `string` |  The substring to search for. |
-| `Optional` position |  `undefined` &#124; `number`|  The index at which to begin searching. If omitted, the search begins at the end of the string. |
+| `Optional` position | `undefined` \| `number` |  The index at which to begin searching. If omitted, the search begins at the end of the string. |
 
 **Returns:** `number`
 
@@ -455,13 +455,13 @@ ___
 
 *Inherited from String.link*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:481*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:481*
 
 Returns an HTML element and sets the href attribute value
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | url | `string` |
 
@@ -478,13 +478,13 @@ ___
 
 *Overrides String.localeCompare*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:364*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:424*
 
 Determines whether two strings are equivalent in the current locale.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | that | `string` |  String to compare to target string |
 
@@ -495,58 +495,58 @@ ___
 
 ###  match
 
-▸ **match**(regexp: * `string` &#124; `RegExp`*):  `RegExpMatchArray` &#124; `null`
+▸ **match**(regexp: *`string` \| `RegExp`*): `RegExpMatchArray` \| `null`
 
 *Inherited from String.match*
 
 *Overrides String.match*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:370*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:430*
 
 Matches a string with a regular expression, and returns an array containing the results of that search.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| regexp |  `string` &#124; `RegExp`|  A variable name or string literal containing the regular expression pattern and flags. |
+| regexp | `string` \| `RegExp` |  A variable name or string literal containing the regular expression pattern and flags. |
 
-**Returns:**  `RegExpMatchArray` &#124; `null`
+**Returns:** `RegExpMatchArray` \| `null`
 
 ___
 <a id="normalize"></a>
 
 ###  normalize
 
-▸ **normalize**(form: * "NFC" &#124; "NFD" &#124; "NFKC" &#124; "NFKD"*): `string`
+▸ **normalize**(form: *"NFC" \| "NFD" \| "NFKC" \| "NFKD"*): `string`
 
-▸ **normalize**(form?: * `undefined` &#124; `string`*): `string`
+▸ **normalize**(form?: *`undefined` \| `string`*): `string`
 
 *Inherited from String.normalize*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:426*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:426*
 
 Returns the String value result of normalizing the string into the normalization form named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| form |  "NFC" &#124; "NFD" &#124; "NFKC" &#124; "NFKD"|  Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default is "NFC" |
+| form | "NFC" \| "NFD" \| "NFKC" \| "NFKD" |  Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default is "NFC" |
 
 **Returns:** `string`
 
 *Inherited from String.normalize*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:434*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:434*
 
 Returns the String value result of normalizing the string into the normalization form named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| `Optional` form |  `undefined` &#124; `string`|  Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default is "NFC" |
+| `Optional` form | `undefined` \| `string` |  Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default is "NFC" |
 
 **Returns:** `string`
 
@@ -555,20 +555,20 @@ ___
 
 ###  padEnd
 
-▸ **padEnd**(maxLength: *`number`*, fillString?: * `undefined` &#124; `string`*): `string`
+▸ **padEnd**(maxLength: *`number`*, fillString?: *`undefined` \| `string`*): `string`
 
 *Inherited from String.padEnd*
 
-*Defined in node_modules/typescript/lib/lib.es2017.string.d.ts:46*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2017.string.d.ts:46*
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length. The padding is applied from the end (right) of the current string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | maxLength | `number` |  The length of the resulting string once the current string has been padded. If this parameter is smaller than the current string's length, the current string will be returned as it is. |
-| `Optional` fillString |  `undefined` &#124; `string`|  The string to pad the current string with. If this string is too long, it will be truncated and the left-most part will be applied. The default value for this parameter is " " (U+0020). |
+| `Optional` fillString | `undefined` \| `string` |  The string to pad the current string with. If this string is too long, it will be truncated and the left-most part will be applied. The default value for this parameter is " " (U+0020). |
 
 **Returns:** `string`
 
@@ -577,20 +577,20 @@ ___
 
 ###  padStart
 
-▸ **padStart**(maxLength: *`number`*, fillString?: * `undefined` &#124; `string`*): `string`
+▸ **padStart**(maxLength: *`number`*, fillString?: *`undefined` \| `string`*): `string`
 
 *Inherited from String.padStart*
 
-*Defined in node_modules/typescript/lib/lib.es2017.string.d.ts:33*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2017.string.d.ts:33*
 
 Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length. The padding is applied from the start (left) of the current string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | maxLength | `number` |  The length of the resulting string once the current string has been padded. If this parameter is smaller than the current string's length, the current string will be returned as it is. |
-| `Optional` fillString |  `undefined` &#124; `string`|  The string to pad the current string with. If this string is too long, it will be truncated and the left-most part will be applied. The default value for this parameter is " " (U+0020). |
+| `Optional` fillString | `undefined` \| `string` |  The string to pad the current string with. If this string is too long, it will be truncated and the left-most part will be applied. The default value for this parameter is " " (U+0020). |
 
 **Returns:** `string`
 
@@ -603,13 +603,13 @@ ___
 
 *Inherited from String.repeat*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:441*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:441*
 
 Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | count | `number` |  number of copies to append |
 
@@ -620,23 +620,23 @@ ___
 
 ###  replace
 
-▸ **replace**(searchValue: * `string` &#124; `RegExp`*, replaceValue: *`string`*): `string`
+▸ **replace**(searchValue: *`string` \| `RegExp`*, replaceValue: *`string`*): `string`
 
-▸ **replace**(searchValue: * `string` &#124; `RegExp`*, replacer: *`function`*): `string`
+▸ **replace**(searchValue: *`string` \| `RegExp`*, replacer: *`function`*): `string`
 
 *Inherited from String.replace*
 
 *Overrides String.replace*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:377*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:437*
 
 Replaces text in a string, using a regular expression or search string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| searchValue |  `string` &#124; `RegExp`|  A string to search for. |
+| searchValue | `string` \| `RegExp` |  A string to search for. |
 | replaceValue | `string` |  A string containing the text to replace for every successful match of searchValue in this string. |
 
 **Returns:** `string`
@@ -645,15 +645,15 @@ Replaces text in a string, using a regular expression or search string.
 
 *Overrides String.replace*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:384*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:444*
 
 Replaces text in a string, using a regular expression or search string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| searchValue |  `string` &#124; `RegExp`|  A string to search for. |
+| searchValue | `string` \| `RegExp` |  A string to search for. |
 | replacer | `function` |  A function that returns the replacement text. |
 
 **Returns:** `string`
@@ -663,21 +663,21 @@ ___
 
 ###  search
 
-▸ **search**(regexp: * `string` &#124; `RegExp`*): `number`
+▸ **search**(regexp: *`string` \| `RegExp`*): `number`
 
 *Inherited from String.search*
 
 *Overrides String.search*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:390*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:450*
 
 Finds the first substring match in a regular expression search.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| regexp |  `string` &#124; `RegExp`|  The regular expression pattern and applicable flags. |
+| regexp | `string` \| `RegExp` |  The regular expression pattern and applicable flags. |
 
 **Returns:** `number`
 
@@ -686,20 +686,20 @@ ___
 
 ###  slice
 
-▸ **slice**(start?: * `undefined` &#124; `number`*, end?: * `undefined` &#124; `number`*): `string`
+▸ **slice**(start?: *`undefined` \| `number`*, end?: *`undefined` \| `number`*): `string`
 
 *Inherited from String.slice*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:398*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:458*
 
 Returns a section of a string.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| `Optional` start |  `undefined` &#124; `number`|  The index to the beginning of the specified portion of stringObj. |
-| `Optional` end |  `undefined` &#124; `number`|  The index to the end of the specified portion of stringObj. The substring includes the characters up to, but not including, the character indicated by end. If this value is not specified, the substring continues to the end of stringObj. |
+| `Optional` start | `undefined` \| `number` |  The index to the beginning of the specified portion of stringObj. |
+| `Optional` end | `undefined` \| `number` |  The index to the end of the specified portion of stringObj. The substring includes the characters up to, but not including, the character indicated by end. If this value is not specified, the substring continues to the end of stringObj. |
 
 **Returns:** `string`
 
@@ -712,7 +712,7 @@ ___
 
 *Inherited from String.small*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:484*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:484*
 
 Returns a HTML element
 
@@ -723,22 +723,22 @@ ___
 
 ###  split
 
-▸ **split**(separator: * `string` &#124; `RegExp`*, limit?: * `undefined` &#124; `number`*): `string`[]
+▸ **split**(separator: *`string` \| `RegExp`*, limit?: *`undefined` \| `number`*): `string`[]
 
 *Inherited from String.split*
 
 *Overrides String.split*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:405*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:465*
 
 Split a string into substrings using the specified separator and return them as an array.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
-| separator |  `string` &#124; `RegExp`|  A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned. |
-| `Optional` limit |  `undefined` &#124; `number`|  A value used to limit the number of elements returned in the array. |
+| separator | `string` \| `RegExp` |  A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned. |
+| `Optional` limit | `undefined` \| `number` |  A value used to limit the number of elements returned in the array. |
 
 **Returns:** `string`[]
 
@@ -747,20 +747,20 @@ ___
 
 ###  startsWith
 
-▸ **startsWith**(searchString: *`string`*, position?: * `undefined` &#124; `number`*): `boolean`
+▸ **startsWith**(searchString: *`string`*, position?: *`undefined` \| `number`*): `boolean`
 
 *Inherited from String.startsWith*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:448*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:448*
 
 Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) starting at position. Otherwise returns false.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | searchString | `string` |
-| `Optional` position |  `undefined` &#124; `number`|
+| `Optional` position | `undefined` \| `number` |
 
 **Returns:** `boolean`
 
@@ -773,7 +773,7 @@ ___
 
 *Inherited from String.strike*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:487*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:487*
 
 Returns a HTML element
 
@@ -788,7 +788,7 @@ ___
 
 *Inherited from String.sub*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:490*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:490*
 
 Returns a HTML element
 
@@ -799,20 +799,20 @@ ___
 
 ###  substr
 
-▸ **substr**(from: *`number`*, length?: * `undefined` &#124; `number`*): `string`
+▸ **substr**(from: *`number`*, length?: *`undefined` \| `number`*): `string`
 
 *Inherited from String.substr*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:439*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:499*
 
 Gets a substring beginning at the specified location and having the specified length.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | from | `number` |  The starting position of the desired substring. The index of the first character in the string is zero. |
-| `Optional` length |  `undefined` &#124; `number`|  The number of characters to include in the returned substring. |
+| `Optional` length | `undefined` \| `number` |  The number of characters to include in the returned substring. |
 
 **Returns:** `string`
 
@@ -821,20 +821,20 @@ ___
 
 ###  substring
 
-▸ **substring**(start: *`number`*, end?: * `undefined` &#124; `number`*): `string`
+▸ **substring**(start: *`number`*, end?: *`undefined` \| `number`*): `string`
 
 *Inherited from String.substring*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:413*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:473*
 
 Returns the substring at the specified location within a String object.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | start | `number` |  The zero-based index number indicating the beginning of the substring. |
-| `Optional` end |  `undefined` &#124; `number`|  Zero-based index number indicating the end of the substring. The substring includes the characters up to, but not including, the character indicated by end. If end is omitted, the characters from start through the end of the original string are returned. |
+| `Optional` end | `undefined` \| `number` |  Zero-based index number indicating the end of the substring. The substring includes the characters up to, but not including, the character indicated by end. If end is omitted, the characters from start through the end of the original string are returned. |
 
 **Returns:** `string`
 
@@ -847,7 +847,7 @@ ___
 
 *Inherited from String.sup*
 
-*Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:493*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es2015.core.d.ts:493*
 
 Returns a HTML element
 
@@ -862,7 +862,7 @@ ___
 
 *Inherited from String.toLocaleLowerCase*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:419*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:479*
 
 Converts all alphabetic characters to lowercase, taking into account the host environment's current locale.
 
@@ -877,7 +877,7 @@ ___
 
 *Inherited from String.toLocaleUpperCase*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:425*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:485*
 
 Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
 
@@ -892,7 +892,7 @@ ___
 
 *Inherited from String.toLowerCase*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:416*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:476*
 
 Converts all the alphabetic characters in a string to lowercase.
 
@@ -907,7 +907,7 @@ ___
 
 *Inherited from String.toString*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:326*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:386*
 
 Returns a string representation of a string.
 
@@ -922,7 +922,7 @@ ___
 
 *Inherited from String.toUpperCase*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:422*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:482*
 
 Converts all the alphabetic characters in a string to uppercase.
 
@@ -937,7 +937,7 @@ ___
 
 *Inherited from String.trim*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:428*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:488*
 
 Removes the leading and trailing white space and line terminator characters from a string.
 
@@ -982,7 +982,7 @@ ___
 
 *Inherited from String.valueOf*
 
-*Defined in node_modules/typescript/lib/lib.es5.d.ts:442*
+*Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:502*
 
 Returns the primitive value of the specified object.
 

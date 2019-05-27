@@ -44,493 +44,493 @@
 
 ###  ch
 
-▸ **ch**(value: *`number`*): [IChValue](../interfaces/_unittypes_.ichvalue.md)
+▸ **ch**(value: *`number`*): [ChValue](../interfaces/_unittypes_.chvalue.md)
 
-*Defined in [unitUtils.ts:32](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L32)*
+*Defined in [unitUtils.ts:32](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L32)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IChValue](../interfaces/_unittypes_.ichvalue.md)
+**Returns:** [ChValue](../interfaces/_unittypes_.chvalue.md)
 
 ___
 <a id="cm"></a>
 
 ###  cm
 
-▸ **cm**(value: *`number`*): [ICmValue](../interfaces/_unittypes_.icmvalue.md)
+▸ **cm**(value: *`number`*): [CmValue](../interfaces/_unittypes_.cmvalue.md)
 
-*Defined in [unitUtils.ts:35](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L35)*
+*Defined in [unitUtils.ts:35](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L35)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [ICmValue](../interfaces/_unittypes_.icmvalue.md)
+**Returns:** [CmValue](../interfaces/_unittypes_.cmvalue.md)
 
 ___
 <a id="deg"></a>
 
 ###  deg
 
-▸ **deg**(value: *`number`*): [IDegValue](../interfaces/_unittypes_.idegvalue.md)
+▸ **deg**(value: *`number`*): [DegValue](../interfaces/_unittypes_.degvalue.md)
 
-*Defined in [unitUtils.ts:38](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L38)*
+*Defined in [unitUtils.ts:38](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L38)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IDegValue](../interfaces/_unittypes_.idegvalue.md)
+**Returns:** [DegValue](../interfaces/_unittypes_.degvalue.md)
 
 ___
 <a id="dpcm"></a>
 
 ###  dpcm
 
-▸ **dpcm**(value: *`number`*): [IDpcmValue](../interfaces/_unittypes_.idpcmvalue.md)
+▸ **dpcm**(value: *`number`*): [DpcmValue](../interfaces/_unittypes_.dpcmvalue.md)
 
-*Defined in [unitUtils.ts:41](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L41)*
+*Defined in [unitUtils.ts:41](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L41)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IDpcmValue](../interfaces/_unittypes_.idpcmvalue.md)
+**Returns:** [DpcmValue](../interfaces/_unittypes_.dpcmvalue.md)
 
 ___
 <a id="dpi"></a>
 
 ###  dpi
 
-▸ **dpi**(value: *`number`*): [IDpiValue](../interfaces/_unittypes_.idpivalue.md)
+▸ **dpi**(value: *`number`*): [DpiValue](../interfaces/_unittypes_.dpivalue.md)
 
-*Defined in [unitUtils.ts:44](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L44)*
+*Defined in [unitUtils.ts:44](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L44)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IDpiValue](../interfaces/_unittypes_.idpivalue.md)
+**Returns:** [DpiValue](../interfaces/_unittypes_.dpivalue.md)
 
 ___
 <a id="dppx"></a>
 
 ###  dppx
 
-▸ **dppx**(value: *`number`*): [IDppxValue](../interfaces/_unittypes_.idppxvalue.md)
+▸ **dppx**(value: *`number`*): [DppxValue](../interfaces/_unittypes_.dppxvalue.md)
 
-*Defined in [unitUtils.ts:47](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L47)*
+*Defined in [unitUtils.ts:47](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L47)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IDppxValue](../interfaces/_unittypes_.idppxvalue.md)
+**Returns:** [DppxValue](../interfaces/_unittypes_.dppxvalue.md)
 
 ___
 <a id="em"></a>
 
 ###  em
 
-▸ **em**(value: *`number`*): [IEmValue](../interfaces/_unittypes_.iemvalue.md)
+▸ **em**(value: *`number`*): [EmValue](../interfaces/_unittypes_.emvalue.md)
 
-*Defined in [unitUtils.ts:50](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L50)*
+*Defined in [unitUtils.ts:50](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L50)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IEmValue](../interfaces/_unittypes_.iemvalue.md)
+**Returns:** [EmValue](../interfaces/_unittypes_.emvalue.md)
 
 ___
 <a id="ex"></a>
 
 ###  ex
 
-▸ **ex**(value: *`number`*): [IExValue](../interfaces/_unittypes_.iexvalue.md)
+▸ **ex**(value: *`number`*): [ExValue](../interfaces/_unittypes_.exvalue.md)
 
-*Defined in [unitUtils.ts:53](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L53)*
+*Defined in [unitUtils.ts:53](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L53)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IExValue](../interfaces/_unittypes_.iexvalue.md)
+**Returns:** [ExValue](../interfaces/_unittypes_.exvalue.md)
 
 ___
 <a id="fr"></a>
 
 ###  fr
 
-▸ **fr**(value: *`number`*): [IFrValue](../interfaces/_unittypes_.ifrvalue.md)
+▸ **fr**(value: *`number`*): [FrValue](../interfaces/_unittypes_.frvalue.md)
 
-*Defined in [unitUtils.ts:56](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L56)*
+*Defined in [unitUtils.ts:56](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L56)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IFrValue](../interfaces/_unittypes_.ifrvalue.md)
+**Returns:** [FrValue](../interfaces/_unittypes_.frvalue.md)
 
 ___
 <a id="grad"></a>
 
 ###  grad
 
-▸ **grad**(value: *`number`*): [IGradValue](../interfaces/_unittypes_.igradvalue.md)
+▸ **grad**(value: *`number`*): [GradValue](../interfaces/_unittypes_.gradvalue.md)
 
-*Defined in [unitUtils.ts:59](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L59)*
+*Defined in [unitUtils.ts:59](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L59)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IGradValue](../interfaces/_unittypes_.igradvalue.md)
+**Returns:** [GradValue](../interfaces/_unittypes_.gradvalue.md)
 
 ___
 <a id="hz"></a>
 
 ###  hz
 
-▸ **hz**(value: *`number`*): [IHzValue](../interfaces/_unittypes_.ihzvalue.md)
+▸ **hz**(value: *`number`*): [HzValue](../interfaces/_unittypes_.hzvalue.md)
 
-*Defined in [unitUtils.ts:62](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L62)*
+*Defined in [unitUtils.ts:62](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L62)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IHzValue](../interfaces/_unittypes_.ihzvalue.md)
+**Returns:** [HzValue](../interfaces/_unittypes_.hzvalue.md)
 
 ___
 <a id="inch"></a>
 
 ###  inch
 
-▸ **inch**(value: *`number`*): [IInchValue](../interfaces/_unittypes_.iinchvalue.md)
+▸ **inch**(value: *`number`*): [InchValue](../interfaces/_unittypes_.inchvalue.md)
 
-*Defined in [unitUtils.ts:65](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L65)*
+*Defined in [unitUtils.ts:65](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L65)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IInchValue](../interfaces/_unittypes_.iinchvalue.md)
+**Returns:** [InchValue](../interfaces/_unittypes_.inchvalue.md)
 
 ___
 <a id="khz"></a>
 
 ###  khz
 
-▸ **khz**(value: *`number`*): [IKhzValue](../interfaces/_unittypes_.ikhzvalue.md)
+▸ **khz**(value: *`number`*): [KhzValue](../interfaces/_unittypes_.khzvalue.md)
 
-*Defined in [unitUtils.ts:68](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L68)*
+*Defined in [unitUtils.ts:68](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L68)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IKhzValue](../interfaces/_unittypes_.ikhzvalue.md)
+**Returns:** [KhzValue](../interfaces/_unittypes_.khzvalue.md)
 
 ___
 <a id="mm"></a>
 
 ###  mm
 
-▸ **mm**(value: *`number`*): [IMmValue](../interfaces/_unittypes_.immvalue.md)
+▸ **mm**(value: *`number`*): [MmValue](../interfaces/_unittypes_.mmvalue.md)
 
-*Defined in [unitUtils.ts:71](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L71)*
+*Defined in [unitUtils.ts:71](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L71)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IMmValue](../interfaces/_unittypes_.immvalue.md)
+**Returns:** [MmValue](../interfaces/_unittypes_.mmvalue.md)
 
 ___
 <a id="ms"></a>
 
 ###  ms
 
-▸ **ms**(value: *`number`*): [IMsValue](../interfaces/_unittypes_.imsvalue.md)
+▸ **ms**(value: *`number`*): [MsValue](../interfaces/_unittypes_.msvalue.md)
 
-*Defined in [unitUtils.ts:74](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L74)*
+*Defined in [unitUtils.ts:74](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L74)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IMsValue](../interfaces/_unittypes_.imsvalue.md)
+**Returns:** [MsValue](../interfaces/_unittypes_.msvalue.md)
 
 ___
 <a id="pc"></a>
 
 ###  pc
 
-▸ **pc**(value: *`number`*): [IPcValue](../interfaces/_unittypes_.ipcvalue.md)
+▸ **pc**(value: *`number`*): [PcValue](../interfaces/_unittypes_.pcvalue.md)
 
-*Defined in [unitUtils.ts:77](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L77)*
+*Defined in [unitUtils.ts:77](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L77)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IPcValue](../interfaces/_unittypes_.ipcvalue.md)
+**Returns:** [PcValue](../interfaces/_unittypes_.pcvalue.md)
 
 ___
 <a id="percentage"></a>
 
 ###  percentage
 
-▸ **percentage**(value: *`number`*): [IPercentageValue](../interfaces/_unittypes_.ipercentagevalue.md)
+▸ **percentage**(value: *`number`*): [PercentageValue](../interfaces/_unittypes_.percentagevalue.md)
 
-*Defined in [unitUtils.ts:80](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L80)*
+*Defined in [unitUtils.ts:80](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L80)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IPercentageValue](../interfaces/_unittypes_.ipercentagevalue.md)
+**Returns:** [PercentageValue](../interfaces/_unittypes_.percentagevalue.md)
 
 ___
 <a id="pt"></a>
 
 ###  pt
 
-▸ **pt**(value: *`number`*): [IPtValue](../interfaces/_unittypes_.iptvalue.md)
+▸ **pt**(value: *`number`*): [PtValue](../interfaces/_unittypes_.ptvalue.md)
 
-*Defined in [unitUtils.ts:83](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L83)*
+*Defined in [unitUtils.ts:83](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L83)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IPtValue](../interfaces/_unittypes_.iptvalue.md)
+**Returns:** [PtValue](../interfaces/_unittypes_.ptvalue.md)
 
 ___
 <a id="px"></a>
 
 ###  px
 
-▸ **px**(value: *`number`*): [IPxValue](../interfaces/_unittypes_.ipxvalue.md)
+▸ **px**(value: *`number`*): [PxValue](../interfaces/_unittypes_.pxvalue.md)
 
-*Defined in [unitUtils.ts:86](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L86)*
+*Defined in [unitUtils.ts:86](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L86)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IPxValue](../interfaces/_unittypes_.ipxvalue.md)
+**Returns:** [PxValue](../interfaces/_unittypes_.pxvalue.md)
 
 ___
 <a id="q"></a>
 
 ###  q
 
-▸ **q**(value: *`number`*): [IQValue](../interfaces/_unittypes_.iqvalue.md)
+▸ **q**(value: *`number`*): [QValue](../interfaces/_unittypes_.qvalue.md)
 
-*Defined in [unitUtils.ts:89](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L89)*
+*Defined in [unitUtils.ts:89](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L89)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IQValue](../interfaces/_unittypes_.iqvalue.md)
+**Returns:** [QValue](../interfaces/_unittypes_.qvalue.md)
 
 ___
 <a id="rad"></a>
 
 ###  rad
 
-▸ **rad**(value: *`number`*): [IRadValue](../interfaces/_unittypes_.iradvalue.md)
+▸ **rad**(value: *`number`*): [RadValue](../interfaces/_unittypes_.radvalue.md)
 
-*Defined in [unitUtils.ts:92](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L92)*
+*Defined in [unitUtils.ts:92](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L92)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IRadValue](../interfaces/_unittypes_.iradvalue.md)
+**Returns:** [RadValue](../interfaces/_unittypes_.radvalue.md)
 
 ___
 <a id="rem"></a>
 
 ###  rem
 
-▸ **rem**(value: *`number`*): [IRemValue](../interfaces/_unittypes_.iremvalue.md)
+▸ **rem**(value: *`number`*): [RemValue](../interfaces/_unittypes_.remvalue.md)
 
-*Defined in [unitUtils.ts:95](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L95)*
+*Defined in [unitUtils.ts:95](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L95)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IRemValue](../interfaces/_unittypes_.iremvalue.md)
+**Returns:** [RemValue](../interfaces/_unittypes_.remvalue.md)
 
 ___
 <a id="s"></a>
 
 ###  s
 
-▸ **s**(value: *`number`*): [ISValue](../interfaces/_unittypes_.isvalue.md)
+▸ **s**(value: *`number`*): [SValue](../interfaces/_unittypes_.svalue.md)
 
-*Defined in [unitUtils.ts:98](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L98)*
+*Defined in [unitUtils.ts:98](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L98)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [ISValue](../interfaces/_unittypes_.isvalue.md)
+**Returns:** [SValue](../interfaces/_unittypes_.svalue.md)
 
 ___
 <a id="turn"></a>
 
 ###  turn
 
-▸ **turn**(value: *`number`*): [ITurnValue](../interfaces/_unittypes_.iturnvalue.md)
+▸ **turn**(value: *`number`*): [TurnValue](../interfaces/_unittypes_.turnvalue.md)
 
-*Defined in [unitUtils.ts:101](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L101)*
+*Defined in [unitUtils.ts:101](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L101)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [ITurnValue](../interfaces/_unittypes_.iturnvalue.md)
+**Returns:** [TurnValue](../interfaces/_unittypes_.turnvalue.md)
 
 ___
 <a id="vh"></a>
 
 ###  vh
 
-▸ **vh**(value: *`number`*): [IVhValue](../interfaces/_unittypes_.ivhvalue.md)
+▸ **vh**(value: *`number`*): [VhValue](../interfaces/_unittypes_.vhvalue.md)
 
-*Defined in [unitUtils.ts:104](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L104)*
+*Defined in [unitUtils.ts:104](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L104)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IVhValue](../interfaces/_unittypes_.ivhvalue.md)
+**Returns:** [VhValue](../interfaces/_unittypes_.vhvalue.md)
 
 ___
 <a id="vmax"></a>
 
 ###  vmax
 
-▸ **vmax**(value: *`number`*): [IVmaxValue](../interfaces/_unittypes_.ivmaxvalue.md)
+▸ **vmax**(value: *`number`*): [VmaxValue](../interfaces/_unittypes_.vmaxvalue.md)
 
-*Defined in [unitUtils.ts:107](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L107)*
+*Defined in [unitUtils.ts:107](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L107)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IVmaxValue](../interfaces/_unittypes_.ivmaxvalue.md)
+**Returns:** [VmaxValue](../interfaces/_unittypes_.vmaxvalue.md)
 
 ___
 <a id="vmin"></a>
 
 ###  vmin
 
-▸ **vmin**(value: *`number`*): [IVminValue](../interfaces/_unittypes_.ivminvalue.md)
+▸ **vmin**(value: *`number`*): [VminValue](../interfaces/_unittypes_.vminvalue.md)
 
-*Defined in [unitUtils.ts:110](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L110)*
+*Defined in [unitUtils.ts:110](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L110)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IVminValue](../interfaces/_unittypes_.ivminvalue.md)
+**Returns:** [VminValue](../interfaces/_unittypes_.vminvalue.md)
 
 ___
 <a id="vw"></a>
 
 ###  vw
 
-▸ **vw**(value: *`number`*): [IVwValue](../interfaces/_unittypes_.ivwvalue.md)
+▸ **vw**(value: *`number`*): [VwValue](../interfaces/_unittypes_.vwvalue.md)
 
-*Defined in [unitUtils.ts:113](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L113)*
+*Defined in [unitUtils.ts:113](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L113)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IVwValue](../interfaces/_unittypes_.ivwvalue.md)
+**Returns:** [VwValue](../interfaces/_unittypes_.vwvalue.md)
 
 ___
 <a id="x"></a>
 
 ###  x
 
-▸ **x**(value: *`number`*): [IXValue](../interfaces/_unittypes_.ixvalue.md)
+▸ **x**(value: *`number`*): [XValue](../interfaces/_unittypes_.xvalue.md)
 
-*Defined in [unitUtils.ts:116](https://github.com/johanneslumpe/css-types/blob/e2805de/generated/unitUtils.ts#L116)*
+*Defined in [unitUtils.ts:116](https://github.com/johanneslumpe/css-types/blob/80e7b78/generated/unitUtils.ts#L116)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | value | `number` |
 
-**Returns:** [IXValue](../interfaces/_unittypes_.ixvalue.md)
+**Returns:** [XValue](../interfaces/_unittypes_.xvalue.md)
 
 ___
 
