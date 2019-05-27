@@ -45,8 +45,8 @@ export async function generateAllTypes() {
   const customTypes = generateTypesFromRawSyntaxes(parsedCustomSyntaxes, {
     availableTypes: [
       ...map(unitType => generateUnitValueInterface(unitType.name), unitTypes),
-      'i-s-value',
-      'i-x-value',
+      's-value',
+      'x-value',
     ],
     lookupFn: () => undefined,
   });

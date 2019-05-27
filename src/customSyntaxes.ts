@@ -3,7 +3,7 @@ import { GLOBAL_KEYWORDS, GLOBAL_KEYWORDS_DATA_TYPE } from './constants';
 export const customSyntaxes = {
   // https://developer.mozilla.org/en-US/docs/Web/CSS/angle
   angle: {
-    syntax: '<IDegValue> | <IGradValue> | <IRadValue> | <ITurnValue>',
+    syntax: '<DegValue> | <GradValue> | <RadValue> | <TurnValue>',
   },
   // https://developer.mozilla.org/en-US/docs/Web/CSS/color
   color: {
@@ -11,11 +11,11 @@ export const customSyntaxes = {
   },
   // https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value
   flex: {
-    syntax: '<IFrValue>',
+    syntax: '<FrValue>',
   },
   // https://developer.mozilla.org/en-US/docs/Web/CSS/frequency
   frequency: {
-    syntax: '<IHzValue> | <IKhzValue>',
+    syntax: '<HzValue> | <KhzValue>',
   },
   // https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#Keywords
   [GLOBAL_KEYWORDS_DATA_TYPE]: {
@@ -31,11 +31,11 @@ export const customSyntaxes = {
     syntax: '<number>',
   },
   percentage: {
-    syntax: '<IPercentageValue>',
+    syntax: '<PercentageValue>',
   },
   // https://developer.mozilla.org/en-US/docs/Web/CSS/resolution
   resolution: {
-    syntax: '<IDpiValue> | <IDpcmValue> | <IDppxValue> | <i-x-value>',
+    syntax: '<DpiValue> | <DpcmValue> | <DppxValue> | <x-value>',
   },
   shape: {
     syntax: '<string>',
@@ -44,7 +44,7 @@ export const customSyntaxes = {
   time: {
     // hacky fix to get the interface name generation function
     // to play nice with single letter camel case
-    syntax: '<i-s-value> | <IMsValue>',
+    syntax: '<s-value> | <MsValue>',
   },
   'track-repeat': {
     syntax: '<string>',

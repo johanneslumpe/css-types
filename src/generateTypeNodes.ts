@@ -119,16 +119,14 @@ export const generateTypesNodes = (
     }
 
     case ComponentTypeRepresentation.UNION:
+      const mapped = map(item => {
+        if (Array.isArray(item)) {
+          return generateTypesNodes(item);
+        }
+        return generateTsNode(item);
+      }, componentsWithoutVoid);
       const nestedValues = compact(
-        reject(
-          item => Array.isArray(item) && !item.length,
-          map(item => {
-            if (Array.isArray(item)) {
-              return generateTypesNodes(item);
-            }
-            return generateTsNode(item);
-          }, componentsWithoutVoid),
-        ),
+        reject(item => Array.isArray(item) && !item.length, mapped),
       );
       // TODO fold tuples
 

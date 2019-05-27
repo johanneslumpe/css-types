@@ -1,70 +1,71 @@
 import {
-  IChValue,
-  ICmValue,
-  IDegValue,
-  IDpcmValue,
-  IDpiValue,
-  IDppxValue,
-  IEmValue,
-  IExValue,
-  IFrValue,
-  IGradValue,
-  IHzValue,
-  IInchValue,
-  IKhzValue,
-  IMmValue,
-  IMsValue,
-  IPcValue,
-  IPercentageValue,
-  IPtValue,
-  IPxValue,
-  IQValue,
-  IRadValue,
-  IRemValue,
-  ISValue,
-  ITurnValue,
-  IVhValue,
-  IVmaxValue,
-  IVminValue,
-  IVwValue,
-  IXValue
+  ChValue,
+  CmValue,
+  DegValue,
+  DpcmValue,
+  DpiValue,
+  DppxValue,
+  EmValue,
+  ExValue,
+  FrValue,
+  GradValue,
+  HzValue,
+  InchValue,
+  KhzValue,
+  MmValue,
+  MsValue,
+  PcValue,
+  PercentageValue,
+  PtValue,
+  PxValue,
+  QValue,
+  RadValue,
+  RemValue,
+  SValue,
+  TurnValue,
+  VhValue,
+  VmaxValue,
+  VminValue,
+  VwValue,
+  XValue
 } from './unitTypes';
 export type Length =
-  | IChValue
-  | ICmValue
-  | IEmValue
-  | IExValue
-  | IFrValue
-  | IInchValue
-  | IMmValue
-  | IPcValue
-  | IPtValue
-  | IPxValue
-  | IQValue
-  | IRemValue
-  | IVhValue
-  | IVmaxValue
-  | IVminValue
-  | IVwValue;
+  | ChValue
+  | CmValue
+  | EmValue
+  | ExValue
+  | FrValue
+  | InchValue
+  | MmValue
+  | PcValue
+  | PtValue
+  | PxValue
+  | QValue
+  | RemValue
+  | VhValue
+  | VmaxValue
+  | VminValue
+  | VwValue;
 export type AnPlusB = string;
 export type CustomIdent = string;
+export type Dimension = string;
 export type Ident = string;
 export type Ratio = string;
 export type String = string;
 export type TimingFunction = string;
 export type Url = string;
-export type Angle = IDegValue | IGradValue | IRadValue | ITurnValue;
+export type Angle = DegValue | GradValue | RadValue | TurnValue;
 export type Color = string;
-export type Flex = IFrValue;
-export type Frequency = IHzValue | IKhzValue;
+export type Flex = FrValue;
+export type Frequency = HzValue | KhzValue;
 export type GlobalKeywords = 'inherit' | 'initial' | 'unset';
 export type InsetFunction = string;
 export type Integer = number;
 export type Number = number;
-export type Percentage = IPercentageValue;
-export type Resolution = IDpiValue | IDpcmValue | IDppxValue | IXValue;
+export type Percentage = PercentageValue;
+export type Resolution = DpiValue | DpcmValue | DppxValue | XValue;
 export type Shape = string;
-export type Time = ISValue | IMsValue;
+export type Time = SValue | MsValue;
 export type TrackRepeat = string;
 export type AbsoluteSize =
   | 'xx-small'
@@ -76,10 +77,13 @@ export type AbsoluteSize =
   | 'xx-large';
 export type AlphaValue = number | Percentage;
 export type AnglePercentage = Angle | Percentage;
+export type AngularColorHint = AnglePercentage;
+export type AngularColorStop = Color | [Color, ColorStopAngle];
+export type AngularColorStopList = string;
 export type AnimateableFeature = 'scroll-position' | 'contents' | CustomIdent;
 export type Attachment = 'scroll' | 'fixed' | 'local';
 export type AttrMatcher = string;
-export type AttrModifier = 'i';
+export type AttrModifier = 'i' | 's';
 export type AutoRepeat = string;
 export type AutoTrackList = string;
 export type BaselinePosition = 'baseline' | ['first', 'baseline'] | ['last', 'baseline'];
@@ -163,13 +167,34 @@ export type BrightnessFunction = string;
 export type CalcFunction = string;
 export type CalcSum = string;
 export type CalcProduct = string;
+export type CalcValue = string;
 export type CfFinalImage = Image | Color;
 export type CfMixingImage = Image | [Percentage, Image];
 export type CircleFunction = string;
+export type ClampFunction = string;
 export type ClipSource = Url;
-export type ColorStop<TLength = Length> = Color | [Color, LengthPercentage<TLength>];
+export type ColorStop<TLength = Length> = ColorStopLength | ColorStopAngle;
+export type ColorStopAngle = AnglePercentage | [AnglePercentage, AnglePercentage];
+export type ColorStopLength<TLength = Length> =
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type ColorStopList = string;
+export type Combinator = string;
 export type CommonLigValues = 'common-ligatures' | 'no-common-ligatures';
+export type Compat =
+  | 'searchfield'
+  | 'textarea'
+  | 'push-button'
+  | 'button-bevel'
+  | 'slider-horizontal'
+  | 'checkbox'
+  | 'radio'
+  | 'square-button'
+  | 'menulist'
+  | 'menulist-button'
+  | 'listbox'
+  | 'meter'
+  | 'progress-bar';
 export type CompositeStyle =
   | 'clear'
   | 'copy'
@@ -183,6 +208,7 @@ export type CompositeStyle =
   | 'destination-atop'
   | 'xor';
 export type CompositingOperator = 'add' | 'subtract' | 'intersect' | 'exclude';
+export type ConicGradientFunction = string;
 export type ContextualAltValues = 'contextual' | 'no-contextual';
 export type ContentDistribution = 'space-between' | 'space-around' | 'space-evenly' | 'stretch';
 export type ContentList =
@@ -577,7 +603,8 @@ export type Gradient =
   | LinearGradientFunction
   | RepeatingLinearGradientFunction
   | RadialGradientFunction
-  | RepeatingRadialGradientFunction;
+  | RepeatingRadialGradientFunction
+  | ConicGradientFunction;
 export type GrayscaleFunction = string;
 export type GridLine =
   | 'auto'
@@ -602,6 +629,8 @@ export type Image =
 export type ImageFunction = string;
 export type ImageSetFunction = string;
 export type ImageSetOption = [Image, Resolution] | [string, Resolution];
+export type ImageSrc = Url | string;
+export type ImageTags = 'ltr' | 'rtl';
 export type InflexibleBreadth<TLength = Length> =
   | TLength
   | Percentage
@@ -653,6 +682,8 @@ export type LineStyle =
   | 'inset'
   | 'outset';
 export type LineWidth<TLength = Length> = TLength | 'thin' | 'medium' | 'thick';
+export type LinearColorHint<TLength = Length> = LengthPercentage<TLength>;
+export type LinearColorStop<TLength = Length> = [Color, ColorStopLength];
 export type LinearGradientFunction = string;
 export type MaskLayer = string;
 export type MaskPosition<TLength = Length> =
@@ -681,6 +712,7 @@ export type MaskSource = Url;
 export type MaskingMode = 'alpha' | 'luminance' | 'match-source';
 export type MatrixFunction = string;
 export type Matrix3DFunction = string;
+export type MaxFunction = string;
 export type MediaAnd =
   | [MediaInParens, 'and', MediaInParens]
   | [MediaInParens, ['and', MediaInParens], ['and', MediaInParens]]
@@ -798,6 +830,8 @@ export type MfBoolean = MfName;
 export type MfName = Ident;
 export type MfPlain = string;
 export type MfRange = string;
+export type MfValue = number | Dimension | Ident | Ratio;
+export type MinFunction = string;
 export type MinmaxFunction = string;
 export type NamedColor =
   | 'transparent'
@@ -2556,16 +2590,45 @@ export type BorderProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
+export type BorderBlockProperty =
+  | GlobalKeywords
+  | ColorProperty
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
+export type BorderBlockColorProperty =
+  | GlobalKeywords
+  | BorderTopColorProperty
+  | [BorderTopColorProperty, BorderTopColorProperty];
+export type BorderBlockStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'hidden'
+  | 'dotted'
+  | 'dashed'
+  | 'solid'
+  | 'double'
+  | 'groove'
+  | 'ridge'
+  | 'inset'
+  | 'outset';
+export type BorderBlockStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderBlockWidthProperty = GlobalKeywords | BorderTopWidthProperty;
 export type BorderBlockEndProperty =
   | GlobalKeywords
   | ColorProperty
-  | BorderStyleProperty
-  | [BorderStyleProperty, ColorProperty]
-  | BorderWidthProperty
-  | [BorderWidthProperty, ColorProperty]
-  | [BorderWidthProperty, BorderStyleProperty]
-  | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderBlockEndColorProperty = GlobalKeywords | ColorProperty;
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
+export type BorderBlockEndColorProperty = GlobalKeywords | BorderTopColorProperty;
 export type BorderBlockEndStylePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -2580,18 +2643,18 @@ export type BorderBlockEndStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderBlockEndStyleProperty = GlobalKeywords | BorderStyleProperty;
-export type BorderBlockEndWidthProperty = GlobalKeywords | BorderWidthProperty;
+export type BorderBlockEndStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderBlockEndWidthProperty = GlobalKeywords | BorderTopWidthProperty;
 export type BorderBlockStartProperty =
   | GlobalKeywords
   | ColorProperty
-  | BorderStyleProperty
-  | [BorderStyleProperty, ColorProperty]
-  | BorderWidthProperty
-  | [BorderWidthProperty, ColorProperty]
-  | [BorderWidthProperty, BorderStyleProperty]
-  | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderBlockStartColorProperty = GlobalKeywords | ColorProperty;
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
+export type BorderBlockStartColorProperty = GlobalKeywords | BorderTopColorProperty;
 export type BorderBlockStartStylePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -2606,8 +2669,8 @@ export type BorderBlockStartStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderBlockStartStyleProperty = GlobalKeywords | BorderStyleProperty;
-export type BorderBlockStartWidthProperty = GlobalKeywords | BorderWidthProperty;
+export type BorderBlockStartStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderBlockStartWidthProperty = GlobalKeywords | BorderTopWidthProperty;
 export type BorderBottomProperty =
   | GlobalKeywords
   | Color
@@ -2617,7 +2680,7 @@ export type BorderBottomProperty =
   | [LineWidth, Color]
   | [LineWidth, LineStyle]
   | [LineWidth, LineStyle, Color];
-export type BorderBottomColorProperty = GlobalKeywords | Color;
+export type BorderBottomColorProperty = GlobalKeywords | BorderTopColorProperty;
 export type BorderBottomLeftRadiusProperty<TLength = Length> =
   | GlobalKeywords
   | LengthPercentage<TLength>
@@ -2655,6 +2718,14 @@ export type BorderColorProperty =
   | [Color, Color]
   | [Color, Color, Color]
   | [Color, Color, Color, Color];
+export type BorderEndEndRadiusProperty<TLength = Length> =
+  | GlobalKeywords
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderEndStartRadiusProperty<TLength = Length> =
+  | GlobalKeywords
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderImageProperty = string;
 export type BorderImageOutsetProperty<TLength = Length> =
   | GlobalKeywords
@@ -2706,16 +2777,45 @@ export type BorderImageWidthProperty<TLength = Length> =
       LengthPercentage<TLength> | number | 'auto',
       LengthPercentage<TLength> | number | 'auto'
     ];
+export type BorderInlineProperty =
+  | GlobalKeywords
+  | ColorProperty
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
 export type BorderInlineEndProperty =
   | GlobalKeywords
   | ColorProperty
-  | BorderStyleProperty
-  | [BorderStyleProperty, ColorProperty]
-  | BorderWidthProperty
-  | [BorderWidthProperty, ColorProperty]
-  | [BorderWidthProperty, BorderStyleProperty]
-  | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderInlineEndColorProperty = GlobalKeywords | ColorProperty;
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
+export type BorderInlineColorProperty =
+  | GlobalKeywords
+  | BorderTopColorProperty
+  | [BorderTopColorProperty, BorderTopColorProperty];
+export type BorderInlineStylePropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'hidden'
+  | 'dotted'
+  | 'dashed'
+  | 'solid'
+  | 'double'
+  | 'groove'
+  | 'ridge'
+  | 'inset'
+  | 'outset';
+export type BorderInlineStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderInlineWidthProperty = GlobalKeywords | BorderTopWidthProperty;
+export type BorderInlineEndColorProperty = GlobalKeywords | BorderTopColorProperty;
 export type BorderInlineEndStylePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -2730,18 +2830,18 @@ export type BorderInlineEndStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderInlineEndStyleProperty = GlobalKeywords | BorderStyleProperty;
-export type BorderInlineEndWidthProperty = GlobalKeywords | BorderWidthProperty;
+export type BorderInlineEndStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderInlineEndWidthProperty = GlobalKeywords | BorderTopWidthProperty;
 export type BorderInlineStartProperty =
   | GlobalKeywords
   | ColorProperty
-  | BorderStyleProperty
-  | [BorderStyleProperty, ColorProperty]
-  | BorderWidthProperty
-  | [BorderWidthProperty, ColorProperty]
-  | [BorderWidthProperty, BorderStyleProperty]
-  | [BorderWidthProperty, BorderStyleProperty, ColorProperty];
-export type BorderInlineStartColorProperty = GlobalKeywords | ColorProperty;
+  | BorderTopStyleProperty
+  | [BorderTopStyleProperty, ColorProperty]
+  | BorderTopWidthProperty
+  | [BorderTopWidthProperty, ColorProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty]
+  | [BorderTopWidthProperty, BorderTopStyleProperty, ColorProperty];
+export type BorderInlineStartColorProperty = GlobalKeywords | BorderTopColorProperty;
 export type BorderInlineStartStylePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -2756,8 +2856,8 @@ export type BorderInlineStartStylePropertyCombined =
   | 'ridge'
   | 'inset'
   | 'outset';
-export type BorderInlineStartStyleProperty = GlobalKeywords | BorderStyleProperty;
-export type BorderInlineStartWidthProperty = GlobalKeywords | BorderWidthProperty;
+export type BorderInlineStartStyleProperty = GlobalKeywords | BorderTopStyleProperty;
+export type BorderInlineStartWidthProperty = GlobalKeywords | BorderTopWidthProperty;
 export type BorderLeftProperty =
   | GlobalKeywords
   | Color
@@ -2812,6 +2912,14 @@ export type BorderRightStylePropertyCombined =
 export type BorderRightStyleProperty = GlobalKeywords | LineStyle;
 export type BorderRightWidthProperty = GlobalKeywords | LineWidth;
 export type BorderSpacingProperty<TLength = Length> = GlobalKeywords | TLength | [TLength, TLength];
+export type BorderStartEndRadiusProperty<TLength = Length> =
+  | GlobalKeywords
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
+export type BorderStartStartRadiusProperty<TLength = Length> =
+  | GlobalKeywords
+  | LengthPercentage<TLength>
+  | [LengthPercentage<TLength>, LengthPercentage<TLength>];
 export type BorderStylePropertyCombined =
   | 'inherit'
   | 'initial'
@@ -3813,10 +3921,18 @@ export type ImageRenderingPropertyCombined =
   | 'pixelated';
 export type ImageRenderingProperty = GlobalKeywords | 'auto' | 'crisp-edges' | 'pixelated';
 export type InlineSizeProperty = GlobalKeywords | WidthProperty;
-export type InsetBlockEndProperty = GlobalKeywords | LeftProperty;
-export type InsetBlockStartProperty = GlobalKeywords | LeftProperty;
-export type InsetInlineEndProperty = GlobalKeywords | LeftProperty;
-export type InsetInlineStartProperty = GlobalKeywords | LeftProperty;
+export type InsetProperty =
+  | GlobalKeywords
+  | TopProperty
+  | [TopProperty, TopProperty]
+  | [TopProperty, TopProperty, TopProperty]
+  | [TopProperty, TopProperty, TopProperty, TopProperty];
+export type InsetBlockProperty = GlobalKeywords | TopProperty | [TopProperty, TopProperty];
+export type InsetBlockEndProperty = GlobalKeywords | TopProperty;
+export type InsetBlockStartProperty = GlobalKeywords | TopProperty;
+export type InsetInlineProperty = GlobalKeywords | TopProperty | [TopProperty, TopProperty];
+export type InsetInlineEndProperty = GlobalKeywords | TopProperty;
+export type InsetInlineStartProperty = GlobalKeywords | TopProperty;
 export type IsolationPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'isolate';
 export type IsolationProperty = GlobalKeywords | 'auto' | 'isolate';
 export type JustifyContentPropertyCombined =
@@ -4011,9 +4127,17 @@ export type MarginProperty<TLength = Length> =
       TLength | Percentage | 'auto',
       TLength | Percentage | 'auto'
     ];
+export type MarginBlockProperty =
+  | GlobalKeywords
+  | MarginLeftProperty
+  | [MarginLeftProperty, MarginLeftProperty];
 export type MarginBlockEndProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginBlockStartProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
+export type MarginInlineProperty =
+  | GlobalKeywords
+  | MarginLeftProperty
+  | [MarginLeftProperty, MarginLeftProperty];
 export type MarginInlineEndProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginInlineStartProperty = GlobalKeywords | MarginLeftProperty;
 export type MarginLeftProperty<TLength = Length> = GlobalKeywords | TLength | Percentage | 'auto';
@@ -4171,8 +4295,9 @@ export type OverflowWrapPropertyCombined =
   | 'initial'
   | 'unset'
   | 'normal'
-  | 'break-word';
-export type OverflowWrapProperty = GlobalKeywords | 'normal' | 'break-word';
+  | 'break-word'
+  | 'anywhere';
+export type OverflowWrapProperty = GlobalKeywords | 'normal' | 'break-word' | 'anywhere';
 export type OverflowXPropertyCombined =
   | 'inherit'
   | 'initial'
@@ -4200,9 +4325,17 @@ export type PaddingProperty<TLength = Length> =
   | [TLength | Percentage, TLength | Percentage]
   | [TLength | Percentage, TLength | Percentage, TLength | Percentage]
   | [TLength | Percentage, TLength | Percentage, TLength | Percentage, TLength | Percentage];
+export type PaddingBlockProperty =
+  | GlobalKeywords
+  | PaddingLeftProperty
+  | [PaddingLeftProperty, PaddingLeftProperty];
 export type PaddingBlockEndProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingBlockStartProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingBottomProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
+export type PaddingInlineProperty =
+  | GlobalKeywords
+  | PaddingLeftProperty
+  | [PaddingLeftProperty, PaddingLeftProperty];
 export type PaddingInlineEndProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingInlineStartProperty = GlobalKeywords | PaddingLeftProperty;
 export type PaddingLeftProperty<TLength = Length> = GlobalKeywords | TLength | Percentage;
@@ -4315,6 +4448,26 @@ export type PlaceItemsProperty =
   | GlobalKeywords
   | AlignItemsProperty
   | [AlignItemsProperty, JustifyItemsProperty];
+export type PlaceSelfPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'auto auto'
+  | 'auto normal'
+  | 'auto stretch'
+  | 'normal'
+  | 'normal auto'
+  | 'normal normal'
+  | 'normal stretch'
+  | 'stretch'
+  | 'stretch auto'
+  | 'stretch normal'
+  | 'stretch stretch';
+export type PlaceSelfProperty =
+  | GlobalKeywords
+  | AlignSelfProperty
+  | [AlignSelfProperty, JustifySelfProperty];
 export type PointerEventsPropertyCombined =
   | 'inherit'
   | 'initial'
@@ -4430,16 +4583,152 @@ export type ScaleProperty =
   | number
   | [number, number]
   | [number, number, number];
+export type ScrollbarColorProperty = GlobalKeywords | 'auto' | 'dark' | 'light' | [Color, Color];
+export type ScrollbarWidthPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'auto'
+  | 'thin'
+  | 'none';
+export type ScrollbarWidthProperty = GlobalKeywords | 'auto' | 'thin' | 'none';
 export type ScrollBehaviorPropertyCombined = 'inherit' | 'initial' | 'unset' | 'auto' | 'smooth';
 export type ScrollBehaviorProperty = GlobalKeywords | 'auto' | 'smooth';
+export type ScrollMarginProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | ['auto' | TLength, 'auto' | TLength]
+  | ['auto' | TLength, 'auto' | TLength, 'auto' | TLength]
+  | ['auto' | TLength, 'auto' | TLength, 'auto' | TLength, 'auto' | TLength];
+export type ScrollMarginBlockProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | ['auto' | TLength, 'auto' | TLength];
+export type ScrollMarginBlockStartProperty = string;
+export type ScrollMarginBlockEndProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginBottomProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginInlineProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | ['auto' | TLength, 'auto' | TLength];
+export type ScrollMarginInlineStartProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginInlineEndProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginLeftProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginRightProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollMarginTopProperty<TLength = Length> = GlobalKeywords | 'auto' | TLength;
+export type ScrollPaddingProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage
+  | ['auto' | TLength | Percentage, 'auto' | TLength | Percentage]
+  | ['auto' | TLength | Percentage, 'auto' | TLength | Percentage, 'auto' | TLength | Percentage]
+  | [
+      'auto' | TLength | Percentage,
+      'auto' | TLength | Percentage,
+      'auto' | TLength | Percentage,
+      'auto' | TLength | Percentage
+    ];
+export type ScrollPaddingBlockProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage
+  | ['auto' | TLength | Percentage, 'auto' | TLength | Percentage];
+export type ScrollPaddingBlockStartProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingBlockEndProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingBottomProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingInlineProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage
+  | ['auto' | TLength | Percentage, 'auto' | TLength | Percentage];
+export type ScrollPaddingInlineStartProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingInlineEndProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingLeftProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingRightProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollPaddingTopProperty<TLength = Length> =
+  | GlobalKeywords
+  | 'auto'
+  | TLength
+  | Percentage;
+export type ScrollSnapAlignPropertyCombined =
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+  | 'none'
+  | 'start'
+  | 'end'
+  | 'center';
+export type ScrollSnapAlignProperty =
+  | GlobalKeywords
+  | 'none'
+  | 'start'
+  | 'end'
+  | 'center'
+  | ['none' | 'start' | 'end' | 'center', 'none' | 'start' | 'end' | 'center'];
+export type ScrollSnapStopPropertyCombined = 'inherit' | 'initial' | 'unset' | 'normal' | 'always';
+export type ScrollSnapStopProperty = GlobalKeywords | 'normal' | 'always';
 export type ScrollSnapTypePropertyCombined =
   | 'inherit'
   | 'initial'
   | 'unset'
   | 'none'
-  | 'mandatory'
-  | 'proximity';
-export type ScrollSnapTypeProperty = GlobalKeywords | 'none' | 'mandatory' | 'proximity';
+  | 'x mandatory'
+  | 'x proximity'
+  | 'y mandatory'
+  | 'y proximity'
+  | 'block mandatory'
+  | 'block proximity'
+  | 'inline mandatory'
+  | 'inline proximity'
+  | 'both mandatory'
+  | 'both proximity';
+export type ScrollSnapTypeProperty =
+  | GlobalKeywords
+  | 'none'
+  | ['x', 'mandatory']
+  | ['x', 'proximity']
+  | ['y', 'mandatory']
+  | ['y', 'proximity']
+  | ['block', 'mandatory']
+  | ['block', 'proximity']
+  | ['inline', 'mandatory']
+  | ['inline', 'proximity']
+  | ['both', 'mandatory']
+  | ['both', 'proximity'];
 export type ShapeImageThresholdProperty = GlobalKeywords | number;
 export type ShapeMarginProperty<TLength = Length> = GlobalKeywords | LengthPercentage<TLength>;
 export type ShapeOutsideProperty =
